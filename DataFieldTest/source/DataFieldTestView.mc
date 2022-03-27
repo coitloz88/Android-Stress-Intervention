@@ -14,6 +14,8 @@ class DataFieldTestView extends WatchUi.DataField {
 
     hidden var ticker = 0; //active상태의 timer
 
+    hidden var valueFormat = "%d";
+
     function initialize() {
         DataField.initialize();
         mValue = 0; //0.0f
@@ -50,6 +52,10 @@ class DataFieldTestView extends WatchUi.DataField {
         }
 
         (View.findDrawableById("label") as Text).setText(Rez.Strings.label);
+    }
+
+    function isSingleFieldLayout(){
+        return (DataField.getObscurityFlags() == OBSCURE_TOP | OBSCURE_LEFT | OBSCURE_BOTTOM | OBSCURE_RIGHT);
     }
 
     // The given info object contains all the current workout information.
@@ -101,6 +107,8 @@ class DataFieldTestView extends WatchUi.DataField {
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc as Dc) as Void {
+
+        /*
         // Set the background color
         (View.findDrawableById("Background") as Text).setColor(getBackgroundColor());
 
@@ -118,6 +126,26 @@ class DataFieldTestView extends WatchUi.DataField {
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
+        */
+
+        var width = dc.getWidth();
+        var height = dc.getHeight();
+        var textCenter = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
+        var backgroundColor = getBackgroundColor();
+
+        dc.setColor(backgroundColor, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(0, 0, width, height);
+        
+        dc.setColor((backgroundColor == Graphics.COLOR_BLACK) ? Graphics.COLOR_WHITE : Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+    
+        if (isSingleFieldLayout()) {
+            dc.drawText(width / 2, height / 2 - 40, Graphics.FONT_TINY, label, textCenter);
+            dc.drawText(width / 2, height / 2 + 7, Graphics.FONT_NUMBER_THAI_HOT, mValue.format(valueFormat), textCenter);
+        } else {
+            dc.drawText(width / 2, 5 + (height - 55) / 2, Graphics.FONT_TINY, label, textCenter);
+            dc.drawText(width / 2, (height - 23) - (height - 55) / 2 - 1, Graphics.FONT_NUMBER_HOT, mValue.format(valueFormat), textCenter);
+        }
+    
     }
 
     //stop -> running
