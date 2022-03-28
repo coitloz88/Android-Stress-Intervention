@@ -8,9 +8,13 @@
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="2" lineNum="12" parent="globals/SampleWidgetView" pc="268435754" symbol="onLayout"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="3" lineNum="18" parent="globals/SampleWidgetView" pc="268435792" symbol="onShow"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="4" lineNum="22" parent="globals/SampleWidgetView" pc="268435797" symbol="onUpdate"/>
-<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="5" lineNum="39" parent="globals/SampleWidgetView" pc="268435802" symbol="onHide"/>
-<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="6" lineNum="4" parent="globals/SampleWidgetView" pc="268436037" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="6" lineNum="4" parent="globals/SampleWidgetView" pc="268436037" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="4" lineNum="26" parent="globals/SampleWidgetView" pc="268435801" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="4" lineNum="27" parent="globals/SampleWidgetView" pc="268435820" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="4" lineNum="34" parent="globals/SampleWidgetView" pc="268435896" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="4" lineNum="35" parent="globals/SampleWidgetView" pc="268435932" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="5" lineNum="41" parent="globals/SampleWidgetView" pc="268436005" symbol="onHide"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="6" lineNum="4" parent="globals/SampleWidgetView" pc="268436240" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetView.mc" id="6" lineNum="4" parent="globals/SampleWidgetView" pc="268436240" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetGlanceView.mc" id="8" lineNum="6" parent="globals/SampleWidgetGlanceView" pc="268435456" symbol="initialize"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetGlanceView.mc" id="8" lineNum="7" parent="globals/SampleWidgetGlanceView" pc="268435460" symbol="initialize"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetGlanceView.mc" id="9" lineNum="10" parent="globals/SampleWidgetGlanceView" pc="268435479" symbol="onUpdate"/>
@@ -28,20 +32,20 @@
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="16" lineNum="25" parent="globals/SampleWidgetApp" pc="268435650" symbol="getGlanceView"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="17" lineNum="5" parent="globals/SampleWidgetApp" pc="268435708" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="17" lineNum="5" parent="globals/SampleWidgetApp" pc="268435708" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="18" lineNum="30" parent="globals" pc="268435807" symbol="getApp"/>
-<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="18" lineNum="31" parent="globals" pc="268435819" symbol="getApp"/>
-<entry filename="Rez" id="20" lineNum="2" parent="globals/Rez/Drawables" pc="268436080" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="21" lineNum="7" parent="globals/Rez/Fonts" pc="268436082" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="22" lineNum="9" parent="globals/Rez/JsonData" pc="268436084" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="23" lineNum="18" parent="globals/Rez/Layouts" pc="268435836" symbol="MainLayout"/>
-<entry filename="Rez" id="23" lineNum="20" parent="globals/Rez/Layouts" pc="268435848" symbol="MainLayout"/>
-<entry filename="Rez" id="23" lineNum="21" parent="globals/Rez/Layouts" pc="268435967" symbol="MainLayout"/>
-<entry filename="Rez" id="23" lineNum="23" parent="globals/Rez/Layouts" pc="268436019" symbol="MainLayout"/>
-<entry filename="Rez" id="24" lineNum="11" parent="globals/Rez/Layouts" pc="268436083" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="25" lineNum="28" parent="globals/Rez/Menus" pc="268436081" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="26" lineNum="30" parent="globals/Rez/Strings" pc="268436085" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436056" symbol="&lt;init&gt;"/>
-<entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436056" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="18" lineNum="30" parent="globals" pc="268436010" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\SampleWidget\\source\\SampleWidgetApp.mc" id="18" lineNum="31" parent="globals" pc="268436022" symbol="getApp"/>
+<entry filename="Rez" id="20" lineNum="2" parent="globals/Rez/Drawables" pc="268436283" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="21" lineNum="7" parent="globals/Rez/Fonts" pc="268436285" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="22" lineNum="9" parent="globals/Rez/JsonData" pc="268436287" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="23" lineNum="18" parent="globals/Rez/Layouts" pc="268436039" symbol="MainLayout"/>
+<entry filename="Rez" id="23" lineNum="20" parent="globals/Rez/Layouts" pc="268436051" symbol="MainLayout"/>
+<entry filename="Rez" id="23" lineNum="21" parent="globals/Rez/Layouts" pc="268436170" symbol="MainLayout"/>
+<entry filename="Rez" id="23" lineNum="23" parent="globals/Rez/Layouts" pc="268436222" symbol="MainLayout"/>
+<entry filename="Rez" id="24" lineNum="11" parent="globals/Rez/Layouts" pc="268436286" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="25" lineNum="28" parent="globals/Rez/Menus" pc="268436284" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="26" lineNum="30" parent="globals/Rez/Strings" pc="268436288" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436259" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436259" symbol="&lt;init&gt;"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -90,12 +94,14 @@
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435791" name="dc" stackId="1" startPc="268435750"/>
-<entry arg="true" endPc="268435801" name="dc" stackId="1" startPc="268435797"/>
+<entry endPc="268436003" name="timeString" stackId="3" startPc="268435801"/>
+<entry endPc="268436003" name="clockTime" stackId="2" startPc="268435801"/>
+<entry arg="true" endPc="268436004" name="dc" stackId="1" startPc="268435797"/>
 <entry arg="true" endPc="268435570" name="dc" stackId="1" startPc="268435479"/>
 <entry arg="true" endPc="268435598" name="state" stackId="1" startPc="268435594"/>
 <entry arg="true" endPc="268435603" name="state" stackId="1" startPc="268435599"/>
-<entry endPc="268436035" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268435848"/>
-<entry arg="true" endPc="268436036" name="dc" stackId="1" startPc="268435836"/>
+<entry endPc="268436238" name="rez_cmp_local_bitmap_id_monkey" stackId="2" startPc="268436051"/>
+<entry arg="true" endPc="268436239" name="dc" stackId="1" startPc="268436039"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
@@ -126,14 +132,14 @@
 <functionEntry accessMode="public" endPc="268435796" name="onShow" parent="SampleWidgetView" startPc="268435792">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435801" name="onUpdate" parent="SampleWidgetView" startPc="268435797">
+<functionEntry accessMode="public" endPc="268436004" name="onUpdate" parent="SampleWidgetView" startPc="268435797">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435806" name="onHide" parent="SampleWidgetView" startPc="268435802">
+<functionEntry accessMode="public" endPc="268436009" name="onHide" parent="SampleWidgetView" startPc="268436005">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436055" name="&lt;init&gt;" parent="SampleWidgetView" startPc="268436037">
+<functionEntry accessMode="protected" endPc="268436258" name="&lt;init&gt;" parent="SampleWidgetView" startPc="268436240">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="SampleWidgetGlanceView" startPc="268435456">
@@ -166,32 +172,32 @@
 <functionEntry accessMode="protected" endPc="268435726" name="&lt;init&gt;" parent="SampleWidgetApp" startPc="268435708">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268435835" name="getApp" startPc="268435807">
+<functionEntry accessMode="public" endPc="268436038" name="getApp" startPc="268436010">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436080" name="&lt;init&gt;" parent="Drawables" startPc="268436080">
+<functionEntry accessMode="protected" endPc="268436283" name="&lt;init&gt;" parent="Drawables" startPc="268436283">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436082" name="&lt;init&gt;" parent="Fonts" startPc="268436082">
+<functionEntry accessMode="protected" endPc="268436285" name="&lt;init&gt;" parent="Fonts" startPc="268436285">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436084" name="&lt;init&gt;" parent="JsonData" startPc="268436084">
+<functionEntry accessMode="protected" endPc="268436287" name="&lt;init&gt;" parent="JsonData" startPc="268436287">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268436036" name="MainLayout" parent="Layouts" startPc="268435836">
+<functionEntry accessMode="public" endPc="268436239" name="MainLayout" parent="Layouts" startPc="268436039">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436083" name="&lt;init&gt;" parent="Layouts" startPc="268436083">
+<functionEntry accessMode="protected" endPc="268436286" name="&lt;init&gt;" parent="Layouts" startPc="268436286">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436081" name="&lt;init&gt;" parent="Menus" startPc="268436081">
+<functionEntry accessMode="protected" endPc="268436284" name="&lt;init&gt;" parent="Menus" startPc="268436284">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436085" name="&lt;init&gt;" parent="Strings" startPc="268436085">
+<functionEntry accessMode="protected" endPc="268436288" name="&lt;init&gt;" parent="Strings" startPc="268436288">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="protected" endPc="268436079" name="&lt;init&gt;" parent="Rez" startPc="268436056">
+<functionEntry accessMode="protected" endPc="268436282" name="&lt;init&gt;" parent="Rez" startPc="268436259">
 <documentation/>
 </functionEntry>
 </functions>
