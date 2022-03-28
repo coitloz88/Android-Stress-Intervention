@@ -20,6 +20,7 @@ class SampleWidgetView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        /*
         // Call the parent onUpdate function to redraw the layout
         // Get and show the current time
         var clockTime = System.getClockTime();
@@ -29,6 +30,7 @@ class SampleWidgetView extends WatchUi.View {
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        */
     }
 
     // Called when this View is removed from the screen. Save the
