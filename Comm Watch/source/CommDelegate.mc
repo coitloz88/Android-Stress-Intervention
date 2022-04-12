@@ -7,6 +7,7 @@
 using Toybox.WatchUi;
 using Toybox.System;
 using Toybox.Communications;
+using Toybox.Sensor;
 
 class CommListener extends Communications.ConnectionListener {
     function initialize() {
@@ -50,6 +51,7 @@ class CommInputDelegate extends WatchUi.BehaviorDelegate {
 }
 
 class BaseMenuDelegate extends WatchUi.MenuInputDelegate {
+
     function initialize() {
         WatchUi.MenuInputDelegate.initialize();
     }
@@ -59,7 +61,7 @@ class BaseMenuDelegate extends WatchUi.MenuInputDelegate {
         var delegate = null;
 
         if(item == :sendData) {
-            menu.addItem("Hello World.", :hello);
+            menu.addItem("Heart rate", :heartrate);
             menu.addItem("Ackbar", :trap);
             menu.addItem("Garmin", :garmin);
             delegate = new SendMenuDelegate();
@@ -86,8 +88,13 @@ class SendMenuDelegate extends WatchUi.MenuInputDelegate {
     function onMenuItem(item) {
         var listener = new CommListener();
 
-        if(item == :hello) {
-            Communications.transmit("Hello World.", null, listener);
+        if(item == :heartrate) {
+            var currentHeartRateData = CommView.userHeartRate;
+            if(currentHeartRateData == null){
+                Communications.transmit("heart rate", null, listener);
+            } else {
+               Communications.transmit(currentHeartRateData.toString(), null, listener);
+            }
         } else if(item == :trap) {
             Communications.transmit("IT'S A TRAP!", null, listener);
         } else if(item == :garmin) {

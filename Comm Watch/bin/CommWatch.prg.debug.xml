@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\loveg\Documents\GitHub\connectiq-android-sdk\Comm Watch\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="1" lineNum="19" parent="globals/CommView" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="1" lineNum="20" parent="globals/CommView" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="1" lineNum="21" parent="globals/CommView" pc="268435478" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="1" lineNum="22" parent="globals/CommView" pc="268435520" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="2" lineNum="25" parent="globals/CommView" pc="268435553" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="2" lineNum="26" parent="globals/CommView" pc="268435557" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="3" lineNum="29" parent="globals/CommView" pc="268435587" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="3" lineNum="30" parent="globals/CommView" pc="268435591" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="3" lineNum="31" parent="globals/CommView" pc="268435633" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="34" parent="globals/CommView" pc="268435666" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="35" parent="globals/CommView" pc="268435670" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="36" parent="globals/CommView" pc="268435697" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="37" parent="globals/CommView" pc="268435713" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="39" parent="globals/CommView" pc="268435746" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="4" lineNum="40" parent="globals/CommView" pc="268435759" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="44" parent="globals/CommView" pc="268435781" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="45" parent="globals/CommView" pc="268435785" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="46" parent="globals/CommView" pc="268435809" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="47" parent="globals/CommView" pc="268435872" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="48" parent="globals/CommView" pc="268435935" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="49" parent="globals/CommView" pc="268435998" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="50" parent="globals/CommView" pc="268436061" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="51" parent="globals/CommView" pc="268436127" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="52" parent="globals/CommView" pc="268436151" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="53" parent="globals/CommView" pc="268436214" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="54" parent="globals/CommView" pc="268436277" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="55" parent="globals/CommView" pc="268436340" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="56" parent="globals/CommView" pc="268436406" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="57" parent="globals/CommView" pc="268436432" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="58" parent="globals/CommView" pc="268436483" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="59" parent="globals/CommView" pc="268436534" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="60" parent="globals/CommView" pc="268436585" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="62" parent="globals/CommView" pc="268436639" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="63" parent="globals/CommView" pc="268436690" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="64" parent="globals/CommView" pc="268436741" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="65" parent="globals/CommView" pc="268436792" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="66" parent="globals/CommView" pc="268436843" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="5" lineNum="67" parent="globals/CommView" pc="268436894" symbol="drawIntroPage"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="71" parent="globals/CommView" pc="268436946" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="72" parent="globals/CommView" pc="268436950" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="73" parent="globals/CommView" pc="268436986" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="74" parent="globals/CommView" pc="268436998" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="75" parent="globals/CommView" pc="268437034" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="77" parent="globals/CommView" pc="268437061" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="78" parent="globals/CommView" pc="268437072" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="79" parent="globals/CommView" pc="268437089" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="81" parent="globals/CommView" pc="268437106" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="82" parent="globals/CommView" pc="268437106" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="84" parent="globals/CommView" pc="268437113" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="85" parent="globals/CommView" pc="268437176" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="86" parent="globals/CommView" pc="268437197" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="87" parent="globals/CommView" pc="268437263" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="91" parent="globals/CommView" pc="268437289" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="6" lineNum="93" parent="globals/CommView" pc="268437364" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="7" lineNum="15" parent="globals/CommView" pc="268439319" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommView.mc" id="7" lineNum="15" parent="globals/CommView" pc="268439319" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="22" parent="globals/CommExample" pc="268437431" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="23" parent="globals/CommExample" pc="268437435" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="25" parent="globals/CommExample" pc="268437457" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="26" parent="globals/CommExample" pc="268437481" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="27" parent="globals/CommExample" pc="268437505" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="28" parent="globals/CommExample" pc="268437520" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="29" parent="globals/CommExample" pc="268437547" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="30" parent="globals/CommExample" pc="268437562" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="9" lineNum="32" parent="globals/CommExample" pc="268437589" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="10" lineNum="37" parent="globals/CommExample" pc="268437600" symbol="onStart"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="11" lineNum="41" parent="globals/CommExample" pc="268437605" symbol="onStop"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="12" lineNum="45" parent="globals/CommExample" pc="268437610" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="12" lineNum="46" parent="globals/CommExample" pc="268437614" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="49" parent="globals/CommExample" pc="268437682" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="50" parent="globals/CommExample" pc="268437686" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="52" parent="globals/CommExample" pc="268437686" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="54" parent="globals/CommExample" pc="268437699" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="55" parent="globals/CommExample" pc="268437706" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="56" parent="globals/CommExample" pc="268437706" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="57" parent="globals/CommExample" pc="268437733" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="59" parent="globals/CommExample" pc="268437774" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="60" parent="globals/CommExample" pc="268437799" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="61" parent="globals/CommExample" pc="268437812" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="64" parent="globals/CommExample" pc="268437828" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="13" lineNum="65" parent="globals/CommExample" pc="268437844" symbol="onMail"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="68" parent="globals/CommExample" pc="268437861" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="69" parent="globals/CommExample" pc="268437865" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="71" parent="globals/CommExample" pc="268437865" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="72" parent="globals/CommExample" pc="268437907" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="75" parent="globals/CommExample" pc="268437922" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="76" parent="globals/CommExample" pc="268437949" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="78" parent="globals/CommExample" pc="268437990" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="79" parent="globals/CommExample" pc="268438021" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="14" lineNum="81" parent="globals/CommExample" pc="268438034" symbol="onPhone"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="15" lineNum="20" parent="globals/CommExample" pc="268439357" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="15" lineNum="20" parent="globals/CommExample" pc="268439357" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommApp.mc" id="16" lineNum="13" parent="globals" pc="268439152" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="17" lineNum="13" parent="globals/CommListener" pc="268438051" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="17" lineNum="14" parent="globals/CommListener" pc="268438055" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="18" lineNum="17" parent="globals/CommListener" pc="268438078" symbol="onComplete"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="18" lineNum="18" parent="globals/CommListener" pc="268438082" symbol="onComplete"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="19" lineNum="21" parent="globals/CommListener" pc="268438104" symbol="onError"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="19" lineNum="22" parent="globals/CommListener" pc="268438108" symbol="onError"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="20" lineNum="12" parent="globals/CommListener" pc="268439338" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="20" lineNum="12" parent="globals/CommListener" pc="268439338" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="21" lineNum="27" parent="globals/CommInputDelegate" pc="268438130" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="21" lineNum="28" parent="globals/CommInputDelegate" pc="268438134" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="31" parent="globals/CommInputDelegate" pc="268438157" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="32" parent="globals/CommInputDelegate" pc="268438161" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="33" parent="globals/CommInputDelegate" pc="268438189" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="35" parent="globals/CommInputDelegate" pc="268438189" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="36" parent="globals/CommInputDelegate" pc="268438211" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="37" parent="globals/CommInputDelegate" pc="268438233" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="38" parent="globals/CommInputDelegate" pc="268438257" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="22" lineNum="40" parent="globals/CommInputDelegate" pc="268438285" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="23" lineNum="43" parent="globals/CommInputDelegate" pc="268438289" symbol="onTap"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="23" lineNum="44" parent="globals/CommInputDelegate" pc="268438293" symbol="onTap"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="23" lineNum="45" parent="globals/CommInputDelegate" pc="268438310" symbol="onTap"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="23" lineNum="47" parent="globals/CommInputDelegate" pc="268438326" symbol="onTap"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="23" lineNum="49" parent="globals/CommInputDelegate" pc="268438339" symbol="onTap"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="24" lineNum="26" parent="globals/CommInputDelegate" pc="268439376" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="24" lineNum="26" parent="globals/CommInputDelegate" pc="268439376" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="25" lineNum="55" parent="globals/BaseMenuDelegate" pc="268438356" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="25" lineNum="56" parent="globals/BaseMenuDelegate" pc="268438360" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="59" parent="globals/BaseMenuDelegate" pc="268438383" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="60" parent="globals/BaseMenuDelegate" pc="268438387" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="61" parent="globals/BaseMenuDelegate" pc="268438415" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="63" parent="globals/BaseMenuDelegate" pc="268438418" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="64" parent="globals/BaseMenuDelegate" pc="268438429" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="65" parent="globals/BaseMenuDelegate" pc="268438451" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="66" parent="globals/BaseMenuDelegate" pc="268438473" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="67" parent="globals/BaseMenuDelegate" pc="268438495" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="68" parent="globals/BaseMenuDelegate" pc="268438522" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="69" parent="globals/BaseMenuDelegate" pc="268438533" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="70" parent="globals/BaseMenuDelegate" pc="268438550" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="71" parent="globals/BaseMenuDelegate" pc="268438572" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="72" parent="globals/BaseMenuDelegate" pc="268438587" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="74" parent="globals/BaseMenuDelegate" pc="268438612" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="75" parent="globals/BaseMenuDelegate" pc="268438634" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="76" parent="globals/BaseMenuDelegate" pc="268438656" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="26" lineNum="79" parent="globals/BaseMenuDelegate" pc="268438683" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="27" lineNum="53" parent="globals/BaseMenuDelegate" pc="268439251" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="27" lineNum="53" parent="globals/BaseMenuDelegate" pc="268439251" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="28" lineNum="84" parent="globals/SendMenuDelegate" pc="268438712" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="28" lineNum="85" parent="globals/SendMenuDelegate" pc="268438716" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="88" parent="globals/SendMenuDelegate" pc="268438739" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="89" parent="globals/SendMenuDelegate" pc="268438743" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="91" parent="globals/SendMenuDelegate" pc="268438767" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="94" parent="globals/SendMenuDelegate" pc="268438778" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="98" parent="globals/SendMenuDelegate" pc="268438805" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="99" parent="globals/SendMenuDelegate" pc="268438816" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="100" parent="globals/SendMenuDelegate" pc="268438843" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="101" parent="globals/SendMenuDelegate" pc="268438854" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="29" lineNum="104" parent="globals/SendMenuDelegate" pc="268438881" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="30" lineNum="83" parent="globals/SendMenuDelegate" pc="268439232" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="30" lineNum="83" parent="globals/SendMenuDelegate" pc="268439232" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="31" lineNum="109" parent="globals/ListnerMenuDelegate" pc="268438906" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="31" lineNum="110" parent="globals/ListnerMenuDelegate" pc="268438910" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="113" parent="globals/ListnerMenuDelegate" pc="268438933" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="114" parent="globals/ListnerMenuDelegate" pc="268438937" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="115" parent="globals/ListnerMenuDelegate" pc="268438948" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="116" parent="globals/ListnerMenuDelegate" pc="268438975" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="117" parent="globals/ListnerMenuDelegate" pc="268438986" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="118" parent="globals/ListnerMenuDelegate" pc="268439001" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="120" parent="globals/ListnerMenuDelegate" pc="268439031" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="121" parent="globals/ListnerMenuDelegate" pc="268439042" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="122" parent="globals/ListnerMenuDelegate" pc="268439059" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="123" parent="globals/ListnerMenuDelegate" pc="268439079" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="124" parent="globals/ListnerMenuDelegate" pc="268439090" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="125" parent="globals/ListnerMenuDelegate" pc="268439100" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="32" lineNum="128" parent="globals/ListnerMenuDelegate" pc="268439127" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="33" lineNum="108" parent="globals/ListnerMenuDelegate" pc="268439270" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\connectiq-android-sdk\\Comm Watch\\source\\CommDelegate.mc" id="33" lineNum="108" parent="globals/ListnerMenuDelegate" pc="268439270" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="35" lineNum="2" parent="globals/Rez/Drawables" pc="268439313" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="36" lineNum="7" parent="globals/Rez/Fonts" pc="268439315" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="37" lineNum="9" parent="globals/Rez/JsonData" pc="268439317" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="38" lineNum="11" parent="globals/Rez/Layouts" pc="268439316" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="39" lineNum="13" parent="globals/Rez/Menus" pc="268439314" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="40" lineNum="15" parent="globals/Rez/Strings" pc="268439318" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="41" lineNum="1" parent="globals/Rez" pc="268439289" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="41" lineNum="1" parent="globals/Rez" pc="268439289" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389939" method="true" symbol="registerForPhoneAppMessages"/>
+<entry field="true" id="15" symbol="crashOnMessage"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry id="8388716" method="true" symbol="trap"/>
+<entry field="true" id="10" symbol="page"/>
+<entry id="21" object="true" symbol="SendMenuDelegate"/>
+<entry field="true" id="13" symbol="mailMethod"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="27" symbol="AppName"/>
+<entry field="true" id="28" symbol="userHeartRate"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="33" symbol="sendData"/>
+<entry id="8388822" method="true" symbol="setMailboxListener"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="25" symbol="id_monkey"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="24" module="true" symbol="Menus"/>
+<entry field="true" id="12" symbol="stringsSize"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="11" symbol="strings"/>
+<entry field="true" id="14" symbol="phoneMethod"/>
+<entry id="30" method="true" symbol="drawIntroPage"/>
+<entry id="9" object="true" symbol="CommView"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8388828" method="true" symbol="onError"/>
+<entry id="34" symbol="heartrate"/>
+<entry id="19" object="true" symbol="CommInputDelegate"/>
+<entry id="38" symbol="none"/>
+<entry id="35" symbol="garmin"/>
+<entry id="36" symbol="mailbox"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="39" symbol="phoneFail"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="29" method="true" symbol="onSensor"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="26" symbol="LauncherIcon"/>
+<entry id="18" object="true" symbol="CommListener"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="8389481" method="true" symbol="setListener"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="8388960" symbol="heartRate"/>
+<entry id="17" object="true" symbol="CommExample"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="8389670" symbol="screenShape"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="32" method="true" symbol="onPhone"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="22" object="true" symbol="ListnerMenuDelegate"/>
+<entry id="8388829" method="true" symbol="onComplete"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="23" module="true" symbol="Layouts"/>
+<entry id="31" method="true" symbol="onMail"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry field="true" id="16" symbol="hasDirectMessagingSupport"/>
+<entry id="37" symbol="phone"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="20" object="true" symbol="BaseMenuDelegate"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435586" name="dc" stackId="1" startPc="268435553"/>
+<entry arg="true" endPc="268435780" name="sensorInfo" stackId="1" startPc="268435666"/>
+<entry arg="true" endPc="268436945" name="dc" stackId="1" startPc="268435781"/>
+<entry endPc="268437285" name="i" stackId="2" startPc="268437106"/>
+<entry endPc="268437285" name="y" stackId="3" startPc="268437106"/>
+<entry arg="true" endPc="268437430" name="dc" stackId="1" startPc="268436946"/>
+<entry arg="true" endPc="268437604" name="state" stackId="1" startPc="268437600"/>
+<entry arg="true" endPc="268437609" name="state" stackId="1" startPc="268437605"/>
+<entry endPc="268437824" name="i" stackId="3" startPc="268437706"/>
+<entry endPc="268437859" name="mail" stackId="2" startPc="268437686"/>
+<entry arg="true" endPc="268437860" name="mailIter" stackId="1" startPc="268437682"/>
+<entry endPc="268438049" name="i" stackId="2" startPc="268437865"/>
+<entry arg="true" endPc="268438050" name="msg" stackId="1" startPc="268437861"/>
+<entry endPc="268438287" name="delegate" stackId="2" startPc="268438161"/>
+<entry endPc="268438287" name="menu" stackId="1" startPc="268438161"/>
+<entry arg="true" endPc="268438355" name="event" stackId="1" startPc="268438289"/>
+<entry endPc="268438710" name="delegate" stackId="3" startPc="268438387"/>
+<entry endPc="268438710" name="menu" stackId="2" startPc="268438387"/>
+<entry arg="true" endPc="268438711" name="item" stackId="1" startPc="268438383"/>
+<entry endPc="268438904" name="listener" stackId="2" startPc="268438743"/>
+<entry arg="true" endPc="268438905" name="item" stackId="1" startPc="268438739"/>
+<entry arg="true" endPc="268439151" name="item" stackId="1" startPc="268438933"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/SendMenuDelegate" offset="246" parentId="globals" symbolId="SendMenuDelegate" type="class"/>
+<dataEntry label="globals/BaseMenuDelegate" offset="301" parentId="globals" symbolId="BaseMenuDelegate" type="class"/>
+<dataEntry label="globals/ListnerMenuDelegate" offset="356" parentId="globals" symbolId="ListnerMenuDelegate" type="class"/>
+<dataEntry label="globals/Rez" offset="411" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="490" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="537" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="568" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="599" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="630" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="661" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/CommView" offset="700" parentId="globals" symbolId="CommView" type="class"/>
+<dataEntry label="globals/CommListener" offset="803" parentId="globals" symbolId="CommListener" type="class"/>
+<dataEntry label="globals/CommExample" offset="866" parentId="globals" symbolId="CommExample" type="class"/>
+<dataEntry label="globals/CommInputDelegate" offset="953" parentId="globals" symbolId="CommInputDelegate" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435552" name="initialize" parent="CommView" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435586" name="onLayout" parent="CommView" startPc="268435553">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435665" name="onShow" parent="CommView" startPc="268435587">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435780" name="onSensor" parent="CommView" startPc="268435666">
+<param id="sensorInfo"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436945" name="drawIntroPage" parent="CommView" startPc="268435781">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437430" name="onUpdate" parent="CommView" startPc="268436946">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439337" name="&lt;init&gt;" parent="CommView" startPc="268439319">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437599" name="initialize" parent="CommExample" startPc="268437431">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437604" name="onStart" parent="CommExample" startPc="268437600">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437609" name="onStop" parent="CommExample" startPc="268437605">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437681" name="getInitialView" parent="CommExample" startPc="268437610">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437860" name="onMail" parent="CommExample" startPc="268437682">
+<param id="mailIter"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438050" name="onPhone" parent="CommExample" startPc="268437861">
+<param id="msg"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439375" name="&lt;init&gt;" parent="CommExample" startPc="268439357">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438077" name="initialize" parent="CommListener" startPc="268438051">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438103" name="onComplete" parent="CommListener" startPc="268438078">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438129" name="onError" parent="CommListener" startPc="268438104">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439356" name="&lt;init&gt;" parent="CommListener" startPc="268439338">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438156" name="initialize" parent="CommInputDelegate" startPc="268438130">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438288" name="onMenu" parent="CommInputDelegate" startPc="268438157">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438355" name="onTap" parent="CommInputDelegate" startPc="268438289">
+<param id="event"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439394" name="&lt;init&gt;" parent="CommInputDelegate" startPc="268439376">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438382" name="initialize" parent="BaseMenuDelegate" startPc="268438356">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438711" name="onMenuItem" parent="BaseMenuDelegate" startPc="268438383">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439269" name="&lt;init&gt;" parent="BaseMenuDelegate" startPc="268439251">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438738" name="initialize" parent="SendMenuDelegate" startPc="268438712">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438905" name="onMenuItem" parent="SendMenuDelegate" startPc="268438739">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439250" name="&lt;init&gt;" parent="SendMenuDelegate" startPc="268439232">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268438932" name="initialize" parent="ListnerMenuDelegate" startPc="268438906">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439151" name="onMenuItem" parent="ListnerMenuDelegate" startPc="268438933">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439288" name="&lt;init&gt;" parent="ListnerMenuDelegate" startPc="268439270">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439313" name="&lt;init&gt;" parent="Drawables" startPc="268439313">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439315" name="&lt;init&gt;" parent="Fonts" startPc="268439315">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439317" name="&lt;init&gt;" parent="JsonData" startPc="268439317">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439316" name="&lt;init&gt;" parent="Layouts" startPc="268439316">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439314" name="&lt;init&gt;" parent="Menus" startPc="268439314">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439318" name="&lt;init&gt;" parent="Strings" startPc="268439318">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268439312" name="&lt;init&gt;" parent="Rez" startPc="268439289">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

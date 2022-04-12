@@ -8,16 +8,37 @@ using Toybox.WatchUi;
 using Toybox.Graphics;
 using Toybox.Communications;
 using Toybox.System;
+using Toybox.Activity;
+using Toybox.Sensor;
+using Toybox.Timer;
 
-class CommView extends WatchUi.View {
+public class CommView extends WatchUi.View {
     var screenShape;
+    public var userHeartRate;
 
     function initialize() {
         View.initialize();
+        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        Sensor.enableSensorEvents(method(:onSensor));
     }
 
     function onLayout(dc) {
         screenShape = System.getDeviceSettings().screenShape;
+    }
+
+    function onShow() as Void {
+        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        Sensor.enableSensorEvents(method(:onSensor));
+    }
+
+    function onSensor(sensorInfo){
+        if (sensorInfo has :heartRate && sensorInfo.heartRate != null) {
+            userHeartRate = sensorInfo.heartRate;
+            System.println("Current Heart Rate: " + userHeartRate);
+        } else {
+            userHeartRate = 0;
+            System.println("cannot access");
+        }
     }
 
     function drawIntroPage(dc) {
@@ -51,7 +72,8 @@ class CommView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
+        onSensor(Sensor.getInfo());
+        
         if(hasDirectMessagingSupport) {
             if(page == 0) {
                 drawIntroPage(dc);
@@ -65,9 +87,12 @@ class CommView extends WatchUi.View {
                     y += 20;
                 }
              }
-         } else {
-             dc.drawText(dc.getWidth() / 2, dc.getHeight() / 3, Graphics.FONT_MEDIUM, "Direct Messaging API\nNot Supported", Graphics.TEXT_JUSTIFY_CENTER);
-         }
+        } else {
+            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 3, Graphics.FONT_MEDIUM, "Direct Messaging API\nNot Supported", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        //dc.drawText(dc.getWidth() / 2, 140,  Graphics.FONT_TINY, userHeartRate, Graphics.TEXT_JUSTIFY_CENTER);
+
+        //View.onUpdate(dc);
     }
 
 
