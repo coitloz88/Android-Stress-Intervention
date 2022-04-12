@@ -14,7 +14,7 @@ using Toybox.Timer;
 
 public class CommView extends WatchUi.View {
     var screenShape;
-    public var userHeartRate;
+    public static var userHeartRate;
 
     function initialize() {
         View.initialize();
@@ -72,7 +72,7 @@ public class CommView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        onSensor(Sensor.getInfo());
+        //onSensor(Sensor.getInfo());
         
         if(hasDirectMessagingSupport) {
             if(page == 0) {
