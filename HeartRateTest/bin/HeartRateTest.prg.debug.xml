@@ -141,8 +141,8 @@
 <entry arg="true" endPc="268435944" name="sensorInfo" stackId="1" startPc="268435826"/>
 <entry arg="true" endPc="268435986" name="dc" stackId="1" startPc="268435945"/>
 <entry arg="true" endPc="268436263" name="dc" stackId="1" startPc="268436066"/>
-<entry endPc="268436611" name="rez_cmp_local_text_2108588116" stackId="2" startPc="268436281"/>
 <entry endPc="268436611" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436281"/>
+<entry endPc="268436611" name="rez_cmp_local_text_5102570401" stackId="2" startPc="268436281"/>
 <entry arg="true" endPc="268436612" name="dc" stackId="1" startPc="268436269"/>
 </localVars>
 <annotations>
