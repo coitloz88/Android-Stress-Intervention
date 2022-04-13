@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\loveg\Documents\GitHub\Garmin-Project\HeartRateTest\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="1" lineNum="7" parent="globals/HeartRateTestMenuDelegate" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="1" lineNum="8" parent="globals/HeartRateTestMenuDelegate" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="2" lineNum="11" parent="globals/HeartRateTestMenuDelegate" pc="268435479" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="2" lineNum="12" parent="globals/HeartRateTestMenuDelegate" pc="268435483" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="2" lineNum="13" parent="globals/HeartRateTestMenuDelegate" pc="268435494" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="2" lineNum="14" parent="globals/HeartRateTestMenuDelegate" pc="268435518" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="2" lineNum="15" parent="globals/HeartRateTestMenuDelegate" pc="268435529" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/HeartRateTestMenuDelegate" pc="268436855" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestMenuDelegate.mc" id="3" lineNum="5" parent="globals/HeartRateTestMenuDelegate" pc="268436855" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="5" lineNum="7" parent="globals/HeartRateTestApp" pc="268435554" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="5" lineNum="8" parent="globals/HeartRateTestApp" pc="268435558" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="6" lineNum="12" parent="globals/HeartRateTestApp" pc="268435577" symbol="onStart"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="7" lineNum="16" parent="globals/HeartRateTestApp" pc="268435582" symbol="onStop"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="8" lineNum="20" parent="globals/HeartRateTestApp" pc="268435587" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="8" lineNum="21" parent="globals/HeartRateTestApp" pc="268435591" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="9" lineNum="5" parent="globals/HeartRateTestApp" pc="268436836" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="9" lineNum="5" parent="globals/HeartRateTestApp" pc="268436836" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="10" lineNum="26" parent="globals" pc="268435659" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestApp.mc" id="10" lineNum="27" parent="globals" pc="268435671" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="12" lineNum="6" parent="globals/HeartRateTestDelegate" pc="268435688" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="12" lineNum="7" parent="globals/HeartRateTestDelegate" pc="268435692" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="13" lineNum="10" parent="globals/HeartRateTestDelegate" pc="268435711" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="13" lineNum="11" parent="globals/HeartRateTestDelegate" pc="268435715" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="13" lineNum="12" parent="globals/HeartRateTestDelegate" pc="268435799" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="14" lineNum="4" parent="globals/HeartRateTestDelegate" pc="268436798" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestDelegate.mc" id="14" lineNum="4" parent="globals/HeartRateTestDelegate" pc="268436798" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="16" lineNum="17" parent="globals/HeartRateTestView" pc="268435803" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="16" lineNum="18" parent="globals/HeartRateTestView" pc="268435807" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="21" parent="globals/HeartRateTestView" pc="268435826" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="22" parent="globals/HeartRateTestView" pc="268435830" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="23" parent="globals/HeartRateTestView" pc="268435857" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="24" parent="globals/HeartRateTestView" pc="268435873" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="26" parent="globals/HeartRateTestView" pc="268435908" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="17" lineNum="27" parent="globals/HeartRateTestView" pc="268435921" symbol="onSensor"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="18" lineNum="32" parent="globals/HeartRateTestView" pc="268435945" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="18" lineNum="33" parent="globals/HeartRateTestView" pc="268435949" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="19" lineNum="39" parent="globals/HeartRateTestView" pc="268435987" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="19" lineNum="40" parent="globals/HeartRateTestView" pc="268435991" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="19" lineNum="41" parent="globals/HeartRateTestView" pc="268436033" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="45" parent="globals/HeartRateTestView" pc="268436066" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="46" parent="globals/HeartRateTestView" pc="268436070" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="48" parent="globals/HeartRateTestView" pc="268436106" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="50" parent="globals/HeartRateTestView" pc="268436118" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="51" parent="globals/HeartRateTestView" pc="268436145" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="52" parent="globals/HeartRateTestView" pc="268436180" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="20" lineNum="54" parent="globals/HeartRateTestView" pc="268436243" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="21" lineNum="60" parent="globals/HeartRateTestView" pc="268436264" symbol="onHide"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="22" lineNum="6" parent="globals/HeartRateTestView" pc="268436817" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\HeartRateTest\\source\\HeartRateTestView.mc" id="22" lineNum="6" parent="globals/HeartRateTestView" pc="268436817" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268436773" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="25" lineNum="7" parent="globals/Rez/Fonts" pc="268436794" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="26" lineNum="9" parent="globals/Rez/JsonData" pc="268436796" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="27" lineNum="18" parent="globals/Rez/Layouts" pc="268436269" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="20" parent="globals/Rez/Layouts" pc="268436281" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268436433" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Layouts" pc="268436545" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="24" parent="globals/Rez/Layouts" pc="268436585" symbol="MainLayout"/>
+<entry filename="Rez" id="28" lineNum="11" parent="globals/Rez/Layouts" pc="268436795" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="29" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436613" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268436617" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436635" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436691" symbol="initialize"/>
+<entry filename="Rez" id="30" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436775" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="30" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436775" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="31" lineNum="29" parent="globals/Rez/Menus" pc="268436774" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="32" lineNum="47" parent="globals/Rez/Strings" pc="268436797" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436749" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436749" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389346" symbol="text"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry id="18" method="true" symbol="MainLayout"/>
+<entry id="10" object="true" symbol="HeartRateTestApp"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="22" symbol="AppName"/>
+<entry field="true" id="23" symbol="userHeartRate"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="21" symbol="prompt"/>
+<entry field="true" id="15" symbol="id_monkey"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="26" symbol="item_2"/>
+<entry id="25" symbol="item_1"/>
+<entry id="14" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="11" object="true" symbol="HeartRateTestDelegate"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="17" object="true" symbol="MainMenu"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="12" object="true" symbol="HeartRateTestView"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="24" method="true" symbol="onSensor"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="16" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="9" object="true" symbol="HeartRateTestMenuDelegate"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="8388960" symbol="heartRate"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="8389347" symbol="color"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="13" module="true" symbol="Layouts"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="20" symbol="menu_label_2"/>
+<entry field="true" id="19" symbol="menu_label_1"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435553" name="item" stackId="1" startPc="268435479"/>
+<entry arg="true" endPc="268435581" name="state" stackId="1" startPc="268435577"/>
+<entry arg="true" endPc="268435586" name="state" stackId="1" startPc="268435582"/>
+<entry arg="true" endPc="268435944" name="sensorInfo" stackId="1" startPc="268435826"/>
+<entry arg="true" endPc="268435986" name="dc" stackId="1" startPc="268435945"/>
+<entry arg="true" endPc="268436263" name="dc" stackId="1" startPc="268436066"/>
+<entry endPc="268436611" name="rez_cmp_local_text_2108588116" stackId="2" startPc="268436281"/>
+<entry endPc="268436611" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436281"/>
+<entry arg="true" endPc="268436612" name="dc" stackId="1" startPc="268436269"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="174" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="253" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="300" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="339" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry label="globals/Rez/Fonts" offset="386" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="417" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="456" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="487" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/HeartRateTestDelegate" offset="550" parentId="globals" symbolId="HeartRateTestDelegate" type="class"/>
+<dataEntry label="globals/HeartRateTestView" offset="605" parentId="globals" symbolId="HeartRateTestView" type="class"/>
+<dataEntry label="globals/HeartRateTestApp" offset="700" parentId="globals" symbolId="HeartRateTestApp" type="class"/>
+<dataEntry label="globals/HeartRateTestMenuDelegate" offset="771" parentId="globals" symbolId="HeartRateTestMenuDelegate" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="initialize" parent="HeartRateTestMenuDelegate" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435553" name="onMenuItem" parent="HeartRateTestMenuDelegate" startPc="268435479">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436873" name="&lt;init&gt;" parent="HeartRateTestMenuDelegate" startPc="268436855">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435576" name="initialize" parent="HeartRateTestApp" startPc="268435554">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435581" name="onStart" parent="HeartRateTestApp" startPc="268435577">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435586" name="onStop" parent="HeartRateTestApp" startPc="268435582">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435658" name="getInitialView" parent="HeartRateTestApp" startPc="268435587">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436854" name="&lt;init&gt;" parent="HeartRateTestApp" startPc="268436836">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435687" name="getApp" startPc="268435659">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435710" name="initialize" parent="HeartRateTestDelegate" startPc="268435688">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435802" name="onMenu" parent="HeartRateTestDelegate" startPc="268435711">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436816" name="&lt;init&gt;" parent="HeartRateTestDelegate" startPc="268436798">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435825" name="initialize" parent="HeartRateTestView" startPc="268435803">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435944" name="onSensor" parent="HeartRateTestView" startPc="268435826">
+<param id="sensorInfo"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435986" name="onLayout" parent="HeartRateTestView" startPc="268435945">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436065" name="onShow" parent="HeartRateTestView" startPc="268435987">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436263" name="onUpdate" parent="HeartRateTestView" startPc="268436066">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436268" name="onHide" parent="HeartRateTestView" startPc="268436264">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436835" name="&lt;init&gt;" parent="HeartRateTestView" startPc="268436817">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436773" name="&lt;init&gt;" parent="Drawables" startPc="268436773">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436794" name="&lt;init&gt;" parent="Fonts" startPc="268436794">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436796" name="&lt;init&gt;" parent="JsonData" startPc="268436796">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436612" name="MainLayout" parent="Layouts" startPc="268436269">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436795" name="&lt;init&gt;" parent="Layouts" startPc="268436795">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436747" name="initialize" parent="MainMenu" startPc="268436613">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436793" name="&lt;init&gt;" parent="MainMenu" startPc="268436775">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436774" name="&lt;init&gt;" parent="Menus" startPc="268436774">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436797" name="&lt;init&gt;" parent="Strings" startPc="268436797">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436772" name="&lt;init&gt;" parent="Rez" startPc="268436749">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
