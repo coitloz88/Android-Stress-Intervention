@@ -27,8 +27,8 @@ public class CommView extends WatchUi.View {
     }
 
     function onShow() as Void {
-        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
-        Sensor.enableSensorEvents(method(:onSensor));
+        //Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        //Sensor.enableSensorEvents(method(:onSensor));
     }
 
     function onSensor(sensorInfo){
