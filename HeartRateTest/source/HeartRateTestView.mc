@@ -16,6 +16,8 @@ class HeartRateTestView extends WatchUi.View {
 */
     function initialize() {
         View.initialize();
+        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        Sensor.enableSensorEvents(method(:onSensor));
     }
 
     function onSensor(sensorInfo){
@@ -37,8 +39,7 @@ class HeartRateTestView extends WatchUi.View {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
-        Sensor.enableSensorEvents(method(:onSensor));
+
     }
 
     // Update the view
@@ -47,7 +48,7 @@ class HeartRateTestView extends WatchUi.View {
 
         dc.clear();
         // Call the parent onUpdate function to redraw the layout
-        onSensor(Sensor.getInfo());
+        //onSensor(Sensor.getInfo());
         System.println(userHeartRate.toString());
         dc.drawText(dc.getWidth() / 2, 100, Graphics.FONT_SMALL, "Test message", Graphics.TEXT_JUSTIFY_CENTER);
         //dc.drawText(dc.getWidth() / 2, 160,  Graphics.FONT_TINY,  strTmp, Graphics.TEXT_JUSTIFY_CENTER);
