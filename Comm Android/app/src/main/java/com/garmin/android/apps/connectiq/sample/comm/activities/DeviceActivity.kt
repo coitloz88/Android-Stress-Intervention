@@ -27,7 +27,7 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
-private const val COMM_WATCH_ID = "a3421feed289106a538cb9547ab12095"
+private const val COMM_WATCH_ID = "a3421feed289106a538cb9547ab12095" //이건 어떻게 생성하는거지?
 
 // TODO Add a valid store app id.
 private const val STORE_APP_ID = ""
