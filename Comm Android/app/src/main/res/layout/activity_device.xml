@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toStartOf="@id/devicestatus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Fenix 7" />
+        tools:text="Forerunner 55" />
 
     <TextView
         android:id="@+id/devicestatus"

@@ -62,8 +62,9 @@ class BaseMenuDelegate extends WatchUi.MenuInputDelegate {
 
         if(item == :sendData) {
             menu.addItem("Heart rate", :heartrate);
-            menu.addItem("Ackbar", :trap);
-            menu.addItem("Garmin", :garmin);
+            menu.addItem("Send Perodically", :periodical);            
+            // menu.addItem("Ackbar", :trap);
+            // menu.addItem("Garmin", :garmin);
             delegate = new SendMenuDelegate();
         } else if(item == :setListener) {
             menu.setTitle("Listner Type");
@@ -89,19 +90,28 @@ class SendMenuDelegate extends WatchUi.MenuInputDelegate {
         var listener = new CommListener();
 
         if(item == :heartrate) {
-            var currentHeartRateData = CommView.userHeartRate;
-            if(currentHeartRateData == null){
-                Communications.transmit("heart rate", null, listener);
-            } else {
-               Communications.transmit(currentHeartRateData.toString(), null, listener);
-            }
-        } else if(item == :trap) {
-            Communications.transmit("IT'S A TRAP!", null, listener);
-        } else if(item == :garmin) {
-            Communications.transmit("ConnectIQ", null, listener);
+            sendHeartRate(listener);
+        } 
+        // else if(item == :trap) {
+        //     Communications.transmit("IT'S A TRAP!", null, listener);
+        // } else if(item == :garmin) {
+        //     Communications.transmit("ConnectIQ", null, listener);
+        // }
+        else if(item == :periodical){
+            System.println("TODO");
+            Communications.transmit("TODO", null, listener);
         }
 
         WatchUi.popView(SLIDE_IMMEDIATE);
+    }
+
+    public function sendHeartRate(listener){
+        var currentHeartRateData = CommView.userHeartRate;
+        if(currentHeartRateData == null){
+            Communications.transmit("heart rate", null, listener);
+        } else {
+            Communications.transmit(currentHeartRateData.toString(), null, listener);
+        }
     }
 }
 
@@ -128,4 +138,3 @@ class ListnerMenuDelegate extends WatchUi.MenuInputDelegate {
         WatchUi.popView(SLIDE_IMMEDIATE);
     }
 }
-

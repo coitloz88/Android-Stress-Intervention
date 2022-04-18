@@ -12,32 +12,58 @@ using Toybox.Activity;
 using Toybox.Sensor;
 using Toybox.Timer;
 
+// 주기적으로 HeartRate을 보내는 방법
+// 1. timerCallback 메서드가 timeUnit을 주기로 호출되므로, 해당 메서드에서 Data를 transmit로 보내는 메서드를 다시 호출
+// 2. Data를 transmit로 보내는 메서드 -> CommDelegate.mc에서 public static으로 작성하여 CommView.mc에서 접근 가능
+
 public class CommView extends WatchUi.View {
-    var screenShape;
     public static var userHeartRate;
+    public static var userTimer;
+
+    var screenShape;
+    var timerCount;
+    hidden var timeUnit;
 
     function initialize() {
         View.initialize();
+        timerCount = 0;
+        timeUnit = 5; //5s마다 한번씩 호출
         Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
         Sensor.enableSensorEvents(method(:onSensor));
     }
 
+    function timerCallback(){
+        timerCount += timeUnit;
+        System.println("timerCount: " + timerCount);
+        if(userHeartRate != null){
+            System.println("Current Heart Rate: " + userHeartRate);
+            SendMenuDelegate.sendHeartRate(new CommListener());
+        } else{
+            System.println("Current Heart Rate: null");
+        } 
+        WatchUi.requestUpdate();
+    }
+
+    //onLayout() → onShow() → onUpdate() → onHide()
+
     function onLayout(dc) {
+        userTimer = new Timer.Timer();
+        userTimer.start(method(:timerCallback), timeUnit * 1000, true);
         screenShape = System.getDeviceSettings().screenShape;
     }
 
-    function onShow() as Void {
-        //Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
-        //Sensor.enableSensorEvents(method(:onSensor));
-    }
+    // function onShow() as Void {
+    //     Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+    //     Sensor.enableSensorEvents(method(:onSensor));
+    // }
 
     function onSensor(sensorInfo){
         if (sensorInfo has :heartRate && sensorInfo.heartRate != null) {
             userHeartRate = sensorInfo.heartRate;
-            System.println("Current Heart Rate: " + userHeartRate);
+            //System.println("Current Heart Rate: " + userHeartRate);
         } else {
             userHeartRate = 0;
-            System.println("cannot access");
+            //System.println("cannot access");
         }
     }
 
@@ -94,6 +120,5 @@ public class CommView extends WatchUi.View {
 
         //View.onUpdate(dc);
     }
-
 
 }

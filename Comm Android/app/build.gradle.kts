@@ -33,4 +33,5 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.3")
 
     implementation("com.garmin.connectiq:monkeybrains:1.0.2")
+    implementation(files("libs\\connectiq.jar"))
 }

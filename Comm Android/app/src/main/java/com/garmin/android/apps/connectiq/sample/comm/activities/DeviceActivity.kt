@@ -161,6 +161,7 @@ class DeviceActivity : Activity() {
                     builder.append("Received an empty message from the application")
                 }
 
+                //TODO: 대화상자에서 워치에서 받은 메시지를 표시하는 것이 아니라 다른 activity가 실행되며 받은 메시지를 보여주기
                 AlertDialog.Builder(this@DeviceActivity)
                     .setTitle(R.string.received_message)
                     .setMessage(builder.toString())
