@@ -151,23 +151,29 @@ class DeviceActivity : Activity() {
                 // We know from our Comm sample widget that it will only ever send us strings, but in case
                 // we get something else, we are simply going to do a toString() on each object in the
                 // message list.
-                val builder = StringBuilder()
-                if (message.size > 0) {
-                    for (o in message) {
-                        builder.append(o.toString())
-                        builder.append("\r\n")
-                    }
-                } else {
-                    builder.append("Received an empty message from the application")
-                }
+//                val builder = StringBuilder()
+//                if (message.size > 0) {
+//                    for (o in message) {
+//                        builder.append(o.toString())
+//                        builder.append("\r\n")
+//                    }
+//                } else {
+//                    builder.append("Received an empty message from the application")
+//                }
+//
+//                AlertDialog.Builder(this@DeviceActivity)
+//                    .setTitle(R.string.received_message) //
+//                    .setMessage(builder.toString())
+//                    .setPositiveButton(android.R.string.ok, null)
+//                    .create()
+//                    .show()
 
-                //TODO: 대화상자에서 워치에서 받은 메시지를 표시하는 것이 아니라 다른 activity가 실행되며 받은 메시지를 보여주기
-                AlertDialog.Builder(this@DeviceActivity)
-                    .setTitle(R.string.received_message)
-                    .setMessage(builder.toString())
-                    .setPositiveButton(android.R.string.ok, null)
-                    .create()
-                    .show()
+                if(message.size > 0){
+                    // TODO: RecyclerView에 데이터 추가
+                    // DB에 실시간으로 업로드하는 코드 -> 근데 지금 메서드가 Watch app 이벤트가 발생할 때마다 뭔가를 하는 함수라서 실시간 업로드는 가능할 것 같음
+                } else {
+                    // message.size == 0
+                }
             }
         } catch (e: InvalidStateException) {
             Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
