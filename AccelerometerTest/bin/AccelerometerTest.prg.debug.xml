@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\loveg\Documents\GitHub\Garmin-Project\AccelerometerTest\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="1" lineNum="7" parent="globals/AccelerometerTestApp" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="1" lineNum="8" parent="globals/AccelerometerTestApp" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="2" lineNum="12" parent="globals/AccelerometerTestApp" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="3" lineNum="16" parent="globals/AccelerometerTestApp" pc="268435484" symbol="onStop"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="4" lineNum="20" parent="globals/AccelerometerTestApp" pc="268435489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="4" lineNum="21" parent="globals/AccelerometerTestApp" pc="268435493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="5" lineNum="5" parent="globals/AccelerometerTestApp" pc="268436696" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="5" lineNum="5" parent="globals/AccelerometerTestApp" pc="268436696" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="6" lineNum="26" parent="globals" pc="268435561" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestApp.mc" id="6" lineNum="27" parent="globals" pc="268435573" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="8" lineNum="11" parent="globals/AccelerometerTestView" pc="268435590" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="8" lineNum="12" parent="globals/AccelerometerTestView" pc="268435594" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="8" lineNum="14" parent="globals/AccelerometerTestView" pc="268435612" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="8" lineNum="15" parent="globals/AccelerometerTestView" pc="268435625" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="18" parent="globals/AccelerometerTestView" pc="268435639" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="19" parent="globals/AccelerometerTestView" pc="268435643" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="20" parent="globals/AccelerometerTestView" pc="268435665" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="22" parent="globals/AccelerometerTestView" pc="268435697" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="24" parent="globals/AccelerometerTestView" pc="268435714" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="25" parent="globals/AccelerometerTestView" pc="268435741" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="26" parent="globals/AccelerometerTestView" pc="268435751" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="28" parent="globals/AccelerometerTestView" pc="268435801" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="9" lineNum="31" parent="globals/AccelerometerTestView" pc="268435824" symbol="timerCallback"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="10" lineNum="35" parent="globals/AccelerometerTestView" pc="268435841" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="10" lineNum="36" parent="globals/AccelerometerTestView" pc="268435845" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="10" lineNum="38" parent="globals/AccelerometerTestView" pc="268435882" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="10" lineNum="39" parent="globals/AccelerometerTestView" pc="268435910" symbol="onLayout"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="11" lineNum="45" parent="globals/AccelerometerTestView" pc="268435949" symbol="onShow"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="12" lineNum="49" parent="globals/AccelerometerTestView" pc="268435954" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="12" lineNum="51" parent="globals/AccelerometerTestView" pc="268435958" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="13" lineNum="57" parent="globals/AccelerometerTestView" pc="268435979" symbol="onHide"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="14" lineNum="6" parent="globals/AccelerometerTestView" pc="268436734" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestView.mc" id="14" lineNum="6" parent="globals/AccelerometerTestView" pc="268436734" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="16" lineNum="7" parent="globals/AccelerometerTestMenuDelegate" pc="268435984" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="16" lineNum="8" parent="globals/AccelerometerTestMenuDelegate" pc="268435988" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="17" lineNum="11" parent="globals/AccelerometerTestMenuDelegate" pc="268436007" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="17" lineNum="12" parent="globals/AccelerometerTestMenuDelegate" pc="268436011" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="17" lineNum="13" parent="globals/AccelerometerTestMenuDelegate" pc="268436022" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="17" lineNum="14" parent="globals/AccelerometerTestMenuDelegate" pc="268436046" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="17" lineNum="15" parent="globals/AccelerometerTestMenuDelegate" pc="268436057" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="18" lineNum="5" parent="globals/AccelerometerTestMenuDelegate" pc="268436715" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestMenuDelegate.mc" id="18" lineNum="5" parent="globals/AccelerometerTestMenuDelegate" pc="268436715" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="20" lineNum="6" parent="globals/AccelerometerTestDelegate" pc="268436082" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="20" lineNum="7" parent="globals/AccelerometerTestDelegate" pc="268436086" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="21" lineNum="10" parent="globals/AccelerometerTestDelegate" pc="268436105" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="21" lineNum="11" parent="globals/AccelerometerTestDelegate" pc="268436109" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="21" lineNum="12" parent="globals/AccelerometerTestDelegate" pc="268436193" symbol="onMenu"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="22" lineNum="4" parent="globals/AccelerometerTestDelegate" pc="268436677" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\AccelerometerTest\\source\\AccelerometerTestDelegate.mc" id="22" lineNum="4" parent="globals/AccelerometerTestDelegate" pc="268436677" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="24" lineNum="2" parent="globals/Rez/Drawables" pc="268436777" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="25" lineNum="7" parent="globals/Rez/Fonts" pc="268436798" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="26" lineNum="9" parent="globals/Rez/JsonData" pc="268436800" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="27" lineNum="18" parent="globals/Rez/Layouts" pc="268436197" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="20" parent="globals/Rez/Layouts" pc="268436209" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="21" parent="globals/Rez/Layouts" pc="268436361" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Layouts" pc="268436473" symbol="MainLayout"/>
+<entry filename="Rez" id="27" lineNum="24" parent="globals/Rez/Layouts" pc="268436513" symbol="MainLayout"/>
+<entry filename="Rez" id="28" lineNum="11" parent="globals/Rez/Layouts" pc="268436799" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="29" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436541" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268436545" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436563" symbol="initialize"/>
+<entry filename="Rez" id="29" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436619" symbol="initialize"/>
+<entry filename="Rez" id="30" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436779" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="30" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436779" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="31" lineNum="29" parent="globals/Rez/Menus" pc="268436778" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="32" lineNum="47" parent="globals/Rez/Strings" pc="268436801" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436753" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="33" lineNum="1" parent="globals/Rez" pc="268436753" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8389346" symbol="text"/>
+<entry field="true" id="13" symbol="timeUnit"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry id="9" object="true" symbol="AccelerometerTestApp"/>
+<entry id="21" method="true" symbol="MainLayout"/>
+<entry id="12" object="true" symbol="AccelerometerTestDelegate"/>
+<entry field="true" id="8389605" symbol="accel"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="25" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="24" symbol="prompt"/>
+<entry field="true" id="18" symbol="id_monkey"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389348" symbol="font"/>
+<entry id="27" symbol="item_2"/>
+<entry id="26" symbol="item_1"/>
+<entry id="17" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry field="true" id="14" symbol="timeCount"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="20" object="true" symbol="MainMenu"/>
+<entry id="10" object="true" symbol="AccelerometerTestView"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="15" method="true" symbol="timerCallback"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="19" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="8389347" symbol="color"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="16" module="true" symbol="Layouts"/>
+<entry id="11" object="true" symbol="AccelerometerTestMenuDelegate"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="23" symbol="menu_label_2"/>
+<entry field="true" id="22" symbol="menu_label_1"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435483" name="state" stackId="1" startPc="268435479"/>
+<entry arg="true" endPc="268435488" name="state" stackId="1" startPc="268435484"/>
+<entry endPc="268435797" name="accelArray" stackId="2" startPc="268435741"/>
+<entry endPc="268435839" name="sensorInfo" stackId="1" startPc="268435643"/>
+<entry endPc="268435947" name="myTimer" stackId="2" startPc="268435845"/>
+<entry arg="true" endPc="268435948" name="dc" stackId="1" startPc="268435841"/>
+<entry arg="true" endPc="268435978" name="dc" stackId="1" startPc="268435954"/>
+<entry arg="true" endPc="268436081" name="item" stackId="1" startPc="268436007"/>
+<entry endPc="268436539" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436209"/>
+<entry endPc="268436539" name="rez_cmp_local_text_1928324616" stackId="2" startPc="268436209"/>
+<entry arg="true" endPc="268436540" name="dc" stackId="1" startPc="268436197"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/AccelerometerTestDelegate" offset="174" parentId="globals" symbolId="AccelerometerTestDelegate" type="class"/>
+<dataEntry label="globals/AccelerometerTestApp" offset="229" parentId="globals" symbolId="AccelerometerTestApp" type="class"/>
+<dataEntry label="globals/AccelerometerTestMenuDelegate" offset="300" parentId="globals" symbolId="AccelerometerTestMenuDelegate" type="class"/>
+<dataEntry label="globals/AccelerometerTestView" offset="355" parentId="globals" symbolId="AccelerometerTestView" type="class"/>
+<dataEntry label="globals/Rez" offset="458" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="537" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="584" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="623" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry label="globals/Rez/Fonts" offset="670" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="701" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="740" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="771" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="initialize" parent="AccelerometerTestApp" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435483" name="onStart" parent="AccelerometerTestApp" startPc="268435479">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435488" name="onStop" parent="AccelerometerTestApp" startPc="268435484">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435560" name="getInitialView" parent="AccelerometerTestApp" startPc="268435489">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436714" name="&lt;init&gt;" parent="AccelerometerTestApp" startPc="268436696">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435589" name="getApp" startPc="268435561">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435638" name="initialize" parent="AccelerometerTestView" startPc="268435590">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435840" name="timerCallback" parent="AccelerometerTestView" startPc="268435639">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435948" name="onLayout" parent="AccelerometerTestView" startPc="268435841">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435953" name="onShow" parent="AccelerometerTestView" startPc="268435949">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435978" name="onUpdate" parent="AccelerometerTestView" startPc="268435954">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435983" name="onHide" parent="AccelerometerTestView" startPc="268435979">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436752" name="&lt;init&gt;" parent="AccelerometerTestView" startPc="268436734">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436006" name="initialize" parent="AccelerometerTestMenuDelegate" startPc="268435984">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436081" name="onMenuItem" parent="AccelerometerTestMenuDelegate" startPc="268436007">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436733" name="&lt;init&gt;" parent="AccelerometerTestMenuDelegate" startPc="268436715">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436104" name="initialize" parent="AccelerometerTestDelegate" startPc="268436082">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436196" name="onMenu" parent="AccelerometerTestDelegate" startPc="268436105">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436695" name="&lt;init&gt;" parent="AccelerometerTestDelegate" startPc="268436677">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436777" name="&lt;init&gt;" parent="Drawables" startPc="268436777">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436798" name="&lt;init&gt;" parent="Fonts" startPc="268436798">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436800" name="&lt;init&gt;" parent="JsonData" startPc="268436800">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436540" name="MainLayout" parent="Layouts" startPc="268436197">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436799" name="&lt;init&gt;" parent="Layouts" startPc="268436799">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436675" name="initialize" parent="MainMenu" startPc="268436541">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436797" name="&lt;init&gt;" parent="MainMenu" startPc="268436779">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436778" name="&lt;init&gt;" parent="Menus" startPc="268436778">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436801" name="&lt;init&gt;" parent="Strings" startPc="268436801">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268436776" name="&lt;init&gt;" parent="Rez" startPc="268436753">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
