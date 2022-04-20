@@ -8,9 +8,12 @@ class ArrayTransmitMenuDelegate extends WatchUi.MenuInputDelegate {
         MenuInputDelegate.initialize();
     }
 
+    function onMenu(){
+    }
+
     function onMenuItem(item as Symbol) as Void {
-        if (item == :item_1) {
-            System.println("item 1");
+        if (item == :item1) {
+            System.println("Send Data");
         } else if (item == :item_2) {
             System.println("item 2");
         }

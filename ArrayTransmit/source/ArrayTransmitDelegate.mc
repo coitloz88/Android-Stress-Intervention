@@ -17,7 +17,7 @@ class CommListener extends Communications.ConnectionListener {
     }
 }
 
-class ArrayTransmitDelegate extends WatchUi.BehaviorDelegate {
+public class ArrayTransmitDelegate extends WatchUi.BehaviorDelegate {
 
     function initialize() {
         BehaviorDelegate.initialize();
@@ -28,12 +28,13 @@ class ArrayTransmitDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
-    public function transmitArraytoStringForm(target){
+    public function transmitTarget(target){
+        var listener = new CommListener();
+
         if(target != null){
-            var targetStringForm;
-            for(var i = 0; i < target.size(); i += 1){
-                
-            }
+            Communications.transmit(target, "null", listener);
+        } else {
+            Communications.transmit("target is null", "null", listener);
         }
     }
 
