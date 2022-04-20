@@ -41,6 +41,7 @@ TODO: Data Field를 실제 기기에서 Test하는 방법
 ### TODO
 * 휴대폰 모바일 앱에서 정보를 받는 Garmin Watch Device App ID를 발급 받는 방법?
     - 앱 ID가 Garmin에서 개발한 Comm Watch 샘플과 달라서 Transmit 자체를 인식하지 못하는 것 같음
+    - **해결**:  `manifest.xml`에서 확인 가능
 
 ## TimerTestPRoject
 [Garmin Watch fr55] Device App: `start(callback as Lang.Method() as Void, time as Lang.Number, repeat as Lang.Boolean) as Void`가 호출될 때마다 디버그 콘솔에 카운트된 시간을 출력해줌
