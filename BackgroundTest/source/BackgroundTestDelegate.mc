@@ -37,16 +37,15 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // When a scheduled background event triggers, make a request to
     // a service and handle the response with a callback function
     // within this delegate.
-    var TAG = "BackgroundServiceDelegate: ";
 
     function initialize(){
-        ServiceDelegate.initialize();
-        System.println(TAG + "call initizlize()");
+        System.ServiceDelegate.initialize();
+        System.println("call initialize()");
     }
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
-        System.println(TAG+ "call onTemporalEvent()");
+        System.println("call onTemporalEvent()");
         var listener = new CommListener();
         var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
         Communications.transmit(currentHeartRateData, "null", listener);

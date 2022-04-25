@@ -1,5 +1,6 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
+
 class BackgroundTestView extends WatchUi.View {
 
     function initialize() {
