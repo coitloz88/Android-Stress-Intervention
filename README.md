@@ -12,39 +12,12 @@ TODO: Data Field를 실제 기기에서 Test하는 방법
 [Garmin Watch fr55] Widget Test App: fr55에서 위젯 항목에 접속할 경우, Sample이라는 Widget이 나타남  
 아직 Widget의 기능은 없으므로 접속은 불가  
 
-## HeartRateTest
-[Garmin Watch fr55] Device App: 현재 `SensorInfo.HeartRate`를 디버그 콘솔에 출력해줌
-에뮬레이터로 실행하는 경우, 컴파일 후 에뮬레이터가 실행되면 `Simulation → FIT Data → Simulate Data`를 실행해주면 됨
-
 ## ConnectIQ Android SDK
-[Garmin watch fr55] 휴대폰에서 간단한 텍스트를 시계로 보내거나 시계에서 간단한 텍스트 혹은 현재 심박수를 `Transmit()`함수로 보냄
+[Garmin watch fr55] 휴대폰에서 간단한 텍스트를 시계로 보내거나 시계에서 간단한 텍스트 혹은 현재 Target Sensor data를 `Transmit()`함수로 보냄
 - 현재 프로젝트와 별도로 관리되고 있으며 코드는 [여기](https://github.com/coitloz88/connectiq-android-sdk/tree/main)서 확인 가능함
-- 본래 코드는 [여기](https://github.com/garmin/connectiq-android-sdk)
-- 220418 업데이트: 워치에서 Comm앱에 접속하면 5초에 한번씩 현재 심박수를 Android에 팝업 대화 상자로 보냄(단, 안드로이드 기기와 블루투스로 연결되어 있어야함)
 
-## AccelerometerTest
-[Garmin watch fr55] Device App: 설정한 `timeUnit`마다 현재 Accelerometer Sensor data를 받아와서 디버그 콘솔에 출력함
-에뮬레이터로 실행하는 경우, 컴파일 후 에뮬레이터가 실행되면 `Simulation → FIT Data → Simulate Data`를 실행해주면 됨
-### TODO
-1. 샘플에 있던 안드로이드→워치로 문자열 보내기 기능 삭제
-2. 안드로이드에서 워치로부터 데이터를 받으면 팝업 대화 상자가 아닌 새로운 `Activity`가 열리면서 그동안 받은 정보가 화면에 기록됨
-3. 2.에서 받은 정보를 자체 DB에 따로 저장?
-    - `SharedPreferneces`에 저장하기([참고](https://developer.android.com/training/data-storage/shared-preferences?hl=ko))
-    - Room 사용하기([참고](https://developer.android.com/training/data-storage/room?hl=ko))
-
-## ArrayTransmit
-가장 최근의 HeartRate 3개가 담긴 Dictionary를 휴대폰으로 보냄  
-### DONE
-* HeartRate 수집
-* 데이터 셋 3개를 하나의 Object(Dictionary) 모으기
-* Array가 아니라 Dictionary로 데이터 타입 변경
-### TODO
-* 휴대폰 모바일 앱에서 정보를 받는 Garmin Watch Device App ID를 발급 받는 방법?
-    - 앱 ID가 Garmin에서 개발한 Comm Watch 샘플과 달라서 Transmit 자체를 인식하지 못하는 것 같음
-    - **해결**:  `manifest.xml`에서 확인 가능
-
-## TimerTestPRoject
-[Garmin Watch fr55] Device App: `start(callback as Lang.Method() as Void, time as Lang.Number, repeat as Lang.Boolean) as Void`가 호출될 때마다 디버그 콘솔에 카운트된 시간을 출력해줌
+## Others
+각 프로젝트에 README.md 추가
 
 ## How to use monkey barrel
 
