@@ -46,16 +46,14 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
-        var listener = new CommListener();
-        var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
-        Communications.transmit(currentHeartRateData, "null", listener);
+
+        if(System.getDeviceSettings().phoneConnected){
+            // System.println("Call `if` clause");
+            var listener = new CommListener();
+            var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
+            Communications.transmit(currentHeartRateData, "null", listener);
+        } else {
+            Background.exit(null);
+        }
     }
-
-    // function responseCallback(responseCode, data) {
-    //     // Do stuff with the response data here and send the data
-    //     // payload back to the app that originated the background
-    //     // process.
-    //     Background.exit(backgroundData);
-    // }
-
 }
