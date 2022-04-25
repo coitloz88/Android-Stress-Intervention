@@ -27,7 +27,7 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
-private const val COMM_WATCH_ID = "a3421feed289106a538cb9547ab12095" //이건 어떻게 생성하는거지?
+private const val COMM_WATCH_ID = "4cfb48fc-3452-4b01-b079-fd7f76b589ae"
 
 // TODO Add a valid store app id.
 private const val STORE_APP_ID = ""
@@ -151,29 +151,22 @@ class DeviceActivity : Activity() {
                 // We know from our Comm sample widget that it will only ever send us strings, but in case
                 // we get something else, we are simply going to do a toString() on each object in the
                 // message list.
-//                val builder = StringBuilder()
-//                if (message.size > 0) {
-//                    for (o in message) {
-//                        builder.append(o.toString())
-//                        builder.append("\r\n")
-//                    }
-//                } else {
-//                    builder.append("Received an empty message from the application")
-//                }
-//
-//                AlertDialog.Builder(this@DeviceActivity)
-//                    .setTitle(R.string.received_message) //
-//                    .setMessage(builder.toString())
-//                    .setPositiveButton(android.R.string.ok, null)
-//                    .create()
-//                    .show()
-
-                if(message.size > 0){
-                    // TODO: RecyclerView에 데이터 추가
-                    // DB에 실시간으로 업로드하는 코드 -> 근데 지금 메서드가 Watch app 이벤트가 발생할 때마다 뭔가를 하는 함수라서 실시간 업로드는 가능할 것 같음
+                val builder = StringBuilder()
+                if (message.size > 0) {
+                    for (o in message) {
+                        builder.append(o.toString())
+                        builder.append("\r\n")
+                    }
                 } else {
-                    // message.size == 0
+                    builder.append("Received an empty message from the application")
                 }
+
+                AlertDialog.Builder(this@DeviceActivity)
+                    .setTitle(R.string.received_message)
+                    .setMessage(builder.toString())
+                    .setPositiveButton(android.R.string.ok, null)
+                    .create()
+                    .show()
             }
         } catch (e: InvalidStateException) {
             Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()

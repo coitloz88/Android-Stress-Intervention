@@ -32,6 +32,10 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.3")
 
-    implementation("com.garmin.connectiq:monkeybrains:1.0.2")
-    implementation(files("libs\\connectiq.jar"))
+//    implementation("com.garmin.connectiq:monkeybrains:1.0.2")
+//    implementation(files("libs\\connectiq.jar"))
+
+    // 파일 경로를 libs\monkeybrains-sdk-release.aar이 있는 경로로 바꿔주어야 함
+    // aar 파일 추가 방법: https://developer.android.com/studio/projects/android-library?hl=ko
+    implementation(files("C:\\Users\\loveg\\Downloads\\connectiq-android-sdk-main\\Comm Android\\app\\libs\\monkeybrains-sdk-release.aar"))
 }
