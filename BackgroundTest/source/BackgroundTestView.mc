@@ -1,16 +1,19 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
-import Toybox.background;
-import Toybox.Time;
-
 class BackgroundTestView extends WatchUi.View {
-
-    const FIVE_MINUTES = new Time.Duration(5 * 60);
-    var eventTime = Time.now().add(FIVE_MINUTES);
 
     function initialize() {
         View.initialize();
-        Background.registerForTemporalEvent(eventTime);
+
+        // var DURATION_SECONDS = new Time.Duration(5); //5s
+        // var eventTime = Time.now().add(DURATION_SECONDS);  
+
+//        try {
+//            Background.registerForTemporalEvent(eventTime);
+//        } catch (Background.InvalidBackgroundTimeException ibte) {
+//            System.println(ibte);
+//        }
+
     }
 
     // Load your resources here
@@ -27,13 +30,20 @@ class BackgroundTestView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+    
+        dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
+
+        // View.onUpdate(dc);
     }
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
-    }
+        // dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
 
+       
+    }
 }
