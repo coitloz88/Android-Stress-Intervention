@@ -1,6 +1,8 @@
 import Toybox.Sensor;
 import Toybox.System;
+import Toybox.Background;
 
+(:background)
 public class HeartRateSensorDelegate {
     public function getHeartRate(){
         var sensorInfo = Sensor.getInfo();
