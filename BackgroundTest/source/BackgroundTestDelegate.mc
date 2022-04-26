@@ -61,7 +61,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         if(System.getDeviceSettings().phoneConnected){
             System.println("Call `if` clause");
             var listener = new CommListener();
-            var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
+            var currentHeartRateData = SensorDelegate.getHeartRate();
             System.println(currentHeartRateData);
             Communications.transmit(currentHeartRateData, "null", listener);
             // Background.exit(null);
