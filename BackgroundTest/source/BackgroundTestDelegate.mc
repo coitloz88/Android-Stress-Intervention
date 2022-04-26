@@ -4,6 +4,7 @@ import Toybox.WatchUi;
 import Toybox.Background;
 import Toybox.System;
 import Toybox.Communications;
+import Toybox.Timer;
 
 class BackgroundTestDelegate extends WatchUi.BehaviorDelegate {
 
@@ -17,6 +18,7 @@ class BackgroundTestDelegate extends WatchUi.BehaviorDelegate {
     }
 }
 
+(:background)
 class CommListener extends Communications.ConnectionListener {
     function initialize() {
         Communications.ConnectionListener.initialize();
@@ -38,23 +40,51 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // a service and handle the response with a callback function
     // within this delegate.
 
+    // var timerCount;
+    // var myTimer;
+
+    // var maxTime;
+    // var timerUnit;
+
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
+        // maxTime = 20; //20s
+        // timerUnit = 2; //2s
     }
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
+        // timerCount = 0;
 
-        // if(System.getDeviceSettings().phoneConnected){
-            // System.println("Call `if` clause");
-            // var listener = new CommListener();
+        if(System.getDeviceSettings().phoneConnected){
+            System.println("Call `if` clause");
+            var listener = new CommListener();
             var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
             System.println(currentHeartRateData);
-            // Communications.transmit(currentHeartRateData, "null", listener);
-        // } else {
-        //    Background.exit(null);
-        // }
+            Communications.transmit(currentHeartRateData, "null", listener);
+        } else {
+            // myTimer.stop();
+            // timerCount = 0;
+            Background.exit(null);
+        }
+
+        // myTimer = new Timer.Timer();
+        // myTimer.start(method(:timerCallback), timerUnit, true);
     }
+
+    // function timerCallback(){
+
+    //     System.println("call timerCallback()");
+
+    //     if(timerCount >= maxTime){
+    //         myTimer.stop();
+    //         timerCount = 0;
+    //     } else {
+    //         timerCount += timerUnit;
+    //         System.print(timerCount + "s: ");
+    //         WatchUi.requestUpdate();
+    //     }
+    // }
 }
