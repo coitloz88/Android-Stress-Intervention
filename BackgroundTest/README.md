@@ -6,11 +6,11 @@
 
 ## TODO
 * Background에서 Toybox.Timer 사용 불가
+    - 어떻게 30초동안 특정 센서 데이터를 일정 간격으로 수집할 것인가?
 ```
 Error: Permission Required
 Details: Module 'Toybox.Timer' not available to 'Background'
 ```
-    - 어떻게 30초동안 특정 센서 데이터를 일정 간격으로 수집할 것인가?
 
 * ~~Background에서 Fit data Simulation~~: 가능함
 * Background에서 30초 동안 메모리의 Dictionary 변수에 심박수 기록?
