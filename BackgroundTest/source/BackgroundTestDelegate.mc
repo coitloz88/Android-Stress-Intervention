@@ -64,6 +64,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             var currentHeartRateData = HeartRateSensorDelegate.getHeartRate();
             System.println(currentHeartRateData);
             Communications.transmit(currentHeartRateData, "null", listener);
+            // Background.exit(null);
         } else {
             // myTimer.stop();
             // timerCount = 0;
