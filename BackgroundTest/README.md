@@ -12,6 +12,9 @@ Error: Permission Required
 Details: Module 'Toybox.Timer' not available to 'Background'
 ```
 
+* 생각해보니까 휴대폰이랑 연결이 안되어있어도 데이터는 계속 측정해야할 듯?
+    - `phoneConnected`를 기준으로 `exit()`을 결정하면 안될 것 같음
+
 * ~~Background에서 Fit data Simulation~~: 가능함
 * Background에서 30초 동안 메모리의 Dictionary 변수에 심박수 기록?
 * 기록된 변수를 휴대폰으로 보냄
