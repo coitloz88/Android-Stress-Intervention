@@ -29,3 +29,6 @@ Details: Module 'Toybox.Timer' not available to 'Background'
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html#registerForTemporalEvent-instance_function>
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ServiceDelegate.html>
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AppBase.html#getServiceDelegate-instance_function>
+
+* 수행 가능한 작업 정리: <https://developer.garmin.com/connect-iq/core-topics/backgrounding/>
+* Background의 Data 관련: <https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-create-a-connect-iq-background-service/>
