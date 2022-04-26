@@ -27,6 +27,8 @@ class BackgroundTestApp extends Application.AppBase {
     function getInitialView() as Array<Views or InputDelegates>? {
         if(canDoBackground()){
             Background.registerForTemporalEvent(new Time.Duration(5 * 60));
+        } else {
+            System.println("*** Background Process Not Available ***");
         }
         return [ new BackgroundTestView(), new BackgroundTestDelegate() ] as Array<Views or InputDelegates>;
         // return new BackgroundTestView();
