@@ -3,21 +3,30 @@ import Toybox.WatchUi;
 import Toybox.Timer;
 
 class SensorHistoryTestView extends WatchUi.View {
-
-    var timeCount;
-    var timeUnit;
+    
+    private var _samplesX = null;
+    private var _samplesY = null;
+    private var _samplesZ = null;
 
     function initialize() {
         View.initialize();
-        timeCount = 0;
-        timeUnit = 6
+
+        var maxSampleRate = Sensor.getMaxSampleRate();
+
+         // initialize accelerometer to request the maximum amount of data possible
+        var options = {:period => 5000, :sampleRate => maxSampleRate, :enableAccelerometer => true};
+        try {
+            Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
+        }
+        catch(e) {
+            System.println("*** " + e.getErrorMessage());
+            disableAccel();
+        }
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
-        var testTimer = new Timer.Timer();
-        testTimer.start(method(:timerCallback), timeUnit * 1000, true);
     }
 
     function timerCallback(){
@@ -36,20 +45,26 @@ class SensorHistoryTestView extends WatchUi.View {
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(dc.getWidth() / 2, 30, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
-        // Call the parent onUpdate function to redraw the layout
-        var userHeartRate = SensorDataClass.getHeartRateData();
-        var userSteps = SensorDataClass.getSteps();
-
-        if(userHeartRate != null && userSteps != null){
-            dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, userHeartRate, Graphics.TEXT_JUSTIFY_CENTER);
-            dc.drawText(dc.getWidth() / 2, 90, Graphics.FONT_SMALL, userSteps, Graphics.TEXT_JUSTIFY_CENTER);
-        }
     }
 
     // Called when this View is removed from the screen. Save the
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+    }
+
+    public function accelHistoryCallback(sensorData as SensorData) as Void {
+        _samplesX = sensorData.accelerometerData.x;
+        _samplesY = sensorData.accelerometerData.y;
+        _samplesZ = sensorData.accelerometerData.z;
+
+        System.println("Raw samples, X axis: " + _samplesX);
+        System.println("Raw samples, Y axis: " + _samplesY);
+        System.println("Raw samples, Z axis: " + _samplesZ);
+    }
+
+    public function disableAccel() as Void {
+        Sensor.unregisterSensorDataListener();
     }
 
 }
