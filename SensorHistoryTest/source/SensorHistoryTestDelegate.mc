@@ -7,6 +7,8 @@ import Toybox.SensorHistory;
 import Toybox.Activity;
 import Toybox.ActivityMonitor;
 
+import Toybox.Time;
+
 class SensorHistoryTestDelegate extends WatchUi.BehaviorDelegate {
 
     function initialize() {
@@ -30,26 +32,35 @@ public class SensorDataClass {
         }
         return null;
     }
+    
+    var options;
+    public function initialize(){
+        options = {:period => new Time.Duration(5), :order => ORDER_NEWEST_FIRST};
+    }
     */
 
-    public function getHeartRateData(){
+    public function getHeartRateData(seconds){
         var value = "-1";
         if (Toybox has :SensorHistory){
-            System.println("getData: use SensorHistory");
+            System.println("*** HeartRate getData: use SensorHistory");
 
             if(Toybox.SensorHistory has :getHeartRateHistory){
-                var iter = SensorHistory.getHeartRateHistory({:period =>1, :order => SensorHistory.ORDER_NEWEST_FIRST});
+                var iter = SensorHistory.getHeartRateHistory({:seconds => 2, :order => SensorHistory.ORDER_NEWEST_FIRST});
+                System.println("    getHeartRateHistory check");
                 if(iter != null){
+                    System.println("    iter check");
                     var sample = iter.next();
                     if(sample != null){
+                        System.println("    sample check");
                         if(sample.data != null){
+                            System.println("    data check");
                             value = sample.data.toString();
                         }
                     }
                 }
             }
         } else {
-            System.println("getData: use Activity Monitor");
+            System.println("*** HeartRate getData: use Activity Monitor");
             var info = Activity.getActivityInfo();
             if(info != null){
                 value = info.currentHeartRate;

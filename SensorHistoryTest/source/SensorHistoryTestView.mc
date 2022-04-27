@@ -1,17 +1,28 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
+import Toybox.Timer;
 
 class SensorHistoryTestView extends WatchUi.View {
 
+    var timeCount;
+    var timeUnit;
+
     function initialize() {
         View.initialize();
+        timeCount = 0;
+        timeUnit = 6
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
-        // var testTimer = new Timer.Timer();
-        // testTimer.start(method(:timerCallback), 5000, true);
+        var testTimer = new Timer.Timer();
+        testTimer.start(method(:timerCallback), timeUnit * 1000, true);
+    }
+
+    function timerCallback(){
+        timeCount += 
+        WatchUi.requestUpdate();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -34,7 +45,6 @@ class SensorHistoryTestView extends WatchUi.View {
             dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, userHeartRate, Graphics.TEXT_JUSTIFY_CENTER);
             dc.drawText(dc.getWidth() / 2, 90, Graphics.FONT_SMALL, userSteps, Graphics.TEXT_JUSTIFY_CENTER);
         }
-        // WatchUi.requestUpdate();
     }
 
     // Called when this View is removed from the screen. Save the
