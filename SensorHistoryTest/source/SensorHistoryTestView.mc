@@ -21,7 +21,6 @@ class SensorHistoryTestView extends WatchUi.View {
     }
 
     function timerCallback(){
-        timeCount += 
         WatchUi.requestUpdate();
     }
 

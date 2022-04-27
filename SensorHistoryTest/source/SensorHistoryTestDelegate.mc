@@ -39,13 +39,17 @@ public class SensorDataClass {
     }
     */
 
-    public function getHeartRateData(seconds){
+    public function getHeartRateData(period){
         var value = "-1";
+        var options = {
+            :period => period.toNumber() + 1,
+            :order => SensorHistory.ORDER_NEWEST_FIRST
+        };
         if (Toybox has :SensorHistory){
             System.println("*** HeartRate getData: use SensorHistory");
 
             if(Toybox.SensorHistory has :getHeartRateHistory){
-                var iter = SensorHistory.getHeartRateHistory({:seconds => 2, :order => SensorHistory.ORDER_NEWEST_FIRST});
+                var iter = SensorHistory.getHeartRateHistory(options);
                 System.println("    getHeartRateHistory check");
                 if(iter != null){
                     System.println("    iter check");

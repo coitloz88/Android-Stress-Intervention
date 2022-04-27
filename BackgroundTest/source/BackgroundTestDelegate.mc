@@ -46,8 +46,13 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // var maxTime;
     // var timerUnit;
 
+    var userHR;
+
     function initialize(){
         System.ServiceDelegate.initialize();
+        userHR = -1;
+        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
+        Sensor.enableSensorEvents(method(:onSensor));
         System.println("call initialize()");
         // maxTime = 20; //20s
         // timerUnit = 2; //2s
@@ -56,23 +61,25 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
-        // timerCount = 0;
 
-        if(System.getDeviceSettings().phoneConnected){
-            System.println("Call `if` clause");
-            var listener = new CommListener();
-            var currentHeartRateData = SensorDelegate.getHeartRate();
-            System.println(currentHeartRateData);
-            Communications.transmit(currentHeartRateData, "null", listener);
+        // if(System.getDeviceSettings().phoneConnected){
+           // System.println("Call `if` clause");
+           //  var listener = new CommListener();
+        System.println(userHR);
+            // Communications.transmit(currentHeartRateData, "null", listener);
             // Background.exit(null);
+        // } else {
+        //    Background.exit(null);
+        // }
+    }
+    
+    function onSensor(sensorInfo as Sensor.Info) as Void{
+        if (sensorInfo has :heartRate && sensorInfo.heartRate != null) {
+            userHR = sensorInfo.heartRate;
+            System.println("onSensor HR: " + userHR);
         } else {
-            // myTimer.stop();
-            // timerCount = 0;
-            Background.exit(null);
+            userHR = -1;
         }
-
-        // myTimer = new Timer.Timer();
-        // myTimer.start(method(:timerCallback), timerUnit, true);
     }
 
     // function timerCallback(){

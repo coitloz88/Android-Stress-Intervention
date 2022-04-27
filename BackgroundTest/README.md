@@ -48,6 +48,8 @@ Details: Module 'Toybox.Timer' not available to 'Background'
     - oldest 시간보다 30초 초과되면 데이터 수집 멈춤
     - oldest 시간의 초기화 업데이트 주기: 새롭게 이벤트가 시작될때마다? < 이걸 어떻게 맞추지?
 
+* 생각해보니까 Activity Recording이나... 암튼 따로 기록해서 넘길 순 없나
+
 </div>
 </details>
 
