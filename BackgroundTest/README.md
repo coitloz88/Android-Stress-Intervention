@@ -6,16 +6,8 @@
 * 센서 데이터를 받지 못하는 경우 일괄적으로 `-1` 전송
 
 <details>
-<summary>TODO</summary>
+<summary>TODO가 너무 많아서 분할1</summary>
 <div markdown = "1">
-
-* Background에서 Toybox.Timer 사용 불가
-    - 어떻게 30초동안 특정 센서 데이터를 일정 간격으로 수집할 것인가?
-```
-Error: Permission Required
-Details: Module 'Toybox.Timer' not available to 'Background'
-```
-
 * 휴대폰이랑 연결이 안되어있어도 데이터는 계속 측정해야할 듯?
     - `phoneConnected`를 기준으로 `exit()`을 결정하면 안될 것 같음
     - `exit()`는 전체 백그라운드 프로세스를 종료하는 것 같음... 
@@ -33,10 +25,33 @@ Details: Module 'Toybox.Timer' not available to 'Background'
 </div>
 </details>
 
+
+<details>
+<summary>TODO: 30초 recording 반복 작업 관련</summary>
+<div markdown = "1">
+
+* Background에서 Toybox.Timer 사용 불가
+    - 어떻게 30초동안 특정 센서 데이터를 일정 간격으로 수집할 것인가?
+```
+Error: Permission Required
+Details: Module 'Toybox.Timer' not available to 'Background'
+```
+
 * Sensor History(혹은 ActivityMonitor)로 지난 Sensor 기록 받아오기
     - `while(iter != null) iter = iter.next()`이거하면 익셉션남 왜지?
     - [Sensor Core Topics](https://developer.garmin.com/connect-iq/core-topics/sensors/)에서 `Sensor.registerSensorDataListener()`를 이용해보는 건 어떨지... → 메모리 초과
+
 * FIT 파일 접근하는 방법?
+
+* 현재 시간을 받아와서([참고](https://youtu.be/DPt7rkVZG1s?t=838))
+    - oldest 시간보다 30초가 초과되지 않았다면 데이터 수집
+    - oldest 시간보다 30초 초과되면 데이터 수집 멈춤
+    - oldest 시간의 초기화 업데이트 주기: 새롭게 이벤트가 시작될때마다? < 이걸 어떻게 맞추지?
+
+</div>
+</details>
+
+
 
 <br>
 

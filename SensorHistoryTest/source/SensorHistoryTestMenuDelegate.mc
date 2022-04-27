@@ -2,6 +2,10 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
+import Toybox.SensorHistory;
+import Toybox.System;
+import Toybox.Time;
+
 class SensorHistoryTestMenuDelegate extends WatchUi.MenuInputDelegate {
 
     function initialize() {

@@ -1,12 +1,6 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
-import Toybox.Sensor;
-import Toybox.Lang;
-import Toybox.System;
-import Toybox.ActivityRecording;
-import Toybox.SensorLogging;
-
 class SensorHistoryTestView extends WatchUi.View {
 
     function initialize() {
@@ -28,11 +22,19 @@ class SensorHistoryTestView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, 30, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
         // Call the parent onUpdate function to redraw the layout
-        // View.onUpdate(dc);
+        var userHeartRate = SensorDataClass.getHeartRateData();
+        var userSteps = SensorDataClass.getSteps();
+
+        if(userHeartRate != null && userSteps != null){
+            dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, userHeartRate, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(dc.getWidth() / 2, 90, Graphics.FONT_SMALL, userSteps, Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        // WatchUi.requestUpdate();
     }
 
     // Called when this View is removed from the screen. Save the
