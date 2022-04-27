@@ -34,6 +34,8 @@ Details: Module 'Toybox.Timer' not available to 'Background'
 </details>
 
 * Sensor History(혹은 ActivityMonitor)로 지난 Sensor 기록 받아오기
+    - `while(iter != null) iter = iter.next()`이거하면 익셉션남 왜지?
+    - [Sensor Core Topics](https://developer.garmin.com/connect-iq/core-topics/sensors/)에서 `Sensor.registerSensorDataListener()`를 이용해보는 건 어떨지... → 메모리 초과
 * FIT 파일 접근하는 방법?
 
 <br>

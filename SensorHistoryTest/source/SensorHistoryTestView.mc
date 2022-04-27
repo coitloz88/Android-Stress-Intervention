@@ -1,11 +1,11 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
-import Toybox.SensorHistory;
+import Toybox.Sensor;
 import Toybox.Lang;
 import Toybox.System;
-
-import Toybox.Timer;
+import Toybox.ActivityRecording;
+import Toybox.SensorLogging;
 
 class SensorHistoryTestView extends WatchUi.View {
 
@@ -41,30 +41,4 @@ class SensorHistoryTestView extends WatchUi.View {
     function onHide() as Void {
     }
 
-    // Functions for Sensor History Test
-    // Create a method to get the SensorHistoryIterator object
-    function getIterator() {
-        // Check device for SensorHistory compatibility
-        if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
-            return Toybox.SensorHistory.getHeartRateHistory({});
-        }
-        return null;
-    }
-
-    function timerCallback(){
-        var sensorIter = getIterator();
-
-        while(sensorIter != null){
-            // System.println(sensorIter.next().data);
-            // sensorIter = sensorIter.next(); //sensorIter은 SensorHistoryIterator인데 next()는 SensorSample을 반환함 
-            System.println("Max: " + sensorIter.getMax());
-            System.println("min: " + sensorIter.getMin());
-        }
-
-        System.println("=====================");
-
-        WatchUi.requestUpdate();
-    }
-
 }
-
