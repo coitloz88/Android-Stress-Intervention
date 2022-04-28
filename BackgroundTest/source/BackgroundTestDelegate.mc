@@ -91,7 +91,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         // System.println("Raw samples, X axis: " + _samplesX);
         // System.println("Raw samples, Y axis: " + _samplesY);
         // System.println("Raw samples, Z axis: " + _samplesZ);
-        // System.println("=========================");
+        System.println("=========================");
 
         if(sensorData.accelerometerData != null){
             var dicAccel = {};
@@ -102,7 +102,13 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
             timeCount += periodSetting;
 
-            Communications.transmit(dicAccel, "null", listener);
+            System.println(dicAccel);
+
+            // if(System.getDeviceSettings().phoneConnected){
+            //     Communications.transmit(dicAccel, "null", listener);
+            // } else {
+            //     System.println("    *** fail to send ***");
+            // }
         }
         
     }
