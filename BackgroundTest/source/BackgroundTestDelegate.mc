@@ -4,7 +4,7 @@ import Toybox.WatchUi;
 import Toybox.Background;
 import Toybox.System;
 import Toybox.Communications;
-import Toybox.Timer;
+import Toybox.Sensor;
 
 class BackgroundTestDelegate extends WatchUi.BehaviorDelegate {
 
@@ -46,53 +46,69 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // var maxTime;
     // var timerUnit;
 
-    var userHR;
+    private var _samplesX = null;
+    private var _samplesY = null;
+    private var _samplesZ = null;
+    private var timeCount;
+    private var periodSetting;
+    private var listener;
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        userHR = -1;
-        Sensor.setEnabledSensors([Sensor.SENSOR_HEARTRATE]);
-        Sensor.enableSensorEvents(method(:onSensor));
         System.println("call initialize()");
-        // maxTime = 20; //20s
-        // timerUnit = 2; //2s
+        periodSetting = 3;
+        timeCount = 0 + periodSetting;
     }
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
 
+        var maxSampleRate = Sensor.getMaxSampleRate();
+        listener = new CommListener();
+
         // if(System.getDeviceSettings().phoneConnected){
-           // System.println("Call `if` clause");
-           //  var listener = new CommListener();
-        System.println(userHR);
-            // Communications.transmit(currentHeartRateData, "null", listener);
+            // initialize accelerometer to request the maximum amount of data possible
+            var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
+            try {
+                Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
+            }
+            catch(e) {
+                System.println("*** " + e.getErrorMessage());
+                disableAccel();
+            }
             // Background.exit(null);
         // } else {
-        //    Background.exit(null);
+        //     Background.exit(null);
         // }
     }
-    
-    function onSensor(sensorInfo as Sensor.Info) as Void{
-        if (sensorInfo has :heartRate && sensorInfo.heartRate != null) {
-            userHR = sensorInfo.heartRate;
-            System.println("onSensor HR: " + userHR);
-        } else {
-            userHR = -1;
+
+    public function accelHistoryCallback(sensorData as SensorData) as Void {
+        _samplesX = sensorData.accelerometerData.x;
+        _samplesY = sensorData.accelerometerData.y;
+        _samplesZ = sensorData.accelerometerData.z;
+
+        // System.println("Raw samples, X axis: " + _samplesX);
+        // System.println("Raw samples, Y axis: " + _samplesY);
+        // System.println("Raw samples, Z axis: " + _samplesZ);
+        // System.println("=========================");
+
+        if(sensorData.accelerometerData != null){
+            var dicAccel = {};
+
+            dicAccel.put(timeCount + "X", _samplesX);
+            dicAccel.put(timeCount + "Y", _samplesY);
+            dicAccel.put(timeCount + "Z", _samplesZ);
+
+            timeCount += periodSetting;
+
+            Communications.transmit(dicAccel, "null", listener);
         }
+        
     }
 
-    // function timerCallback(){
+    public function disableAccel() as Void {
+        Sensor.unregisterSensorDataListener();
+    }
 
-    //     System.println("call timerCallback()");
-
-    //     if(timerCount >= maxTime){
-    //         myTimer.stop();
-    //         timerCount = 0;
-    //     } else {
-    //         timerCount += timerUnit;
-    //         System.print(timerCount + "s: ");
-    //         WatchUi.requestUpdate();
-    //     }
-    // }
 }
