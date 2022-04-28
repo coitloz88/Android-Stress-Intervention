@@ -18,6 +18,7 @@
 <details>
 <summary>TODO가 너무 많아서 분할1</summary>
 <div markdown = "1">
+
 * 휴대폰이랑 연결이 안되어있어도 데이터는 계속 측정해야할 듯?
     - `phoneConnected`를 기준으로 `exit()`을 결정하면 안될 것 같음
     - `exit()`는 전체 백그라운드 프로세스를 종료하는 것 같음... 
