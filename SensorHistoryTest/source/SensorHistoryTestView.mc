@@ -1,6 +1,5 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
-import Toybox.Timer;
 
 class SensorHistoryTestView extends WatchUi.View {
     
@@ -14,7 +13,7 @@ class SensorHistoryTestView extends WatchUi.View {
         var maxSampleRate = Sensor.getMaxSampleRate();
 
          // initialize accelerometer to request the maximum amount of data possible
-        var options = {:period => 5000, :sampleRate => maxSampleRate, :enableAccelerometer => true};
+        var options = {:period => 1, :sampleRate => maxSampleRate, :enableAccelerometer => true};
         try {
             Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
         }
@@ -27,10 +26,6 @@ class SensorHistoryTestView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
-    }
-
-    function timerCallback(){
-        WatchUi.requestUpdate();
     }
 
     // Called when this View is brought to the foreground. Restore

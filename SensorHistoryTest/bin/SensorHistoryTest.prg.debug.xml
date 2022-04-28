@@ -2,81 +2,79 @@
 <debugInfo>
     <manifest filename="C:\Users\loveg\Documents\GitHub\Garmin-Project\SensorHistoryTest\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="11" parent="globals/SensorHistoryTestView" pc="268435456" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="12" parent="globals/SensorHistoryTestView" pc="268435460" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="14" parent="globals/SensorHistoryTestView" pc="268435478" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="17" parent="globals/SensorHistoryTestView" pc="268435497" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="10" parent="globals/SensorHistoryTestView" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="11" parent="globals/SensorHistoryTestView" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="13" parent="globals/SensorHistoryTestView" pc="268435478" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="16" parent="globals/SensorHistoryTestView" pc="268435497" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="17" parent="globals/SensorHistoryTestView" pc="268435538" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="18" parent="globals/SensorHistoryTestView" pc="268435538" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="19" parent="globals/SensorHistoryTestView" pc="268435538" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="22" parent="globals/SensorHistoryTestView" pc="268435584" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="23" parent="globals/SensorHistoryTestView" pc="268435619" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="2" lineNum="28" parent="globals/SensorHistoryTestView" pc="268435644" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="2" lineNum="29" parent="globals/SensorHistoryTestView" pc="268435648" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="3" lineNum="32" parent="globals/SensorHistoryTestView" pc="268435686" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="3" lineNum="33" parent="globals/SensorHistoryTestView" pc="268435690" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="39" parent="globals/SensorHistoryTestView" pc="268435707" symbol="onShow"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="43" parent="globals/SensorHistoryTestView" pc="268435712" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="44" parent="globals/SensorHistoryTestView" pc="268435716" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="45" parent="globals/SensorHistoryTestView" pc="268435752" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="46" parent="globals/SensorHistoryTestView" pc="268435764" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="47" parent="globals/SensorHistoryTestView" pc="268435800" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="53" parent="globals/SensorHistoryTestView" pc="268435864" symbol="onHide"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="56" parent="globals/SensorHistoryTestView" pc="268435869" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="57" parent="globals/SensorHistoryTestView" pc="268435873" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="58" parent="globals/SensorHistoryTestView" pc="268435895" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="59" parent="globals/SensorHistoryTestView" pc="268435917" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="61" parent="globals/SensorHistoryTestView" pc="268435939" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="62" parent="globals/SensorHistoryTestView" pc="268435971" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="63" parent="globals/SensorHistoryTestView" pc="268436003" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="8" lineNum="66" parent="globals/SensorHistoryTestView" pc="268436036" symbol="disableAccel"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="8" lineNum="67" parent="globals/SensorHistoryTestView" pc="268436040" symbol="disableAccel"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="9" lineNum="5" parent="globals/SensorHistoryTestView" pc="268436992" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="9" lineNum="5" parent="globals/SensorHistoryTestView" pc="268436992" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="11" lineNum="7" parent="globals/SensorHistoryTestApp" pc="268436059" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="11" lineNum="8" parent="globals/SensorHistoryTestApp" pc="268436063" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="12" lineNum="12" parent="globals/SensorHistoryTestApp" pc="268436082" symbol="onStart"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="13" lineNum="16" parent="globals/SensorHistoryTestApp" pc="268436087" symbol="onStop"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="14" lineNum="20" parent="globals/SensorHistoryTestApp" pc="268436092" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="14" lineNum="21" parent="globals/SensorHistoryTestApp" pc="268436096" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="15" lineNum="5" parent="globals/SensorHistoryTestApp" pc="268436973" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="15" lineNum="5" parent="globals/SensorHistoryTestApp" pc="268436973" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="16" lineNum="26" parent="globals" pc="268436164" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="16" lineNum="27" parent="globals" pc="268436176" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="18" lineNum="11" parent="globals/SensorHistoryTestDelegate" pc="268436193" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="18" lineNum="12" parent="globals/SensorHistoryTestDelegate" pc="268436197" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="19" lineNum="15" parent="globals/SensorHistoryTestDelegate" pc="268436216" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="19" lineNum="16" parent="globals/SensorHistoryTestDelegate" pc="268436220" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="19" lineNum="17" parent="globals/SensorHistoryTestDelegate" pc="268436304" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="20" lineNum="9" parent="globals/SensorHistoryTestDelegate" pc="268436954" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="20" lineNum="9" parent="globals/SensorHistoryTestDelegate" pc="268436954" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="11" parent="globals/SensorHistoryTestMenuDelegate" pc="268436308" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="12" parent="globals/SensorHistoryTestMenuDelegate" pc="268436312" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="15" parent="globals/SensorHistoryTestMenuDelegate" pc="268436331" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="16" parent="globals/SensorHistoryTestMenuDelegate" pc="268436335" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="17" parent="globals/SensorHistoryTestMenuDelegate" pc="268436346" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="18" parent="globals/SensorHistoryTestMenuDelegate" pc="268436370" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="19" parent="globals/SensorHistoryTestMenuDelegate" pc="268436381" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="24" lineNum="9" parent="globals/SensorHistoryTestMenuDelegate" pc="268436935" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="24" lineNum="9" parent="globals/SensorHistoryTestMenuDelegate" pc="268436935" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="26" lineNum="2" parent="globals/Rez/Drawables" pc="268436910" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="27" lineNum="7" parent="globals/Rez/Fonts" pc="268436931" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="28" lineNum="9" parent="globals/Rez/JsonData" pc="268436933" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="18" parent="globals/Rez/Layouts" pc="268436406" symbol="MainLayout"/>
-        <entry filename="Rez" id="29" lineNum="20" parent="globals/Rez/Layouts" pc="268436418" symbol="MainLayout"/>
-        <entry filename="Rez" id="29" lineNum="21" parent="globals/Rez/Layouts" pc="268436570" symbol="MainLayout"/>
-        <entry filename="Rez" id="29" lineNum="22" parent="globals/Rez/Layouts" pc="268436682" symbol="MainLayout"/>
-        <entry filename="Rez" id="29" lineNum="24" parent="globals/Rez/Layouts" pc="268436722" symbol="MainLayout"/>
-        <entry filename="Rez" id="30" lineNum="11" parent="globals/Rez/Layouts" pc="268436932" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436750" symbol="initialize"/>
-        <entry filename="Rez" id="31" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268436754" symbol="initialize"/>
-        <entry filename="Rez" id="31" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436772" symbol="initialize"/>
-        <entry filename="Rez" id="31" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436828" symbol="initialize"/>
-        <entry filename="Rez" id="32" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436912" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="32" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436912" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="33" lineNum="29" parent="globals/Rez/Menus" pc="268436911" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="34" lineNum="47" parent="globals/Rez/Strings" pc="268436934" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="1" parent="globals/Rez" pc="268436886" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="1" parent="globals/Rez" pc="268436886" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="21" parent="globals/SensorHistoryTestView" pc="268435584" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="1" lineNum="22" parent="globals/SensorHistoryTestView" pc="268435619" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="2" lineNum="27" parent="globals/SensorHistoryTestView" pc="268435644" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="2" lineNum="28" parent="globals/SensorHistoryTestView" pc="268435648" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="3" lineNum="34" parent="globals/SensorHistoryTestView" pc="268435686" symbol="onShow"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="38" parent="globals/SensorHistoryTestView" pc="268435691" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="39" parent="globals/SensorHistoryTestView" pc="268435695" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="40" parent="globals/SensorHistoryTestView" pc="268435731" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="41" parent="globals/SensorHistoryTestView" pc="268435743" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="4" lineNum="42" parent="globals/SensorHistoryTestView" pc="268435779" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="5" lineNum="48" parent="globals/SensorHistoryTestView" pc="268435843" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="51" parent="globals/SensorHistoryTestView" pc="268435848" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="52" parent="globals/SensorHistoryTestView" pc="268435852" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="53" parent="globals/SensorHistoryTestView" pc="268435874" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="54" parent="globals/SensorHistoryTestView" pc="268435896" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="56" parent="globals/SensorHistoryTestView" pc="268435918" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="57" parent="globals/SensorHistoryTestView" pc="268435950" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="6" lineNum="58" parent="globals/SensorHistoryTestView" pc="268435982" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="61" parent="globals/SensorHistoryTestView" pc="268436015" symbol="disableAccel"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="7" lineNum="62" parent="globals/SensorHistoryTestView" pc="268436019" symbol="disableAccel"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="8" lineNum="4" parent="globals/SensorHistoryTestView" pc="268436971" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestView.mc" id="8" lineNum="4" parent="globals/SensorHistoryTestView" pc="268436971" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="10" lineNum="7" parent="globals/SensorHistoryTestApp" pc="268436038" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="10" lineNum="8" parent="globals/SensorHistoryTestApp" pc="268436042" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="11" lineNum="12" parent="globals/SensorHistoryTestApp" pc="268436061" symbol="onStart"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="12" lineNum="16" parent="globals/SensorHistoryTestApp" pc="268436066" symbol="onStop"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="13" lineNum="20" parent="globals/SensorHistoryTestApp" pc="268436071" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="13" lineNum="21" parent="globals/SensorHistoryTestApp" pc="268436075" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="14" lineNum="5" parent="globals/SensorHistoryTestApp" pc="268436952" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="14" lineNum="5" parent="globals/SensorHistoryTestApp" pc="268436952" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="15" lineNum="26" parent="globals" pc="268436143" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestApp.mc" id="15" lineNum="27" parent="globals" pc="268436155" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="17" lineNum="11" parent="globals/SensorHistoryTestDelegate" pc="268436172" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="17" lineNum="12" parent="globals/SensorHistoryTestDelegate" pc="268436176" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="18" lineNum="15" parent="globals/SensorHistoryTestDelegate" pc="268436195" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="18" lineNum="16" parent="globals/SensorHistoryTestDelegate" pc="268436199" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="18" lineNum="17" parent="globals/SensorHistoryTestDelegate" pc="268436283" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="19" lineNum="9" parent="globals/SensorHistoryTestDelegate" pc="268436933" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestDelegate.mc" id="19" lineNum="9" parent="globals/SensorHistoryTestDelegate" pc="268436933" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="21" lineNum="11" parent="globals/SensorHistoryTestMenuDelegate" pc="268436287" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="21" lineNum="12" parent="globals/SensorHistoryTestMenuDelegate" pc="268436291" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="15" parent="globals/SensorHistoryTestMenuDelegate" pc="268436310" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="16" parent="globals/SensorHistoryTestMenuDelegate" pc="268436314" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="17" parent="globals/SensorHistoryTestMenuDelegate" pc="268436325" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="18" parent="globals/SensorHistoryTestMenuDelegate" pc="268436349" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="22" lineNum="19" parent="globals/SensorHistoryTestMenuDelegate" pc="268436360" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="9" parent="globals/SensorHistoryTestMenuDelegate" pc="268436914" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\SensorHistoryTest\\source\\SensorHistoryTestMenuDelegate.mc" id="23" lineNum="9" parent="globals/SensorHistoryTestMenuDelegate" pc="268436914" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="2" parent="globals/Rez/Drawables" pc="268436889" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="7" parent="globals/Rez/Fonts" pc="268436910" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="9" parent="globals/Rez/JsonData" pc="268436912" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="28" lineNum="18" parent="globals/Rez/Layouts" pc="268436385" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="20" parent="globals/Rez/Layouts" pc="268436397" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="21" parent="globals/Rez/Layouts" pc="268436549" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="22" parent="globals/Rez/Layouts" pc="268436661" symbol="MainLayout"/>
+        <entry filename="Rez" id="28" lineNum="24" parent="globals/Rez/Layouts" pc="268436701" symbol="MainLayout"/>
+        <entry filename="Rez" id="29" lineNum="11" parent="globals/Rez/Layouts" pc="268436911" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436729" symbol="initialize"/>
+        <entry filename="Rez" id="30" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268436733" symbol="initialize"/>
+        <entry filename="Rez" id="30" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436751" symbol="initialize"/>
+        <entry filename="Rez" id="30" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436807" symbol="initialize"/>
+        <entry filename="Rez" id="31" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436891" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436891" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="32" lineNum="29" parent="globals/Rez/Menus" pc="268436890" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="47" parent="globals/Rez/Strings" pc="268436913" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="1" parent="globals/Rez" pc="268436865" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="1" parent="globals/Rez" pc="268436865" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -103,8 +101,8 @@
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="30" symbol="item_2"/>
-        <entry id="29" symbol="item_1"/>
+        <entry id="29" symbol="item_2"/>
+        <entry id="28" symbol="item_1"/>
         <entry id="14" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
@@ -119,11 +117,10 @@
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="26" method="true" symbol="timerCallback"/>
-        <entry id="28" method="true" symbol="disableAccel"/>
+        <entry id="27" method="true" symbol="disableAccel"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry id="27" method="true" symbol="accelHistoryCallback"/>
+        <entry id="26" method="true" symbol="accelHistoryCallback"/>
         <entry field="true" id="16" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
@@ -138,7 +135,6 @@
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry id="8389347" symbol="color"/>
         <entry id="8389781" module="true" symbol="SensorHistory"/>
-        <entry id="8388646" module="true" object="true" symbol="Timer"/>
         <entry id="13" module="true" symbol="Layouts"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
@@ -153,14 +149,14 @@
         <entry endPc="268435642" name="maxSampleRate" stackId="1" startPc="268435460"/>
         <entry endPc="268435642" name="options" stackId="2" startPc="268435460"/>
         <entry arg="true" endPc="268435685" name="dc" stackId="1" startPc="268435644"/>
-        <entry arg="true" endPc="268435863" name="dc" stackId="1" startPc="268435712"/>
-        <entry arg="true" endPc="268436035" name="sensorData" stackId="1" startPc="268435869"/>
-        <entry arg="true" endPc="268436086" name="state" stackId="1" startPc="268436082"/>
-        <entry arg="true" endPc="268436091" name="state" stackId="1" startPc="268436087"/>
-        <entry arg="true" endPc="268436405" name="item" stackId="1" startPc="268436331"/>
-        <entry endPc="268436748" name="rez_cmp_local_text_1510129030" stackId="2" startPc="268436418"/>
-        <entry endPc="268436748" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436418"/>
-        <entry arg="true" endPc="268436749" name="dc" stackId="1" startPc="268436406"/>
+        <entry arg="true" endPc="268435842" name="dc" stackId="1" startPc="268435691"/>
+        <entry arg="true" endPc="268436014" name="sensorData" stackId="1" startPc="268435848"/>
+        <entry arg="true" endPc="268436065" name="state" stackId="1" startPc="268436061"/>
+        <entry arg="true" endPc="268436070" name="state" stackId="1" startPc="268436066"/>
+        <entry arg="true" endPc="268436384" name="item" stackId="1" startPc="268436310"/>
+        <entry endPc="268436727" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268436397"/>
+        <entry endPc="268436727" name="rez_cmp_local_text_4061055182" stackId="2" startPc="268436397"/>
+        <entry arg="true" endPc="268436728" name="dc" stackId="1" startPc="268436385"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
@@ -193,97 +189,94 @@
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435706" name="timerCallback" parent="SensorHistoryTestView" startPc="268435686">
+        <functionEntry accessMode="public" endPc="268435690" name="onShow" parent="SensorHistoryTestView" startPc="268435686">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435711" name="onShow" parent="SensorHistoryTestView" startPc="268435707">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435863" name="onUpdate" parent="SensorHistoryTestView" startPc="268435712">
+        <functionEntry accessMode="public" endPc="268435842" name="onUpdate" parent="SensorHistoryTestView" startPc="268435691">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435868" name="onHide" parent="SensorHistoryTestView" startPc="268435864">
+        <functionEntry accessMode="public" endPc="268435847" name="onHide" parent="SensorHistoryTestView" startPc="268435843">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436035" name="accelHistoryCallback" parent="SensorHistoryTestView" startPc="268435869">
+        <functionEntry accessMode="public" endPc="268436014" name="accelHistoryCallback" parent="SensorHistoryTestView" startPc="268435848">
             <param id="sensorData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436058" name="disableAccel" parent="SensorHistoryTestView" startPc="268436036">
+        <functionEntry accessMode="public" endPc="268436037" name="disableAccel" parent="SensorHistoryTestView" startPc="268436015">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437010" name="&lt;init&gt;" parent="SensorHistoryTestView" startPc="268436992">
+        <functionEntry accessMode="protected" endPc="268436989" name="&lt;init&gt;" parent="SensorHistoryTestView" startPc="268436971">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436081" name="initialize" parent="SensorHistoryTestApp" startPc="268436059">
+        <functionEntry accessMode="public" endPc="268436060" name="initialize" parent="SensorHistoryTestApp" startPc="268436038">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436086" name="onStart" parent="SensorHistoryTestApp" startPc="268436082">
+        <functionEntry accessMode="public" endPc="268436065" name="onStart" parent="SensorHistoryTestApp" startPc="268436061">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436091" name="onStop" parent="SensorHistoryTestApp" startPc="268436087">
+        <functionEntry accessMode="public" endPc="268436070" name="onStop" parent="SensorHistoryTestApp" startPc="268436066">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436163" name="getInitialView" parent="SensorHistoryTestApp" startPc="268436092">
+        <functionEntry accessMode="public" endPc="268436142" name="getInitialView" parent="SensorHistoryTestApp" startPc="268436071">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436991" name="&lt;init&gt;" parent="SensorHistoryTestApp" startPc="268436973">
+        <functionEntry accessMode="protected" endPc="268436970" name="&lt;init&gt;" parent="SensorHistoryTestApp" startPc="268436952">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436192" name="getApp" startPc="268436164">
+        <functionEntry accessMode="public" endPc="268436171" name="getApp" startPc="268436143">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436215" name="initialize" parent="SensorHistoryTestDelegate" startPc="268436193">
+        <functionEntry accessMode="public" endPc="268436194" name="initialize" parent="SensorHistoryTestDelegate" startPc="268436172">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436307" name="onMenu" parent="SensorHistoryTestDelegate" startPc="268436216">
+        <functionEntry accessMode="public" endPc="268436286" name="onMenu" parent="SensorHistoryTestDelegate" startPc="268436195">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436972" name="&lt;init&gt;" parent="SensorHistoryTestDelegate" startPc="268436954">
+        <functionEntry accessMode="protected" endPc="268436951" name="&lt;init&gt;" parent="SensorHistoryTestDelegate" startPc="268436933">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436330" name="initialize" parent="SensorHistoryTestMenuDelegate" startPc="268436308">
+        <functionEntry accessMode="public" endPc="268436309" name="initialize" parent="SensorHistoryTestMenuDelegate" startPc="268436287">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436405" name="onMenuItem" parent="SensorHistoryTestMenuDelegate" startPc="268436331">
+        <functionEntry accessMode="public" endPc="268436384" name="onMenuItem" parent="SensorHistoryTestMenuDelegate" startPc="268436310">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436953" name="&lt;init&gt;" parent="SensorHistoryTestMenuDelegate" startPc="268436935">
+        <functionEntry accessMode="protected" endPc="268436932" name="&lt;init&gt;" parent="SensorHistoryTestMenuDelegate" startPc="268436914">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436910" name="&lt;init&gt;" parent="Drawables" startPc="268436910">
+        <functionEntry accessMode="protected" endPc="268436889" name="&lt;init&gt;" parent="Drawables" startPc="268436889">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436931" name="&lt;init&gt;" parent="Fonts" startPc="268436931">
+        <functionEntry accessMode="protected" endPc="268436910" name="&lt;init&gt;" parent="Fonts" startPc="268436910">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436933" name="&lt;init&gt;" parent="JsonData" startPc="268436933">
+        <functionEntry accessMode="protected" endPc="268436912" name="&lt;init&gt;" parent="JsonData" startPc="268436912">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436749" name="MainLayout" parent="Layouts" startPc="268436406">
+        <functionEntry accessMode="public" endPc="268436728" name="MainLayout" parent="Layouts" startPc="268436385">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436932" name="&lt;init&gt;" parent="Layouts" startPc="268436932">
+        <functionEntry accessMode="protected" endPc="268436911" name="&lt;init&gt;" parent="Layouts" startPc="268436911">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436884" name="initialize" parent="MainMenu" startPc="268436750">
+        <functionEntry accessMode="public" endPc="268436863" name="initialize" parent="MainMenu" startPc="268436729">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436930" name="&lt;init&gt;" parent="MainMenu" startPc="268436912">
+        <functionEntry accessMode="protected" endPc="268436909" name="&lt;init&gt;" parent="MainMenu" startPc="268436891">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436911" name="&lt;init&gt;" parent="Menus" startPc="268436911">
+        <functionEntry accessMode="protected" endPc="268436890" name="&lt;init&gt;" parent="Menus" startPc="268436890">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436934" name="&lt;init&gt;" parent="Strings" startPc="268436934">
+        <functionEntry accessMode="protected" endPc="268436913" name="&lt;init&gt;" parent="Strings" startPc="268436913">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436909" name="&lt;init&gt;" parent="Rez" startPc="268436886">
+        <functionEntry accessMode="protected" endPc="268436888" name="&lt;init&gt;" parent="Rez" startPc="268436865">
             <documentation/>
         </functionEntry>
     </functions>
