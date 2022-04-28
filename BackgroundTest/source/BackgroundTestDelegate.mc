@@ -69,13 +69,15 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         // if(System.getDeviceSettings().phoneConnected){
             // initialize accelerometer to request the maximum amount of data possible
-            var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
+            // var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
+            var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => { :enabled=> true}};
             try {
-                Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
+                // Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
+                Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
             }
             catch(e) {
-                System.println("*** " + e.getErrorMessage());
-                disableAccel();
+                System.println(" *** " + e.getErrorMessage());
+                disableSensorDataListener();
             }
             // Background.exit(null);
         // } else {
@@ -104,16 +106,42 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
             System.println(dicAccel);
 
-            // if(System.getDeviceSettings().phoneConnected){
-            //     Communications.transmit(dicAccel, "null", listener);
-            // } else {
-            //     System.println("    *** fail to send ***");
-            // }
+            if(System.getDeviceSettings().phoneConnected){
+                Communications.transmit(dicAccel, "null", listener);
+            } else {
+                System.println("    *** fail to send ***");
+            }
         }
         
     }
 
-    public function disableAccel() as Void {
+    public function HRHistoryCallback(sensorData as SensorData) as Void {
+        var HR_samples = sensorData.heartRateData;
+
+        // System.println("Raw samples, X axis: " + _samplesX);
+        // System.println("Raw samples, Y axis: " + _samplesY);
+        // System.println("Raw samples, Z axis: " + _samplesZ);
+        System.println("=========================");
+
+        if(sensorData.heartRateData != null){
+            var dicHR = {};
+
+            dicHR.put(timeCount, HR_samples);
+
+            timeCount += periodSetting;
+
+            System.println("dicHR: " + dicHR);
+
+            if(System.getDeviceSettings().phoneConnected){
+                Communications.transmit(dicHR, "null", listener);
+            } else {
+                System.println("    *** fail to send ***");
+            }
+        }
+        
+    }
+
+    public function disableSensorDataListener() as Void {
         Sensor.unregisterSensorDataListener();
     }
 

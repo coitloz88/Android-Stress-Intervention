@@ -2,7 +2,6 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Background;
-import Toybox.Time;
 
 (:background)
 class BackgroundTestMenuDelegate extends WatchUi.MenuInputDelegate {
