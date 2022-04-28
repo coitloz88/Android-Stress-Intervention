@@ -77,7 +77,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             }
             catch(e) {
                 System.println(" *** " + e.getErrorMessage());
-                disableSensorDataListener();
+                disableSensorDataListener(); 
             }
             // Background.exit(null);
         // } else {
