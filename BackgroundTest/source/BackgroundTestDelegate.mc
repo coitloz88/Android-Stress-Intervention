@@ -56,7 +56,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-        periodSetting = 1;
+        periodSetting = 4;
         timeCount = 0 + periodSetting;
     }
 
@@ -109,8 +109,10 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dicAccel, "null", listener);
             } else {
-                System.println("    *** fail to send ***");
+                System.println("    *** phone not connected ***");
             }
+        } else {
+            System.println("    *** no accel data! ***");
         }
         
     }
@@ -142,6 +144,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     }
 
     public function disableSensorDataListener() as Void {
+        System.println("call disableSensorDataListener()");
         Sensor.unregisterSensorDataListener();
     }
 

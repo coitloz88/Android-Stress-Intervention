@@ -8,12 +8,14 @@
 
 2. 여러 번 측정 동작
     * Emulator에서 `registerSensorDataListener`의 콜백함수를 주기적으로 호출해서 `SensorData`가 측정됨
-    * 그러나 해당 콜백함수는 Background에서 실행된다고 표시되지만 실제로 앱을 나가게 되면 수집 함수가 호출되지 않음(왜?)
+    * **그러나 해당 콜백함수는 Background에서 실행된다고 표시되지만 실제로 앱을 나가게 되면 수집 함수가 호출되지 않음(왜?)**
         - 센서 데이터 수집 중 앱이 종료되면 수집이 종료됨
         - stack overflow에서 background에서의 callback함수 호출 불가에 관한 [논의](https://stackoverflow.com/questions/66377387/garmin-makewebrequest-in-background-service-delegate-can-not-wake-app-from-callb)가 있었음
     * 30초 후 Temporal Background Event는 자동으로 종료되며, 5분뒤에 재실행됨(앱 실행 중에만)
-    * 실제 디바이스 & 휴대폰에서 테스트해본 결과 `transmit`이 안됨 => [garmin forum](https://forums.garmin.com/developer/connect-iq/i/bug-reports/background-event-system-does-not-work) 확인 결과 메모리가 부족한 것으로 보임
+    * 실제 디바이스 & 휴대폰에서 테스트해본 결과 `transmit`이 안됨 => ~~[garmin forum](https://forums.garmin.com/developer/connect-iq/i/bug-reports/background-event-system-does-not-work) 확인 결과 메모리가 부족한 것으로 보임~~ log file을 생성하여 디버그해본 결과 transmit이 되긴 하는데 지연이 있음
     * `for`문은 돌리면 당연히 시간 조절이 안되고 1초 안에 순식간에 많은 프레임을 반복한 뒤 종료됨
+
+---
 
 <details>
 <summary>TODO가 너무 많아서 분할1</summary>
