@@ -2,9 +2,7 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 import Toybox.System;
-import Toybox.Sensor;
-
-import Toybox.Time;
+import Toybox.SensorHistory;
 
 class SensorHistoryTestDelegate extends WatchUi.BehaviorDelegate {
 
