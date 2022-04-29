@@ -87,7 +87,7 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="68" parent="globals/BackgroundServiceDelegate" pc="268436305" symbol="onTemporalEvent"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="73" parent="globals/BackgroundServiceDelegate" pc="268436335" symbol="onTemporalEvent"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="74" parent="globals/BackgroundServiceDelegate" pc="268436417" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="76" parent="globals/BackgroundServiceDelegate" pc="268436417" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="75" parent="globals/BackgroundServiceDelegate" pc="268436417" symbol="onTemporalEvent"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="79" parent="globals/BackgroundServiceDelegate" pc="268436461" symbol="onTemporalEvent"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="80" parent="globals/BackgroundServiceDelegate" pc="268436494" symbol="onTemporalEvent"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="88" parent="globals/BackgroundServiceDelegate" pc="268436519" symbol="accelHistoryCallback"/>
@@ -247,7 +247,7 @@
         <entry endPc="268437058" name="dicHR" stackId="3" startPc="268436904"/>
         <entry endPc="268437061" name="HR_samples" stackId="2" startPc="268436860"/>
         <entry arg="true" endPc="268437062" name="sensorData" stackId="1" startPc="268436856"/>
-        <entry endPc="268437875" name="rez_cmp_local_text_1663230304" stackId="2" startPc="268437545"/>
+        <entry endPc="268437875" name="rez_cmp_local_text_1517064654" stackId="2" startPc="268437545"/>
         <entry endPc="268437875" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437545"/>
         <entry arg="true" endPc="268437876" name="dc" stackId="1" startPc="268437533"/>
     </localVars>
