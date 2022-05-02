@@ -17,6 +17,8 @@
 
 ---
 
+<br>
+
 <details>
 <summary>TODO가 너무 많아서 분할1</summary>
 <div markdown = "1">
@@ -75,10 +77,11 @@ Details: Module 'Toybox.Timer' not available to 'Background'
 # References
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html#registerForTemporalEvent-instance_function>
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ServiceDelegate.html>
-* <https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AppBase.html#getServiceDelegate-instance_function>
+* <https://developer.garmin.com/connect-iq/api-docs/Toybox/Application/AppBase.html#getServiceDelegate-instance_function>  
 
 * 수행 가능한 작업 정리: <https://developer.garmin.com/connect-iq/core-topics/backgrounding/>
 * Background의 Data ↔ Process의 Data 관련: <https://developer.garmin.com/connect-iq/connect-iq-faq/how-do-i-create-a-connect-iq-background-service/>
+* Background Process ↔ Foreground Process: [Appdata를 이용해서 통신하는 방법 뿐?](https://forums.garmin.com/developer/connect-iq/f/discussion/284157/can-i-force-a-running-background-to-quit-when-the-mainapp-starts-up)
 
 * How to debug garmin watch apps: <https://forums.garmin.com/developer/connect-iq/w/wiki/4/new-developer-faq#debugging>
 * transmit Queue full: <https://forums.garmin.com/developer/connect-iq/f/discussion/5135/comm-transmit---communications-transmit-queue-full-error-in-comm-callback>

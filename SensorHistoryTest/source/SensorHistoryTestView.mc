@@ -60,6 +60,7 @@ class SensorHistoryTestView extends WatchUi.View {
             var sample = userHeartRate.next();
             do {
                 var data = sample.data;
+                System.println("@ sample: " + sample);
                 System.println("@ Data: " + data);
                 sample = userHeartRate.next();
             } while(sample.data != null);
