@@ -67,3 +67,8 @@ class Sample{
     }
 }
 ```
+
+
+# 더 찾아볼 것
+* Garmin FIT SDK 사용: <https://towardsdatascience.com/accessing-and-cleaning-data-from-garmin-wearables-for-analysis-56c22b83d932>
+* Parsing Garmin Connect (web) data: <https://github.com/tcgoetz/GarminDB>
