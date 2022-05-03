@@ -58,6 +58,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         System.println("call initialize()");
         periodSetting = 4;
         timeCount = 0 + periodSetting;
+        dicAccel = {};
     }
 
     function onTemporalEvent() {
@@ -97,7 +98,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         if(sensorData.accelerometerData != null){
             var dicAccel = {};
-
             dicAccel.put(timeCount + "X", _samplesX);
             dicAccel.put(timeCount + "Y", _samplesY);
             dicAccel.put(timeCount + "Z", _samplesZ);
@@ -105,12 +105,12 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             timeCount += periodSetting;
 
             System.println(dicAccel);
-
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dicAccel, "null", listener);
             } else {
-                System.println("    *** phone not connected ***");
+                System.println("    *** fail to send(not connected) ***");
             }
+            
         } else {
             System.println("    *** no accel data! ***");
         }
@@ -137,8 +137,10 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dicHR, "null", listener);
             } else {
-                System.println("    *** fail to send ***");
+                System.println("    *** fail to send(not connected) ***");
             }
+        } else {
+            System.println("    *** no HeartRate data! ***");
         }
         
     }

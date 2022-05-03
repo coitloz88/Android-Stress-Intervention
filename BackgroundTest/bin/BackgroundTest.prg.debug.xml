@@ -15,23 +15,23 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="5" lineNum="43" parent="globals/BackgroundTestApp" pc="268435650" symbol="getServiceDelegate"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="6" lineNum="46" parent="globals/BackgroundTestApp" pc="268435688" symbol="canDoBackground"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="6" lineNum="47" parent="globals/BackgroundTestApp" pc="268435692" symbol="canDoBackground"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="7" lineNum="10" parent="globals/BackgroundTestApp" pc="268437144" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="7" lineNum="10" parent="globals/BackgroundTestApp" pc="268437144" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="8" lineNum="51" parent="globals" pc="268437183" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="8" lineNum="52" parent="globals" pc="268437195" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="10" lineNum="6" parent="globals/BackgroundTestView" pc="268437212" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="10" lineNum="7" parent="globals/BackgroundTestView" pc="268437216" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="11" lineNum="21" parent="globals/BackgroundTestView" pc="268437235" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="11" lineNum="22" parent="globals/BackgroundTestView" pc="268437239" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="12" lineNum="28" parent="globals/BackgroundTestView" pc="268437277" symbol="onShow"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="32" parent="globals/BackgroundTestView" pc="268437282" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="34" parent="globals/BackgroundTestView" pc="268437286" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="36" parent="globals/BackgroundTestView" pc="268437322" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="37" parent="globals/BackgroundTestView" pc="268437334" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="39" parent="globals/BackgroundTestView" pc="268437370" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="14" lineNum="47" parent="globals/BackgroundTestView" pc="268437434" symbol="onHide"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="15" lineNum="4" parent="globals/BackgroundTestView" pc="268438033" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="15" lineNum="4" parent="globals/BackgroundTestView" pc="268438033" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="7" lineNum="10" parent="globals/BackgroundTestApp" pc="268437230" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="7" lineNum="10" parent="globals/BackgroundTestApp" pc="268437230" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="8" lineNum="51" parent="globals" pc="268437269" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestApp.mc" id="8" lineNum="52" parent="globals" pc="268437281" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="10" lineNum="6" parent="globals/BackgroundTestView" pc="268437298" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="10" lineNum="7" parent="globals/BackgroundTestView" pc="268437302" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="11" lineNum="21" parent="globals/BackgroundTestView" pc="268437321" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="11" lineNum="22" parent="globals/BackgroundTestView" pc="268437325" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="12" lineNum="28" parent="globals/BackgroundTestView" pc="268437363" symbol="onShow"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="32" parent="globals/BackgroundTestView" pc="268437368" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="34" parent="globals/BackgroundTestView" pc="268437372" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="36" parent="globals/BackgroundTestView" pc="268437408" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="37" parent="globals/BackgroundTestView" pc="268437420" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="13" lineNum="39" parent="globals/BackgroundTestView" pc="268437456" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="14" lineNum="47" parent="globals/BackgroundTestView" pc="268437520" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="15" lineNum="4" parent="globals/BackgroundTestView" pc="268438119" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestView.mc" id="15" lineNum="4" parent="globals/BackgroundTestView" pc="268438119" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="17" lineNum="9" parent="globals/BackgroundTestMenuDelegate" pc="268435714" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="17" lineNum="10" parent="globals/BackgroundTestMenuDelegate" pc="268435718" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="18" lineNum="13" parent="globals/BackgroundTestMenuDelegate" pc="268435737" symbol="onMenuItem"/>
@@ -41,8 +41,8 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="18" lineNum="17" parent="globals/BackgroundTestMenuDelegate" pc="268435785" symbol="onMenuItem"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="18" lineNum="18" parent="globals/BackgroundTestMenuDelegate" pc="268435809" symbol="onMenuItem"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="18" lineNum="19" parent="globals/BackgroundTestMenuDelegate" pc="268435820" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="19" lineNum="7" parent="globals/BackgroundTestMenuDelegate" pc="268437125" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="19" lineNum="7" parent="globals/BackgroundTestMenuDelegate" pc="268437125" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="19" lineNum="7" parent="globals/BackgroundTestMenuDelegate" pc="268437211" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="19" lineNum="7" parent="globals/BackgroundTestMenuDelegate" pc="268437211" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="21" lineNum="7" parent="globals/SensorDelegate" pc="268435845" symbol="getHeartRate"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="21" lineNum="8" parent="globals/SensorDelegate" pc="268435849" symbol="getHeartRate"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="21" lineNum="9" parent="globals/SensorDelegate" pc="268435866" symbol="getHeartRate"/>
@@ -59,87 +59,89 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="22" lineNum="24" parent="globals/SensorDelegate" pc="268436064" symbol="getAcceleration"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="22" lineNum="26" parent="globals/SensorDelegate" pc="268436070" symbol="getAcceleration"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="22" lineNum="27" parent="globals/SensorDelegate" pc="268436091" symbol="getAcceleration"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="23" lineNum="6" parent="globals/SensorDelegate" pc="268437182" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="23" lineNum="6" parent="globals/SensorDelegate" pc="268437268" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\SensorDelegate.mc" id="24" lineNum="6" parent="globals/SensorDelegate" pc="268436098" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="26" lineNum="11" parent="globals/BackgroundTestDelegate" pc="268437439" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="26" lineNum="12" parent="globals/BackgroundTestDelegate" pc="268437443" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="15" parent="globals/BackgroundTestDelegate" pc="268437462" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="16" parent="globals/BackgroundTestDelegate" pc="268437466" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="17" parent="globals/BackgroundTestDelegate" pc="268437550" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="28" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438101" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="28" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438101" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="26" lineNum="11" parent="globals/BackgroundTestDelegate" pc="268437525" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="26" lineNum="12" parent="globals/BackgroundTestDelegate" pc="268437529" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="15" parent="globals/BackgroundTestDelegate" pc="268437548" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="16" parent="globals/BackgroundTestDelegate" pc="268437552" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="27" lineNum="17" parent="globals/BackgroundTestDelegate" pc="268437636" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="28" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438187" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="28" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438187" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="29" lineNum="23" parent="globals/CommListener" pc="268436101" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="29" lineNum="24" parent="globals/CommListener" pc="268436105" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="30" lineNum="27" parent="globals/CommListener" pc="268436128" symbol="onComplete"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="30" lineNum="28" parent="globals/CommListener" pc="268436132" symbol="onComplete"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="31" lineNum="31" parent="globals/CommListener" pc="268436154" symbol="onError"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="31" lineNum="32" parent="globals/CommListener" pc="268436158" symbol="onError"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="32" lineNum="22" parent="globals/CommListener" pc="268437163" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="32" lineNum="22" parent="globals/CommListener" pc="268437163" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="56" parent="globals/BackgroundServiceDelegate" pc="268436180" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="57" parent="globals/BackgroundServiceDelegate" pc="268436184" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="58" parent="globals/BackgroundServiceDelegate" pc="268436206" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="59" parent="globals/BackgroundServiceDelegate" pc="268436227" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="60" parent="globals/BackgroundServiceDelegate" pc="268436240" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="63" parent="globals/BackgroundServiceDelegate" pc="268436263" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="65" parent="globals/BackgroundServiceDelegate" pc="268436267" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="67" parent="globals/BackgroundServiceDelegate" pc="268436288" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="68" parent="globals/BackgroundServiceDelegate" pc="268436305" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="73" parent="globals/BackgroundServiceDelegate" pc="268436335" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="74" parent="globals/BackgroundServiceDelegate" pc="268436417" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="75" parent="globals/BackgroundServiceDelegate" pc="268436417" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="79" parent="globals/BackgroundServiceDelegate" pc="268436461" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="80" parent="globals/BackgroundServiceDelegate" pc="268436494" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="88" parent="globals/BackgroundServiceDelegate" pc="268436519" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="89" parent="globals/BackgroundServiceDelegate" pc="268436523" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="90" parent="globals/BackgroundServiceDelegate" pc="268436545" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268436567" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="96" parent="globals/BackgroundServiceDelegate" pc="268436589" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436610" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="99" parent="globals/BackgroundServiceDelegate" pc="268436623" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="101" parent="globals/BackgroundServiceDelegate" pc="268436631" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="102" parent="globals/BackgroundServiceDelegate" pc="268436665" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="103" parent="globals/BackgroundServiceDelegate" pc="268436699" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="105" parent="globals/BackgroundServiceDelegate" pc="268436733" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="107" parent="globals/BackgroundServiceDelegate" pc="268436755" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="109" parent="globals/BackgroundServiceDelegate" pc="268436773" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="110" parent="globals/BackgroundServiceDelegate" pc="268436797" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="112" parent="globals/BackgroundServiceDelegate" pc="268436831" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="115" parent="globals/BackgroundServiceDelegate" pc="268436855" symbol="accelHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="120" parent="globals/BackgroundServiceDelegate" pc="268436877" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="121" parent="globals/BackgroundServiceDelegate" pc="268436881" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="126" parent="globals/BackgroundServiceDelegate" pc="268436891" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="128" parent="globals/BackgroundServiceDelegate" pc="268436912" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="129" parent="globals/BackgroundServiceDelegate" pc="268436925" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="131" parent="globals/BackgroundServiceDelegate" pc="268436933" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="133" parent="globals/BackgroundServiceDelegate" pc="268436955" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="135" parent="globals/BackgroundServiceDelegate" pc="268436977" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="137" parent="globals/BackgroundServiceDelegate" pc="268437001" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="138" parent="globals/BackgroundServiceDelegate" pc="268437025" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="140" parent="globals/BackgroundServiceDelegate" pc="268437059" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="37" lineNum="146" parent="globals/BackgroundServiceDelegate" pc="268437084" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="37" lineNum="147" parent="globals/BackgroundServiceDelegate" pc="268437088" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="38" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437106" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="38" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437106" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="40" lineNum="2" parent="globals/Rez/Drawables" pc="268438076" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="41" lineNum="7" parent="globals/Rez/Fonts" pc="268438097" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="42" lineNum="9" parent="globals/Rez/JsonData" pc="268438099" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="43" lineNum="18" parent="globals/Rez/Layouts" pc="268437554" symbol="MainLayout"/>
-        <entry filename="Rez" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268437566" symbol="MainLayout"/>
-        <entry filename="Rez" id="43" lineNum="21" parent="globals/Rez/Layouts" pc="268437718" symbol="MainLayout"/>
-        <entry filename="Rez" id="43" lineNum="22" parent="globals/Rez/Layouts" pc="268437830" symbol="MainLayout"/>
-        <entry filename="Rez" id="43" lineNum="24" parent="globals/Rez/Layouts" pc="268437870" symbol="MainLayout"/>
-        <entry filename="Rez" id="44" lineNum="11" parent="globals/Rez/Layouts" pc="268438098" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="45" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268437898" symbol="initialize"/>
-        <entry filename="Rez" id="45" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268437902" symbol="initialize"/>
-        <entry filename="Rez" id="45" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268437920" symbol="initialize"/>
-        <entry filename="Rez" id="45" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268437976" symbol="initialize"/>
-        <entry filename="Rez" id="46" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268438078" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="46" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268438078" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="47" lineNum="29" parent="globals/Rez/Menus" pc="268438077" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="48" lineNum="47" parent="globals/Rez/Strings" pc="268438100" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="49" lineNum="1" parent="globals/Rez" pc="268438052" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="49" lineNum="1" parent="globals/Rez" pc="268438052" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="32" lineNum="22" parent="globals/CommListener" pc="268437249" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="32" lineNum="22" parent="globals/CommListener" pc="268437249" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="57" parent="globals/BackgroundServiceDelegate" pc="268436180" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="58" parent="globals/BackgroundServiceDelegate" pc="268436184" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="59" parent="globals/BackgroundServiceDelegate" pc="268436206" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="60" parent="globals/BackgroundServiceDelegate" pc="268436227" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="61" parent="globals/BackgroundServiceDelegate" pc="268436240" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="33" lineNum="62" parent="globals/BackgroundServiceDelegate" pc="268436262" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="65" parent="globals/BackgroundServiceDelegate" pc="268436277" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="67" parent="globals/BackgroundServiceDelegate" pc="268436281" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="69" parent="globals/BackgroundServiceDelegate" pc="268436302" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="70" parent="globals/BackgroundServiceDelegate" pc="268436319" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="75" parent="globals/BackgroundServiceDelegate" pc="268436349" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="76" parent="globals/BackgroundServiceDelegate" pc="268436431" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="77" parent="globals/BackgroundServiceDelegate" pc="268436431" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="81" parent="globals/BackgroundServiceDelegate" pc="268436475" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="34" lineNum="82" parent="globals/BackgroundServiceDelegate" pc="268436508" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="90" parent="globals/BackgroundServiceDelegate" pc="268436533" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268436537" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="92" parent="globals/BackgroundServiceDelegate" pc="268436559" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="93" parent="globals/BackgroundServiceDelegate" pc="268436581" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436603" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="100" parent="globals/BackgroundServiceDelegate" pc="268436624" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="101" parent="globals/BackgroundServiceDelegate" pc="268436637" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="102" parent="globals/BackgroundServiceDelegate" pc="268436677" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="103" parent="globals/BackgroundServiceDelegate" pc="268436717" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="105" parent="globals/BackgroundServiceDelegate" pc="268436757" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="107" parent="globals/BackgroundServiceDelegate" pc="268436779" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="110" parent="globals/BackgroundServiceDelegate" pc="268436803" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="111" parent="globals/BackgroundServiceDelegate" pc="268436829" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="112" parent="globals/BackgroundServiceDelegate" pc="268436853" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="114" parent="globals/BackgroundServiceDelegate" pc="268436893" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="35" lineNum="118" parent="globals/BackgroundServiceDelegate" pc="268436920" symbol="accelHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="123" parent="globals/BackgroundServiceDelegate" pc="268436942" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="124" parent="globals/BackgroundServiceDelegate" pc="268436946" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="129" parent="globals/BackgroundServiceDelegate" pc="268436956" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="131" parent="globals/BackgroundServiceDelegate" pc="268436977" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="132" parent="globals/BackgroundServiceDelegate" pc="268436990" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="134" parent="globals/BackgroundServiceDelegate" pc="268436998" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="136" parent="globals/BackgroundServiceDelegate" pc="268437020" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="138" parent="globals/BackgroundServiceDelegate" pc="268437042" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="140" parent="globals/BackgroundServiceDelegate" pc="268437066" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="141" parent="globals/BackgroundServiceDelegate" pc="268437090" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="36" lineNum="143" parent="globals/BackgroundServiceDelegate" pc="268437124" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="37" lineNum="149" parent="globals/BackgroundServiceDelegate" pc="268437149" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="37" lineNum="150" parent="globals/BackgroundServiceDelegate" pc="268437153" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="37" lineNum="151" parent="globals/BackgroundServiceDelegate" pc="268437174" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="38" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437192" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Project\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="38" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437192" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="40" lineNum="2" parent="globals/Rez/Drawables" pc="268438162" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="41" lineNum="7" parent="globals/Rez/Fonts" pc="268438183" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="42" lineNum="9" parent="globals/Rez/JsonData" pc="268438185" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="43" lineNum="18" parent="globals/Rez/Layouts" pc="268437640" symbol="MainLayout"/>
+        <entry filename="Rez" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268437652" symbol="MainLayout"/>
+        <entry filename="Rez" id="43" lineNum="21" parent="globals/Rez/Layouts" pc="268437804" symbol="MainLayout"/>
+        <entry filename="Rez" id="43" lineNum="22" parent="globals/Rez/Layouts" pc="268437916" symbol="MainLayout"/>
+        <entry filename="Rez" id="43" lineNum="24" parent="globals/Rez/Layouts" pc="268437956" symbol="MainLayout"/>
+        <entry filename="Rez" id="44" lineNum="11" parent="globals/Rez/Layouts" pc="268438184" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="45" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268437984" symbol="initialize"/>
+        <entry filename="Rez" id="45" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268437988" symbol="initialize"/>
+        <entry filename="Rez" id="45" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268438006" symbol="initialize"/>
+        <entry filename="Rez" id="45" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268438062" symbol="initialize"/>
+        <entry filename="Rez" id="46" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268438164" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="46" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268438164" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="47" lineNum="29" parent="globals/Rez/Menus" pc="268438163" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="48" lineNum="47" parent="globals/Rez/Strings" pc="268438186" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="49" lineNum="1" parent="globals/Rez" pc="268438138" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="49" lineNum="1" parent="globals/Rez" pc="268438138" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -148,39 +150,40 @@
         <entry id="10" object="true" symbol="BackgroundTestView"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="34" method="true" symbol="MainLayout"/>
+        <entry id="35" method="true" symbol="MainLayout"/>
         <entry id="12" object="true" symbol="SensorDelegate"/>
         <entry field="true" id="8389605" symbol="accel"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="38" symbol="AppName"/>
+        <entry field="true" id="22" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;dicAccel&gt;"/>
+        <entry field="true" id="39" symbol="AppName"/>
         <entry field="true" id="19" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;timeCount&gt;"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8389345" symbol="rezId"/>
-        <entry id="27" method="true" symbol="getHeartRate"/>
+        <entry id="28" method="true" symbol="getHeartRate"/>
         <entry id="8390147" object="true" symbol="ServiceDelegate"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8390148" method="true" symbol="onTemporalEvent"/>
-        <entry field="true" id="37" symbol="prompt"/>
-        <entry field="true" id="31" symbol="id_monkey"/>
-        <entry id="28" method="true" symbol="getAcceleration"/>
+        <entry field="true" id="38" symbol="prompt"/>
+        <entry field="true" id="32" symbol="id_monkey"/>
+        <entry id="29" method="true" symbol="getAcceleration"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry id="24" method="true" symbol="disableSensorDataListener"/>
+        <entry id="25" method="true" symbol="disableSensorDataListener"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="40" symbol="item_2"/>
-        <entry id="39" symbol="item_1"/>
+        <entry id="41" symbol="item_2"/>
+        <entry id="40" symbol="item_1"/>
         <entry id="8390169" method="true" symbol="getServiceDelegate"/>
-        <entry id="30" module="true" symbol="Menus"/>
+        <entry id="31" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="23" method="true" symbol="HRHistoryCallback"/>
+        <entry id="24" method="true" symbol="HRHistoryCallback"/>
         <entry id="8389349" symbol="justification"/>
         <entry field="true" id="8390134" symbol="sampleRate"/>
         <entry id="15" object="true" symbol="BackgroundServiceDelegate"/>
@@ -193,7 +196,7 @@
         <entry field="true" id="17" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;_samplesY&gt;"/>
         <entry field="true" id="16" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;_samplesX&gt;"/>
         <entry id="8388828" method="true" symbol="onError"/>
-        <entry id="33" object="true" symbol="MainMenu"/>
+        <entry id="34" object="true" symbol="MainMenu"/>
         <entry id="11" object="true" symbol="BackgroundTestMenuDelegate"/>
         <entry field="true" id="8390438" symbol="enabled"/>
         <entry id="8388644" module="true" symbol="System"/>
@@ -201,8 +204,8 @@
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-        <entry id="22" method="true" symbol="accelHistoryCallback"/>
-        <entry field="true" id="32" symbol="LauncherIcon"/>
+        <entry id="23" method="true" symbol="accelHistoryCallback"/>
+        <entry field="true" id="33" symbol="LauncherIcon"/>
         <entry id="14" object="true" symbol="CommListener"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
@@ -211,7 +214,7 @@
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8390146" module="true" symbol="Background"/>
         <entry field="true" id="8388960" symbol="heartRate"/>
-        <entry field="true" id="25" symbol="_view"/>
+        <entry field="true" id="26" symbol="_view"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry id="8389808" symbol="period"/>
@@ -223,34 +226,33 @@
         <entry id="8388829" method="true" symbol="onComplete"/>
         <entry field="true" id="21" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;listener&gt;"/>
         <entry id="13" object="true" symbol="BackgroundTestDelegate"/>
-        <entry id="29" module="true" symbol="Layouts"/>
-        <entry id="26" method="true" symbol="canDoBackground"/>
+        <entry id="30" module="true" symbol="Layouts"/>
+        <entry id="27" method="true" symbol="canDoBackground"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="36" symbol="menu_label_2"/>
-        <entry field="true" id="35" symbol="menu_label_1"/>
+        <entry field="true" id="37" symbol="menu_label_2"/>
+        <entry field="true" id="36" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435483" name="state" stackId="1" startPc="268435479"/>
         <entry arg="true" endPc="268435488" name="state" stackId="1" startPc="268435484"/>
-        <entry arg="true" endPc="268437276" name="dc" stackId="1" startPc="268437235"/>
-        <entry arg="true" endPc="268437433" name="dc" stackId="1" startPc="268437282"/>
+        <entry arg="true" endPc="268437362" name="dc" stackId="1" startPc="268437321"/>
+        <entry arg="true" endPc="268437519" name="dc" stackId="1" startPc="268437368"/>
         <entry arg="true" endPc="268435844" name="item" stackId="1" startPc="268435737"/>
         <entry endPc="268435929" name="userHeartRate" stackId="2" startPc="268435893"/>
         <entry endPc="268435959" name="sensorInfo" stackId="1" startPc="268435849"/>
         <entry endPc="268436066" name="accelArray" stackId="2" startPc="268436009"/>
         <entry endPc="268436096" name="sensorInfo" stackId="1" startPc="268435965"/>
-        <entry endPc="268436517" name="maxSampleRate" stackId="1" startPc="268436267"/>
-        <entry endPc="268436517" name="options" stackId="2" startPc="268436267"/>
-        <entry endPc="268436851" name="dicAccel" stackId="2" startPc="268436623"/>
-        <entry arg="true" endPc="268436876" name="sensorData" stackId="1" startPc="268436519"/>
-        <entry endPc="268437079" name="dicHR" stackId="3" startPc="268436925"/>
-        <entry endPc="268437082" name="HR_samples" stackId="2" startPc="268436881"/>
-        <entry arg="true" endPc="268437083" name="sensorData" stackId="1" startPc="268436877"/>
-        <entry endPc="268437896" name="rez_cmp_local_text_7652605191" stackId="2" startPc="268437566"/>
-        <entry endPc="268437896" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437566"/>
-        <entry arg="true" endPc="268437897" name="dc" stackId="1" startPc="268437554"/>
+        <entry endPc="268436531" name="maxSampleRate" stackId="1" startPc="268436281"/>
+        <entry endPc="268436531" name="options" stackId="2" startPc="268436281"/>
+        <entry arg="true" endPc="268436941" name="sensorData" stackId="1" startPc="268436533"/>
+        <entry endPc="268437144" name="dicHR" stackId="3" startPc="268436990"/>
+        <entry endPc="268437147" name="HR_samples" stackId="2" startPc="268436946"/>
+        <entry arg="true" endPc="268437148" name="sensorData" stackId="1" startPc="268436942"/>
+        <entry endPc="268437982" name="rez_cmp_local_text_1515153294" stackId="2" startPc="268437652"/>
+        <entry endPc="268437982" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437652"/>
+        <entry arg="true" endPc="268437983" name="dc" stackId="1" startPc="268437640"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
@@ -263,20 +265,20 @@
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
         <dataEntry label="globals/BackgroundServiceDelegate" offset="198" parentId="globals" symbolId="BackgroundServiceDelegate" type="class"/>
-        <dataEntry label="globals/BackgroundTestMenuDelegate" offset="325" parentId="globals" symbolId="BackgroundTestMenuDelegate" type="class"/>
-        <dataEntry label="globals/BackgroundTestApp" offset="380" parentId="globals" symbolId="BackgroundTestApp" type="class"/>
-        <dataEntry label="globals/CommListener" offset="475" parentId="globals" symbolId="CommListener" type="class"/>
-        <dataEntry label="globals/SensorDelegate" offset="538" parentId="globals" symbolId="SensorDelegate" type="class"/>
-        <dataEntry label="globals/BackgroundTestView" offset="1705" parentId="globals" symbolId="BackgroundTestView" type="class"/>
-        <dataEntry label="globals/Rez" offset="1784" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1863" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="1910" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1949" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="1996" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="2027" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="2066" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="2097" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/BackgroundTestDelegate" offset="2160" parentId="globals" symbolId="BackgroundTestDelegate" type="class"/>
+        <dataEntry label="globals/BackgroundTestMenuDelegate" offset="333" parentId="globals" symbolId="BackgroundTestMenuDelegate" type="class"/>
+        <dataEntry label="globals/BackgroundTestApp" offset="388" parentId="globals" symbolId="BackgroundTestApp" type="class"/>
+        <dataEntry label="globals/CommListener" offset="483" parentId="globals" symbolId="CommListener" type="class"/>
+        <dataEntry label="globals/SensorDelegate" offset="546" parentId="globals" symbolId="SensorDelegate" type="class"/>
+        <dataEntry label="globals/BackgroundTestView" offset="1749" parentId="globals" symbolId="BackgroundTestView" type="class"/>
+        <dataEntry label="globals/Rez" offset="1828" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1907" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1954" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1993" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="2040" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="2071" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="2110" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2141" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/BackgroundTestDelegate" offset="2204" parentId="globals" symbolId="BackgroundTestDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="BackgroundTestApp" startPc="268435456">
@@ -299,30 +301,30 @@
         <functionEntry accessMode="public" endPc="268435713" name="canDoBackground" parent="BackgroundTestApp" startPc="268435688">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437162" name="&lt;init&gt;" parent="BackgroundTestApp" startPc="268437144">
+        <functionEntry accessMode="protected" endPc="268437248" name="&lt;init&gt;" parent="BackgroundTestApp" startPc="268437230">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437211" name="getApp" startPc="268437183">
+        <functionEntry accessMode="public" endPc="268437297" name="getApp" startPc="268437269">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437234" name="initialize" parent="BackgroundTestView" startPc="268437212">
+        <functionEntry accessMode="public" endPc="268437320" name="initialize" parent="BackgroundTestView" startPc="268437298">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437276" name="onLayout" parent="BackgroundTestView" startPc="268437235">
+        <functionEntry accessMode="public" endPc="268437362" name="onLayout" parent="BackgroundTestView" startPc="268437321">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437281" name="onShow" parent="BackgroundTestView" startPc="268437277">
+        <functionEntry accessMode="public" endPc="268437367" name="onShow" parent="BackgroundTestView" startPc="268437363">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437433" name="onUpdate" parent="BackgroundTestView" startPc="268437282">
+        <functionEntry accessMode="public" endPc="268437519" name="onUpdate" parent="BackgroundTestView" startPc="268437368">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437438" name="onHide" parent="BackgroundTestView" startPc="268437434">
+        <functionEntry accessMode="public" endPc="268437524" name="onHide" parent="BackgroundTestView" startPc="268437520">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438051" name="&lt;init&gt;" parent="BackgroundTestView" startPc="268438033">
+        <functionEntry accessMode="protected" endPc="268438137" name="&lt;init&gt;" parent="BackgroundTestView" startPc="268438119">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435736" name="initialize" parent="BackgroundTestMenuDelegate" startPc="268435714">
@@ -332,7 +334,7 @@
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437143" name="&lt;init&gt;" parent="BackgroundTestMenuDelegate" startPc="268437125">
+        <functionEntry accessMode="protected" endPc="268437229" name="&lt;init&gt;" parent="BackgroundTestMenuDelegate" startPc="268437211">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435960" name="getHeartRate" parent="SensorDelegate" startPc="268435845">
@@ -341,19 +343,19 @@
         <functionEntry accessMode="public" endPc="268436097" name="getAcceleration" parent="SensorDelegate" startPc="268435961">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437182" name="&lt;init&gt;" parent="SensorDelegate" startPc="268437182">
+        <functionEntry accessMode="protected" endPc="268437268" name="&lt;init&gt;" parent="SensorDelegate" startPc="268437268">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268436100" name="initialize" parent="SensorDelegate" startPc="268436098">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437461" name="initialize" parent="BackgroundTestDelegate" startPc="268437439">
+        <functionEntry accessMode="public" endPc="268437547" name="initialize" parent="BackgroundTestDelegate" startPc="268437525">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437553" name="onMenu" parent="BackgroundTestDelegate" startPc="268437462">
+        <functionEntry accessMode="public" endPc="268437639" name="onMenu" parent="BackgroundTestDelegate" startPc="268437548">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438119" name="&lt;init&gt;" parent="BackgroundTestDelegate" startPc="268438101">
+        <functionEntry accessMode="protected" endPc="268438205" name="&lt;init&gt;" parent="BackgroundTestDelegate" startPc="268438187">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268436127" name="initialize" parent="CommListener" startPc="268436101">
@@ -365,58 +367,58 @@
         <functionEntry accessMode="public" endPc="268436179" name="onError" parent="CommListener" startPc="268436154">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437181" name="&lt;init&gt;" parent="CommListener" startPc="268437163">
+        <functionEntry accessMode="protected" endPc="268437267" name="&lt;init&gt;" parent="CommListener" startPc="268437249">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436262" name="initialize" parent="BackgroundServiceDelegate" startPc="268436180">
+        <functionEntry accessMode="public" endPc="268436276" name="initialize" parent="BackgroundServiceDelegate" startPc="268436180">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436518" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268436263">
+        <functionEntry accessMode="public" endPc="268436532" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268436277">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436876" name="accelHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436519">
+        <functionEntry accessMode="public" endPc="268436941" name="accelHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436533">
             <param id="sensorData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437083" name="HRHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436877">
+        <functionEntry accessMode="public" endPc="268437148" name="HRHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436942">
             <param id="sensorData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437104" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268437084">
+        <functionEntry accessMode="public" endPc="268437190" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268437149">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437124" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268437106">
+        <functionEntry accessMode="protected" endPc="268437210" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268437192">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438076" name="&lt;init&gt;" parent="Drawables" startPc="268438076">
+        <functionEntry accessMode="protected" endPc="268438162" name="&lt;init&gt;" parent="Drawables" startPc="268438162">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438097" name="&lt;init&gt;" parent="Fonts" startPc="268438097">
+        <functionEntry accessMode="protected" endPc="268438183" name="&lt;init&gt;" parent="Fonts" startPc="268438183">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438099" name="&lt;init&gt;" parent="JsonData" startPc="268438099">
+        <functionEntry accessMode="protected" endPc="268438185" name="&lt;init&gt;" parent="JsonData" startPc="268438185">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437897" name="MainLayout" parent="Layouts" startPc="268437554">
+        <functionEntry accessMode="public" endPc="268437983" name="MainLayout" parent="Layouts" startPc="268437640">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438098" name="&lt;init&gt;" parent="Layouts" startPc="268438098">
+        <functionEntry accessMode="protected" endPc="268438184" name="&lt;init&gt;" parent="Layouts" startPc="268438184">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438032" name="initialize" parent="MainMenu" startPc="268437898">
+        <functionEntry accessMode="public" endPc="268438118" name="initialize" parent="MainMenu" startPc="268437984">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438096" name="&lt;init&gt;" parent="MainMenu" startPc="268438078">
+        <functionEntry accessMode="protected" endPc="268438182" name="&lt;init&gt;" parent="MainMenu" startPc="268438164">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438077" name="&lt;init&gt;" parent="Menus" startPc="268438077">
+        <functionEntry accessMode="protected" endPc="268438163" name="&lt;init&gt;" parent="Menus" startPc="268438163">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438100" name="&lt;init&gt;" parent="Strings" startPc="268438100">
+        <functionEntry accessMode="protected" endPc="268438186" name="&lt;init&gt;" parent="Strings" startPc="268438186">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438075" name="&lt;init&gt;" parent="Rez" startPc="268438052">
+        <functionEntry accessMode="protected" endPc="268438161" name="&lt;init&gt;" parent="Rez" startPc="268438138">
             <documentation/>
         </functionEntry>
     </functions>
