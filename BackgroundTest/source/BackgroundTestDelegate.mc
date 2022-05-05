@@ -145,6 +145,39 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         
     }
 
+    public function SensorDataCallback(sensorData as SensorData) as Void{
+        _samplesX = sensorData.accelerometerData.x;
+        _samplesY = sensorData.accelerometerData.y;
+        _samplesZ = sensorData.accelerometerData.z;
+
+        var HR_samples = sensorData.heartRateData;
+
+        if(sensorData.accelerometerData != null && sensorData.heartRateData != null){
+            var dicSensorDatas = {};
+
+            dicSensorDatas.put(timeCount + "X", _samplesX);
+            dicSensorDatas.put(timeCount + "Y", _samplesY);
+            dicSensorDatas.put(timeCount + "Z", _samplesZ);        
+            dicSensorDatas.put(timeCount, HR_samples);
+
+            timeCount += periodSetting;
+
+            //for debugging
+            System.println(dicSensorDatas);
+
+            if(System.getDeviceSettings().phoneConnected){
+                Communications.transmit(dicSensorDatas, "null", listener);
+            } else {
+                System.println("    *** fail to send(not connected) ***");
+            }
+
+        } else {
+            //for debugging
+            System.println("No Sensor Data!");
+        }
+
+    }
+
     public function disableSensorDataListener() as Void {
         System.println("call disableSensorDataListener()");
         Sensor.unregisterSensorDataListener();
