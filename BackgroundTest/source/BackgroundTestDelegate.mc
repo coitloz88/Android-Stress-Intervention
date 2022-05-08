@@ -58,7 +58,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         System.println("call initialize()");
         periodSetting = 4;
         timeCount = 0 + periodSetting;
-        dicAccel = {};
     }
 
     function onTemporalEvent() {
