@@ -21,7 +21,14 @@ class BgGetMessageView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+
+        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
+        dc.clear();
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        
+        dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
+        
+        // View.onUpdate(dc);
     }
 
     // Called when this View is removed from the screen. Save the
