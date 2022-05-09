@@ -57,6 +57,11 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         listener = new CommListener();
 
+        if(hasDirectMessagingSupport){
+            Background.requestApplicationWake("launch app?");
+            Background.exit(null);
+        }
+
     }
 
 

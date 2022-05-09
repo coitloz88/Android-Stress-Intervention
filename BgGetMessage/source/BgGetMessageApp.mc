@@ -74,6 +74,17 @@ class BgGetMessageApp extends Application.AppBase {
         // WatchUi.requestUpdate();
     }
 
+    function onPhone(msg){
+        if(crashOnMessage == true){
+            msg.length();
+        }
+
+        receivedString = msg.data.toString();
+        page = 1;
+
+        // WatchUi.requestUpdate();
+    }
+
 }
 
 function getApp() as BgGetMessageApp {
