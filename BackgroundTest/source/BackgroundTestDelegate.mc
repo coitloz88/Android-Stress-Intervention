@@ -72,7 +72,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             // var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
             var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => { :enabled=> true}};
             try {
-                Sensor.registerSensorDataListener(method(:accelHistoryCallback), options);
+                Sensor.registerSensorDataListener(method(:SensorDataCallback), options);
                 // Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
             }
             catch(e) {
