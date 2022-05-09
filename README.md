@@ -1,9 +1,9 @@
-<center>
-
+<div align = "center">
+   
 # Garmin-Background-Test
 Garmin Background Collecting data &amp; Communications(with Android) Test Project
 
-</center>
+</div>
 
 
 <br>
