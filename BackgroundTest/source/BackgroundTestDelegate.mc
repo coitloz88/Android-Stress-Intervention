@@ -56,7 +56,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-        periodSetting = 4;
+        periodSetting = 3; //1~4 (max 4)
         timeCount = 0 + periodSetting;
     }
 
@@ -70,7 +70,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         // if(System.getDeviceSettings().phoneConnected){
             // initialize accelerometer to request the maximum amount of data possible
             // var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
-            var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => { :enabled=> true}};
+            var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
             try {
                 Sensor.registerSensorDataListener(method(:SensorDataCallback), options);
                 // Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
@@ -127,7 +127,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         if(sensorData.heartRateData != null){
             var dicHR = {};
 
-            dicHR.put(timeCount, HR_samples);
+            dicHR.put(timeCount, HR_samples.heartBeatIntervals);
 
             timeCount += periodSetting;
 
@@ -157,15 +157,16 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             dicSensorDatas.put(timeCount + "X", _samplesX);
             dicSensorDatas.put(timeCount + "Y", _samplesY);
             dicSensorDatas.put(timeCount + "Z", _samplesZ);        
-            dicSensorDatas.put(timeCount, HR_samples);
+            dicSensorDatas.put(timeCount, HR_samples.heartBeatIntervals);
 
             timeCount += periodSetting;
 
             //for debugging
-            System.println(dicSensorDatas);
+            System.println("sensor data:" + dicSensorDatas);
 
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dicSensorDatas, "null", listener);
+                // System.println("    *** callback done ***");
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
