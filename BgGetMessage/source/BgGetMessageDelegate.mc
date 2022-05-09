@@ -6,8 +6,6 @@ import Toybox.System;
 import Toybox.Communications;
 import Toybox.Sensor;
 
-private var TAG = "BgGetMessageDelegate.mc: ";
-
 class BgGetMessageDelegate extends WatchUi.BehaviorDelegate {
 
     function initialize() {
@@ -48,12 +46,12 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        System.println(TAG + "call initialize()");
+        System.println("call initialize()");
     }
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
-        System.println(TAG + "call onTemporalEvent()");
+        System.println("call onTemporalEvent()");
 
         listener = new CommListener();
 

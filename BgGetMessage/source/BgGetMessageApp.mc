@@ -7,8 +7,6 @@ import Toybox.Background;
 import Toybox.System;
 import Toybox.Time;
 
-private var TAG = "BgGetMessageApp.mc: ";
-
 var page = 0;
 var receivedString;
 
@@ -47,7 +45,7 @@ class BgGetMessageApp extends Application.AppBase {
         if(canDoBackground()){
             Background.registerForTemporalEvent(new Time.Duration(5 * 60));
         } else {
-            System.println(TAG + "Background Process Not Available");
+            System.println("Background Process Not Available");
         }
         return [ new BgGetMessageView(), new BgGetMessageDelegate() ] as Array<Views or InputDelegates>;
     }
