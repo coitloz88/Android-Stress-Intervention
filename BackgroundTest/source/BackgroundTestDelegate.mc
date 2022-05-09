@@ -67,22 +67,16 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         var maxSampleRate = Sensor.getMaxSampleRate();
         listener = new CommListener();
 
-        // if(System.getDeviceSettings().phoneConnected){
-            // initialize accelerometer to request the maximum amount of data possible
-            // var options = {:period => periodSetting, :sampleRate => maxSampleRate, :enableAccelerometer => true};
-            var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
-            try {
-                Sensor.registerSensorDataListener(method(:SensorDataCallback), options);
-                // Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
-            }
-            catch(e) {
-                System.println(" *** " + e.getErrorMessage());
-                disableSensorDataListener(); 
-            }
-            // Background.exit(null);
-        // } else {
-        //     Background.exit(null);
-        // }
+        // initialize accelerometer & heart rate intervals to request the maximum amount of data possible    
+        var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
+        try {
+            Sensor.registerSensorDataListener(method(:SensorDataCallback), options);
+        }
+        catch(e) {
+            System.println(" *** " + e.getErrorMessage());
+            disableSensorDataListener(); 
+        }
+
     }
 
     public function accelHistoryCallback(sensorData as SensorData) as Void {
@@ -160,6 +154,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             dicSensorDatas.put(timeCount, HR_samples.heartBeatIntervals);
 
             timeCount += periodSetting;
+            System.println("timeCount: " + timeCount);
 
             //for debugging
             System.println("sensor data:" + dicSensorDatas);
@@ -170,6 +165,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
+
 
         } else {
             //for debugging
