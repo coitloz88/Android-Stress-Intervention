@@ -40,12 +40,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // a service and handle the response with a callback function
     // within this delegate.
 
-    // var timerCount;
-    // var myTimer;
-
-    // var maxTime;
-    // var timerUnit;
-
     private var _samplesX = null;
     private var _samplesY = null;
     private var _samplesZ = null;
@@ -84,9 +78,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         _samplesY = sensorData.accelerometerData.y;
         _samplesZ = sensorData.accelerometerData.z;
 
-        // System.println("Raw samples, X axis: " + _samplesX);
-        // System.println("Raw samples, Y axis: " + _samplesY);
-        // System.println("Raw samples, Z axis: " + _samplesZ);
         System.println("=========================");
 
         if(sensorData.accelerometerData != null){
@@ -113,9 +104,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     public function HRHistoryCallback(sensorData as SensorData) as Void {
         var HR_samples = sensorData.heartRateData;
 
-        // System.println("Raw samples, X axis: " + _samplesX);
-        // System.println("Raw samples, Y axis: " + _samplesY);
-        // System.println("Raw samples, Z axis: " + _samplesZ);
         System.println("=========================");
 
         if(sensorData.heartRateData != null){
@@ -138,7 +126,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         
     }
 
-    public function SensorDataCallback(sensorData as SensorData) as Void{
+    public function SensorDataCallback(sensorData as SensorData) as Void {
         _samplesX = sensorData.accelerometerData.x;
         _samplesY = sensorData.accelerometerData.y;
         _samplesZ = sensorData.accelerometerData.z;
@@ -161,7 +149,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dicSensorDatas, "null", listener);
-                // System.println("    *** callback done ***");
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
@@ -169,7 +156,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         } else {
             //for debugging
-            System.println("No Sensor Data!");
+            System.println("No Sensor Data Object!");
         }
 
     }
