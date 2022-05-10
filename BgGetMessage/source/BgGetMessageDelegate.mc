@@ -56,8 +56,11 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         listener = new CommListener();
 
         if(hasDirectMessagingSupport){
+            hasDirectMessagingSupport = false;
             Background.requestApplicationWake("launch app?");
             Background.exit(null);
+        } else {
+            System.println("No message from phone");
         }
 
     }
