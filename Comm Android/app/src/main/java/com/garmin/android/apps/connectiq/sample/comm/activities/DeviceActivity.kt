@@ -27,7 +27,7 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
-private const val COMM_WATCH_ID = "4cfb48fc-3452-4b01-b079-fd7f76b589ae"
+private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
 // TODO Add a valid store app id.
 private const val STORE_APP_ID = ""
@@ -51,7 +51,7 @@ class DeviceActivity : Activity() {
 
     private var appIsOpen = false
     private val openAppListener = ConnectIQ.IQOpenApplicationListener { device, app, status ->
-        Toast.makeText(applicationContext, "App Status: " + status.name, Toast.LENGTH_SHORT).show()
+        Toast.makeText(applicationContext, "App Status: " + status.name, Toast.LENGTH_LONG).show()
 
         if (status == ConnectIQ.IQOpenApplicationStatus.APP_IS_ALREADY_RUNNING) {
             appIsOpen = true
@@ -69,6 +69,8 @@ class DeviceActivity : Activity() {
         device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
         myApp = IQApp(COMM_WATCH_ID)
         appIsOpen = false
+
+        Log.d(TAG, "연결된 Device: " + device.friendlyName)
 
         val deviceNameView = findViewById<TextView>(R.id.devicename)
         deviceStatusView = findViewById(R.id.devicestatus)
@@ -107,6 +109,7 @@ class DeviceActivity : Activity() {
         try {
             connectIQ.openApplication(device, myApp, openAppListener)
         } catch (ex: Exception) {
+            Log.e(TAG, ex.toString());
         }
     }
 
@@ -161,6 +164,7 @@ class DeviceActivity : Activity() {
                     builder.append("Received an empty message from the application")
                 }
 
+                Log.d(TAG, builder.toString())
                 AlertDialog.Builder(this@DeviceActivity)
                     .setTitle(R.string.received_message)
                     .setMessage(builder.toString())
