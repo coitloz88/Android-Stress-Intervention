@@ -1,5 +1,17 @@
-## import monkeybrains-sdk-release.aar 
-### Error
+<div align = "center">
+
+# Connecting Android App to Garmin Watch device
+
+나를 위한 kotlin 문법 정리: [공식 사이트](https://kotlinlang.org/docs/basic-syntax.html)
+
+</div>
+
+<details>
+<summary>Previous process</summary>
+<div markdown = "1">
+
+## How to import monkeybrains-sdk-release.aar 
+### Errors
 * Error 1
 ```
 Execution failed for task
@@ -23,12 +35,6 @@ classpath 설정, sdk version, 등등 여러가지를 시도해보았는데 다�
 implementation(files("monkeybrains-sdk-release.aar가 있는 절대 경로(로컬 경로)"))
 ```
 
----
-## Now...
-* Comm Android: [ArrayTransmit](https://github.com/coitloz88/Garmin-Project/tree/master/ArrayTransmit) 앱에서 `transmit`하는 정보를 받아옴
-
----
-
 ## TODO
 1. 안드로이드에서 Garmin Watch로 메시지 보내는 기능 및 화면은 없어도 괜찮을 듯
 2. 대화상자에서 Watch에서 받은 메시지를 표시하는 것이 아니라 다른 activity가 실행되며 받은 메시지를 보여주기  
@@ -38,3 +44,22 @@ implementation(files("monkeybrains-sdk-release.aar가 있는 절대 경로(로�
     (기존 메시지 += 새로운 메시지)
     ```
 3. 프로젝트 쪼개기... 
+
+</div>
+</details>
+
+
+<details>
+<summary>Current process</summary>
+<div markdown = "1">
+
+* `DeviceActivity.kt`의 `COMM_WATCH_ID`을 바꿔서 내가 만든 Garmin Watch 앱과 연결 가능함
+
+* `listenByMyAppEvents()`에서
+    1. string을 파싱하는 함수(`parseSensorData()`)가 호출되므로, 해당 `parseSensorData()`에서 센서 데이터 string을 key value에 따라 [파싱](https://hanyeop.tistory.com/304)한 후 리턴하고, 
+    2. `isHighHeartRateInterval()`에 파싱한 데이터를 넘겨주면 해당 함수에서 heartRateInterval이 일정치를 넘었는지 판단한 뒤,
+    3. 필요한 경우 `giveFeedBack()`에서 워치 앱을 열고 앱이 foreground로 넘어오면 피드백 메시지를 보냄
+
+</div>
+</details>
+
