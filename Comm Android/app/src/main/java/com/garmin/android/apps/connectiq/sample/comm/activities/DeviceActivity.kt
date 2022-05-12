@@ -218,6 +218,7 @@ class DeviceActivity : Activity() {
 
     private fun onItemClick(message: Any) {
         try {
+            openMyApp()
             connectIQ.sendMessage(device, myApp, message) { device, app, status ->
                 Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
             }
@@ -255,6 +256,8 @@ class DeviceActivity : Activity() {
     private fun giveFeedBack(){
 
         // TODO: feedback 문구 설정
+
+        Log.d(TAG, "return feedback to Garmin Watch app")
 
         openMyApp() // 앱을 foreground로 가져옴
 
