@@ -86,7 +86,13 @@ Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보
 <br>
 
 <br>
-
+   
+   
+# Branch
+`BgCommMsg`: 모바일 앱에서 메시지를 전송하는 경우 이를 받을 수 있는 앱
+   - test 필요
+   - [Comm Watch](https://github.com/coitloz88/connectiq-android-sdk/tree/Sample/Comm%20Watch)의 foreground 동작을 가져와도 될듯
+   
 # References
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html#registerForTemporalEvent-instance_function>
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/System/ServiceDelegate.html>
