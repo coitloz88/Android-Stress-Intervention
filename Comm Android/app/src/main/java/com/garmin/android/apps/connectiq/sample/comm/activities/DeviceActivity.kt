@@ -171,10 +171,11 @@ class DeviceActivity : Activity() {
                     .setPositiveButton(android.R.string.ok, null)
                     .create()
                     .show()
-                
-                // TODO: 위에서 만들어진 string 파싱 후(parseSensorData)
-                // isHighHeartRateInterval(파싱한 HeartRateInterval값) 호출
-                // 해당 함수에서 워치 앱을 실행할지 안할지 판단
+                try {
+                    giveFeedBack(builder.toString())
+                } catch (e: Exception) {
+                    Log.e(TAG, e.toString())
+                }
             }
         } catch (e: InvalidStateException) {
             Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
@@ -233,49 +234,53 @@ class DeviceActivity : Activity() {
         }
     }
 
-    private fun parseSensorData(sensorData: Any){
-        // TODO: 센서 데이터 파싱 여기서하고 리턴하기!
-        // 필요하면 함수 인자 변경
-    }
-
-    private fun isHighHeartRateInterval(heartRateIntervals: Array<Int>){
-        // heartRateInterval은 워치 앱으로부터 넘어온 string을 파싱해서 얻어올 수 있음
-
-        val maxHeartRateInterval = 500 // 설정해주기
-        // var isOver = false
-
-        for(index in heartRateIntervals){
-            if(index >= maxHeartRateInterval){
-                // isOver = true
-                giveFeedBack()
-                break
-            }
-        }
-        
-        // if(isOver) giveFeedBack()
-    }
-
-    private fun giveFeedBack(){
-
-        // TODO: feedback 문구 설정
-
-        Log.d(TAG, "return feedback to Garmin Watch app")
-
-        openMyApp() // 앱을 foreground로 가져옴
-
+    private fun parseSensorData(rawDatas: String): List<Int> {
         try {
-            connectIQ.sendMessage(device, myApp, "Take a Breath.") { device, app, status ->
-                Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
-            }
-        } catch (e: InvalidStateException) {
-            Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
-        } catch (e: ServiceUnavailableException) {
-            Toast.makeText(
-                this,
-                "ConnectIQ service is unavailable.   Is Garmin Connect Mobile installed and running?",
-                Toast.LENGTH_LONG
-            ).show()
+            val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).split(",").map{it.toInt()}
+            Log.d(TAG, "Parsed Sensor Data Values: $sensorDataValues")
+            return sensorDataValues
+        } catch (e: IndexOutOfBoundsException) {
+            Log.e(TAG, e.toString())
+        } catch (e: NumberFormatException){
+            Log.e(TAG, e.toString())
         }
 
+        return listOf(0)
+    }
+
+    private fun isHighHeartBeatInterval(heartBeatIntervals: List<Int>): Boolean {
+        val maxHeartBeatInterval = 500 // TODO: 설정해주기
+
+        for(value in heartBeatIntervals){
+            if(value >= maxHeartBeatInterval){
+                return true
+            }
+        }
+        return false
+    }
+
+    private fun giveFeedBack(rawDatas: String){
+        if(isHighHeartBeatInterval(parseSensorData(rawDatas))){
+            Log.d(TAG, "return feedback to Garmin Watch app")
+
+            openMyApp() // 앱을 foreground로 가져옴
+
+            try {
+                connectIQ.sendMessage(device, myApp, "Take a Breath.") { device, app, status ->
+                    Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
+                }
+            } catch (e: InvalidStateException) {
+                Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
+            } catch (e: ServiceUnavailableException) {
+                Toast.makeText(
+                    this,
+                    "ConnectIQ service is unavailable.   Is Garmin Connect Mobile installed and running?",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+
+        } else {
+            Log.d(TAG, "No feedback")
+        }
     }
 }
