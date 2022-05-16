@@ -242,15 +242,17 @@ class DeviceActivity : Activity() {
         // heartRateInterval은 워치 앱으로부터 넘어온 string을 파싱해서 얻어올 수 있음
 
         val maxHeartRateInterval = 500 // 설정해주기
-        var isOver = false
+        // var isOver = false
 
         for(index in heartRateIntervals){
             if(index >= maxHeartRateInterval){
-                isOver = true
+                // isOver = true
+                giveFeedBack()
+                break
             }
         }
         
-        if(isOver) giveFeedBack()
+        // if(isOver) giveFeedBack()
     }
 
     private fun giveFeedBack(){

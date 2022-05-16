@@ -60,7 +60,9 @@ implementation(files("monkeybrains-sdk-release.aar가 있는 절대 경로(로�
     2. `isHighHeartRateInterval()`에 파싱한 데이터를 넘겨주면 해당 함수에서 heartRateInterval이 일정치를 넘었는지 판단한 뒤,
     3. 필요한 경우 `giveFeedBack()`에서 워치 앱을 열고 앱이 foreground로 넘어오면 피드백 메시지를 보냄
 
-* 안드로이드 앱에서 메시지를 보내기 전 워치 앱을 열고 메시지를 보내는 것까지 테스트
+* 안드로이드 앱에서 메시지를 보내기 전 워치 앱을 열고 메시지를 보내는 것까지 테스트 완료
+
+* 가민 워치에서 Accel data는 보내지 말고, heart rate interval만 보내고 해당 데이터를 파싱해서 `ArrayList`에 넣는 방법도 고려
    
 </div>
 </details>
