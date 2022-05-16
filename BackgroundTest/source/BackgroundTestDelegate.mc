@@ -64,7 +64,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         // initialize accelerometer & heart rate intervals to request the maximum amount of data possible    
         var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
         try {
-            Sensor.registerSensorDataListener(method(:SensorDataCallback), options);
+            Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
         }
         catch(e) {
             System.println(" *** " + e.getErrorMessage());
