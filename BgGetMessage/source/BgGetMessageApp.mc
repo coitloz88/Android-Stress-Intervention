@@ -9,9 +9,8 @@ import Toybox.Time;
 
 var page = 0;
 var receivedString;
-
-var crashOnMessage = false;
-var hasDirectMessagingSupport = false;
+var phoneMethod;
+var hasDirectMessagingSupport = true;
 
 (:background)
 class BgGetMessageApp extends Application.AppBase {
@@ -19,12 +18,9 @@ class BgGetMessageApp extends Application.AppBase {
     function initialize() {
         AppBase.initialize();
 
-        if(Communications has :registerForPhoneAppMessages) {
-            Communications.registerForPhoneAppMessages(method(:onPhone));
-            System.println("registered for phone app messages");
-
-        } else if(Communications has :setMailboxListener) {
-            Communications.setMailboxListener(method(:onMail));
+        phoneMethod = method(:onPhone);
+        if(Communications has :registerForPhoneAppMessage){
+            Communications.registerForPhoneAppMessages(phoneMethod);
         } else {
             hasDirectMessagingSupport = false;
         }
@@ -56,28 +52,8 @@ class BgGetMessageApp extends Application.AppBase {
         return (Toybox.System has :ServiceDelegate);
     }
 
-    function onMail(mailIter){
-        var mail;
-
-        mail = mailIter.next();
-
-        if(mail != null) {
-            receivedString = mail.toString();
-            page = 1;
-        }
-
-        Communications.emptyMailbox();
-        // WatchUi.requestUpdate();
-    }
-
     function onPhone(msg){
-
-
         System.println("call onPhone()");
-
-        if(crashOnMessage == true){
-            msg.length();
-        }
 
         hasDirectMessagingSupport = true;
         receivedString = msg.data.toString();
@@ -85,7 +61,7 @@ class BgGetMessageApp extends Application.AppBase {
 
         System.println("Received message: " + receivedString);
 
-        // WatchUi.requestUpdate();
+        WatchUi.requestUpdate();
     }
 
 }

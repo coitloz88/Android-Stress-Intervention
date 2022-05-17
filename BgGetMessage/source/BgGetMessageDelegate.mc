@@ -47,23 +47,24 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
+
+
     }
 
-    function onTemporalEvent() {
+    function onTemporalEvent(){
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
 
-        listener = new CommListener();
-
-        if(hasDirectMessagingSupport){
-            hasDirectMessagingSupport = false;
-            Background.requestApplicationWake("launch app?");
-            Background.exit(null);
-        } else {
-            System.println("No message from phone");
-        }
-
+        // TODO: write something to do in background in this block
+        
+        // if(Communications has :registerForPhoneAppMessages) {
+        //     Communications.registerForPhoneAppMessages(method(:onPhone));
+        // } else {
+        //     hasDirectMessagingSupport = false;
+        //     System.println("No registerForPhoneAppMessages");
+        // }
     }
+
 
 
 }
