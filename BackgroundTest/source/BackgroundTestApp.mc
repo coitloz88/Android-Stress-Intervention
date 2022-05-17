@@ -7,6 +7,14 @@ import Toybox.Background;
 import Toybox.System;
 import Toybox.Time;
 
+var page = 0;
+var strings = ["","","","",""];
+var stringsSize = 5;
+var mailMethod;
+var phoneMethod;
+var crashOnMessage = false;
+var hasDirectMessagingSupport = true;
+
 (:background)
 class BackgroundTestApp extends Application.AppBase {
 
@@ -14,6 +22,12 @@ class BackgroundTestApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
+
+        if(Communications has :registerForPhoneAppMessages) {
+            Communications.registerForPhoneAppMessages(method(:onPhone));
+        } else {
+            hasDirectMessagingSupport = false;
+        }
     }
 
     // onStart() is called on application start up
@@ -40,6 +54,22 @@ class BackgroundTestApp extends Application.AppBase {
 
     function canDoBackground(){
         return (Toybox.System has :ServiceDelegate);
+    }
+
+    function onPhone(msg) {
+        var i;
+
+        if((crashOnMessage == true) && msg.data.equals("Hi")) {
+            msg.length(); // Generates a symbol not found error in the VM
+        }
+
+        for(i = (stringsSize - 1); i > 0; i -= 1) {
+            strings[i] = strings[i-1];
+        }
+        strings[0] = msg.data.toString();
+        page = 1;
+
+        WatchUi.requestUpdate();
     }
 
 }

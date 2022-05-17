@@ -1,6 +1,9 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 
+import Toybox.Communications;
+import Toybox.System;
+
 class BackgroundTestView extends WatchUi.View {
 
     function initialize() {
@@ -20,12 +23,26 @@ class BackgroundTestView extends WatchUi.View {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Call the parent onUpdate function to redraw the layout
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
-
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(dc.getWidth() / 2, 40,  Graphics.FONT_MEDIUM, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
+        
+        if(hasDirectMessagingSupport) {
+            if(page == 0) {
+                dc.drawText(dc.getWidth() / 2, 80,  Graphics.FONT_MEDIUM, "Waiting...", Graphics.TEXT_JUSTIFY_CENTER);
+            } else {
+                var i;
+                var y = 50;
+
+                dc.drawText(dc.getWidth() / 2, 20,  Graphics.FONT_MEDIUM, "Feedback:", Graphics.TEXT_JUSTIFY_CENTER);
+                for(i = 0; i < stringsSize; i += 1) {
+                    dc.drawText(dc.getWidth() / 2, y,  Graphics.FONT_SMALL, strings[i], Graphics.TEXT_JUSTIFY_CENTER);
+                    y += 20;
+                }
+             }
+        } else {
+            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 3, Graphics.FONT_MEDIUM, "Direct Messaging API\nNot Supported", Graphics.TEXT_JUSTIFY_CENTER);
+        }
     }
 
     // Called when this View is removed from the screen. Save the
