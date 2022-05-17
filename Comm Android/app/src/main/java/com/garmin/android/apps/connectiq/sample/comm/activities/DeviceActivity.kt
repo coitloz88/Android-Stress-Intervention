@@ -27,7 +27,7 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
-private const val COMM_WATCH_ID = "a3421feed289106a538cb9547ab12095"
+private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
 // TODO Add a valid store app id.
 private const val STORE_APP_ID = ""
@@ -164,15 +164,17 @@ class DeviceActivity : Activity() {
                     builder.append("Received an empty message from the application")
                 }
 
-                Log.d(TAG, builder.toString())
+                Log.d(TAG, "받은 데이터 메시지" + builder.toString())
                 AlertDialog.Builder(this@DeviceActivity)
                     .setTitle(R.string.received_message)
                     .setMessage(builder.toString())
                     .setPositiveButton(android.R.string.ok, null)
                     .create()
                     .show()
+
                 try {
                     giveFeedBack(builder.toString())
+
                 } catch (e: Exception) {
                     Log.e(TAG, e.toString())
                 }
@@ -219,7 +221,6 @@ class DeviceActivity : Activity() {
 
     private fun onItemClick(message: Any) {
         try {
-            openMyApp()
             connectIQ.sendMessage(device, myApp, message) { device, app, status ->
                 Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
             }
@@ -236,7 +237,7 @@ class DeviceActivity : Activity() {
 
     private fun parseSensorData(rawDatas: String): List<Int> {
         try {
-            val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).split(",").map{it.toInt()}
+            val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).replace(" ", "").split(",").map{it.toInt()}
             Log.d(TAG, "Parsed Sensor Data Values: $sensorDataValues")
             return sensorDataValues
         } catch (e: IndexOutOfBoundsException) {
@@ -249,7 +250,7 @@ class DeviceActivity : Activity() {
     }
 
     private fun isHighHeartBeatInterval(heartBeatIntervals: List<Int>): Boolean {
-        val maxHeartBeatInterval = 500 // TODO: 설정해주기
+        val maxHeartBeatInterval = 610 // TODO: 설정해주기
 
         for(value in heartBeatIntervals){
             if(value >= maxHeartBeatInterval){
@@ -283,4 +284,5 @@ class DeviceActivity : Activity() {
             Log.d(TAG, "No feedback")
         }
     }
+
 }
