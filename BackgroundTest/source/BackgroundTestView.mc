@@ -25,7 +25,7 @@ class BackgroundTestView extends WatchUi.View {
 
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
+        dc.drawText(dc.getWidth() / 2, 40,  Graphics.FONT_MEDIUM, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Called when this View is removed from the screen. Save the

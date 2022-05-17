@@ -50,7 +50,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-        periodSetting = 3; //1~4 (max 4)
+        periodSetting = 4; //1~4 (max 4)
         timeCount = 0 + periodSetting;
     }
 
@@ -160,6 +160,31 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         }
 
     }
+
+    // public function testCallback(sensorData as SensorData) as Void {
+
+    //     System.println("call testCallback()");
+
+    //     var testDictionary = {};
+    //     var array1 = [300, 400, 650, 600];
+    //     var array2 = [100, 200, 300, 400];
+
+    //     if(timeCount % 12 == 0){
+    //         testDictionary.put(timeCount, array1);
+    //     } else {
+    //         testDictionary.put(timeCount, array2);
+    //     }
+
+    //     timeCount += periodSetting;
+
+    //     System.println(testDictionary);
+
+    //     if(System.getDeviceSettings().phoneConnected){
+    //         Communications.transmit(testDictionary, "null", listener);
+    //     } else {
+    //         System.println("    *** fail to send(not connected) ***");
+    //     }
+    // }
 
     public function disableSensorDataListener() as Void {
         System.println("call disableSensorDataListener()");
