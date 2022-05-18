@@ -2,28 +2,22 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-import Toybox.Communications;
 import Toybox.Background;
 import Toybox.System;
 import Toybox.Time;
 
-var page = 0;
-var receivedString;
-var phoneMethod;
-var hasDirectMessagingSupport = true;
+var IBI_data;
+
+//그런데 어차피 foreground로 앱이 켜지는 거라면 foreground에서 다시 데이터를 수집하면 되니까 굳이 background data를 넘길 필요는 없지 않나?
 
 (:background)
 class BgGetMessageApp extends Application.AppBase {
+    enum {
+        BACKGROUND_REPONSE_CODE
+    }
 
     function initialize() {
         AppBase.initialize();
-
-        phoneMethod = method(:onPhone);
-        if(Communications has :registerForPhoneAppMessage){
-            Communications.registerForPhoneAppMessages(phoneMethod);
-        } else {
-            hasDirectMessagingSupport = false;
-        }
     }
 
     // onStart() is called on application start up
@@ -52,18 +46,13 @@ class BgGetMessageApp extends Application.AppBase {
         return (Toybox.System has :ServiceDelegate);
     }
 
-    function onPhone(msg){
-        System.println("call onPhone()");
+    function onBackgroundData(data) {
 
-        hasDirectMessagingSupport = true;
-        receivedString = msg.data.toString();
-        page = 1;
-
-        System.println("Received message: " + receivedString);
-
-        WatchUi.requestUpdate();
+        if(data[BACKGROUND_REPONSE_CODE] != null){
+            Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
+            System.println("BACKGROUND_REPONSE_CODE: " + data[BACKGROUND_REPONSE_CODE]);      
+        } 
     }
-
 }
 
 function getApp() as BgGetMessageApp {

@@ -80,18 +80,16 @@ Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보
 * Emulator에서 `registerSensorDataListener`의 콜백함수를 주기적으로 호출해서 `SensorData`가 측정됨
 * 콜백함수 내에서 `Transmit()`을 호출, 콜백 함수 호출 주기로 데이터 전송
 
+<br>
+
+* 휴대폰에서 피드백이 필요하다고 판단하는 경우 워치 앱이 실행되게 되고, 피드백 메시지가 foreground 화면에 출력됨
+
 </div>
 </details>
 
 <br>
 
 <br>
-   
-   
-# Branch
-`BgCommMsg`: 모바일 앱에서 메시지를 전송하는 경우 이를 받을 수 있는 앱
-   - test 필요
-   - [Comm Watch](https://github.com/coitloz88/connectiq-android-sdk/tree/Sample/Comm%20Watch)의 foreground 동작을 가져와도 될듯
    
 # References
 * <https://developer.garmin.com/connect-iq/api-docs/Toybox/Background.html#registerForTemporalEvent-instance_function>

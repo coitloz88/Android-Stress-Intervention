@@ -25,18 +25,6 @@ class BgGetMessageView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        
-        
-        if(hasDirectMessagingSupport) {
-            if(page == 0){
-                dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, "Running...", Graphics.TEXT_JUSTIFY_CENTER);
-            } else {
-                // get message from phone
-                dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, receivedString, Graphics.TEXT_JUSTIFY_CENTER);
-            }
-        } else {
-            dc.drawText(dc.getWidth() / 2, 60, Graphics.FONT_SMALL, "Direct Messaging API\nNot Supported", Graphics.TEXT_JUSTIFY_CENTER);
-        }
 
         // View.onUpdate(dc);
     }

@@ -3,7 +3,6 @@ import Toybox.WatchUi;
 
 import Toybox.Background;
 import Toybox.System;
-import Toybox.Communications;
 import Toybox.Sensor;
 
 class BgGetMessageDelegate extends WatchUi.BehaviorDelegate {
@@ -20,51 +19,75 @@ class BgGetMessageDelegate extends WatchUi.BehaviorDelegate {
 }
 
 (:background)
-class CommListener extends Communications.ConnectionListener {
-    function initialize() {
-        Communications.ConnectionListener.initialize();
-    }
-
-    function onComplete() {
-        System.println("Transmit Complete");
-    }
-
-    function onError() {
-        System.println("Transmit Failed");
-    }
-
-}
-
-
-(:background)
 public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // When a scheduled background event triggers, make a request to
     // a service and handle the response with a callback function
     // within this delegate.
 
-    private var listener;
+    var max_IBI;
+    var periodSetting;
 
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-
-
+        max_IBI = 500;
+        periodSetting = 3; // 1 ~ 4s
     }
 
     function onTemporalEvent(){
         // A callback method that is triggered in the background when time-based events occur.
         System.println("call onTemporalEvent()");
 
-        // TODO: write something to do in background in this block
-        
-        // if(Communications has :registerForPhoneAppMessages) {
-        //     Communications.registerForPhoneAppMessages(method(:onPhone));
-        // } else {
-        //     hasDirectMessagingSupport = false;
-        //     System.println("No registerForPhoneAppMessages");
-        // }
+        var maxSampleRate = Sensor.getMaxSampleRate();
+        var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
+        try {
+            Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
+        }
+        catch(e) {
+            System.println(" *** " + e.getErrorMessage());
+            disableSensorDataListener(); 
+        }    
     }
 
+    public function HRHistoryCallback(sensorData as SensorData) as Void {
+        var HRV_samples = sensorData.heartRateData;
+        var IBI_samples = HRV_samples.heartBeatIntervals;
 
+        System.println("=========================");
+
+        if(HRV_samples != null){
+
+            //for debugging
+            System.println("IBI_samples: " + IBI_samples);
+            
+            for(var i = 0; i < IBI_samples.size(); i += 1){
+                if(IBI_samples[i] > max_IBI){
+                    Background.requestApplicationWake("Take a breath");
+                    saveBackgroundData(1);
+                }
+        }
+
+        } else {
+            System.println("    *** no HeartRate data! ***");
+        }
+    }
+
+    function saveBackgroundData(currentData){
+        var backgroundData;
+        var app = Application.getApp();
+
+        backgroundData = {
+            app.BACKGROUND_REPONSE_CODE => currentData
+        };
+        Background.exit(backgroundData);
+    }
+
+    public function disableSensorDataListener() as Void {
+        System.println("call disableSensorDataListener()");
+        Sensor.unregisterSensorDataListener();
+    }
 
 }
+
+
+
