@@ -26,6 +26,11 @@ class BgGetMessageView extends WatchUi.View {
         dc.clear();
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 
+        if(needBreath == 1){
+            dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
+        } else {
+            dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Running..", Graphics.TEXT_JUSTIFY_CENTER);
+        }
         // View.onUpdate(dc);
     }
 

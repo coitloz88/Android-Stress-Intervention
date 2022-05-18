@@ -7,7 +7,7 @@ import Toybox.System;
 import Toybox.Time;
 
 var IBI_data;
-
+var needBreath;
 //그런데 어차피 foreground로 앱이 켜지는 거라면 foreground에서 다시 데이터를 수집하면 되니까 굳이 background data를 넘길 필요는 없지 않나?
 
 (:background)
@@ -18,6 +18,7 @@ class BgGetMessageApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
+        needBreath = 0;
     }
 
     // onStart() is called on application start up
@@ -47,10 +48,11 @@ class BgGetMessageApp extends Application.AppBase {
     }
 
     function onBackgroundData(data) {
-
         if(data[BACKGROUND_REPONSE_CODE] != null){
             Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
-            System.println("BACKGROUND_REPONSE_CODE: " + data[BACKGROUND_REPONSE_CODE]);      
+            // System.println("data code: " + data[BACKGROUND_REPONSE_CODE]);
+            needBreath = Application.Storage.getValue(BACKGROUND_REPONSE_CODE);
+            // System.println("BACKGROUND_REPONSE_CODE: " + code);      
         } 
     }
 }

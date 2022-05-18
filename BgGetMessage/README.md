@@ -27,6 +27,8 @@ Background Event가 실행되고 있을 때, IBI 값이 일정 수치를 넘어�
 
 * 그런데 어차피 foreground로 앱이 켜지는 거라면 foreground에서 다시 데이터를 수집하면 되니까 굳이 background data를 넘길 필요는 없지 않나? → IBI 데이터를 넘길 필요는 없고, 호흡하라는 메시지를 띄워야하는지 아닌지만 판단하면 될듯
 
+* 애니메이션 기능 자체는 [다른 가민 워치](https://developer.garmin.com/connect-iq/api-docs/Toybox/WatchUi/AnimationDelegate.html)에서 지원하기는 하나 forerunner 55에서는 지원되지 않는 기능..
+
 </div>
 </details>
 

@@ -24,14 +24,14 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // a service and handle the response with a callback function
     // within this delegate.
 
-    var max_IBI;
+    var MIN_HRV;
     var periodSetting;
 
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-        max_IBI = 500;
-        periodSetting = 3; // 1 ~ 4s
+        MIN_HRV = 60;
+        periodSetting = 4; // 1 ~ 4s
     }
 
     function onTemporalEvent(){
@@ -50,26 +50,47 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     }
 
     public function HRHistoryCallback(sensorData as SensorData) as Void {
-        var HRV_samples = sensorData.heartRateData;
-        var IBI_samples = HRV_samples.heartBeatIntervals;
+        var rawHeartRateData = sensorData.heartRateData;
+        var IBI_samples = rawHeartRateData.heartBeatIntervals;
 
         System.println("=========================");
 
-        if(HRV_samples != null){
+        if(rawHeartRateData != null){
 
             //for debugging
             System.println("IBI_samples: " + IBI_samples);
             
-            for(var i = 0; i < IBI_samples.size(); i += 1){
-                if(IBI_samples[i] > max_IBI){
-                    Background.requestApplicationWake("Take a breath");
-                    saveBackgroundData(1);
-                }
-        }
+            // for(var i = 0; i < IBI_samples.size(); i += 1){
+            //     if(IBI_samples[i] < MIN_HRV){
+            //         Background.requestApplicationWake("Take a breath");
+            //         saveBackgroundData(1);
+            //     }
+            // }
+
+            var HRVdata = IBItoHRV(IBI_samples);
+
+            System.println("HRVdata: " + HRVdata);
+
+            if(HRVdata >= MIN_HRV){
+                Background.requestApplicationWake("Tachycardia");
+                saveBackgroundData(1);
+            }
 
         } else {
             System.println("    *** no HeartRate data! ***");
         }
+    }
+
+
+    function IBItoHRV(IBI_samples){
+        var HRVdata = 0;
+
+        for(var i = 0; i < IBI_samples.size() - 1; i += 1){
+            HRVdata += Math.pow(IBI_samples[i + 1] - IBI_samples[i], 2);
+        }
+        HRVdata /= (IBI_samples.size() - 1);
+
+        return Math.sqrt(HRVdata);
     }
 
     function saveBackgroundData(currentData){
