@@ -249,11 +249,11 @@ class DeviceActivity : Activity() {
         return listOf(0)
     }
 
-    private fun isHighHeartBeatInterval(heartBeatIntervals: List<Int>): Boolean {
-        val maxHeartBeatInterval = 610 // TODO: 설정해주기
+    private fun isLowerHeartBeatInterval(heartBeatIntervals: List<Int>): Boolean {
+        val minHeartBeatInterval = 610 // TODO: 설정해주기
 
         for(value in heartBeatIntervals){
-            if(value >= maxHeartBeatInterval){
+            if(value >= minHeartBeatInterval){
                 return true
             }
         }
@@ -261,13 +261,15 @@ class DeviceActivity : Activity() {
     }
 
     private fun giveFeedBack(rawDatas: String){
-        if(isHighHeartBeatInterval(parseSensorData(rawDatas))){
+        if(isLowerHeartBeatInterval(parseSensorData(rawDatas))){
             Log.d(TAG, "return feedback to Garmin Watch app")
 
             openMyApp() // 앱을 foreground로 가져옴
 
+            val feedbackMessage = "Take a Breath."
+
             try {
-                connectIQ.sendMessage(device, myApp, "Take a Breath.") { device, app, status ->
+                connectIQ.sendMessage(device, myApp, feedbackMessage) { device, app, status ->
                     Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
                 }
             } catch (e: InvalidStateException) {
