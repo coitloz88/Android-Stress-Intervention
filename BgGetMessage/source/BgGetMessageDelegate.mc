@@ -41,7 +41,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         var maxSampleRate = Sensor.getMaxSampleRate();
         var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
         try {
-            Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
+            Sensor.registerSensorDataListener(method(:HRVHistoryCallback), options);
         }
         catch(e) {
             System.println(" *** " + e.getErrorMessage());
@@ -49,7 +49,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         }    
     }
 
-    public function HRHistoryCallback(sensorData as SensorData) as Void {
+    public function HRVHistoryCallback(sensorData as SensorData) as Void {
         var rawHeartRateData = sensorData.heartRateData;
         var IBI_samples = rawHeartRateData.heartBeatIntervals;
 
@@ -80,7 +80,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             System.println("    *** no HeartRate data! ***");
         }
     }
-
 
     function IBItoHRV(IBI_samples){
         var HRVdata = 0;
