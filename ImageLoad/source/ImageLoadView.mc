@@ -21,8 +21,11 @@ class ImageLoadView extends WatchUi.View {
     // Update the view
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_WHITE);
-        View.onUpdate(dc);
+        // dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_GREEN);
+        // dc.clear();
+        // View.onUpdate(dc);
+        var breathingView = View.findDrawableById("img_Breathing");
+        breathingView.draw(dc);
     }
 
     // Called when this View is removed from the screen. Save the

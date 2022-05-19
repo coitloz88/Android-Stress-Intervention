@@ -1,4 +1,6 @@
 <layout id="MainLayout">
+<!--
     <bitmap id="id_img_breathing" x="center" y="18" filename="../drawables/breathing.png" />
-    <label x="center" y="95" text="@Strings.firstInformation" color="Graphics.COLOR_BLUE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label x="center" y="90" text="@Strings.firstInformation" color="Graphics.COLOR_BLUE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+-->
 </layout>

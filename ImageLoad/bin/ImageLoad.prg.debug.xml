@@ -7,64 +7,59 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="2" lineNum="10" parent="globals/ImageLoadDelegate" pc="268435479" symbol="onMenu"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="2" lineNum="11" parent="globals/ImageLoadDelegate" pc="268435483" symbol="onMenu"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="2" lineNum="12" parent="globals/ImageLoadDelegate" pc="268435567" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="3" lineNum="4" parent="globals/ImageLoadDelegate" pc="268436419" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="3" lineNum="4" parent="globals/ImageLoadDelegate" pc="268436419" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="3" lineNum="4" parent="globals/ImageLoadDelegate" pc="268436077" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadDelegate.mc" id="3" lineNum="4" parent="globals/ImageLoadDelegate" pc="268436077" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="5" lineNum="6" parent="globals/ImageLoadView" pc="268435571" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="5" lineNum="7" parent="globals/ImageLoadView" pc="268435575" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="6" lineNum="11" parent="globals/ImageLoadView" pc="268435594" symbol="onLayout"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="6" lineNum="12" parent="globals/ImageLoadView" pc="268435598" symbol="onLayout"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="7" lineNum="18" parent="globals/ImageLoadView" pc="268435636" symbol="onShow"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="8" lineNum="22" parent="globals/ImageLoadView" pc="268435641" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="8" lineNum="24" parent="globals/ImageLoadView" pc="268435645" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="8" lineNum="25" parent="globals/ImageLoadView" pc="268435681" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="9" lineNum="31" parent="globals/ImageLoadView" pc="268435702" symbol="onHide"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="10" lineNum="4" parent="globals/ImageLoadView" pc="268436525" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="10" lineNum="4" parent="globals/ImageLoadView" pc="268436525" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="12" lineNum="7" parent="globals/ImageLoadMenuDelegate" pc="268435707" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="12" lineNum="8" parent="globals/ImageLoadMenuDelegate" pc="268435711" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="11" parent="globals/ImageLoadMenuDelegate" pc="268435730" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="12" parent="globals/ImageLoadMenuDelegate" pc="268435734" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="13" parent="globals/ImageLoadMenuDelegate" pc="268435745" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="14" parent="globals/ImageLoadMenuDelegate" pc="268435769" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="15" parent="globals/ImageLoadMenuDelegate" pc="268435780" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="14" lineNum="5" parent="globals/ImageLoadMenuDelegate" pc="268436506" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="14" lineNum="5" parent="globals/ImageLoadMenuDelegate" pc="268436506" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="16" lineNum="7" parent="globals/ImageLoadApp" pc="268435805" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="16" lineNum="8" parent="globals/ImageLoadApp" pc="268435809" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="17" lineNum="12" parent="globals/ImageLoadApp" pc="268435828" symbol="onStart"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="18" lineNum="16" parent="globals/ImageLoadApp" pc="268435833" symbol="onStop"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="19" lineNum="20" parent="globals/ImageLoadApp" pc="268435838" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="19" lineNum="21" parent="globals/ImageLoadApp" pc="268435842" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="20" lineNum="5" parent="globals/ImageLoadApp" pc="268436487" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="20" lineNum="5" parent="globals/ImageLoadApp" pc="268436487" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="21" lineNum="26" parent="globals" pc="268435910" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="21" lineNum="27" parent="globals" pc="268435922" symbol="getApp"/>
-        <entry filename="Rez" id="23" lineNum="2" parent="globals/Rez/Drawables" pc="268436462" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="7" parent="globals/Rez/Fonts" pc="268436483" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="9" parent="globals/Rez/JsonData" pc="268436485" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="26" lineNum="18" parent="globals/Rez/Layouts" pc="268435939" symbol="MainLayout"/>
-        <entry filename="Rez" id="26" lineNum="20" parent="globals/Rez/Layouts" pc="268435951" symbol="MainLayout"/>
-        <entry filename="Rez" id="26" lineNum="21" parent="globals/Rez/Layouts" pc="268436063" symbol="MainLayout"/>
-        <entry filename="Rez" id="26" lineNum="22" parent="globals/Rez/Layouts" pc="268436103" symbol="MainLayout"/>
-        <entry filename="Rez" id="26" lineNum="24" parent="globals/Rez/Layouts" pc="268436255" symbol="MainLayout"/>
-        <entry filename="Rez" id="27" lineNum="11" parent="globals/Rez/Layouts" pc="268436484" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="28" lineNum="38" parent="globals/Rez/Menus/MainMenu" pc="268436283" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="39" parent="globals/Rez/Menus/MainMenu" pc="268436287" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="40" parent="globals/Rez/Menus/MainMenu" pc="268436305" symbol="initialize"/>
-        <entry filename="Rez" id="28" lineNum="41" parent="globals/Rez/Menus/MainMenu" pc="268436361" symbol="initialize"/>
-        <entry filename="Rez" id="29" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436464" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="36" parent="globals/Rez/Menus/MainMenu" pc="268436464" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="30" lineNum="29" parent="globals/Rez/Menus" pc="268436463" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="31" lineNum="47" parent="globals/Rez/Strings" pc="268436486" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="32" lineNum="1" parent="globals/Rez" pc="268436438" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="32" lineNum="1" parent="globals/Rez" pc="268436438" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="8" lineNum="27" parent="globals/ImageLoadView" pc="268435645" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="8" lineNum="28" parent="globals/ImageLoadView" pc="268435669" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="9" lineNum="34" parent="globals/ImageLoadView" pc="268435684" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="10" lineNum="4" parent="globals/ImageLoadView" pc="268436183" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadView.mc" id="10" lineNum="4" parent="globals/ImageLoadView" pc="268436183" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="12" lineNum="7" parent="globals/ImageLoadMenuDelegate" pc="268435689" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="12" lineNum="8" parent="globals/ImageLoadMenuDelegate" pc="268435693" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="11" parent="globals/ImageLoadMenuDelegate" pc="268435712" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="12" parent="globals/ImageLoadMenuDelegate" pc="268435716" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="13" parent="globals/ImageLoadMenuDelegate" pc="268435727" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="14" parent="globals/ImageLoadMenuDelegate" pc="268435751" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="13" lineNum="15" parent="globals/ImageLoadMenuDelegate" pc="268435762" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="14" lineNum="5" parent="globals/ImageLoadMenuDelegate" pc="268436164" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadMenuDelegate.mc" id="14" lineNum="5" parent="globals/ImageLoadMenuDelegate" pc="268436164" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="16" lineNum="7" parent="globals/ImageLoadApp" pc="268435787" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="16" lineNum="8" parent="globals/ImageLoadApp" pc="268435791" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="17" lineNum="12" parent="globals/ImageLoadApp" pc="268435810" symbol="onStart"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="18" lineNum="16" parent="globals/ImageLoadApp" pc="268435815" symbol="onStop"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="19" lineNum="20" parent="globals/ImageLoadApp" pc="268435820" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="19" lineNum="21" parent="globals/ImageLoadApp" pc="268435824" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="20" lineNum="5" parent="globals/ImageLoadApp" pc="268436145" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="20" lineNum="5" parent="globals/ImageLoadApp" pc="268436145" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="21" lineNum="26" parent="globals" pc="268435892" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-API-Test\\ImageLoad\\source\\ImageLoadApp.mc" id="21" lineNum="27" parent="globals" pc="268435904" symbol="getApp"/>
+        <entry filename="Rez" id="23" lineNum="2" parent="globals/Rez/Drawables" pc="268436120" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="24" lineNum="7" parent="globals/Rez/Fonts" pc="268436141" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="9" parent="globals/Rez/JsonData" pc="268436143" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="18" parent="globals/Rez/Layouts" pc="268435921" symbol="MainLayout"/>
+        <entry filename="Rez" id="26" lineNum="19" parent="globals/Rez/Layouts" pc="268435933" symbol="MainLayout"/>
+        <entry filename="Rez" id="27" lineNum="11" parent="globals/Rez/Layouts" pc="268436142" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="28" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268435941" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268435945" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268435963" symbol="initialize"/>
+        <entry filename="Rez" id="28" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268436019" symbol="initialize"/>
+        <entry filename="Rez" id="29" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268436122" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268436122" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="30" lineNum="22" parent="globals/Rez/Menus" pc="268436121" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="31" lineNum="40" parent="globals/Rez/Strings" pc="268436144" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="32" lineNum="1" parent="globals/Rez" pc="268436096" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="32" lineNum="1" parent="globals/Rez" pc="268436096" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry id="8389346" symbol="text"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="4" module="true" symbol="globals/Rez/Menus"/>
-        <entry field="true" id="15" symbol="id_img_breathing"/>
         <entry id="18" method="true" symbol="MainLayout"/>
         <entry id="9" object="true" symbol="ImageLoadDelegate"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
@@ -73,22 +68,16 @@
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-        <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
-        <entry field="true" id="8389065" symbol="locY"/>
-        <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
-        <entry id="8389348" symbol="font"/>
         <entry id="24" symbol="item_2"/>
         <entry id="23" symbol="item_1"/>
         <entry id="14" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="8389349" symbol="justification"/>
         <entry id="12" object="true" symbol="ImageLoadApp"/>
         <entry id="10" object="true" symbol="ImageLoadView"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
@@ -108,7 +97,7 @@
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
-        <entry id="8389347" symbol="color"/>
+        <entry field="true" id="15" symbol="img_Breathing"/>
         <entry id="13" module="true" symbol="Layouts"/>
         <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="11" object="true" symbol="ImageLoadMenuDelegate"/>
@@ -119,16 +108,15 @@
     </symbolTable>
     <localVars>
         <entry arg="true" endPc="268435635" name="dc" stackId="1" startPc="268435594"/>
-        <entry arg="true" endPc="268435701" name="dc" stackId="1" startPc="268435641"/>
-        <entry arg="true" endPc="268435804" name="item" stackId="1" startPc="268435730"/>
-        <entry arg="true" endPc="268435832" name="state" stackId="1" startPc="268435828"/>
-        <entry arg="true" endPc="268435837" name="state" stackId="1" startPc="268435833"/>
-        <entry endPc="268436281" name="rez_cmp_local_bitmap_id_img_breathing" stackId="2" startPc="268435951"/>
-        <entry endPc="268436281" name="rez_cmp_local_text_1591221715" stackId="3" startPc="268435951"/>
-        <entry arg="true" endPc="268436282" name="dc" stackId="1" startPc="268435939"/>
+        <entry endPc="268435682" name="breathingView" stackId="2" startPc="268435645"/>
+        <entry arg="true" endPc="268435683" name="dc" stackId="1" startPc="268435641"/>
+        <entry arg="true" endPc="268435786" name="item" stackId="1" startPc="268435712"/>
+        <entry arg="true" endPc="268435814" name="state" stackId="1" startPc="268435810"/>
+        <entry arg="true" endPc="268435819" name="state" stackId="1" startPc="268435815"/>
+        <entry arg="true" endPc="268435940" name="dc" stackId="1" startPc="268435921"/>
     </localVars>
     <annotations>
-        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_img_breathing"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="img_Breathing"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="firstInformation"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
@@ -157,7 +145,7 @@
         <functionEntry accessMode="public" endPc="268435570" name="onMenu" parent="ImageLoadDelegate" startPc="268435479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436437" name="&lt;init&gt;" parent="ImageLoadDelegate" startPc="268436419">
+        <functionEntry accessMode="protected" endPc="268436095" name="&lt;init&gt;" parent="ImageLoadDelegate" startPc="268436077">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435593" name="initialize" parent="ImageLoadView" startPc="268435571">
@@ -170,75 +158,75 @@
         <functionEntry accessMode="public" endPc="268435640" name="onShow" parent="ImageLoadView" startPc="268435636">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435701" name="onUpdate" parent="ImageLoadView" startPc="268435641">
+        <functionEntry accessMode="public" endPc="268435683" name="onUpdate" parent="ImageLoadView" startPc="268435641">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435706" name="onHide" parent="ImageLoadView" startPc="268435702">
+        <functionEntry accessMode="public" endPc="268435688" name="onHide" parent="ImageLoadView" startPc="268435684">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436543" name="&lt;init&gt;" parent="ImageLoadView" startPc="268436525">
+        <functionEntry accessMode="protected" endPc="268436201" name="&lt;init&gt;" parent="ImageLoadView" startPc="268436183">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435729" name="initialize" parent="ImageLoadMenuDelegate" startPc="268435707">
+        <functionEntry accessMode="public" endPc="268435711" name="initialize" parent="ImageLoadMenuDelegate" startPc="268435689">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435804" name="onMenuItem" parent="ImageLoadMenuDelegate" startPc="268435730">
+        <functionEntry accessMode="public" endPc="268435786" name="onMenuItem" parent="ImageLoadMenuDelegate" startPc="268435712">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436524" name="&lt;init&gt;" parent="ImageLoadMenuDelegate" startPc="268436506">
+        <functionEntry accessMode="protected" endPc="268436182" name="&lt;init&gt;" parent="ImageLoadMenuDelegate" startPc="268436164">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435827" name="initialize" parent="ImageLoadApp" startPc="268435805">
+        <functionEntry accessMode="public" endPc="268435809" name="initialize" parent="ImageLoadApp" startPc="268435787">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435832" name="onStart" parent="ImageLoadApp" startPc="268435828">
+        <functionEntry accessMode="public" endPc="268435814" name="onStart" parent="ImageLoadApp" startPc="268435810">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435837" name="onStop" parent="ImageLoadApp" startPc="268435833">
+        <functionEntry accessMode="public" endPc="268435819" name="onStop" parent="ImageLoadApp" startPc="268435815">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435909" name="getInitialView" parent="ImageLoadApp" startPc="268435838">
+        <functionEntry accessMode="public" endPc="268435891" name="getInitialView" parent="ImageLoadApp" startPc="268435820">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436505" name="&lt;init&gt;" parent="ImageLoadApp" startPc="268436487">
+        <functionEntry accessMode="protected" endPc="268436163" name="&lt;init&gt;" parent="ImageLoadApp" startPc="268436145">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435938" name="getApp" startPc="268435910">
+        <functionEntry accessMode="public" endPc="268435920" name="getApp" startPc="268435892">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436462" name="&lt;init&gt;" parent="Drawables" startPc="268436462">
+        <functionEntry accessMode="protected" endPc="268436120" name="&lt;init&gt;" parent="Drawables" startPc="268436120">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436483" name="&lt;init&gt;" parent="Fonts" startPc="268436483">
+        <functionEntry accessMode="protected" endPc="268436141" name="&lt;init&gt;" parent="Fonts" startPc="268436141">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436485" name="&lt;init&gt;" parent="JsonData" startPc="268436485">
+        <functionEntry accessMode="protected" endPc="268436143" name="&lt;init&gt;" parent="JsonData" startPc="268436143">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436282" name="MainLayout" parent="Layouts" startPc="268435939">
+        <functionEntry accessMode="public" endPc="268435940" name="MainLayout" parent="Layouts" startPc="268435921">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436484" name="&lt;init&gt;" parent="Layouts" startPc="268436484">
+        <functionEntry accessMode="protected" endPc="268436142" name="&lt;init&gt;" parent="Layouts" startPc="268436142">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436417" name="initialize" parent="MainMenu" startPc="268436283">
+        <functionEntry accessMode="public" endPc="268436075" name="initialize" parent="MainMenu" startPc="268435941">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436482" name="&lt;init&gt;" parent="MainMenu" startPc="268436464">
+        <functionEntry accessMode="protected" endPc="268436140" name="&lt;init&gt;" parent="MainMenu" startPc="268436122">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436463" name="&lt;init&gt;" parent="Menus" startPc="268436463">
+        <functionEntry accessMode="protected" endPc="268436121" name="&lt;init&gt;" parent="Menus" startPc="268436121">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436486" name="&lt;init&gt;" parent="Strings" startPc="268436486">
+        <functionEntry accessMode="protected" endPc="268436144" name="&lt;init&gt;" parent="Strings" startPc="268436144">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436461" name="&lt;init&gt;" parent="Rez" startPc="268436438">
+        <functionEntry accessMode="protected" endPc="268436119" name="&lt;init&gt;" parent="Rez" startPc="268436096">
             <documentation/>
         </functionEntry>
     </functions>
