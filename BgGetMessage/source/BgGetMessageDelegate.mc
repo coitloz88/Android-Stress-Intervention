@@ -29,7 +29,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        System.println("call initialize()");
+        // System.println("call initialize()");
         MIN_HRV = 4; //TODO: need to set
         periodSetting = 4; // 1 ~ 4s
     }
@@ -53,22 +53,20 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         var rawHeartRateData = sensorData.heartRateData;
         var IBI_samples = rawHeartRateData.heartBeatIntervals;
 
-        System.println("=========================");
-
         if(rawHeartRateData != null){
 
             //for debugging
             System.println("IBI_samples: " + IBI_samples);
 
             var HRVdata = IBItoHRV(IBI_samples);
+            // System.println("HRVdata: " + HRVdata);
 
-            if(HRVdata <= MIN_HRV){
-                System.println("HRVdata: " + HRVdata);
+            // if(HRVdata <= MIN_HRV){
 
-                Background.requestApplicationWake("stress!");
-                saveBackgroundData(1);
-                // Background.exit(1);
-             }
+            //     Background.requestApplicationWake("stress!");
+            //     saveBackgroundData(1);
+            //     // Background.exit(1);
+            //  }
 
         } else {
             System.println("    *** no HeartRate data! ***");
