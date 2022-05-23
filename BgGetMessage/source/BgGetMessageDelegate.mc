@@ -55,24 +55,24 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         System.println("=========================");
 
-        // if(rawHeartRateData != null){
+        if(rawHeartRateData != null){
 
-        //     //for debugging
-        //     System.println("IBI_samples: " + IBI_samples);
+            //for debugging
+            System.println("IBI_samples: " + IBI_samples);
 
-        //     var HRVdata = IBItoHRV(IBI_samples);
+            var HRVdata = IBItoHRV(IBI_samples);
 
-        //     if(HRVdata <= MIN_HRV){
-        //         System.println("HRVdata: " + HRVdata);
+            if(HRVdata <= MIN_HRV){
+                System.println("HRVdata: " + HRVdata);
 
-                Background.requestApplicationWake("Stressful");
+                Background.requestApplicationWake("stress!");
                 saveBackgroundData(1);
                 // Background.exit(1);
-        //     }
+             }
 
-        // } else {
-        //     System.println("    *** no HeartRate data! ***");
-        // }
+        } else {
+            System.println("    *** no HeartRate data! ***");
+        }
     }
 
     function IBItoHRV(IBI_samples){
