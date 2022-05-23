@@ -1,9 +1,69 @@
-# BackgroundTest
+# ⌚Garmin Watch Application
 
-측정한 Sensor Data를 5분에 한번씩 30초간 백그라운드에서 휴대폰으로 보내는 예제  
+In Garmin watch Application, we can 
 
-# TODO
+- collect target data in background process
+- transfer collected data to mobile companion application through BLE
+- get feedback from mobile companion application if needed and show the feedback message on foreground display of watch application
 
-1. transmit 잘 되는지 재확인
+All logic runs in real time. You can see the code in [here](https://github.com/coitloz88/Garmin-Background-Test/tree/master/BackgroundTest).
 
-    - 휴대폰, 가민 워치 두 쪽 다 로그 찍어서 확인해볼 것
+## Collecting sensor data in background process
+
+### Registering for Events
+
+We can register for events the application can subscribe to by using calls in the `Toybox.Background` module.
+
+There are many types of background events, however, in this case, we are going to use `registerForTemporalEvent()` to allow the service to be woken at a repeatedly at a certain interval.
+
+Temporal Events can fire at most every 5 minutes, and run at most 30 seconds each time it runs.
+
+Therefore, during 30 seconds, sensor data is collected and transferred to mobile companion app.
+
+### Collecting sensor data in temporal event
+
+`Toybox.Timer` module causes app crash when it calls `start()` in background process. Therefore, we had to use other similar methods that can be called periodically in background process.
+
+`Sensor.registerSensorDataListener()` was able to call the callback function periodically, but didn't cause the app to crash. The sampling rate can be specified from 1 second to 4 seconds.
+
+In the callback function called by `Sensor.registerSensorDataListener()` , it was possible to collect raw data such as sensor data as well as more complex data such as activity data.
+
+You can set the call period by setting the option of `Sensor.registerSensorDataListener()` as desired, and you can write code that collects the desired sensor data within the called callback function.
+
+In order to transmit such data to the mobile phone, a method called `transmit()` is used.
+
+<aside>
+💡 `transmit()` causes memory leak when a dictionary that is too large is transferred with the method. If you want to transmit a lot of data, additional code modifications are required, such as reducing the amount of data by setting the transmission period shorter. However, remember that only 32KB memory can be used in total background process.
+
+</aside>
+
+## Show feedback message in foreground display
+
+When watch app receives feedback from the phone, first open the Garmin watch app that was running in the background to the foreground to receive a message. After that, the feedback message received from the mobile phone is displayed on the screen using the module `Communications.registerForPhoneAppMessages` .
+
+# 📱Mobile Companion application(check in [here](https://github.com/coitloz88/connectiq-android-sdk/tree/main/Comm%20Android))
+
+The mobile companion app performs certain calculations based on user data collected and transferred in real time from the Garmin watch app. Afterwards, if it determines that feedback is necessary, the mobile app opens the designated Garmin watch app and sends a feedback message.
+
+## Get data collected in real-time
+
+Data sent from the Garmin watch is handled by event handlers.  `listenByMyAppEvents()` method can receive message from Garmin watch.
+
+## Parsing data
+
+On Garmin watches, data is transmitted in the form of `Toybox.Lang.Dictionary`, but on mobile companion app, it is received as a string in its entirety. That's why we need to parse the received data.
+
+`parseSensorData()` parses received data. Currently, it is parsed assuming that only heartbeatintervals are transmitted, so in order to parse more data, it is necessary to modify the code in the function.
+
+## Check whether feedback is needed or not
+
+`isLowerHeartBeatInterval()` check whether the `IBI` is lower than minimum value. This method can also be manipulated in various ways as desired. Finally, it returns a boolean value that determines whether the criterion is met or not.
+
+<aside>
+💡 The method `isLowerHeartBeatInterval()` is currently written very simply. If necessary, you can create several more functions, perform more complex operations, and determine whether feedback is needed or not.
+
+</aside>
+
+## Send feedback
+
+If you need feedback, `giveFeedBack()` is called and you can send a message to your Garmin watch. However, the watch app must be running in the foreground in order to receive messages from the Garmin watch app and display the messages. Therefore, in order to first launch the Garmin Watch app in the foreground, the mobile app prompts the user to confirm whether or not to open the app. When the user opens the app, the sent feedback message is displayed on the screen.
