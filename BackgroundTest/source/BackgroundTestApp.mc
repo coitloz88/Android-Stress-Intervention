@@ -59,7 +59,7 @@ class BackgroundTestApp extends Application.AppBase {
     function onPhone(msg) {
         var i;
 
-        if((crashOnMessage == true) && msg.data.equals("Hi")) {
+        if((crashOnMessage == true)) {
             msg.length(); // Generates a symbol not found error in the VM
         }
 

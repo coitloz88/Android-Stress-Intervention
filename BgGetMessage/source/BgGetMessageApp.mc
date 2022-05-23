@@ -7,13 +7,13 @@ import Toybox.System;
 import Toybox.Time;
 
 var IBI_data;
-var needBreath;
-//그런데 어차피 foreground로 앱이 켜지는 거라면 foreground에서 다시 데이터를 수집하면 되니까 굳이 background data를 넘길 필요는 없지 않나?
+var needBreath; //피드백 필요 여부 저장: 0 - 피드백 X, 1 - 피드백 O
 
 (:background)
 class BgGetMessageApp extends Application.AppBase {
+
     enum {
-        BACKGROUND_REPONSE_CODE
+        BACKGROUND_REPONSE_CODE //피드백 필요 여부 저장
     }
 
     function initialize() {
@@ -49,10 +49,13 @@ class BgGetMessageApp extends Application.AppBase {
 
     function onBackgroundData(data) {
         if(data[BACKGROUND_REPONSE_CODE] != null){
+
+            //background에서 넘어온 데이터가 있다면, 해당 데이터(reponse code)를 퍼블릭 변수에 저장
+
             Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
             // System.println("data code: " + data[BACKGROUND_REPONSE_CODE]);
             needBreath = Application.Storage.getValue(BACKGROUND_REPONSE_CODE);
-            System.println("BACKGROUND_REPONSE_CODE: " + needBreath);      
+            System.println("BACKGROUND_REPONSE_CODE: " + needBreath);
         }
     }
 }

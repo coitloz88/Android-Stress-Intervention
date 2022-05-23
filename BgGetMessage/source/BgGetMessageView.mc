@@ -22,14 +22,17 @@ class BgGetMessageView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
 
-        dc.setColor(Graphics.COLOR_TRANSPARENT, Graphics.COLOR_BLACK);
-        dc.clear();
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-
         if(needBreath == 1){
+            dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLUE);
+            dc.clear();
+
+            var image = WatchUi.loadResource(Rez.Drawables.img_Breathing);
+            dc.drawBitmap(10, 30, image);
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
             needBreath = 0;
         } else {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            dc.clear();
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Running..", Graphics.TEXT_JUSTIFY_CENTER);
         }
         // View.onUpdate(dc);
