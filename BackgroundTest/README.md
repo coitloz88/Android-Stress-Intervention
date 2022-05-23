@@ -32,9 +32,8 @@ You can set the call period by setting the option of `Sensor.registerSensorDataL
 
 In order to transmit such data to the mobile phone, a method called `transmit()` is used.
 
-```
-💡 `transmit()` causes memory leak when a dictionary that is too large is transferred with the method. If you want to transmit a lot of data, additional code modifications are required, such as reducing the amount of data by setting the transmission period shorter. However, remember that only 32KB memory can be used in total background process.
-```
+> 💡 `transmit()` causes memory leak when a dictionary that is too large is transferred with the method. If you want to transmit a lot of data, additional code modifications are required, such as reducing the amount of data by setting the transmission period shorter. However, remember that only 32KB memory can be used in total background process.
+
 
 ## Show feedback message in foreground display
 
@@ -60,9 +59,8 @@ On Garmin watches, data is transmitted in the form of `Toybox.Lang.Dictionary`, 
 
 `isLowerHeartBeatInterval()` check whether the `IBI` is lower than minimum value. This method can also be manipulated in various ways as desired. Finally, it returns a boolean value that determines whether the criterion is met or not.
 
-```
-💡 The method `isLowerHeartBeatInterval()` is currently written very simply. If necessary, you can create several more functions, perform more complex operations, and determine whether feedback is needed or not.
-```
+> 💡 The method `isLowerHeartBeatInterval()` is currently written very simply. If necessary, you can create several more functions, perform more complex operations, and determine whether feedback is needed or not.
+
 
 ## Send feedback
 
