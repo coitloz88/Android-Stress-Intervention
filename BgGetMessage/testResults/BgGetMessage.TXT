@@ -1,0 +1,58 @@
+call initialize()
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: []
+HRVdata: 0.000000
+BACKGROUND_REPONSE_CODE: 1
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: []
+HRVdata: 0.000000
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [693, 688, 684, 680, 689, 694]
+HRVdata: 5.709641
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [593, 592, 592, 594, 599, 599, 599]
+HRVdata: 2.236068
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [674, 678, 692, 691, 676, 669]
+HRVdata: 9.869143
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [654, 642, 636, 632, 628, 625]
+HRVdata: 6.648308
+BACKGROUND_REPONSE_CODE: 1
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: []
+HRVdata: 0.000000
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [619, 563, 619, 620, 672, 631]
+HRVdata: 46.169254
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [600, 603, 602, 602, 599, 598, 600]
+HRVdata: 2.000000
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [595, 580, 568, 575, 580, 587, 578]
+HRVdata: 9.772410
+call initialize()
+call onTemporalEvent()
+=========================
+IBI_samples: [610, 610, 604, 595, 589, 594]
+HRVdata: 5.966573
