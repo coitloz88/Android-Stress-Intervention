@@ -12,8 +12,9 @@ Garmin Background Collecting data &amp; Communications(with Android) Test Projec
 
 * BackgroundTest: Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보내고, 휴대폰에서 적절한 피드백을 다시 Watch로 보내어 유저에게 메시지 알림 출력함
     - [android companion app](https://github.com/coitloz88/connectiq-android-sdk/tree/main/Comm%20Android)과 함께 동작
+    - 참고: <https://www.notion.so/coitloz88/B-Feedback-with-mobile-phone-c0928ff6f2dc46f6b3ae5406bd5be1c9>
 * BgGetMessage: HRV가 일정 수치를 넘어서면 워치 앱을 깨워서 피드백 메시지를 출력
-
+    - 참고: <https://www.notion.so/coitloz88/C-Watch-app-3a3e61ff90de4c01b6297bb6ff27c5e3>
 
 ## Progress
 
