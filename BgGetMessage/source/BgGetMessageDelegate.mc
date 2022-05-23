@@ -24,13 +24,13 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // a service and handle the response with a callback function
     // within this delegate.
 
-    var MIN_HRV;
+    var MAX_HRV;
     var periodSetting;
 
     function initialize(){
         System.ServiceDelegate.initialize();
         System.println("call initialize()");
-        MIN_HRV = 60;
+        MAX_HRV = 4; //TODO: need to set
         periodSetting = 4; // 1 ~ 4s
     }
 
@@ -61,7 +61,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             System.println("IBI_samples: " + IBI_samples);
             
             // for(var i = 0; i < IBI_samples.size(); i += 1){
-            //     if(IBI_samples[i] < MIN_HRV){
+            //     if(IBI_samples[i] < MAX_HRV){
             //         Background.requestApplicationWake("Take a breath");
             //         saveBackgroundData(1);
             //     }
@@ -71,7 +71,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
             System.println("HRVdata: " + HRVdata);
 
-            if(HRVdata >= MIN_HRV){
+            if(HRVdata >= MAX_HRV){
                 Background.requestApplicationWake("Tachycardia");
                 saveBackgroundData(1);
             }

@@ -28,6 +28,7 @@ class BgGetMessageView extends WatchUi.View {
 
         if(needBreath == 1){
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
+            needBreath = 0;
         } else {
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Running..", Graphics.TEXT_JUSTIFY_CENTER);
         }

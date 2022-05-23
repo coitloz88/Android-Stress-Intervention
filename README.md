@@ -8,8 +8,11 @@ Garmin Background Collecting data &amp; Communications(with Android) Test Projec
 
 <br>
 
-## 목표
-Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보내고, 휴대폰에서 적절한 피드백을 다시 Watch로 보내어 유저에게 메시지 알림 출력하기
+## Projects
+
+* BackgroundTest: Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보내고, 휴대폰에서 적절한 피드백을 다시 Watch로 보내어 유저에게 메시지 알림 출력함
+    - [android companion app](https://github.com/coitloz88/connectiq-android-sdk/tree/main/Comm%20Android)과 함께 동작
+* BgGetMessage: HRV가 일정 수치를 넘어서면 워치 앱을 깨워서 피드백 메시지를 출력
 
 
 ## Progress
@@ -77,12 +80,19 @@ Watch 유저의 센서 데이터(심박수)를 측정한 뒤 휴대폰으로 보
 <summary>Current Contents</summary>
 <div markdown = "1">
 
+### BackgroundTest
+
 * Emulator에서 `registerSensorDataListener`의 콜백함수를 주기적으로 호출해서 `SensorData`가 측정됨
 * 콜백함수 내에서 `Transmit()`을 호출, 콜백 함수 호출 주기로 데이터 전송
 
 <br>
 
 * 휴대폰에서 피드백이 필요하다고 판단하는 경우 워치 앱이 실행되게 되고, 피드백 메시지가 foreground 화면에 출력됨
+
+### BgGetMessage
+
+* add `IBItoHRV()`
+* 실제 디바이스에서 IBI가 제대로 측정되지 않음(CIQ Emluator에서는 정상적으로 작동)
 
 </div>
 </details>

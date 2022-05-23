@@ -52,8 +52,8 @@ class BgGetMessageApp extends Application.AppBase {
             Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
             // System.println("data code: " + data[BACKGROUND_REPONSE_CODE]);
             needBreath = Application.Storage.getValue(BACKGROUND_REPONSE_CODE);
-            // System.println("BACKGROUND_REPONSE_CODE: " + code);      
-        } 
+            System.println("BACKGROUND_REPONSE_CODE: " + needBreath);      
+        }
     }
 }
 
