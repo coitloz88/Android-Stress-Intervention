@@ -39,6 +39,9 @@ Background Event가 실행되고 있을 때, IBI 값이 일정 수치를 넘어�
 ### 실제 Device
 *  ~~IBI sample이 측정되지 않음...~~ 작동되나 절반 정도는 누락되고 있음
 * `requestApplicationWake()`는 제대로 작동하지 않는데 `saveBackgroundData()`와 `Background.exit()`는 잘 작동하는 것 같음(why..)
+    - 관련해서 참고: <https://forums.garmin.com/developer/connect-iq/f/discussion/232368/conditional-ontemporalevent-and-requestapplicationwake-for-user-interaction>
+    - `Background.exit()` 혹은 `Background.exit(null)`을 호출하는 경우 `Background.requestApplicationWake()`가 제대로 trigger되지 않는 버그 有
+    - `Background.exit(true)`를 호출해야함
 * 조건문 없이 실행하는 경우 피드백 화면(+이미지)가 정상적으로 출력됨
 
 * 30초동안 데이터 모으기: HRV만 저장하는 거라면 모을 수 있을지도? 테스트 필요
@@ -48,5 +51,4 @@ Background Event가 실행되고 있을 때, IBI 값이 일정 수치를 넘어�
 
 </div>
 </details>
-
 
