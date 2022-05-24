@@ -48,15 +48,20 @@ class BgGetMessageApp extends Application.AppBase {
     }
 
     function onBackgroundData(data) {
-        if(data[BACKGROUND_REPONSE_CODE] != null){
+        // if(data[BACKGROUND_REPONSE_CODE] != null){
 
-            //background에서 넘어온 데이터가 있다면, 해당 데이터(reponse code)를 퍼블릭 변수에 저장
+        //     //background에서 넘어온 데이터가 있다면, 해당 데이터(reponse code)를 퍼블릭 변수에 저장
 
-            Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
-            // System.println("data code: " + data[BACKGROUND_REPONSE_CODE]);
-            needBreath = Application.Storage.getValue(BACKGROUND_REPONSE_CODE);
-            System.println("BACKGROUND_REPONSE_CODE: " + needBreath);
-        }
+        //     Application.Storage.setValue(BACKGROUND_REPONSE_CODE, data[BACKGROUND_REPONSE_CODE]);
+        //     // System.println("data code: " + data[BACKGROUND_REPONSE_CODE]);
+        //     needBreath = Application.Storage.getValue(BACKGROUND_REPONSE_CODE);
+        //     System.println("BACKGROUND_REPONSE_CODE: " + needBreath);
+        // }
+
+        if(data != null){
+            needBreath = data;
+            System.println("data: " + data);
+        } 
     }
 }
 

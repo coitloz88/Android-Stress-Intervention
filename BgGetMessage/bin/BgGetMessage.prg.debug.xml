@@ -17,103 +17,107 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="6" lineNum="46" parent="globals/BgGetMessageApp" pc="268435701" symbol="canDoBackground"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="6" lineNum="47" parent="globals/BgGetMessageApp" pc="268435705" symbol="canDoBackground"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="50" parent="globals/BgGetMessageApp" pc="268435727" symbol="onBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="51" parent="globals/BgGetMessageApp" pc="268435731" symbol="onBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="55" parent="globals/BgGetMessageApp" pc="268435747" symbol="onBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="57" parent="globals/BgGetMessageApp" pc="268435788" symbol="onBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="58" parent="globals/BgGetMessageApp" pc="268435825" symbol="onBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="8" lineNum="13" parent="globals/BgGetMessageApp" pc="268436633" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="8" lineNum="13" parent="globals/BgGetMessageApp" pc="268436633" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="9" lineNum="63" parent="globals" pc="268436652" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="9" lineNum="64" parent="globals" pc="268436664" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="11" lineNum="6" parent="globals/BgGetMessageView" pc="268436681" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="11" lineNum="7" parent="globals/BgGetMessageView" pc="268436685" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="12" lineNum="11" parent="globals/BgGetMessageView" pc="268436704" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="12" lineNum="12" parent="globals/BgGetMessageView" pc="268436708" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="13" lineNum="18" parent="globals/BgGetMessageView" pc="268436746" symbol="onShow"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="22" parent="globals/BgGetMessageView" pc="268436751" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="25" parent="globals/BgGetMessageView" pc="268436755" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="26" parent="globals/BgGetMessageView" pc="268436772" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="27" parent="globals/BgGetMessageView" pc="268436808" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="29" parent="globals/BgGetMessageView" pc="268436820" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="30" parent="globals/BgGetMessageView" pc="268436857" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="31" parent="globals/BgGetMessageView" pc="268436881" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="32" parent="globals/BgGetMessageView" pc="268436944" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="34" parent="globals/BgGetMessageView" pc="268436960" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="35" parent="globals/BgGetMessageView" pc="268436996" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="36" parent="globals/BgGetMessageView" pc="268437008" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="15" lineNum="44" parent="globals/BgGetMessageView" pc="268437072" symbol="onHide"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="16" lineNum="4" parent="globals/BgGetMessageView" pc="268437445" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="16" lineNum="4" parent="globals/BgGetMessageView" pc="268437445" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="18" lineNum="7" parent="globals/BgGetMessageMenuDelegate" pc="268437077" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="18" lineNum="8" parent="globals/BgGetMessageMenuDelegate" pc="268437081" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="11" parent="globals/BgGetMessageMenuDelegate" pc="268437100" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="12" parent="globals/BgGetMessageMenuDelegate" pc="268437104" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="13" parent="globals/BgGetMessageMenuDelegate" pc="268437115" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="14" parent="globals/BgGetMessageMenuDelegate" pc="268437139" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="15" parent="globals/BgGetMessageMenuDelegate" pc="268437150" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="20" lineNum="5" parent="globals/BgGetMessageMenuDelegate" pc="268437464" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="20" lineNum="5" parent="globals/BgGetMessageMenuDelegate" pc="268437464" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="22" lineNum="10" parent="globals/BgGetMessageDelegate" pc="268437175" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="22" lineNum="11" parent="globals/BgGetMessageDelegate" pc="268437179" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="14" parent="globals/BgGetMessageDelegate" pc="268437198" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="15" parent="globals/BgGetMessageDelegate" pc="268437202" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="16" parent="globals/BgGetMessageDelegate" pc="268437286" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="24" lineNum="8" parent="globals/BgGetMessageDelegate" pc="268437483" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="24" lineNum="8" parent="globals/BgGetMessageDelegate" pc="268437483" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="32" parent="globals/BackgroundServiceDelegate" pc="268435859" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="33" parent="globals/BackgroundServiceDelegate" pc="268435863" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="35" parent="globals/BackgroundServiceDelegate" pc="268435885" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="36" parent="globals/BackgroundServiceDelegate" pc="268435898" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="37" parent="globals/BackgroundServiceDelegate" pc="268435911" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268435925" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="41" parent="globals/BackgroundServiceDelegate" pc="268435939" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="43" parent="globals/BackgroundServiceDelegate" pc="268435943" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="45" parent="globals/BackgroundServiceDelegate" pc="268435964" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="46" parent="globals/BackgroundServiceDelegate" pc="268435981" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="47" parent="globals/BackgroundServiceDelegate" pc="268436063" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="48" parent="globals/BackgroundServiceDelegate" pc="268436063" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="51" parent="globals/BackgroundServiceDelegate" pc="268436107" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="52" parent="globals/BackgroundServiceDelegate" pc="268436140" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="56" parent="globals/BackgroundServiceDelegate" pc="268436165" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="57" parent="globals/BackgroundServiceDelegate" pc="268436169" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="58" parent="globals/BackgroundServiceDelegate" pc="268436179" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="60" parent="globals/BackgroundServiceDelegate" pc="268436205" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="62" parent="globals/BackgroundServiceDelegate" pc="268436227" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="65" parent="globals/BackgroundServiceDelegate" pc="268436288" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="67" parent="globals/BackgroundServiceDelegate" pc="268436318" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="68" parent="globals/BackgroundServiceDelegate" pc="268436339" symbol="HRVHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="80" parent="globals/BackgroundServiceDelegate" pc="268436367" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="81" parent="globals/BackgroundServiceDelegate" pc="268436371" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="83" parent="globals/BackgroundServiceDelegate" pc="268436378" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="84" parent="globals/BackgroundServiceDelegate" pc="268436408" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="86" parent="globals/BackgroundServiceDelegate" pc="268436465" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="88" parent="globals/BackgroundServiceDelegate" pc="268436487" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268436508" symbol="saveBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="92" parent="globals/BackgroundServiceDelegate" pc="268436512" symbol="saveBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="93" parent="globals/BackgroundServiceDelegate" pc="268436512" symbol="saveBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="95" parent="globals/BackgroundServiceDelegate" pc="268436531" symbol="saveBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436552" symbol="saveBackgroundData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="101" parent="globals/BackgroundServiceDelegate" pc="268436571" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="102" parent="globals/BackgroundServiceDelegate" pc="268436575" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="103" parent="globals/BackgroundServiceDelegate" pc="268436596" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="31" lineNum="22" parent="globals/BackgroundServiceDelegate" pc="268436614" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="31" lineNum="22" parent="globals/BackgroundServiceDelegate" pc="268436614" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="33" lineNum="2" parent="globals/Rez/Drawables" pc="268437526" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="34" lineNum="7" parent="globals/Rez/Fonts" pc="268437547" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="9" parent="globals/Rez/JsonData" pc="268437549" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="36" lineNum="18" parent="globals/Rez/Layouts" pc="268437290" symbol="MainLayout"/>
-        <entry filename="Rez" id="36" lineNum="19" parent="globals/Rez/Layouts" pc="268437302" symbol="MainLayout"/>
-        <entry filename="Rez" id="37" lineNum="11" parent="globals/Rez/Layouts" pc="268437548" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="38" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437310" symbol="initialize"/>
-        <entry filename="Rez" id="38" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437314" symbol="initialize"/>
-        <entry filename="Rez" id="38" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437332" symbol="initialize"/>
-        <entry filename="Rez" id="38" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268437388" symbol="initialize"/>
-        <entry filename="Rez" id="39" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437528" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="39" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437528" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="40" lineNum="22" parent="globals/Rez/Menus" pc="268437527" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="41" lineNum="40" parent="globals/Rez/Strings" pc="268437550" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="42" lineNum="1" parent="globals/Rez" pc="268437502" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="42" lineNum="1" parent="globals/Rez" pc="268437502" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="61" parent="globals/BgGetMessageApp" pc="268435731" symbol="onBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="62" parent="globals/BgGetMessageApp" pc="268435738" symbol="onBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="7" lineNum="63" parent="globals/BgGetMessageApp" pc="268435748" symbol="onBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="8" lineNum="13" parent="globals/BgGetMessageApp" pc="268436706" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="8" lineNum="13" parent="globals/BgGetMessageApp" pc="268436706" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="9" lineNum="68" parent="globals" pc="268436725" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageApp.mc" id="9" lineNum="69" parent="globals" pc="268436737" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="11" lineNum="6" parent="globals/BgGetMessageView" pc="268436754" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="11" lineNum="7" parent="globals/BgGetMessageView" pc="268436758" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="12" lineNum="11" parent="globals/BgGetMessageView" pc="268436777" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="12" lineNum="12" parent="globals/BgGetMessageView" pc="268436781" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="13" lineNum="18" parent="globals/BgGetMessageView" pc="268436819" symbol="onShow"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="22" parent="globals/BgGetMessageView" pc="268436824" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="25" parent="globals/BgGetMessageView" pc="268436828" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="26" parent="globals/BgGetMessageView" pc="268436845" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="27" parent="globals/BgGetMessageView" pc="268436881" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="29" parent="globals/BgGetMessageView" pc="268436893" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="30" parent="globals/BgGetMessageView" pc="268436930" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="31" parent="globals/BgGetMessageView" pc="268436954" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="32" parent="globals/BgGetMessageView" pc="268437017" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="34" parent="globals/BgGetMessageView" pc="268437033" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="35" parent="globals/BgGetMessageView" pc="268437069" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="14" lineNum="36" parent="globals/BgGetMessageView" pc="268437081" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="15" lineNum="44" parent="globals/BgGetMessageView" pc="268437145" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="16" lineNum="4" parent="globals/BgGetMessageView" pc="268437518" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageView.mc" id="16" lineNum="4" parent="globals/BgGetMessageView" pc="268437518" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="18" lineNum="7" parent="globals/BgGetMessageMenuDelegate" pc="268437150" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="18" lineNum="8" parent="globals/BgGetMessageMenuDelegate" pc="268437154" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="11" parent="globals/BgGetMessageMenuDelegate" pc="268437173" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="12" parent="globals/BgGetMessageMenuDelegate" pc="268437177" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="13" parent="globals/BgGetMessageMenuDelegate" pc="268437188" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="14" parent="globals/BgGetMessageMenuDelegate" pc="268437212" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="19" lineNum="15" parent="globals/BgGetMessageMenuDelegate" pc="268437223" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="20" lineNum="5" parent="globals/BgGetMessageMenuDelegate" pc="268437537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageMenuDelegate.mc" id="20" lineNum="5" parent="globals/BgGetMessageMenuDelegate" pc="268437537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="22" lineNum="10" parent="globals/BgGetMessageDelegate" pc="268437248" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="22" lineNum="11" parent="globals/BgGetMessageDelegate" pc="268437252" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="14" parent="globals/BgGetMessageDelegate" pc="268437271" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="15" parent="globals/BgGetMessageDelegate" pc="268437275" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="23" lineNum="16" parent="globals/BgGetMessageDelegate" pc="268437359" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="24" lineNum="8" parent="globals/BgGetMessageDelegate" pc="268437556" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="24" lineNum="8" parent="globals/BgGetMessageDelegate" pc="268437556" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="32" parent="globals/BackgroundServiceDelegate" pc="268435776" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="33" parent="globals/BackgroundServiceDelegate" pc="268435780" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="35" parent="globals/BackgroundServiceDelegate" pc="268435802" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="36" parent="globals/BackgroundServiceDelegate" pc="268435815" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="37" parent="globals/BackgroundServiceDelegate" pc="268435828" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="25" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268435842" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="41" parent="globals/BackgroundServiceDelegate" pc="268435856" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="44" parent="globals/BackgroundServiceDelegate" pc="268435860" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="45" parent="globals/BackgroundServiceDelegate" pc="268435877" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="47" parent="globals/BackgroundServiceDelegate" pc="268435967" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="48" parent="globals/BackgroundServiceDelegate" pc="268435984" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="49" parent="globals/BackgroundServiceDelegate" pc="268436066" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="50" parent="globals/BackgroundServiceDelegate" pc="268436066" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="53" parent="globals/BackgroundServiceDelegate" pc="268436110" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="26" lineNum="54" parent="globals/BackgroundServiceDelegate" pc="268436143" symbol="onTemporalEvent"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="58" parent="globals/BackgroundServiceDelegate" pc="268436168" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="59" parent="globals/BackgroundServiceDelegate" pc="268436172" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="60" parent="globals/BackgroundServiceDelegate" pc="268436182" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="62" parent="globals/BackgroundServiceDelegate" pc="268436208" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="64" parent="globals/BackgroundServiceDelegate" pc="268436230" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="67" parent="globals/BackgroundServiceDelegate" pc="268436291" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="69" parent="globals/BackgroundServiceDelegate" pc="268436321" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="70" parent="globals/BackgroundServiceDelegate" pc="268436342" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="72" parent="globals/BackgroundServiceDelegate" pc="268436366" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="74" parent="globals/BackgroundServiceDelegate" pc="268436380" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="76" parent="globals/BackgroundServiceDelegate" pc="268436394" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="27" lineNum="78" parent="globals/BackgroundServiceDelegate" pc="268436415" symbol="HRVHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="83" parent="globals/BackgroundServiceDelegate" pc="268436440" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="84" parent="globals/BackgroundServiceDelegate" pc="268436444" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="86" parent="globals/BackgroundServiceDelegate" pc="268436451" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="87" parent="globals/BackgroundServiceDelegate" pc="268436481" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="89" parent="globals/BackgroundServiceDelegate" pc="268436538" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="28" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268436560" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="94" parent="globals/BackgroundServiceDelegate" pc="268436581" symbol="saveBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="95" parent="globals/BackgroundServiceDelegate" pc="268436585" symbol="saveBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="96" parent="globals/BackgroundServiceDelegate" pc="268436585" symbol="saveBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436604" symbol="saveBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="29" lineNum="101" parent="globals/BackgroundServiceDelegate" pc="268436625" symbol="saveBackgroundData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="104" parent="globals/BackgroundServiceDelegate" pc="268436644" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="105" parent="globals/BackgroundServiceDelegate" pc="268436648" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="30" lineNum="106" parent="globals/BackgroundServiceDelegate" pc="268436669" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="31" lineNum="22" parent="globals/BackgroundServiceDelegate" pc="268436687" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgGetMessage\\source\\BgGetMessageDelegate.mc" id="31" lineNum="22" parent="globals/BackgroundServiceDelegate" pc="268436687" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="33" lineNum="2" parent="globals/Rez/Drawables" pc="268437599" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="34" lineNum="7" parent="globals/Rez/Fonts" pc="268437620" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="9" parent="globals/Rez/JsonData" pc="268437622" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="18" parent="globals/Rez/Layouts" pc="268437363" symbol="MainLayout"/>
+        <entry filename="Rez" id="36" lineNum="19" parent="globals/Rez/Layouts" pc="268437375" symbol="MainLayout"/>
+        <entry filename="Rez" id="37" lineNum="11" parent="globals/Rez/Layouts" pc="268437621" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="38" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437383" symbol="initialize"/>
+        <entry filename="Rez" id="38" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437387" symbol="initialize"/>
+        <entry filename="Rez" id="38" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268437405" symbol="initialize"/>
+        <entry filename="Rez" id="38" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268437461" symbol="initialize"/>
+        <entry filename="Rez" id="39" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437601" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="39" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437601" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="40" lineNum="22" parent="globals/Rez/Menus" pc="268437600" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="41" lineNum="40" parent="globals/Rez/Strings" pc="268437623" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="42" lineNum="1" parent="globals/Rez" pc="268437575" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="42" lineNum="1" parent="globals/Rez" pc="268437575" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -193,23 +197,24 @@
     <localVars>
         <entry arg="true" endPc="268435496" name="state" stackId="1" startPc="268435492"/>
         <entry arg="true" endPc="268435501" name="state" stackId="1" startPc="268435497"/>
-        <entry arg="true" endPc="268435858" name="data" stackId="1" startPc="268435727"/>
-        <entry arg="true" endPc="268436745" name="dc" stackId="1" startPc="268436704"/>
-        <entry endPc="268436956" name="image" stackId="2" startPc="268436772"/>
-        <entry arg="true" endPc="268437071" name="dc" stackId="1" startPc="268436751"/>
-        <entry arg="true" endPc="268437174" name="item" stackId="1" startPc="268437100"/>
-        <entry endPc="268436163" name="maxSampleRate" stackId="1" startPc="268435943"/>
-        <entry endPc="268436163" name="options" stackId="2" startPc="268435943"/>
-        <entry endPc="268436362" name="HRVdata" stackId="3" startPc="268436288"/>
-        <entry endPc="268436365" name="rawHeartRateData" stackId="2" startPc="268436169"/>
-        <entry arg="true" endPc="268436366" name="sensorData" stackId="1" startPc="268436165"/>
-        <entry endPc="268436464" name="i" stackId="3" startPc="268436408"/>
-        <entry endPc="268436506" name="HRVdata" stackId="2" startPc="268436371"/>
-        <entry arg="true" endPc="268436507" name="IBI_samples" stackId="1" startPc="268436367"/>
-        <entry endPc="268436569" name="backgroundData" stackId="2" startPc="268436512"/>
-        <entry endPc="268436569" name="app" stackId="3" startPc="268436512"/>
-        <entry arg="true" endPc="268436570" name="currentData" stackId="1" startPc="268436508"/>
-        <entry arg="true" endPc="268437309" name="dc" stackId="1" startPc="268437290"/>
+        <entry arg="true" endPc="268435775" name="data" stackId="1" startPc="268435727"/>
+        <entry arg="true" endPc="268436818" name="dc" stackId="1" startPc="268436777"/>
+        <entry endPc="268437029" name="image" stackId="2" startPc="268436845"/>
+        <entry arg="true" endPc="268437144" name="dc" stackId="1" startPc="268436824"/>
+        <entry arg="true" endPc="268437247" name="item" stackId="1" startPc="268437173"/>
+        <entry endPc="268436166" name="maxSampleRate" stackId="2" startPc="268435860"/>
+        <entry endPc="268436166" name="options" stackId="3" startPc="268435860"/>
+        <entry endPc="268436166" name="time" stackId="1" startPc="268435860"/>
+        <entry endPc="268436435" name="HRVdata" stackId="3" startPc="268436291"/>
+        <entry endPc="268436438" name="rawHeartRateData" stackId="2" startPc="268436172"/>
+        <entry arg="true" endPc="268436439" name="sensorData" stackId="1" startPc="268436168"/>
+        <entry endPc="268436537" name="i" stackId="3" startPc="268436481"/>
+        <entry endPc="268436579" name="HRVdata" stackId="2" startPc="268436444"/>
+        <entry arg="true" endPc="268436580" name="IBI_samples" stackId="1" startPc="268436440"/>
+        <entry endPc="268436642" name="backgroundData" stackId="2" startPc="268436585"/>
+        <entry endPc="268436642" name="app" stackId="3" startPc="268436585"/>
+        <entry arg="true" endPc="268436643" name="currentData" stackId="1" startPc="268436581"/>
+        <entry arg="true" endPc="268437382" name="dc" stackId="1" startPc="268437363"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="img_Breathing"/>
@@ -223,17 +228,17 @@
         <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
         <dataEntry label="globals/BackgroundServiceDelegate" offset="198" parentId="globals" symbolId="BackgroundServiceDelegate" type="class"/>
         <dataEntry label="globals/BgGetMessageApp" offset="317" parentId="globals" symbolId="BgGetMessageApp" type="class"/>
-        <dataEntry label="globals/BgGetMessageView" offset="1023" parentId="globals" symbolId="BgGetMessageView" type="class"/>
-        <dataEntry label="globals/BgGetMessageMenuDelegate" offset="1102" parentId="globals" symbolId="BgGetMessageMenuDelegate" type="class"/>
-        <dataEntry label="globals/BgGetMessageDelegate" offset="1157" parentId="globals" symbolId="BgGetMessageDelegate" type="class"/>
-        <dataEntry label="globals/Rez" offset="1212" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1291" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="1338" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1377" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="1424" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1455" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="1494" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1525" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/BgGetMessageView" offset="1048" parentId="globals" symbolId="BgGetMessageView" type="class"/>
+        <dataEntry label="globals/BgGetMessageMenuDelegate" offset="1127" parentId="globals" symbolId="BgGetMessageMenuDelegate" type="class"/>
+        <dataEntry label="globals/BgGetMessageDelegate" offset="1182" parentId="globals" symbolId="BgGetMessageDelegate" type="class"/>
+        <dataEntry label="globals/Rez" offset="1237" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1316" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1363" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1402" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1449" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1480" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1519" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1550" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" endPc="268435491" name="initialize" parent="BgGetMessageApp" startPc="268435456">
@@ -256,108 +261,108 @@
         <functionEntry accessMode="public" endPc="268435726" name="canDoBackground" parent="BgGetMessageApp" startPc="268435701">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435858" name="onBackgroundData" parent="BgGetMessageApp" startPc="268435727">
+        <functionEntry accessMode="public" endPc="268435775" name="onBackgroundData" parent="BgGetMessageApp" startPc="268435727">
             <param id="data"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436651" name="&lt;init&gt;" parent="BgGetMessageApp" startPc="268436633">
+        <functionEntry accessMode="protected" endPc="268436724" name="&lt;init&gt;" parent="BgGetMessageApp" startPc="268436706">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436680" name="getApp" startPc="268436652">
+        <functionEntry accessMode="public" endPc="268436753" name="getApp" startPc="268436725">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436703" name="initialize" parent="BgGetMessageView" startPc="268436681">
+        <functionEntry accessMode="public" endPc="268436776" name="initialize" parent="BgGetMessageView" startPc="268436754">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436745" name="onLayout" parent="BgGetMessageView" startPc="268436704">
+        <functionEntry accessMode="public" endPc="268436818" name="onLayout" parent="BgGetMessageView" startPc="268436777">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436750" name="onShow" parent="BgGetMessageView" startPc="268436746">
+        <functionEntry accessMode="public" endPc="268436823" name="onShow" parent="BgGetMessageView" startPc="268436819">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437071" name="onUpdate" parent="BgGetMessageView" startPc="268436751">
+        <functionEntry accessMode="public" endPc="268437144" name="onUpdate" parent="BgGetMessageView" startPc="268436824">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437076" name="onHide" parent="BgGetMessageView" startPc="268437072">
+        <functionEntry accessMode="public" endPc="268437149" name="onHide" parent="BgGetMessageView" startPc="268437145">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437463" name="&lt;init&gt;" parent="BgGetMessageView" startPc="268437445">
+        <functionEntry accessMode="protected" endPc="268437536" name="&lt;init&gt;" parent="BgGetMessageView" startPc="268437518">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437099" name="initialize" parent="BgGetMessageMenuDelegate" startPc="268437077">
+        <functionEntry accessMode="public" endPc="268437172" name="initialize" parent="BgGetMessageMenuDelegate" startPc="268437150">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437174" name="onMenuItem" parent="BgGetMessageMenuDelegate" startPc="268437100">
+        <functionEntry accessMode="public" endPc="268437247" name="onMenuItem" parent="BgGetMessageMenuDelegate" startPc="268437173">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437482" name="&lt;init&gt;" parent="BgGetMessageMenuDelegate" startPc="268437464">
+        <functionEntry accessMode="protected" endPc="268437555" name="&lt;init&gt;" parent="BgGetMessageMenuDelegate" startPc="268437537">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437197" name="initialize" parent="BgGetMessageDelegate" startPc="268437175">
+        <functionEntry accessMode="public" endPc="268437270" name="initialize" parent="BgGetMessageDelegate" startPc="268437248">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437289" name="onMenu" parent="BgGetMessageDelegate" startPc="268437198">
+        <functionEntry accessMode="public" endPc="268437362" name="onMenu" parent="BgGetMessageDelegate" startPc="268437271">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437501" name="&lt;init&gt;" parent="BgGetMessageDelegate" startPc="268437483">
+        <functionEntry accessMode="protected" endPc="268437574" name="&lt;init&gt;" parent="BgGetMessageDelegate" startPc="268437556">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435938" name="initialize" parent="BackgroundServiceDelegate" startPc="268435859">
+        <functionEntry accessMode="public" endPc="268435855" name="initialize" parent="BackgroundServiceDelegate" startPc="268435776">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436164" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268435939">
+        <functionEntry accessMode="public" endPc="268436167" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268435856">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436366" name="HRVHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436165">
+        <functionEntry accessMode="public" endPc="268436439" name="HRVHistoryCallback" parent="BackgroundServiceDelegate" startPc="268436168">
             <param id="sensorData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436507" name="IBItoHRV" parent="BackgroundServiceDelegate" startPc="268436367">
+        <functionEntry accessMode="public" endPc="268436580" name="IBItoHRV" parent="BackgroundServiceDelegate" startPc="268436440">
             <param id="IBI_samples"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436570" name="saveBackgroundData" parent="BackgroundServiceDelegate" startPc="268436508">
+        <functionEntry accessMode="public" endPc="268436643" name="saveBackgroundData" parent="BackgroundServiceDelegate" startPc="268436581">
             <param id="currentData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436612" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268436571">
+        <functionEntry accessMode="public" endPc="268436685" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268436644">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436632" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268436614">
+        <functionEntry accessMode="protected" endPc="268436705" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268436687">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437526" name="&lt;init&gt;" parent="Drawables" startPc="268437526">
+        <functionEntry accessMode="protected" endPc="268437599" name="&lt;init&gt;" parent="Drawables" startPc="268437599">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437547" name="&lt;init&gt;" parent="Fonts" startPc="268437547">
+        <functionEntry accessMode="protected" endPc="268437620" name="&lt;init&gt;" parent="Fonts" startPc="268437620">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437549" name="&lt;init&gt;" parent="JsonData" startPc="268437549">
+        <functionEntry accessMode="protected" endPc="268437622" name="&lt;init&gt;" parent="JsonData" startPc="268437622">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437309" name="MainLayout" parent="Layouts" startPc="268437290">
+        <functionEntry accessMode="public" endPc="268437382" name="MainLayout" parent="Layouts" startPc="268437363">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437548" name="&lt;init&gt;" parent="Layouts" startPc="268437548">
+        <functionEntry accessMode="protected" endPc="268437621" name="&lt;init&gt;" parent="Layouts" startPc="268437621">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437444" name="initialize" parent="MainMenu" startPc="268437310">
+        <functionEntry accessMode="public" endPc="268437517" name="initialize" parent="MainMenu" startPc="268437383">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437546" name="&lt;init&gt;" parent="MainMenu" startPc="268437528">
+        <functionEntry accessMode="protected" endPc="268437619" name="&lt;init&gt;" parent="MainMenu" startPc="268437601">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437527" name="&lt;init&gt;" parent="Menus" startPc="268437527">
+        <functionEntry accessMode="protected" endPc="268437600" name="&lt;init&gt;" parent="Menus" startPc="268437600">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437550" name="&lt;init&gt;" parent="Strings" startPc="268437550">
+        <functionEntry accessMode="protected" endPc="268437623" name="&lt;init&gt;" parent="Strings" startPc="268437623">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437525" name="&lt;init&gt;" parent="Rez" startPc="268437502">
+        <functionEntry accessMode="protected" endPc="268437598" name="&lt;init&gt;" parent="Rez" startPc="268437575">
             <documentation/>
         </functionEntry>
     </functions>

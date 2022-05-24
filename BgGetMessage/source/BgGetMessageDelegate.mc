@@ -70,13 +70,13 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             System.println("HRVdata: " + HRVdata);
 
             IBI_samples = []; //reset
-            
-            // if(HRVdata <= MIN_HRV){
 
-            //     Background.requestApplicationWake("stress!");
-            //     saveBackgroundData(1);
-            //     // Background.exit(1);
-            //  }
+            if(HRVdata <= MIN_HRV){
+
+                Background.requestApplicationWake("stress!");
+                // saveBackgroundData(1);
+                Background.exit(true);
+             }
         }
     }
 
