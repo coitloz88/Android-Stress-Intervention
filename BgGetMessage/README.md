@@ -37,12 +37,14 @@ Background Event가 실행되고 있을 때, IBI 값이 일정 수치를 넘어�
 
 
 ### 실제 Device
-*  IBI sample이 측정되지 않음...
+*  ~~IBI sample이 측정되지 않음...~~ 작동되나 절반 정도는 누락되고 있음
 * `requestApplicationWake()`는 제대로 작동하지 않는데 `saveBackgroundData()`와 `Background.exit()`는 잘 작동하는 것 같음(why..)
 * 조건문 없이 실행하는 경우 피드백 화면(+이미지)가 정상적으로 출력됨
 
 * 30초동안 데이터 모으기: HRV만 저장하는 거라면 모을 수 있을지도? 테스트 필요
     - sensor callback 함수 부르는 주기 자체는 1~4초이나, 해당 주기에는 데이터를 저장하기만 하고 계산은 백그라운드 프로세스가 끝날때 수행
+
+* 현재는 12 / 12 / 6초 동안 IBI 데이터를 모으고 HRV를 계산하고 있음
 
 </div>
 </details>

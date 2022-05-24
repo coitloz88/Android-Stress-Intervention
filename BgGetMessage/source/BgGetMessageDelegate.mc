@@ -26,17 +26,23 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     var MIN_HRV;
     var periodSetting;
+    var IBI_samples as Lang.Array<Lang.Number>;
+    var timeCount;
 
     function initialize(){
         System.ServiceDelegate.initialize();
         // System.println("call initialize()");
         MIN_HRV = 4; //TODO: need to set
         periodSetting = 4; // 1 ~ 4s
+        IBI_samples = [];
+        timeCount = 0;
     }
 
     function onTemporalEvent(){
         // A callback method that is triggered in the background when time-based events occur.
-        System.println("call onTemporalEvent()");
+
+        var time = System.getClockTime();
+        System.print(Lang.format("BackgroundServiceDelegate::onTemporalEvent: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
 
         var maxSampleRate = Sensor.getMaxSampleRate();
         var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
@@ -51,25 +57,26 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     public function HRVHistoryCallback(sensorData as SensorData) as Void {
         var rawHeartRateData = sensorData.heartRateData;
-        var IBI_samples = rawHeartRateData.heartBeatIntervals;
+        IBI_samples.addAll(rawHeartRateData.heartBeatIntervals);
 
-        if(rawHeartRateData != null){
+        timeCount += periodSetting;
+
+        if(timeCount % (periodSetting * 3) == 0 || timeCount >= (30 - periodSetting)){
 
             //for debugging
             System.println("IBI_samples: " + IBI_samples);
 
             var HRVdata = IBItoHRV(IBI_samples);
-            // System.println("HRVdata: " + HRVdata);
+            System.println("HRVdata: " + HRVdata);
 
+            IBI_samples = []; //reset
+            
             // if(HRVdata <= MIN_HRV){
 
             //     Background.requestApplicationWake("stress!");
             //     saveBackgroundData(1);
             //     // Background.exit(1);
             //  }
-
-        } else {
-            System.println("    *** no HeartRate data! ***");
         }
     }
 
