@@ -44,7 +44,7 @@ class SensorHistoryTestView extends WatchUi.View {
 
     function timerCallback() {
         // var stressIter = getStressIterator();
-        getHeartRateData()
+        getHeartRateData();
     }
 
     function getHeartRateData() {
