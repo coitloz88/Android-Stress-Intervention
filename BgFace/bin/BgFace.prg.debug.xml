@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\loveg\Documents\GitHub\Garmin-Background-Test\BgFace\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="1" lineNum="13" parent="globals/BgFaceView" pc="268435456" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="1" lineNum="14" parent="globals/BgFaceView" pc="268435460" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="2" lineNum="18" parent="globals/BgFaceView" pc="268435479" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="2" lineNum="19" parent="globals/BgFaceView" pc="268435483" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="2" lineNum="21" parent="globals/BgFaceView" pc="268435504" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="2" lineNum="22" parent="globals/BgFaceView" pc="268435541" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="2" lineNum="23" parent="globals/BgFaceView" pc="268435569" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="3" lineNum="29" parent="globals/BgFaceView" pc="268435614" symbol="onShow"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="33" parent="globals/BgFaceView" pc="268435619" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="35" parent="globals/BgFaceView" pc="268435623" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="36" parent="globals/BgFaceView" pc="268435640" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="37" parent="globals/BgFaceView" pc="268435714" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="38" parent="globals/BgFaceView" pc="268435738" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="4" lineNum="41" parent="globals/BgFaceView" pc="268435752" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="5" lineNum="47" parent="globals/BgFaceView" pc="268435773" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="6" lineNum="51" parent="globals/BgFaceView" pc="268435778" symbol="onExitSleep"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="7" lineNum="55" parent="globals/BgFaceView" pc="268435783" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="58" parent="globals/BgFaceView" pc="268435788" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="60" parent="globals/BgFaceView" pc="268435792" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="63" parent="globals/BgFaceView" pc="268435805" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="64" parent="globals/BgFaceView" pc="268435809" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="65" parent="globals/BgFaceView" pc="268435822" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="66" parent="globals/BgFaceView" pc="268435822" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="68" parent="globals/BgFaceView" pc="268435830" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="69" parent="globals/BgFaceView" pc="268435837" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="70" parent="globals/BgFaceView" pc="268435853" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="72" parent="globals/BgFaceView" pc="268435856" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="73" parent="globals/BgFaceView" pc="268435873" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="75" parent="globals/BgFaceView" pc="268435963" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="76" parent="globals/BgFaceView" pc="268435970" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="77" parent="globals/BgFaceView" pc="268435990" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="80" parent="globals/BgFaceView" pc="268436006" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="83" parent="globals/BgFaceView" pc="268436025" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="85" parent="globals/BgFaceView" pc="268436029" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="86" parent="globals/BgFaceView" pc="268436072" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="87" parent="globals/BgFaceView" pc="268436109" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="89" parent="globals/BgFaceView" pc="268436138" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="9" parent="globals/BgFaceView" pc="268436439" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="9" parent="globals/BgFaceView" pc="268436439" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="13" lineNum="7" parent="globals/BgFaceApp" pc="268436141" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="13" lineNum="8" parent="globals/BgFaceApp" pc="268436145" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="14" lineNum="12" parent="globals/BgFaceApp" pc="268436164" symbol="onStart"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="15" lineNum="16" parent="globals/BgFaceApp" pc="268436169" symbol="onStop"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="16" lineNum="20" parent="globals/BgFaceApp" pc="268436174" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="16" lineNum="21" parent="globals/BgFaceApp" pc="268436178" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="17" lineNum="5" parent="globals/BgFaceApp" pc="268436488" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="17" lineNum="5" parent="globals/BgFaceApp" pc="268436488" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="26" parent="globals" pc="268436216" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="27" parent="globals" pc="268436228" symbol="getApp"/>
+        <entry filename="Rez" id="20" lineNum="2" parent="globals/Rez/Drawables" pc="268436482" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="21" lineNum="6" parent="globals/Rez/Fonts" pc="268436484" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="22" lineNum="8" parent="globals/Rez/JsonData" pc="268436486" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="23" lineNum="17" parent="globals/Rez/Layouts" pc="268436245" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="19" parent="globals/Rez/Layouts" pc="268436257" symbol="WatchFace"/>
+        <entry filename="Rez" id="23" lineNum="21" parent="globals/Rez/Layouts" pc="268436420" symbol="WatchFace"/>
+        <entry filename="Rez" id="24" lineNum="10" parent="globals/Rez/Layouts" pc="268436485" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="26" parent="globals/Rez/Menus" pc="268436483" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="26" lineNum="28" parent="globals/Rez/Strings" pc="268436487" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436458" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="1" parent="globals/Rez" pc="268436458" symbol="&lt;init&gt;"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+        <entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="18" symbol="AppName"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="13" method="true" symbol="getHeartRateData"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="16" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="9" object="true" symbol="BgFaceView"/>
+        <entry id="8389809" symbol="order"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="12" method="true" symbol="timerCallback"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry field="true" id="17" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="14" method="true" symbol="getHeartRateIterator"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="8389808" symbol="period"/>
+        <entry field="true" id="11" symbol="timerUnit"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="8389781" module="true" symbol="SensorHistory"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="15" module="true" symbol="Layouts"/>
+        <entry id="10" object="true" symbol="BgFaceApp"/>
+        <entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435612" name="sensorTimer" stackId="2" startPc="268435483"/>
+        <entry arg="true" endPc="268435613" name="dc" stackId="1" startPc="268435479"/>
+        <entry endPc="268435771" name="view" stackId="4" startPc="268435623"/>
+        <entry endPc="268435771" name="timeString" stackId="3" startPc="268435623"/>
+        <entry endPc="268435771" name="clockTime" stackId="2" startPc="268435623"/>
+        <entry arg="true" endPc="268435772" name="dc" stackId="1" startPc="268435619"/>
+        <entry endPc="268436023" name="hrDatas" stackId="3" startPc="268435809"/>
+        <entry endPc="268436023" name="sample" stackId="2" startPc="268435809"/>
+        <entry endPc="268436023" name="time" stackId="4" startPc="268435809"/>
+        <entry endPc="268436023" name="heartRateSensorIter" stackId="1" startPc="268435809"/>
+        <entry endPc="268436134" name="options" stackId="1" startPc="268436072"/>
+        <entry arg="true" endPc="268436168" name="state" stackId="1" startPc="268436164"/>
+        <entry arg="true" endPc="268436173" name="state" stackId="1" startPc="268436169"/>
+        <entry endPc="268436436" name="rez_cmp_local_text_TimeLabel" stackId="2" startPc="268436257"/>
+        <entry arg="true" endPc="268436437" name="dc" stackId="1" startPc="268436245"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/BgFaceView" offset="158" parentId="globals" symbolId="BgFaceView" type="class"/>
+        <dataEntry label="globals/Rez" offset="285" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="364" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="403" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="434" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="465" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="504" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="535" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/BgFaceApp" offset="574" parentId="globals" symbolId="BgFaceApp" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="BgFaceView" startPc="268435456">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435613" name="onLayout" parent="BgFaceView" startPc="268435479">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435618" name="onShow" parent="BgFaceView" startPc="268435614">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435772" name="onUpdate" parent="BgFaceView" startPc="268435619">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435777" name="onHide" parent="BgFaceView" startPc="268435773">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435782" name="onExitSleep" parent="BgFaceView" startPc="268435778">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435787" name="onEnterSleep" parent="BgFaceView" startPc="268435783">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435804" name="timerCallback" parent="BgFaceView" startPc="268435788">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436024" name="getHeartRateData" parent="BgFaceView" startPc="268435805">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436140" name="getHeartRateIterator" parent="BgFaceView" startPc="268436025">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436457" name="&lt;init&gt;" parent="BgFaceView" startPc="268436439">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436163" name="initialize" parent="BgFaceApp" startPc="268436141">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436168" name="onStart" parent="BgFaceApp" startPc="268436164">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436173" name="onStop" parent="BgFaceApp" startPc="268436169">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436215" name="getInitialView" parent="BgFaceApp" startPc="268436174">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436506" name="&lt;init&gt;" parent="BgFaceApp" startPc="268436488">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436244" name="getApp" startPc="268436216">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436482" name="&lt;init&gt;" parent="Drawables" startPc="268436482">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436484" name="&lt;init&gt;" parent="Fonts" startPc="268436484">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436486" name="&lt;init&gt;" parent="JsonData" startPc="268436486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436437" name="WatchFace" parent="Layouts" startPc="268436245">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436485" name="&lt;init&gt;" parent="Layouts" startPc="268436485">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436483" name="&lt;init&gt;" parent="Menus" startPc="268436483">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436487" name="&lt;init&gt;" parent="Strings" startPc="268436487">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="protected" endPc="268436481" name="&lt;init&gt;" parent="Rez" startPc="268436458">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

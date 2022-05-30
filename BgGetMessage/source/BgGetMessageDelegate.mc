@@ -72,7 +72,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             IBI_samples = []; //reset
 
             if(HRVdata > 0 && HRVdata <= MIN_HRV){
-
                 Background.requestApplicationWake("stress!");
                 // saveBackgroundData(1);
                 Background.exit(true);
