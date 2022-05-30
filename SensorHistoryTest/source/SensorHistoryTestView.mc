@@ -18,8 +18,9 @@ class SensorHistoryTestView extends WatchUi.View {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
-        var sensorTimer = new Timer.Timer();
-        sensorTimer.start(method(:timerCallback), timerUnit * 1000, true);
+        // var sensorTimer = new Timer.Timer();
+        // sensorTimer.start(method(:timerCallback), timerUnit * 1000, true);
+        getHeartRateData();
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -42,33 +43,35 @@ class SensorHistoryTestView extends WatchUi.View {
     }
 
     function timerCallback() {
-        var heartRateSensorIter = getHeartRateIterator();
         // var stressIter = getStressIterator();
+        getHeartRateData()
+    }
+
+    function getHeartRateData() {
+        var heartRateSensorIter = getHeartRateIterator();
         var sample;
+        var hrDatas = [];
 
         if(heartRateSensorIter != null){
             sample = heartRateSensorIter.next();
         } else { sample = null; }
-
+        
         var time = System.getClockTime();
-
         System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
-        // if(heartRateSensorIter != null){
-        //     System.println("    Heart rate data: " + heartRateSensorIter.next().data);
-        // }
 
         while (sample != null) {
-            System.println(sample.data);        // print the current sample
+            hrDatas.add(sample.data);
             sample = heartRateSensorIter.next();
         }
+
+        System.println(hrDatas);
     }
 
     function getHeartRateIterator() {
         // Check device for SensorHistory compatibility
         if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
-            var options = {:period => timerUnit, :order => 0};
-            // return Toybox.SensorHistory.getHeartRateHistory(options);
-            return Toybox.SensorHistory.getHeartRateHistory({});
+            var options = {:period => timerUnit * 10, :order => 0};
+            return Toybox.SensorHistory.getHeartRateHistory(options);
         }
         return null;
     }
