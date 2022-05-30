@@ -22,14 +22,14 @@ class BgGetMessageView extends WatchUi.View {
     function onUpdate(dc as Dc) as Void {
         // Call the parent onUpdate function to redraw the layout
 
-        if(needBreath == 1){
+        if(needBreath){
             dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLUE);
             dc.clear();
 
             var image = WatchUi.loadResource(Rez.Drawables.img_Breathing);
             dc.drawBitmap(10, 30, image);
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
-            needBreath = 0;
+            needBreath = false;
         } else {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
             dc.clear();

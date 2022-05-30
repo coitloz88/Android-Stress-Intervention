@@ -32,7 +32,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     function initialize(){
         System.ServiceDelegate.initialize();
         // System.println("call initialize()");
-        MIN_HRV = 4; //TODO: need to set
+        MIN_HRV = 20; //TODO: need to set
         periodSetting = 4; // 1 ~ 4s
         IBI_samples = [];
         timeCount = 0;
@@ -42,7 +42,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         // A callback method that is triggered in the background when time-based events occur.
 
         var time = System.getClockTime();
-        System.print(Lang.format("BackgroundServiceDelegate::onTemporalEvent: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
+        System.println(Lang.format("onTemporalEvent: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
 
         var maxSampleRate = Sensor.getMaxSampleRate();
         var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
@@ -61,8 +61,8 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         timeCount += periodSetting;
 
-        if(timeCount % (periodSetting * 3) == 0 || timeCount >= (30 - periodSetting)){
-
+        // if(timeCount % (periodSetting * 3) == 0 || timeCount >= (30 - periodSetting)){
+        if(timeCount >= (30 - periodSetting)){
             //for debugging
             System.println("IBI_samples: " + IBI_samples);
 
@@ -71,7 +71,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
             IBI_samples = []; //reset
 
-            if(HRVdata <= MIN_HRV){
+            if(HRVdata > 0 && HRVdata <= MIN_HRV){
 
                 Background.requestApplicationWake("stress!");
                 // saveBackgroundData(1);

@@ -18,7 +18,7 @@ class BgGetMessageApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
-        needBreath = 0;
+        needBreath = false;
     }
 
     // onStart() is called on application start up
