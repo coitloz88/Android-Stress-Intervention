@@ -9,6 +9,8 @@ import Toybox.Timer;
 class BgFaceView extends WatchUi.WatchFace {
 
     var timerUnit = 15;
+    var MIN_HRV = 40;
+    var needFeedback = false;
 
     function initialize() {
         WatchFace.initialize();
@@ -31,14 +33,25 @@ class BgFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Get and show the current time
-        var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
-        
-        // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        if(needFeedback){
+            dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLUE);
+            dc.clear();
+            var image = WatchUi.loadResource(Rez.Drawables.img_Breathing);
+            dc.drawBitmap(10, 30, image);
+            dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
+        }
+        else {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            dc.clear();
+            var clockTime = System.getClockTime();
+            var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);        
+                
+            // var view = View.findDrawableById("TimeLabel") as Text;
+            // view.setText(timeString);    
+
+            dc.drawText(dc.getWidth() / 2, dc.getHeight() / 2,  Graphics.FONT_SMALL, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+            // Call the parent onUpdate function to redraw the layout
+        }
     }
 
     // Called when this View is removed from the screen. Save the
@@ -56,8 +69,27 @@ class BgFaceView extends WatchUi.WatchFace {
     }
 
     function timerCallback() {
-        // var stressIter = getStressIterator();
-        getHeartRateData();
+        needFeedback = false;
+
+        var time = System.getClockTime();
+        System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
+        
+        var hrDatas = getHeartRateData();
+        System.println(hrDatas);
+        if(hrDatas != null){
+            var HRVdata = IBItoHRV(BPMtoIBI(hrDatas));
+            System.println("HRV data: " + HRVdata);
+
+            if(HRVdata <= MIN_HRV){
+                needFeedback = true;
+                WatchUi.requestUpdate();
+            }
+
+        } else {
+            System.println("No HeartRate Data!");
+        }
+
+
     }
 
     function getHeartRateData() {
@@ -69,15 +101,11 @@ class BgFaceView extends WatchUi.WatchFace {
             sample = heartRateSensorIter.next();
         } else { sample = null; }
         
-        var time = System.getClockTime();
-        System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
-
         while (sample != null) {
             hrDatas.add(sample.data);
             sample = heartRateSensorIter.next();
         }
-
-        System.println(hrDatas);
+        return hrDatas;
     }
 
     function getHeartRateIterator() {
