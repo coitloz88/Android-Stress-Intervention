@@ -9,7 +9,7 @@ import Toybox.Timer;
 class BgFaceView extends WatchUi.WatchFace {
 
     var timerUnit = 15;
-    var MIN_HRV = 40;
+    var MIN_HRV = 30;
     var needFeedback = false;
 
     function initialize() {
@@ -75,7 +75,7 @@ class BgFaceView extends WatchUi.WatchFace {
         System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
         
         var hrDatas = getHeartRateData();
-        System.println(hrDatas);
+        System.println("HeartRate History data: " + hrDatas);
         if(hrDatas != null){
             var HRVdata = IBItoHRV(BPMtoIBI(hrDatas));
             System.println("HRV data: " + HRVdata);
@@ -125,6 +125,7 @@ class BgFaceView extends WatchUi.WatchFace {
                 IBI_samples.add(60 * 1000 / BPM_samples[i]);
             }
         }
+        System.println("IBI data: " + IBI_samples);
 
         return IBI_samples;
     }

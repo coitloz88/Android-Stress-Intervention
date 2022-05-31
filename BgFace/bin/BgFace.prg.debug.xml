@@ -31,65 +31,66 @@
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="75" parent="globals/BgFaceView" pc="268436067" symbol="timerCallback"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="77" parent="globals/BgFaceView" pc="268436157" symbol="timerCallback"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="78" parent="globals/BgFaceView" pc="268436170" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="79" parent="globals/BgFaceView" pc="268436188" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="80" parent="globals/BgFaceView" pc="268436195" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="81" parent="globals/BgFaceView" pc="268436221" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="83" parent="globals/BgFaceView" pc="268436245" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="84" parent="globals/BgFaceView" pc="268436259" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="85" parent="globals/BgFaceView" pc="268436269" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="89" parent="globals/BgFaceView" pc="268436291" symbol="timerCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="95" parent="globals/BgFaceView" pc="268436313" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="96" parent="globals/BgFaceView" pc="268436317" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="97" parent="globals/BgFaceView" pc="268436330" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="98" parent="globals/BgFaceView" pc="268436330" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="100" parent="globals/BgFaceView" pc="268436338" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="101" parent="globals/BgFaceView" pc="268436345" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="102" parent="globals/BgFaceView" pc="268436361" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="104" parent="globals/BgFaceView" pc="268436364" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="105" parent="globals/BgFaceView" pc="268436371" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="106" parent="globals/BgFaceView" pc="268436391" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="108" parent="globals/BgFaceView" pc="268436407" symbol="getHeartRateData"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="111" parent="globals/BgFaceView" pc="268436411" symbol="getHeartRateIterator"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="113" parent="globals/BgFaceView" pc="268436415" symbol="getHeartRateIterator"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="114" parent="globals/BgFaceView" pc="268436458" symbol="getHeartRateIterator"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="115" parent="globals/BgFaceView" pc="268436495" symbol="getHeartRateIterator"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="117" parent="globals/BgFaceView" pc="268436524" symbol="getHeartRateIterator"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="120" parent="globals/BgFaceView" pc="268436527" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="121" parent="globals/BgFaceView" pc="268436531" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="123" parent="globals/BgFaceView" pc="268436539" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="124" parent="globals/BgFaceView" pc="268436563" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="125" parent="globals/BgFaceView" pc="268436573" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="129" parent="globals/BgFaceView" pc="268436612" symbol="BPMtoIBI"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="133" parent="globals/BgFaceView" pc="268436616" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="134" parent="globals/BgFaceView" pc="268436620" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="79" parent="globals/BgFaceView" pc="268436194" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="80" parent="globals/BgFaceView" pc="268436201" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="81" parent="globals/BgFaceView" pc="268436227" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="83" parent="globals/BgFaceView" pc="268436251" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="84" parent="globals/BgFaceView" pc="268436265" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="85" parent="globals/BgFaceView" pc="268436275" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="8" lineNum="89" parent="globals/BgFaceView" pc="268436297" symbol="timerCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="95" parent="globals/BgFaceView" pc="268436319" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="96" parent="globals/BgFaceView" pc="268436323" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="97" parent="globals/BgFaceView" pc="268436336" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="98" parent="globals/BgFaceView" pc="268436336" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="100" parent="globals/BgFaceView" pc="268436344" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="101" parent="globals/BgFaceView" pc="268436351" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="102" parent="globals/BgFaceView" pc="268436367" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="104" parent="globals/BgFaceView" pc="268436370" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="105" parent="globals/BgFaceView" pc="268436377" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="106" parent="globals/BgFaceView" pc="268436397" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="9" lineNum="108" parent="globals/BgFaceView" pc="268436413" symbol="getHeartRateData"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="111" parent="globals/BgFaceView" pc="268436417" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="113" parent="globals/BgFaceView" pc="268436421" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="114" parent="globals/BgFaceView" pc="268436464" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="115" parent="globals/BgFaceView" pc="268436501" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="10" lineNum="117" parent="globals/BgFaceView" pc="268436530" symbol="getHeartRateIterator"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="120" parent="globals/BgFaceView" pc="268436533" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="121" parent="globals/BgFaceView" pc="268436537" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="123" parent="globals/BgFaceView" pc="268436545" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="124" parent="globals/BgFaceView" pc="268436569" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="125" parent="globals/BgFaceView" pc="268436579" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="128" parent="globals/BgFaceView" pc="268436618" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="11" lineNum="130" parent="globals/BgFaceView" pc="268436642" symbol="BPMtoIBI"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="134" parent="globals/BgFaceView" pc="268436646" symbol="IBItoHRV"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="135" parent="globals/BgFaceView" pc="268436650" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="138" parent="globals/BgFaceView" pc="268436655" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="140" parent="globals/BgFaceView" pc="268436662" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="136" parent="globals/BgFaceView" pc="268436680" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="139" parent="globals/BgFaceView" pc="268436685" symbol="IBItoHRV"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="141" parent="globals/BgFaceView" pc="268436692" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="143" parent="globals/BgFaceView" pc="268436749" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="145" parent="globals/BgFaceView" pc="268436771" symbol="IBItoHRV"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="13" lineNum="9" parent="globals/BgFaceView" pc="268436917" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="13" lineNum="9" parent="globals/BgFaceView" pc="268436917" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="15" lineNum="7" parent="globals/BgFaceApp" pc="268436792" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="15" lineNum="8" parent="globals/BgFaceApp" pc="268436796" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="16" lineNum="12" parent="globals/BgFaceApp" pc="268436815" symbol="onStart"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="17" lineNum="16" parent="globals/BgFaceApp" pc="268436820" symbol="onStop"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="20" parent="globals/BgFaceApp" pc="268436825" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="21" parent="globals/BgFaceApp" pc="268436829" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="19" lineNum="5" parent="globals/BgFaceApp" pc="268436966" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="19" lineNum="5" parent="globals/BgFaceApp" pc="268436966" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="20" lineNum="26" parent="globals" pc="268436867" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="20" lineNum="27" parent="globals" pc="268436879" symbol="getApp"/>
-        <entry filename="Rez" id="22" lineNum="2" parent="globals/Rez/Drawables" pc="268436960" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="23" lineNum="7" parent="globals/Rez/Fonts" pc="268436962" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="24" lineNum="9" parent="globals/Rez/JsonData" pc="268436964" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="25" lineNum="18" parent="globals/Rez/Layouts" pc="268436896" symbol="WatchFace"/>
-        <entry filename="Rez" id="25" lineNum="19" parent="globals/Rez/Layouts" pc="268436908" symbol="WatchFace"/>
-        <entry filename="Rez" id="26" lineNum="11" parent="globals/Rez/Layouts" pc="268436963" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Menus" pc="268436961" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="28" lineNum="24" parent="globals/Rez/Strings" pc="268436965" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="1" parent="globals/Rez" pc="268436936" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="29" lineNum="1" parent="globals/Rez" pc="268436936" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="142" parent="globals/BgFaceView" pc="268436722" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="144" parent="globals/BgFaceView" pc="268436779" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="12" lineNum="146" parent="globals/BgFaceView" pc="268436801" symbol="IBItoHRV"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="13" lineNum="9" parent="globals/BgFaceView" pc="268436947" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceView.mc" id="13" lineNum="9" parent="globals/BgFaceView" pc="268436947" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="15" lineNum="7" parent="globals/BgFaceApp" pc="268436822" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="15" lineNum="8" parent="globals/BgFaceApp" pc="268436826" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="16" lineNum="12" parent="globals/BgFaceApp" pc="268436845" symbol="onStart"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="17" lineNum="16" parent="globals/BgFaceApp" pc="268436850" symbol="onStop"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="20" parent="globals/BgFaceApp" pc="268436855" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="18" lineNum="21" parent="globals/BgFaceApp" pc="268436859" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="19" lineNum="5" parent="globals/BgFaceApp" pc="268436996" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="19" lineNum="5" parent="globals/BgFaceApp" pc="268436996" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="20" lineNum="26" parent="globals" pc="268436897" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Garmin-Background-Test\\BgFace\\source\\BgFaceApp.mc" id="20" lineNum="27" parent="globals" pc="268436909" symbol="getApp"/>
+        <entry filename="Rez" id="22" lineNum="2" parent="globals/Rez/Drawables" pc="268436990" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="23" lineNum="7" parent="globals/Rez/Fonts" pc="268436992" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="24" lineNum="9" parent="globals/Rez/JsonData" pc="268436994" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="25" lineNum="18" parent="globals/Rez/Layouts" pc="268436926" symbol="WatchFace"/>
+        <entry filename="Rez" id="25" lineNum="19" parent="globals/Rez/Layouts" pc="268436938" symbol="WatchFace"/>
+        <entry filename="Rez" id="26" lineNum="11" parent="globals/Rez/Layouts" pc="268436993" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="27" lineNum="22" parent="globals/Rez/Menus" pc="268436991" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="28" lineNum="24" parent="globals/Rez/Strings" pc="268436995" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="1" parent="globals/Rez" pc="268436966" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="29" lineNum="1" parent="globals/Rez" pc="268436966" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -153,22 +154,22 @@
         <entry endPc="268436019" name="timeString" stackId="4" startPc="268435809"/>
         <entry endPc="268436019" name="clockTime" stackId="3" startPc="268435809"/>
         <entry arg="true" endPc="268436020" name="dc" stackId="1" startPc="268435619"/>
-        <entry endPc="268436287" name="HRVdata" stackId="3" startPc="268436195"/>
-        <entry endPc="268436311" name="hrDatas" stackId="2" startPc="268436040"/>
-        <entry endPc="268436311" name="time" stackId="1" startPc="268436040"/>
-        <entry endPc="268436409" name="hrDatas" stackId="3" startPc="268436317"/>
-        <entry endPc="268436409" name="sample" stackId="2" startPc="268436317"/>
-        <entry endPc="268436409" name="heartRateSensorIter" stackId="1" startPc="268436317"/>
-        <entry endPc="268436520" name="options" stackId="1" startPc="268436458"/>
-        <entry endPc="268436611" name="i" stackId="3" startPc="268436563"/>
-        <entry endPc="268436614" name="IBI_samples" stackId="2" startPc="268436531"/>
-        <entry arg="true" endPc="268436615" name="BPM_samples" stackId="1" startPc="268436527"/>
-        <entry endPc="268436748" name="i" stackId="3" startPc="268436692"/>
-        <entry endPc="268436790" name="HRVdata" stackId="2" startPc="268436620"/>
-        <entry arg="true" endPc="268436791" name="IBI_samples" stackId="1" startPc="268436616"/>
-        <entry arg="true" endPc="268436819" name="state" stackId="1" startPc="268436815"/>
-        <entry arg="true" endPc="268436824" name="state" stackId="1" startPc="268436820"/>
-        <entry arg="true" endPc="268436915" name="dc" stackId="1" startPc="268436896"/>
+        <entry endPc="268436293" name="HRVdata" stackId="3" startPc="268436201"/>
+        <entry endPc="268436317" name="hrDatas" stackId="2" startPc="268436040"/>
+        <entry endPc="268436317" name="time" stackId="1" startPc="268436040"/>
+        <entry endPc="268436415" name="hrDatas" stackId="3" startPc="268436323"/>
+        <entry endPc="268436415" name="sample" stackId="2" startPc="268436323"/>
+        <entry endPc="268436415" name="heartRateSensorIter" stackId="1" startPc="268436323"/>
+        <entry endPc="268436526" name="options" stackId="1" startPc="268436464"/>
+        <entry endPc="268436617" name="i" stackId="3" startPc="268436569"/>
+        <entry endPc="268436644" name="IBI_samples" stackId="2" startPc="268436537"/>
+        <entry arg="true" endPc="268436645" name="BPM_samples" stackId="1" startPc="268436533"/>
+        <entry endPc="268436778" name="i" stackId="3" startPc="268436722"/>
+        <entry endPc="268436820" name="HRVdata" stackId="2" startPc="268436650"/>
+        <entry arg="true" endPc="268436821" name="IBI_samples" stackId="1" startPc="268436646"/>
+        <entry arg="true" endPc="268436849" name="state" stackId="1" startPc="268436845"/>
+        <entry arg="true" endPc="268436854" name="state" stackId="1" startPc="268436850"/>
+        <entry arg="true" endPc="268436945" name="dc" stackId="1" startPc="268436926"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="img_Breathing"/>
@@ -211,69 +212,69 @@
         <functionEntry accessMode="public" endPc="268436035" name="onEnterSleep" parent="BgFaceView" startPc="268436031">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436312" name="timerCallback" parent="BgFaceView" startPc="268436036">
+        <functionEntry accessMode="public" endPc="268436318" name="timerCallback" parent="BgFaceView" startPc="268436036">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436410" name="getHeartRateData" parent="BgFaceView" startPc="268436313">
+        <functionEntry accessMode="public" endPc="268436416" name="getHeartRateData" parent="BgFaceView" startPc="268436319">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436526" name="getHeartRateIterator" parent="BgFaceView" startPc="268436411">
+        <functionEntry accessMode="public" endPc="268436532" name="getHeartRateIterator" parent="BgFaceView" startPc="268436417">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436615" name="BPMtoIBI" parent="BgFaceView" startPc="268436527">
+        <functionEntry accessMode="public" endPc="268436645" name="BPMtoIBI" parent="BgFaceView" startPc="268436533">
             <param id="BPM_samples"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436791" name="IBItoHRV" parent="BgFaceView" startPc="268436616">
+        <functionEntry accessMode="public" endPc="268436821" name="IBItoHRV" parent="BgFaceView" startPc="268436646">
             <param id="IBI_samples"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436935" name="&lt;init&gt;" parent="BgFaceView" startPc="268436917">
+        <functionEntry accessMode="protected" endPc="268436965" name="&lt;init&gt;" parent="BgFaceView" startPc="268436947">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436814" name="initialize" parent="BgFaceApp" startPc="268436792">
+        <functionEntry accessMode="public" endPc="268436844" name="initialize" parent="BgFaceApp" startPc="268436822">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436819" name="onStart" parent="BgFaceApp" startPc="268436815">
+        <functionEntry accessMode="public" endPc="268436849" name="onStart" parent="BgFaceApp" startPc="268436845">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436824" name="onStop" parent="BgFaceApp" startPc="268436820">
+        <functionEntry accessMode="public" endPc="268436854" name="onStop" parent="BgFaceApp" startPc="268436850">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436866" name="getInitialView" parent="BgFaceApp" startPc="268436825">
+        <functionEntry accessMode="public" endPc="268436896" name="getInitialView" parent="BgFaceApp" startPc="268436855">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436984" name="&lt;init&gt;" parent="BgFaceApp" startPc="268436966">
+        <functionEntry accessMode="protected" endPc="268437014" name="&lt;init&gt;" parent="BgFaceApp" startPc="268436996">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436895" name="getApp" startPc="268436867">
+        <functionEntry accessMode="public" endPc="268436925" name="getApp" startPc="268436897">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436960" name="&lt;init&gt;" parent="Drawables" startPc="268436960">
+        <functionEntry accessMode="protected" endPc="268436990" name="&lt;init&gt;" parent="Drawables" startPc="268436990">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436962" name="&lt;init&gt;" parent="Fonts" startPc="268436962">
+        <functionEntry accessMode="protected" endPc="268436992" name="&lt;init&gt;" parent="Fonts" startPc="268436992">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436964" name="&lt;init&gt;" parent="JsonData" startPc="268436964">
+        <functionEntry accessMode="protected" endPc="268436994" name="&lt;init&gt;" parent="JsonData" startPc="268436994">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436915" name="WatchFace" parent="Layouts" startPc="268436896">
+        <functionEntry accessMode="public" endPc="268436945" name="WatchFace" parent="Layouts" startPc="268436926">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436963" name="&lt;init&gt;" parent="Layouts" startPc="268436963">
+        <functionEntry accessMode="protected" endPc="268436993" name="&lt;init&gt;" parent="Layouts" startPc="268436993">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436961" name="&lt;init&gt;" parent="Menus" startPc="268436961">
+        <functionEntry accessMode="protected" endPc="268436991" name="&lt;init&gt;" parent="Menus" startPc="268436991">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436965" name="&lt;init&gt;" parent="Strings" startPc="268436965">
+        <functionEntry accessMode="protected" endPc="268436995" name="&lt;init&gt;" parent="Strings" startPc="268436995">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268436959" name="&lt;init&gt;" parent="Rez" startPc="268436936">
+        <functionEntry accessMode="protected" endPc="268436989" name="&lt;init&gt;" parent="Rez" startPc="268436966">
             <documentation/>
         </functionEntry>
     </functions>
