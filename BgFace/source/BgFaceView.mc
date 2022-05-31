@@ -30,7 +30,7 @@ class BgFaceView extends WatchUi.WatchFace {
             var image = WatchUi.loadResource(Rez.Drawables.img_Breathing);
             dc.drawBitmap(10, 30, image);
             dc.drawText(dc.getWidth() / 2, 60,  Graphics.FONT_SMALL, "Take a Breath", Graphics.TEXT_JUSTIFY_CENTER);
-            if(timer >= 3){ //set max showing period in here (3 = 3 seconds)
+            if(timer >= 2){ //set max showing period in here (2 = 2 seconds)
                 timer = 0;
                 needFeedback = false;
             } else {
