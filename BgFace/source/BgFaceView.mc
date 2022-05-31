@@ -38,21 +38,25 @@ class BgFaceView extends WatchUi.WatchFace {
             }
         }
         else {
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
-            dc.clear();
+            // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+            // dc.clear();
             var clockTime = System.getClockTime();
             var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);        
 
             var systemStats = System.getSystemStats();
 
-            // var view = View.findDrawableById("TimeLabel") as Text;
-            // view.setText(timeString);                
-            dc.drawText(dc.getWidth() / 2, 65,  Graphics.FONT_MEDIUM, timeString, Graphics.TEXT_JUSTIFY_CENTER);
-            dc.drawText(dc.getWidth() / 2, 95,  Graphics.FONT_TINY, systemStats.battery.toNumber() + " / 100", Graphics.TEXT_JUSTIFY_CENTER);
-            // Call the parent onUpdate function to redraw the layout
+            var tv_timeView = View.findDrawableById("TimeLabel") as Text;
+            tv_timeView.setText(timeString); 
 
-            dc.setColor(Graphics.COLOR_YELLOW, Graphics.COLOR_BLACK);
-            dc.fillRectangle(dc.getWidth() / 2, 55, 4, 4);
+            var tv_BatteryView = View.findDrawableById("BatteryLabel") as Text;
+            tv_BatteryView.setText(systemStats.battery.toNumber() + " / 100"); 
+
+            // dc.drawText(dc.getWidth() / 2, 65,  Graphics.FONT_SYSTEM_LARGE, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+            // dc.drawText(dc.getWidth() / 2, 98,  Graphics.FONT_TINY, systemStats.battery.toNumber() + " / 100", Graphics.TEXT_JUSTIFY_CENTER);
+
+            // dc.setColor(Graphics.COLOR_DK_BLUE, Graphics.COLOR_BLACK);
+            // dc.fillRectangle((dc.getWidth() / 3).toNumber(), 58, (dc.getWidth() / 3).toNumber(), 5);
+            View.onUpdate(dc);
         }
     }
 
