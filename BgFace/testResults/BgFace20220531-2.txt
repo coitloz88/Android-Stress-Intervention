@@ -1,0 +1,43 @@
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:5:28
+HeartRate History data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 81]
+IBI data: [740]
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:10:28
+HeartRate History data: [102, 111, 94, 90, null, null, null, null, null, null, null, null, null, null, null]
+IBI data: [588, 540, 638, 666]
+HRV data: 65.043571
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:15:28
+HeartRate History data: [93, 93, 94, 104, 103, 102, 111, 94, 90, null, null, null, null, null, null]
+IBI data: [645, 645, 638, 576, 582, 588, 540, 638, 666]
+HRV data: 45.630306
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:20:28
+HeartRate History data: [95, 102, 106, 89, 92, 93, 93, 94, 104, 103, 102, 111, 94, 90, null]
+IBI data: [631, 588, 566, 674, 652, 645, 645, 638, 576, 582, 588, 540, 638, 666]
+HRV data: 48.979588
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:25:28
+HeartRate History data: [93, 95, 95, 94, 92, 95, 102, 106, 89, 92, 93, 93, 94, 104, 103]
+IBI data: [645, 631, 631, 638, 652, 631, 588, 566, 674, 652, 645, 645, 638, 576, 582]
+HRV data: 37.168533
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:30:28
+HeartRate History data: [89, 93, 94, 96, 94, 93, 95, 95, 94, 92, 95, 102, 106, 89, 92]
+IBI data: [674, 645, 638, 625, 638, 645, 631, 631, 638, 652, 631, 588, 566, 674, 652]
+HRV data: 34.475662
+passed data: true
+call initialize()
+call onTemporalEvent()
+timerCallback: 15:35:28
+HeartRate History data: [92, 91, 94, 93, 87, 89, 93, 94, 96, 94, 93, 95, 95, 94, 92]
+IBI data: [652, 659, 638, 645, 689, 674, 645, 638, 625, 638, 645, 631, 631, 638, 652]
+HRV data: 17.764330
+passed data: true

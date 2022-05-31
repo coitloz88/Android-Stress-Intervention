@@ -128,6 +128,7 @@
         <entry id="18" method="true" symbol="IBItoHRV"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="26" symbol="AppName"/>
+        <entry field="true" id="24" symbol="id_backgroundImage"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8389345" symbol="rezId"/>
@@ -162,7 +163,6 @@
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="24" symbol="id_blueLine"/>
         <entry id="8388640" module="true" symbol="Lang"/>
         <entry id="8390088" module="true" object="true" symbol="JsonData"/>
         <entry field="true" id="25" symbol="LauncherIcon"/>
@@ -212,14 +212,14 @@
         <entry arg="true" endPc="268436344" name="state" stackId="1" startPc="268436340"/>
         <entry arg="true" endPc="268436349" name="state" stackId="1" startPc="268436345"/>
         <entry arg="true" endPc="268436593" name="data" stackId="1" startPc="268436545"/>
-        <entry endPc="268437704" name="rez_cmp_local_bitmap_id_blueLine" stackId="2" startPc="268437250"/>
+        <entry endPc="268437704" name="rez_cmp_local_bitmap_id_backgroundImage" stackId="2" startPc="268437250"/>
         <entry endPc="268437704" name="rez_cmp_local_text_BatteryLabel" stackId="4" startPc="268437250"/>
         <entry endPc="268437704" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268437250"/>
         <entry arg="true" endPc="268437705" name="dc" stackId="1" startPc="268437238"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="img_Breathing"/>
-        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_blueLine"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_backgroundImage"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
     </annotations>

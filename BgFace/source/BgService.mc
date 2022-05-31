@@ -11,22 +11,21 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // When a scheduled background event triggers, make a request to
     // a service and handle the response with a callback function
     // within this delegate.
-    var MIN_HRV = 35;
+    var MIN_HRV = 20;
     var timeUnit = 15; // 아마 가장 최근 5개 데이터 수집하는 걸로 수정해야 할듯!
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        System.println("call initialize()");
-
+        // System.println("call initialize()");
     }
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
-        System.println("call onTemporalEvent()");
+        // System.println("call onTemporalEvent()");
 
         // for debugging log
         var time = System.getClockTime();
-        System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
+        System.println(Lang.format("BgEvent: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
     
         // logics for collecting heart rate history
         var hrDatas = getHeartRateData();
