@@ -65,3 +65,7 @@ On Garmin watches, data is transmitted in the form of `Toybox.Lang.Dictionary`, 
 ## Send feedback
 
 If you need feedback, `giveFeedBack()` is called and you can send a message to your Garmin watch. However, the watch app must be running in the foreground in order to receive messages from the Garmin watch app and display the messages. Therefore, in order to first launch the Garmin Watch app in the foreground, the mobile app prompts the user to confirm whether or not to open the app. When the user opens the app, the sent feedback message is displayed on the screen.
+
+
+# 📑Reference
+<https://pastebin.com/BZRfzcUv>
