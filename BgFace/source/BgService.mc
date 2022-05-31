@@ -4,14 +4,15 @@ import Toybox.WatchUi;
 import Toybox.Background;
 import Toybox.System;
 import Toybox.SensorHistory;
+// import Toybox.ActivityMonitor;
 
 (:background)
 public class BackgroundServiceDelegate extends System.ServiceDelegate {
     // When a scheduled background event triggers, make a request to
     // a service and handle the response with a callback function
     // within this delegate.
-    var MIN_HRV = 40;
-    var timeUnit = 15;
+    var MIN_HRV = 35;
+    var timeUnit = 15; // 아마 가장 최근 5개 데이터 수집하는 걸로 수정해야 할듯!
 
     function initialize(){
         System.ServiceDelegate.initialize();
@@ -27,6 +28,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         var time = System.getClockTime();
         System.println(Lang.format("timerCallback: $1$:$2$:$3$", [time.hour, time.min, time.sec]));
     
+        // logics for collecting heart rate history
         var hrDatas = getHeartRateData();
         System.println("HeartRate History data: " + hrDatas);
         if(hrDatas != null){
@@ -40,8 +42,17 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         } else {
             System.println("No HeartRate Data!");
         }
+
+        // logics for collecting stress history
+        // var stressDatas = getStressData();
+        // if(stressDatas != null){
+        //     System.println("stress data: " + stressDatas);
+        // } else {
+        //     System.println("No Stress Data!");
+        // }
     }
 
+    //functions for heart rate data
     function getHeartRateData() {
         var heartRateSensorIter = getHeartRateIterator();
         var sample;
@@ -96,5 +107,30 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         return Math.sqrt(HRVdata);
     }
 
+    // functions for stress
+    // function getStressData() {
+    //     var stressIter = getStressIterator();
+    //     var sample;
+    //     var stressDatas = [];
+
+    //     if(stressIter != null){
+    //         sample = stressIter.next();
+    //     } else { sample = null; }
+        
+    //     while (sample != null) {
+    //         stressDatas.add(sample.data);
+    //         sample = stressIter.next();
+    //     }
+    //     return stressDatas;
+    // }
+
+    // function getStressIterator() {
+    //     // Check device for SensorHistory compatibility
+    //     if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getStressHistory)) {
+    //         var options = {:period => timeUnit, :order => 0};
+    //         return Toybox.SensorHistory.getHeartRateHistory(options);
+    //     }
+    //     return null;
+    // }
 
 }
