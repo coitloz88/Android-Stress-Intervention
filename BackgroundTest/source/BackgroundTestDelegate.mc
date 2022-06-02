@@ -47,7 +47,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        periodSetting = 4; //1~4 (max 4)
+        periodSetting = 4; //1~4s (max 4)
         timeCount = 0;
         IBI_samples = [];
     }
@@ -80,10 +80,8 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         if(timeCount >= (30 - periodSetting)){        
             var time = System.getClockTime();
             System.println(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
-
+            System.println(IBI_samples);
             dic.put(time, IBI_samples);
-
-            System.println("dic: " + dic);
 
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(dic, "null", listener);
