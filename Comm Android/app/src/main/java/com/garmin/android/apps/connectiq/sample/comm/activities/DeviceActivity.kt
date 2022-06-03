@@ -21,6 +21,7 @@ import com.garmin.android.apps.connectiq.sample.comm.MessageFactory
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.adapter.MessagesAdapter
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
@@ -259,16 +260,23 @@ class DeviceActivity : Activity() {
     }
 
     private fun IBItoHRV(IBI_samples: List<Int>): Double{
-        var HRVdata = 0.0
+        var receivedHRVdata = 0.0
         for(i in 0 until (IBI_samples.size-1)){
-            HRVdata += (IBI_samples[i + 1] - IBI_samples[i]).toDouble().pow(2.0)
+            receivedHRVdata += (IBI_samples[i + 1] - IBI_samples[i]).toDouble().pow(2.0)
         }
 
         if(IBI_samples.size > 1) {
-            HRVdata /= (IBI_samples.size - 1)
+            receivedHRVdata /= (IBI_samples.size - 1)
         }
-        val realHRVdata = sqrt(HRVdata)
-        DBhelper!!.roomDAO().insert(java.sql.Timestamp(System.currentTimeMillis()), realHRVdata)
+        val realHRVdata = sqrt(receivedHRVdata)
+
+        val addRunnable = Runnable {
+            DBhelper!!.roomDAO().insert(HRVdata(java.sql.Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+        }
+
+        val thread = Thread(addRunnable)
+        thread.start()
+
         return realHRVdata
     }
 
