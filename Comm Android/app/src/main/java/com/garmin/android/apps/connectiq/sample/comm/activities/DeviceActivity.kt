@@ -16,9 +16,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Room
 import com.garmin.android.apps.connectiq.sample.comm.MessageFactory
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.adapter.MessagesAdapter
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
@@ -44,6 +46,8 @@ class DeviceActivity : Activity() {
         }
     }
 
+    var DBhelper: AppDatabase? = null
+
     private var deviceStatusView: TextView? = null
     private var openAppButtonView: TextView? = null
 
@@ -67,6 +71,8 @@ class DeviceActivity : Activity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_device)
+
+        DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
 
         device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
         myApp = IQApp(COMM_WATCH_ID)
@@ -241,6 +247,7 @@ class DeviceActivity : Activity() {
         try {
             val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).replace(" ", "").split(",").map{it.toInt()}
             Log.d(TAG, "Parsed Sensor Data Values: $sensorDataValues")
+
             return sensorDataValues
         } catch (e: IndexOutOfBoundsException) {
             Log.e(TAG, e.toString())
@@ -260,7 +267,9 @@ class DeviceActivity : Activity() {
         if(IBI_samples.size > 1) {
             HRVdata /= (IBI_samples.size - 1)
         }
-        return sqrt(HRVdata)
+        val realHRVdata = sqrt(HRVdata)
+        DBhelper!!.roomDAO().insert(java.sql.Timestamp(System.currentTimeMillis()), realHRVdata)
+        return realHRVdata
     }
 
     private fun isLowerHRV(userHRV: Double): Boolean {

@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import java.sql.Time
+import java.sql.Timestamp
 
 @Dao
 interface RoomDAO {
@@ -12,8 +12,8 @@ interface RoomDAO {
     fun getAllHRVdata(): List<HRVdata>
 
     @Insert
-    fun insertHRVdata(curretTime: Time, HRVdataSample: Double)
+    fun insert(currentTime: Timestamp , hrvdata: Double)
 
     @Delete
-    fun deleteHRVdata(hrVdata: HRVdata)
+    fun delete(hrvdata: HRVdata)
 }

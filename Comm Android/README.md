@@ -67,3 +67,10 @@ implementation(files("monkeybrains-sdk-release.aar가 있는 절대 경로(로�
 </div>
 </details>
 
+## Database 명령어
+* Insert: DBhelper!!.roomDAO().insert(java.sql.Timestamp(System.currentTimeMillis()), 2.0)
+
+
+## 참고
+* [죽지 않는 안드로이드 서비스](https://forest71.tistory.com/185)
+* [골든 타임](https://github.com/zelatore/GoldenTime_v1_code)에서 WorkManager class, AlarmManager class 찾아보기
