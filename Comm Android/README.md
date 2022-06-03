@@ -68,8 +68,11 @@ implementation(files("monkeybrains-sdk-release.aar가 있는 절대 경로(로�
 </details>
 
 ## Database 명령어
-* Insert: DBhelper!!.roomDAO().insert(java.sql.Timestamp(System.currentTimeMillis()), 2.0)
-그외 delete나 select..등도 비슷함
+* Insert
+   ```kotlin
+   DBhelper!!.roomDAO().insert(HRVdata(java.sql.Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+   ```
+그외 delete나 select..등도 비슷함 DAO파일 참고!
 
 ## 메인 쓰레드에서 DBhelper 호출불가
 해결 방법: 백그라운드 작업, 서브 스레드 만들기 <https://blog.yena.io/studynote/2018/09/08/Android-Kotlin-Room.html>
