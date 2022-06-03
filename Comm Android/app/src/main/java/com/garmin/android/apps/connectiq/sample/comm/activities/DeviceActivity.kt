@@ -24,6 +24,8 @@ import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
 import com.garmin.android.connectiq.exception.ServiceUnavailableException
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
@@ -249,19 +251,31 @@ class DeviceActivity : Activity() {
         return listOf(0)
     }
 
-    private fun isLowerHeartBeatInterval(heartBeatIntervals: List<Int>): Boolean {
-        val minHeartBeatInterval = 610 // TODO: 설정해주기
-
-        for(value in heartBeatIntervals){
-            if(value >= minHeartBeatInterval){
-                return true
-            }
+    private fun IBItoHRV(IBI_samples: List<Int>): Double{
+        var HRVdata = 0.0
+        for(i in 0 until (IBI_samples.size-1)){
+            HRVdata += (IBI_samples[i + 1] - IBI_samples[i]).toDouble().pow(2.0)
         }
+
+        if(IBI_samples.size > 1) {
+            HRVdata /= (IBI_samples.size - 1)
+        }
+        return sqrt(HRVdata)
+    }
+
+    private fun isLowerHRV(userHRV: Double): Boolean {
+        val MIN_HRV_1 = 20 // TODO: 설정해주기
+        val MIN_HRV_2 = 0 // TODO: 설정해주기
+
+        if(userHRV < MIN_HRV_1 && userHRV > MIN_HRV_2){
+            return true
+        }
+
         return false
     }
 
     private fun giveFeedBack(rawDatas: String){
-        if(isLowerHeartBeatInterval(parseSensorData(rawDatas))){
+        if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
             Log.d(TAG, "return feedback to Garmin Watch app")
 
             openMyApp() // 앱을 foreground로 가져옴
