@@ -71,23 +71,36 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     public function HRHistoryCallback(sensorData as SensorData) as Void {
         var rawIBIData = sensorData.heartRateData;
-        var dic = {};
+        var send_dict = {};
 
         IBI_samples.addAll(rawIBIData.heartBeatIntervals);
 
         timeCount += periodSetting;
 
-        if(timeCount >= (30 - periodSetting)){        
+        if(timeCount >= (30 - periodSetting)){            
             var time = System.getClockTime();
-            System.println(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
+            System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
             System.println(IBI_samples);
-            dic.put(time, IBI_samples);
+            send_dict.put(time, IBI_samples);
 
             if(System.getDeviceSettings().phoneConnected){
-                Communications.transmit(dic, "null", listener);
+                Communications.transmit(send_dict, "null", listener);
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
+        } else if(timeCount == periodSetting * 4){        
+            var time = System.getClockTime();
+            System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
+            System.println(IBI_samples);
+            send_dict.put(time, IBI_samples);
+
+            if(System.getDeviceSettings().phoneConnected){
+                Communications.transmit(send_dict, "null", listener);
+            } else {
+                System.println("    *** fail to send(not connected) ***");
+            }
+            send_dict = {};
+            IBI_samples = [];
         }
         
     }
