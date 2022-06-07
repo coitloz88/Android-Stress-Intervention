@@ -10,6 +10,9 @@ interface RoomDAO {
     @Query("SELECT * FROM HRVdata")
     fun getAllHRVdata(): List<HRVdata>
 
+    @Query("SELECT * FROM HRVdata WHERE current_time LIKE :currentTime")
+    fun findByTime(currentTime: String): HRVdata
+
     @Insert
     fun insert(hrvdata: HRVdata)
 
