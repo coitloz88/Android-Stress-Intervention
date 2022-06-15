@@ -1,0 +1,9 @@
+<layout id="WatchFace">    
+<!--    
+    <bitmap id="id_backgroundImage" x="center" y="30" filename="../drawables/chiikawaHeart.png" />
+-->
+    <bitmap id="id_blueLine" x="center" y="59" filename="../drawables/blueLine.png" />    
+
+    <label id="TimeLabel" x="center" y="65" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="BatteryLabel" x="center" y="98" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+</layout>

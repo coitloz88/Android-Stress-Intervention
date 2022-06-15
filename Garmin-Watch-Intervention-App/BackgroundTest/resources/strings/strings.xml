@@ -1,0 +1,9 @@
+<strings>
+    <string id="AppName">BackgroundTest</string>
+
+    <string id="prompt">Click the menu button</string>
+
+    <string id="menu_label_1">Stop Background event</string>
+    <string id="menu_label_2">Send high HRV data</string>
+    <string id="menu_label_3">Send low HRV data</string>
+</strings>

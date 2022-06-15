@@ -1,0 +1,209 @@
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: [532, 531, 528, 526, 523, 510, 504, 491]
+HRVdata: 7.530889
+IBI_samples: [484, 480, 476, 473]
+HRVdata: 3.696846
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: [544, 539, 510, 511]
+HRVdata: 17.000000
+IBI_samples: [496, 487, 514, 517]
+HRVdata: 16.522711
+IBI_samples: [533, 540, 543]
+HRVdata: 5.385165
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: [554]
+call onTemporalEvent()
+IBI_samples: [657, 657, 661, 660, 655, 649, 647]
+HRVdata: 3.696846
+IBI_samples: [638, 628, 622, 603, 583, 561]
+HRVdata: 16.619267
+IBI_samples: [580, 603, 610, 618, 626, 624, 626]
+HRVdata: 10.908712
+IBI_samples: [633, 633, 636, 644, 661, 653]
+HRVdata: 9.230385
+IBI_samples: [644, 656, 658, 657, 662, 666]
+HRVdata: 6.164414
+IBI_samples: [672, 680, 708, 706, 698, 696]
+HRVdata: 13.564660
+IBI_samples: [692, 696, 706, 704, 702, 717]
+HRVdata: 8.354640
+call onTemporalEvent()
+IBI_samples: [608, 608, 608, 605, 594, 568, 563]
+HRVdata: 11.768602
+IBI_samples: [594, 640, 652, 664, 676, 685]
+HRVdata: 22.930328
+IBI_samples: [714, 736, 743, 684, 702, 721]
+HRVdata: 30.656157
+IBI_samples: [719, 702, 689, 692, 690, 682]
+HRVdata: 10.344080
+IBI_samples: [672, 668, 667, 659, 655, 655]
+HRVdata: 4.404543
+IBI_samples: [656, 654, 651, 647, 637, 618]
+HRVdata: 9.899495
+IBI_samples: [616, 613, 601, 615, 630, 634, 635]
+HRVdata: 9.924717
+call onTemporalEvent()
+IBI_samples: [624, 634, 638, 634, 627, 625, 624]
+HRVdata: 5.567764
+IBI_samples: [623, 628, 631, 649, 657, 668]
+HRVdata: 10.421132
+IBI_samples: [700, 725, 690, 680, 666, 662]
+HRVdata: 20.794230
+IBI_samples: [652, 633, 632]
+HRVdata: 13.453624
+IBI_samples: [640, 635, 630, 628, 622, 623]
+HRVdata: 4.266146
+IBI_samples: [650, 650, 656, 661]
+HRVdata: 4.509250
+IBI_samples: [662, 660, 627, 625]
+HRVdata: 19.122412
+call onTemporalEvent()
+IBI_samples: [654, 655, 678, 693, 696, 688]
+HRVdata: 12.868567
+IBI_samples: [656, 650, 646, 644, 653, 670]
+HRVdata: 9.230385
+IBI_samples: [669, 665, 656, 636, 634, 632, 630]
+HRVdata: 9.210502
+IBI_samples: [629, 662, 633, 627]
+HRVdata: 25.599480
+IBI_samples: [619, 617, 618, 619, 620, 625]
+HRVdata: 2.529822
+IBI_samples: [634, 648, 660, 648, 653]
+HRVdata: 11.280514
+IBI_samples: [658, 661, 669, 678, 677, 673]
+HRVdata: 5.848077
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
+IBI_samples: [618, 625, 635, 669]
+HRVdata: 20.856653
+IBI_samples: [681, 661, 658, 677, 679]
+HRVdata: 13.910428
+IBI_samples: [681]
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: [595, 600]
+HRVdata: 5.000000
+IBI_samples: [623, 628, 628]
+HRVdata: 3.535534
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: [589, 594]
+HRVdata: 5.000000
+IBI_samples: [639, 641]
+HRVdata: 2.000000
+IBI_samples: [611, 597, 609, 614, 607, 599, 596]
+HRVdata: 9.009254
+call onTemporalEvent()
+IBI_samples: [623, 624, 625, 632]
+HRVdata: 4.123106
+IBI_samples: [647, 655, 668, 693, 702, 712]
+HRVdata: 14.415270
+IBI_samples: [706, 698, 694, 693, 695]
+HRVdata: 4.609772
+IBI_samples: [693, 689, 685, 680, 674, 670, 669]
+HRVdata: 4.281744
+IBI_samples: [669, 669, 670, 672, 670]
+HRVdata: 1.500000
+IBI_samples: [643, 629, 612, 604]
+HRVdata: 13.527749
+IBI_samples: [619, 639, 658, 670, 678, 686]
+HRVdata: 14.373587
+call onTemporalEvent()
+IBI_samples: [591, 600, 619, 649, 638, 648, 658]
+HRVdata: 16.648323
+IBI_samples: [606, 605, 608, 610]
+HRVdata: 2.160247
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
+IBI_samples: [627, 625, 621]
+HRVdata: 3.162278
+IBI_samples: [603, 598]
+HRVdata: 5.000000
+IBI_samples: [594, 582, 569, 553, 545, 541, 541]
+HRVdata: 10.400320
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+IBI_samples: []
+HRVdata: 0.000000
+call onTemporalEvent()
