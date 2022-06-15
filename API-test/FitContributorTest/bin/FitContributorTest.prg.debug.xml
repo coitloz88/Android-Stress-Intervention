@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Users\loveg\OneDrive\문서\GitHub\Garmin-Project\FitContributorTest\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="1" lineNum="7" parent="globals/FitContributorTestApp" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="1" lineNum="8" parent="globals/FitContributorTestApp" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="2" lineNum="12" parent="globals/FitContributorTestApp" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="3" lineNum="16" parent="globals/FitContributorTestApp" pc="268435484" symbol="onStop"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="4" lineNum="20" parent="globals/FitContributorTestApp" pc="268435489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="4" lineNum="21" parent="globals/FitContributorTestApp" pc="268435493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="5" lineNum="5" parent="globals/FitContributorTestApp" pc="268435839" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="5" lineNum="5" parent="globals/FitContributorTestApp" pc="268435839" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="6" lineNum="26" parent="globals" pc="268435531" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestApp.mc" id="6" lineNum="27" parent="globals" pc="268435543" symbol="getApp"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="8" lineNum="16" parent="globals/FitContributorTestView" pc="268435560" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="8" lineNum="17" parent="globals/FitContributorTestView" pc="268435564" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="8" lineNum="20" parent="globals/FitContributorTestView" pc="268435582" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="8" lineNum="26" parent="globals/FitContributorTestView" pc="268435665" symbol="initialize"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="9" lineNum="33" parent="globals/FitContributorTestView" pc="268435689" symbol="compute"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="9" lineNum="34" parent="globals/FitContributorTestView" pc="268435693" symbol="compute"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="9" lineNum="36" parent="globals/FitContributorTestView" pc="268435716" symbol="compute"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="9" lineNum="37" parent="globals/FitContributorTestView" pc="268435750" symbol="compute"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="9" lineNum="40" parent="globals/FitContributorTestView" pc="268435779" symbol="compute"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="10" lineNum="7" parent="globals/FitContributorTestView" pc="268435820" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\loveg\\OneDrive\\문서\\GitHub\\Garmin-Project\\FitContributorTest\\source\\FitContributorTestView.mc" id="10" lineNum="7" parent="globals/FitContributorTestView" pc="268435820" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="12" lineNum="2" parent="globals/Rez/Drawables" pc="268435814" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="13" lineNum="6" parent="globals/Rez/Fonts" pc="268435816" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="14" lineNum="8" parent="globals/Rez/JsonData" pc="268435818" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="15" lineNum="10" parent="globals/Rez/Layouts" pc="268435817" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="16" lineNum="12" parent="globals/Rez/Menus" pc="268435815" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="17" lineNum="14" parent="globals/Rez/Strings" pc="268435819" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="18" lineNum="1" parent="globals/Rez" pc="268435790" symbol="&lt;init&gt;"/>
+<entry filename="Rez" id="18" lineNum="1" parent="globals/Rez" pc="268435790" symbol="&lt;init&gt;"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="9" object="true" symbol="FitContributorTestApp"/>
+<entry id="10" object="true" symbol="FitContributorTestView"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry id="8389849" symbol="units"/>
+<entry field="true" id="15" symbol="bananasEarnedField"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="14" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="12" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry field="true" id="18" symbol="BANANAS_FIELD_ID"/>
+<entry id="7" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="16" symbol="totalBananas"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="17" symbol="CALORIES_PER_BANANA"/>
+<entry field="true" id="13" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="8389780" module="true" symbol="FitContributor"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8389847" symbol="mesgType"/>
+<entry id="11" module="true" symbol="Layouts"/>
+<entry id="5" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268435483" name="state" stackId="1" startPc="268435479"/>
+<entry arg="true" endPc="268435488" name="state" stackId="1" startPc="268435484"/>
+<entry arg="true" endPc="268435788" name="info" stackId="1" startPc="268435689"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="158" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Rez/Drawables" offset="237" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="276" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="307" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="338" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="369" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="400" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/FitContributorTestView" offset="439" parentId="globals" symbolId="FitContributorTestView" type="class"/>
+<dataEntry label="globals/FitContributorTestApp" offset="526" parentId="globals" symbolId="FitContributorTestApp" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268435478" name="initialize" parent="FitContributorTestApp" startPc="268435456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435483" name="onStart" parent="FitContributorTestApp" startPc="268435479">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435488" name="onStop" parent="FitContributorTestApp" startPc="268435484">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435530" name="getInitialView" parent="FitContributorTestApp" startPc="268435489">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435857" name="&lt;init&gt;" parent="FitContributorTestApp" startPc="268435839">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435559" name="getApp" startPc="268435531">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435688" name="initialize" parent="FitContributorTestView" startPc="268435560">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268435788" name="compute" parent="FitContributorTestView" startPc="268435689">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435838" name="&lt;init&gt;" parent="FitContributorTestView" startPc="268435820">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435814" name="&lt;init&gt;" parent="Drawables" startPc="268435814">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435816" name="&lt;init&gt;" parent="Fonts" startPc="268435816">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435818" name="&lt;init&gt;" parent="JsonData" startPc="268435818">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435817" name="&lt;init&gt;" parent="Layouts" startPc="268435817">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435815" name="&lt;init&gt;" parent="Menus" startPc="268435815">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435819" name="&lt;init&gt;" parent="Strings" startPc="268435819">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" endPc="268435813" name="&lt;init&gt;" parent="Rez" startPc="268435790">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
