@@ -84,7 +84,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             send_dict.put(time, IBI_samples);
 
             if(System.getDeviceSettings().phoneConnected){
-                Communications.transmit(send_dict, "null", listener);
+                Communications.transmit(send_dict, null, listener);
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
@@ -95,7 +95,7 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             send_dict.put(time, IBI_samples);
 
             if(System.getDeviceSettings().phoneConnected){
-                Communications.transmit(send_dict, "null", listener);
+                Communications.transmit(send_dict, null, listener);
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
