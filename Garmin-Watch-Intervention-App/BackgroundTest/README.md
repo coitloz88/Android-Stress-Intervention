@@ -6,7 +6,7 @@ In Garmin watch Application, we can
 - transfer collected data to mobile companion application through BLE
 - get feedback from mobile companion application if needed and show the feedback message on foreground display of watch application
 
-All logic runs in real time. You can see the code in [here](https://github.com/coitloz88/Garmin-Background-Test/tree/master/BackgroundTest).
+All logic runs in real time.
 
 ## Collecting sensor data in background process
 
@@ -41,7 +41,7 @@ When watch app receives feedback from the phone, first open the Garmin watch app
 
 <br>
 
-# 📱Mobile Companion application(check in [here](https://github.com/coitloz88/connectiq-android-sdk/tree/main/Comm%20Android))
+# 📱Mobile Companion application
 
 The mobile companion app performs certain calculations based on user data collected and transferred in real time from the Garmin watch app. Afterwards, if it determines that feedback is necessary, the mobile app opens the designated Garmin watch app and sends a feedback message.
 
@@ -54,6 +54,10 @@ Data sent from the Garmin watch is handled by event handlers.  `listenByMyAppEve
 On Garmin watches, data is transmitted in the form of `Toybox.Lang.Dictionary`, but on mobile companion app, it is received as a string in its entirety. That's why we need to parse the received data.
 
 `parseSensorData()` parses received data. Currently, it is parsed assuming that only heartbeatintervals are transmitted, so in order to parse more data, it is necessary to modify the code in the function.
+
+## Save data
+
+Save data received from Garmin Smart Watch in Room DB(local database for Android). You can download data in form of `.csv` file.
 
 ## Check whether feedback is needed or not
 
