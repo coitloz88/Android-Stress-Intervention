@@ -81,13 +81,26 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             var time = System.getClockTime();
             System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
             System.println(IBI_samples);
-            
-            if(System.getDeviceSettings().phoneConnected){            
-                send_dict.put(timeCount, IBI_samples);
+            send_dict.put(timeCount, IBI_samples);
+
+            if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(send_dict, null, listener);
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
+        } else if(timeCount == periodSetting * 4){        
+            var time = System.getClockTime();
+            System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
+            System.println(IBI_samples);
+            send_dict.put(timeCount, IBI_samples);
+
+            if(System.getDeviceSettings().phoneConnected){
+                Communications.transmit(send_dict, null, listener);
+            } else {
+                System.println("    *** fail to send(not connected) ***");
+            }
+            send_dict = {};
+            IBI_samples = [];
         }
         
     }
