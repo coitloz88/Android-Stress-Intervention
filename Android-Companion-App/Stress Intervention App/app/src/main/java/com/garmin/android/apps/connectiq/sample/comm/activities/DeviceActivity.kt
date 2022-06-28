@@ -164,28 +164,6 @@ class DeviceActivity : Activity() {
         }
     }
 
-    /*
-    private fun openStore() {
-        Toast.makeText(this, "Opening ConnectIQ Store...", Toast.LENGTH_SHORT).show()
-
-        // Send a message to open the store
-        try {
-            if (STORE_APP_ID.isBlank()) {
-                AlertDialog.Builder(this@DeviceActivity)
-                    .setTitle(R.string.missing_store_id)
-                    .setMessage(R.string.missing_store_id_message)
-                    .setPositiveButton(android.R.string.ok, null)
-                    .create()
-                    .show()
-            } else {
-                connectIQ.openStore(STORE_APP_ID)
-            }
-        } catch (ex: Exception) {
-        }
-    }
-    */
-
-
     private fun listenByDeviceEvents() {
         // Get our instance of ConnectIQ. Since we initialized it
         // in our MainActivity, there is no need to do so here, we
@@ -219,14 +197,6 @@ class DeviceActivity : Activity() {
                 }
 
                 Log.d(TAG, "받은 데이터 메시지" + builder.toString())
-                /*
-                AlertDialog.Builder(this@DeviceActivity)
-                    .setTitle(R.string.received_message)
-                    .setMessage(builder.toString())
-                    .setPositiveButton(android.R.string.ok, null)
-                    .create()
-                    .show()
-                */
 
                 try {
                     giveFeedBack(builder.toString())
@@ -266,33 +236,6 @@ class DeviceActivity : Activity() {
         }
     }
 
-    /*
-    private fun buildMessageList() {
-        val adapter = MessagesAdapter { onItemClick(it) }
-        adapter.submitList(MessageFactory.getMessages(this@DeviceActivity))
-        findViewById<RecyclerView>(android.R.id.list).apply {
-            layoutManager = LinearLayoutManager(this@DeviceActivity)
-            this.adapter = adapter
-        }
-    }
-
-    private fun onItemClick(message: Any) {
-        try {
-            connectIQ.sendMessage(device, myApp, message) { device, app, status ->
-                Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
-            }
-        } catch (e: InvalidStateException) {
-            Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
-        } catch (e: ServiceUnavailableException) {
-            Toast.makeText(
-                this,
-                "ConnectIQ service is unavailable.   Is Garmin Connect Mobile installed and running?",
-                Toast.LENGTH_LONG
-            ).show()
-        }
-    }
-    */
-
     private fun parseSensorData(rawDatas: String): List<Int> {
         try {
             val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).replace(" ", "").split(",").map{it.toInt()}
@@ -319,6 +262,7 @@ class DeviceActivity : Activity() {
         }
         val realHRVdata = sqrt(receivedHRVdata)
 
+        //TODO: DB 데이터 추가를 따로 다른 메서드로 빼기
         val addRunnable = Runnable {
             DBhelper!!.roomDAO().insert(HRVdata(java.sql.Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
         }
@@ -330,8 +274,8 @@ class DeviceActivity : Activity() {
     }
 
     private fun isLowerHRV(userHRV: Double): Boolean {
-        val MIN_HRV_1 = 20 // TODO: 설정해주기
-        val MIN_HRV_2 = 0 // TODO: 설정해주기
+        val MIN_HRV_1 = 20
+        val MIN_HRV_2 = 0
 
         if(userHRV < MIN_HRV_1 && userHRV > MIN_HRV_2){
             return true
@@ -342,31 +286,9 @@ class DeviceActivity : Activity() {
 
     private fun giveFeedBack(rawDatas: String){
         if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
-            /*
-            Log.d(TAG, "return feedback to Garmin Watch app")
-            openMyApp() // 앱을 foreground로 가져옴
-
-            val feedbackMessage = "Take a Breath."
-
-            try {
-                connectIQ.sendMessage(device, myApp, feedbackMessage) { device, app, status ->
-                    Toast.makeText(this@DeviceActivity, status.name, Toast.LENGTH_SHORT).show()
-                }
-            } catch (e: InvalidStateException) {
-                Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
-            } catch (e: ServiceUnavailableException) {
-                Toast.makeText(
-                    this,
-                    "ConnectIQ service is unavailable.   Is Garmin Connect Mobile installed and running?",
-                    Toast.LENGTH_LONG
-                ).show()
-            }
-            */
-
             with(NotificationManagerCompat.from(this)) {
                 notificationCompatBuilder?.build()?.let { notify(0, it) }
             }
-
         } else {
             Log.d(TAG, "No feedback")
         }

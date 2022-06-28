@@ -18,4 +18,7 @@ interface RoomDAO {
 
     @Delete
     fun delete(hrvdata: HRVdata)
+
+    @Query("DELETE FROM HRVdata")
+    fun deleteAll()
 }
