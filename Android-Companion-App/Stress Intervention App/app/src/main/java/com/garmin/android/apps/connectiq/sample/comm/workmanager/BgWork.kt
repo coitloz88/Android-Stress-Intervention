@@ -31,7 +31,7 @@ private const val TAG = "BackgroundWork"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
 private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
-class BackgroundWork(appContext: Context, workerParams: WorkerParameters): Worker(appContext, workerParams) {
+class BgWork(appContext: Context, workerParams: WorkerParameters): Worker(appContext, workerParams) {
 
     private val connectIQ: ConnectIQ = ConnectIQ.getInstance()
     private lateinit var device: IQDevice
