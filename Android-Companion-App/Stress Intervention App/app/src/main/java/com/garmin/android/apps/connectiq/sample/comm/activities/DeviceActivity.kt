@@ -33,9 +33,6 @@ private const val TAG = "DeviceActivity"
 private const val EXTRA_IQ_DEVICE = "IQDevice"
 private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
-// TODO Add a valid store app id.
-private const val STORE_APP_ID = ""
-
 class DeviceActivity : Activity() {
 
     companion object {
@@ -86,52 +83,14 @@ class DeviceActivity : Activity() {
         val deviceNameView = findViewById<TextView>(R.id.devicename)
         deviceStatusView = findViewById(R.id.devicestatus)
         openAppButtonView = findViewById(R.id.openapp)
-        //val openAppStoreView = findViewById<View>(R.id.openstore)
         val openSensorView = findViewById<View>(R.id.taptosee)
         val intentSensor = Intent(this, SensorActivity::class.java)
 
         deviceNameView?.text = device.friendlyName
         deviceStatusView?.text = device.status?.name
         openAppButtonView?.setOnClickListener { openMyApp() }
-        //openAppStoreView?.setOnClickListener { openStore() }
         openSensorView?.setOnClickListener { startActivity(intentSensor) }
 
-        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            // Notification Channel 아이디, 이름, 설명, 중요도 설정
-            val channelId = "channel_one"
-            val channelName = "Channel One"
-            val channelDescription = "Channel One Description"
-            val importance = NotificationManager.IMPORTANCE_HIGH
-            // NotificationChannel 객체 생성
-            val notificationChannel = NotificationChannel(channelId, channelName, importance)
-            // 설명 설정
-            notificationChannel.description = channelDescription
-            // 시스템에 notificationChannel 등록
-            notificationManager.createNotificationChannel(notificationChannel)
-            notificationCompatBuilder = NotificationCompat.Builder(this, channelId)
-        }
-        else {
-            // 26버전 미만은 생성자에 context만 설정
-            notificationCompatBuilder = NotificationCompat.Builder(this)
-        }
-
-        notificationCompatBuilder?.let {
-            it.setSmallIcon(android.R.drawable.ic_notification_overlay)
-            it.setWhen(System.currentTimeMillis())
-            it.setContentTitle("Hey!")
-            it.setContentText("Take a breath :)")
-            it.setDefaults(Notification.DEFAULT_VIBRATE)
-            it.setAutoCancel(true)
-            it.setStyle(NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(resources, R.drawable.breath)))
-        }
-
-        // Create an explicit intent for an Activity in your app
-        val intentIntervention = Intent(this, InterventionActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-        }
-        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intentIntervention, PendingIntent.FLAG_UPDATE_CURRENT)
-        notificationCompatBuilder?.setContentIntent(pendingIntent)
     }
 
     public override fun onResume() {
@@ -196,7 +155,7 @@ class DeviceActivity : Activity() {
                     builder.append("Received an empty message from the application")
                 }
 
-                Log.d(TAG, "받은 데이터 메시지" + builder.toString())
+                Log.d(TAG, "받은 데이터 메시지$builder")
 
                 try {
                     giveFeedBack(builder.toString())
