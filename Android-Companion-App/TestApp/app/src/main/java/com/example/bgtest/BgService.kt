@@ -9,6 +9,9 @@ import android.os.IBinder
 import androidx.core.app.NotificationCompat
 
 class BgService : Service() {
+    override fun onBind(p0: Intent?): IBinder? {
+        return null
+    }
 
     override fun onCreate() {
         super.onCreate()
@@ -41,9 +44,5 @@ class BgService : Service() {
     override fun onDestroy() {
         // TODO : 서비스 종료시 할 것들
         super.onDestroy()
-    }
-
-    override fun onBind(intent: Intent): IBinder {
-//        TODO("Return the communication channel to the service.")
     }
 }
