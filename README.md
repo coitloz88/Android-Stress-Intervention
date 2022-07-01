@@ -6,6 +6,7 @@
 Garmin Watch에서 전송된 IBI 데이터 세트를 HRV로 변환한다.  
 데이터를 받은 시간, 계산된 HRV를 로컬 데이터베이스(Room DB)에 저장한다.  
 HRV값이 정상 수치를 벗어나는 경우 워치 앱을 켜고 피드백 메시지를 전송한다.  
+(현재 수정중)
 
 ## Garmin Watch Intervention App
 **BackgroundTest**  

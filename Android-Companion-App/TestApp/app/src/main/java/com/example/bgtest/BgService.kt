@@ -20,19 +20,20 @@ class BgService : Service() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = "Test Notification"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val notificationChannel = NotificationChannel("YOUR_CHANNEL_ID", name, importance)
+            val notificationChannel = NotificationChannel("channel_1", name, importance)
 
             val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(notificationChannel)
         }
 
         // TODO : 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
-        // val notificationIntent = Intent(this, TestActivity::class.java)
-        // val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
-        val builder = NotificationCompat.Builder(this, "YOUR_CHANNEL_ID")
+        //val notificationIntent = Intent(this, MainActivity::class.java)
+        //val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
+
+        val builder = NotificationCompat.Builder(this, "channel_1")
             .setSmallIcon(R.drawable.ic_test_notification)
             .setContentText("test")
-        //.setContentIntent(pendingIntent)
+        //    .setContentIntent(pendingIntent)
         startForeground(1, builder.build())
     }
 
