@@ -5,9 +5,11 @@
 package com.garmin.android.apps.connectiq.sample.comm.activities
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,9 +25,9 @@ class MainActivity : Activity() {
 
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
+    private lateinit var btnStopIntervention: Button
 
     private var isSdkReady = false
-
 
     private val connectIQListener: ConnectIQ.ConnectIQListener =
         object : ConnectIQ.ConnectIQListener {
@@ -50,6 +52,12 @@ class MainActivity : Activity() {
 
         setupUi()
         setupConnectIQSdk()
+
+        btnStopIntervention = findViewById(R.id.btn_stop_intervention)
+        btnStopIntervention.setOnClickListener {
+            val stopIntent = Intent(this, BgService::class.java)
+            stopService(stopIntent)
+        }
     }
 
     public override fun onResume() {
