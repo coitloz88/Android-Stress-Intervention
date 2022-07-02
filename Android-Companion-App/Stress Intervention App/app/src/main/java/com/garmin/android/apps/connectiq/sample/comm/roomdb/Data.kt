@@ -9,3 +9,9 @@ data class HRVdata(
     @PrimaryKey val current_time: String,
     @ColumnInfo(name = "HRV_data") val HRVdata: Double
 )
+
+@Entity
+data class ESMdata(
+    @PrimaryKey val current_time: String,
+    @ColumnInfo(name = "ESM_data") val ESMdata: String
+)

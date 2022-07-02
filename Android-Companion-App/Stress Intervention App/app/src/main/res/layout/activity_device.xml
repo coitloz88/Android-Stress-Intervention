@@ -61,7 +61,7 @@
         android:background="#cdcdcd"
         app:layout_constraintTop_toBottomOf="@id/openapp" />
 
-    <!--
+
     <TextView
         android:id="@+id/openstore"
         android:layout_width="match_parent"
@@ -80,7 +80,7 @@
         android:layout_marginTop="5dp"
         android:background="#cdcdcd"
         app:layout_constraintTop_toBottomOf="@id/openstore" />
-   -->
+
 
     <TextView
         android:id="@+id/taptosee"
@@ -91,7 +91,7 @@
         android:minHeight="43dp"
         android:gravity="center_vertical"
         android:text="@string/tap_for_sensor"
-        app:layout_constraintTop_toBottomOf="@id/dividerB" />
+        app:layout_constraintTop_toBottomOf="@id/dividerC" />
 
     <View
         android:id="@+id/dividerD"

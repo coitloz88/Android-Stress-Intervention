@@ -6,6 +6,7 @@ package com.garmin.android.apps.connectiq.sample.comm.activities
 
 import android.app.*
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
@@ -19,13 +20,17 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.room.Room
 import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase1
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase2
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.ESMdata
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
 import com.garmin.android.connectiq.exception.ServiceUnavailableException
+import java.lang.IllegalArgumentException
+import java.sql.Timestamp
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -46,7 +51,8 @@ class DeviceActivity : Activity() {
         }
     }
 
-    var DBhelper: AppDatabase? = null
+    var DBhelper1: AppDatabase1? = null
+    var DBhelper2: AppDatabase2? = null
 
     private var deviceStatusView: TextView? = null
     private var openAppButtonView: TextView? = null
@@ -75,7 +81,8 @@ class DeviceActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_device)
 
-        DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
+        DBhelper1 = Room.databaseBuilder(applicationContext, AppDatabase1::class.java, "HRVdatabase").build()
+        DBhelper2 = Room.databaseBuilder(applicationContext, AppDatabase2::class.java, "ESMdatabase").build()
 
         device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
         myApp = IQApp(COMM_WATCH_ID)
@@ -86,14 +93,14 @@ class DeviceActivity : Activity() {
         val deviceNameView = findViewById<TextView>(R.id.devicename)
         deviceStatusView = findViewById(R.id.devicestatus)
         openAppButtonView = findViewById(R.id.openapp)
-        //val openAppStoreView = findViewById<View>(R.id.openstore)
+        val openAppStoreView = findViewById<View>(R.id.openstore)
         val openSensorView = findViewById<View>(R.id.taptosee)
         val intentSensor = Intent(this, SensorActivity::class.java)
 
         deviceNameView?.text = device.friendlyName
         deviceStatusView?.text = device.status?.name
         openAppButtonView?.setOnClickListener { openMyApp() }
-        //openAppStoreView?.setOnClickListener { openStore() }
+        openAppStoreView?.setOnClickListener { openStore() }
         openSensorView?.setOnClickListener { startActivity(intentSensor) }
 
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
@@ -164,10 +171,9 @@ class DeviceActivity : Activity() {
         }
     }
 
-    /*
     private fun openStore() {
+        /*
         Toast.makeText(this, "Opening ConnectIQ Store...", Toast.LENGTH_SHORT).show()
-
         // Send a message to open the store
         try {
             if (STORE_APP_ID.isBlank()) {
@@ -182,8 +188,28 @@ class DeviceActivity : Activity() {
             }
         } catch (ex: Exception) {
         }
+        */
+        val alertBuilder = AlertDialog.Builder(this@DeviceActivity)
+        val arrayEMA = arrayOf("Yes", "No")
+        alertBuilder.setTitle("Are you stressed now?")
+        alertBuilder.setSingleChoiceItems(arrayEMA, -1,
+        ) { dialog, which ->
+            val choice = arrayEMA[which]
+            try {
+                val addRunnable2 = Runnable {
+                    DBhelper2!!.roomDAO().insert(ESMdata(System.currentTimeMillis().toString(), choice))
+                    Log.d(TAG, "Choice is "+choice)
+                }
+                val thread2 = Thread(addRunnable2)
+                thread2.start()
+                dialog.dismiss()
+            } catch (e:IllegalArgumentException) {
+                Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
+            }
+        }
+        alertBuilder.create()
+        alertBuilder.show()
     }
-    */
 
 
     private fun listenByDeviceEvents() {
@@ -209,6 +235,7 @@ class DeviceActivity : Activity() {
                 // we get something else, we are simply going to do a toString() on each object in the
                 // message list.
                 val builder = StringBuilder()
+                var idCount = 0
                 if (message.size > 0) {
                     for (o in message) {
                         builder.append(o.toString())
@@ -230,10 +257,32 @@ class DeviceActivity : Activity() {
 
                 try {
                     giveFeedBack(builder.toString())
+                    //idCount += 1
 
                 } catch (e: Exception) {
                     Log.e(TAG, e.toString())
                 }
+                /*
+                val alertBuilder = AlertDialog.Builder(this@DeviceActivity)
+                val arrayEMA = arrayOf("Yes", "No")
+                alertBuilder.setTitle("Are you stressed now?")
+                alertBuilder.setSingleChoiceItems(arrayEMA, -1,
+                ) { dialog, which ->
+                    val choice = arrayEMA[which]
+                    try {
+                        val addRunnable = Runnable {
+                            DBhelper!!.roomDAO().insertEMAdata(idCount, choice)
+                        }
+                        val thread = Thread(addRunnable)
+                        thread.start()
+                        dialog.dismiss()
+                    } catch (e:IllegalArgumentException) {
+                        Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                alertBuilder.create()
+                alertBuilder.show()
+                */
             }
         } catch (e: InvalidStateException) {
             Toast.makeText(this, "ConnectIQ is not in a valid state", Toast.LENGTH_SHORT).show()
@@ -320,7 +369,7 @@ class DeviceActivity : Activity() {
         val realHRVdata = sqrt(receivedHRVdata)
 
         val addRunnable = Runnable {
-            DBhelper!!.roomDAO().insert(HRVdata(java.sql.Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+            DBhelper1!!.roomDAO().insert(HRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
         }
 
         val thread = Thread(addRunnable)
