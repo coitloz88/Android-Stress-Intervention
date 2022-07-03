@@ -7,7 +7,7 @@ plugins {
 val compileSdkVersion: String by project
 val minSdkVersion: String by project
 val targetSdkVersion: String by project
-val applicationId = "com.garmin.android.apps.connectiq.sample.comm"
+val applicationId = "com2.garmin.android.apps.connectiq.sample.comm2"
 
 android {
     compileSdk = this@Build_gradle.compileSdkVersion.toInt()

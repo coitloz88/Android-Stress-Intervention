@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SensorActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/data1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data 1"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/data2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data 2"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/data3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data 3"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/data4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data 4"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+</LinearLayout>

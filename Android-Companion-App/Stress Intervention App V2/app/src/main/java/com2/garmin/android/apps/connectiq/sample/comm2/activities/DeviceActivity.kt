@@ -2,11 +2,10 @@
  * Copyright (C) 2015 Garmin International Ltd.
  * Subject to Garmin SDK License Agreement and Wearables Application Developer Agreement.
  */
-package com.garmin.android.apps.connectiq.sample.comm.activities
+package com2.garmin.android.apps.connectiq.sample.comm2.activities
 
 import android.app.*
 import android.content.Context
-import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
@@ -19,11 +18,11 @@ import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.room.Room
-import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase1
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase2
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.ESMdata
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
+import com2.garmin.android.apps.connectiq.sample.comm2.R
+import com2.garmin.android.apps.connectiq.sample.comm2.roomdb.AppDatabase1
+import com2.garmin.android.apps.connectiq.sample.comm2.roomdb.AppDatabase2
+import com2.garmin.android.apps.connectiq.sample.comm2.roomdb.ESMdata
+import com2.garmin.android.apps.connectiq.sample.comm2.roomdb.HRVdata
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
