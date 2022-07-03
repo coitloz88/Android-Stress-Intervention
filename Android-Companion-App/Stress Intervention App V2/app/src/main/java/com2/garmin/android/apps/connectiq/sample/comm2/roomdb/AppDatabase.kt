@@ -12,3 +12,13 @@ abstract class AppDatabase1 : RoomDatabase() {
 abstract class AppDatabase2 : RoomDatabase() {
     abstract fun roomDAO(): RoomDAO2
 }
+
+@Database(entities = [Locationdata::class], version = 1)
+abstract class AppDatabase3 : RoomDatabase() {
+    abstract fun roomDAO(): RoomDAO3
+}
+
+@Database(entities = [Accdata::class], version = 1)
+abstract class AppDatabase4 : RoomDatabase() {
+    abstract fun roomDAO(): RoomDAO4
+}

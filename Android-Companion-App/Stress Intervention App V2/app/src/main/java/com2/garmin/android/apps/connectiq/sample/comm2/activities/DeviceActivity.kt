@@ -223,14 +223,6 @@ class DeviceActivity : Activity() {
                 }
 
                 Log.d(TAG, "받은 데이터 메시지" + builder.toString())
-                /*
-                AlertDialog.Builder(this@DeviceActivity)
-                    .setTitle(R.string.received_message)
-                    .setMessage(builder.toString())
-                    .setPositiveButton(android.R.string.ok, null)
-                    .create()
-                    .show()
-                */
 
                 try {
                     giveFeedBack(builder.toString())
@@ -238,6 +230,8 @@ class DeviceActivity : Activity() {
                 } catch (e: Exception) {
                     Log.e(TAG, e.toString())
                 }
+
+                //For ESM
                 val alertBuilder = AlertDialog.Builder(this@DeviceActivity)
                 val arrayEMA = arrayOf("Yes", "No")
                 alertBuilder.setTitle("Are you stressed now?")

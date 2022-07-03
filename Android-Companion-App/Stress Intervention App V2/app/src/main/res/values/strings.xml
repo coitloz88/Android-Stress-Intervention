@@ -49,8 +49,12 @@
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
     <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="start_location_update">Start Location Updates</string>
+    <string name="stop_location_updates">Stop Location Updates</string>
+    <string name="start_acc_update">Start Acc Updates</string>
+    <string name="stop_acc_updates">Stop Acc Updates</string>
 
 </resources>
