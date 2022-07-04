@@ -3,7 +3,6 @@ package com2.garmin.android.apps.connectiq.sample.comm2.activities
 import android.Manifest
 import android.app.Activity
 import android.app.ActivityManager
-import android.app.AppOpsManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -12,8 +11,6 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
-import android.os.Process
-import android.provider.Settings
 import android.util.Log
 import android.view.View
 import android.widget.TextView
@@ -24,12 +21,14 @@ import com2.garmin.android.apps.connectiq.sample.comm2.R
 import com2.garmin.android.apps.connectiq.sample.comm2.mobilephonedata.AccService
 import com2.garmin.android.apps.connectiq.sample.comm2.mobilephonedata.Constants
 import com2.garmin.android.apps.connectiq.sample.comm2.mobilephonedata.LocationService
-import com2.garmin.android.apps.connectiq.sample.comm2.mobilephonedata.PhoneUsageService
 
 
 class SensorActivity : Activity() {
     private val REQUEST_CODE_LOCATION_PERMISSION = 1
-    private val REQUEST_CODE_PU_PERMISSION = 2
+
+    /*private val sensorManager by lazy {
+        getSystemService(Context.SENSOR_SERVICE) as SensorManager
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,28 +62,32 @@ class SensorActivity : Activity() {
             stopAccService()
         }
 
-        findViewById<View>(R.id.buttonStartPUUpdates).setOnClickListener {
-            if (!checkPermission()) {
-                startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
-            } else {
-                startPUService()
-            }
-        }
-
-        findViewById<View>(R.id.buttonStopPUUpdates).setOnClickListener {
-            stopPUService()
-        }
-
-
-
     }
 
     override fun onResume() {
         super.onResume()
+        /*sensorManager.registerListener(this,
+            sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
+            SensorManager.SENSOR_DELAY_NORMAL)*/
     }
+
+    /*
+    override fun onSensorChanged(event: SensorEvent?) {
+        event?.let {
+            // [0] x축값, [1] y축값, [2] z축값
+            Log.d("SensorActivity", " x:${event.values[0]}, y:${event.values[1]}, z:${event.values[2]} ")
+            data1?.text = "X =" + event.values[0]
+            data2?.text = "Y =" + event.values[1]
+            data3?.text = "Z =" + event.values[2]
+        }
+    }
+
+    override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
+    }*/
 
     override fun onPause() {
         super.onPause()
+        //sensorManager.unregisterListener(this)
     }
 
     override fun onRequestPermissionsResult(
@@ -167,56 +170,4 @@ class SensorActivity : Activity() {
             Toast.makeText(this, "Acc service stopped", Toast.LENGTH_SHORT).show()
         }
     }
-
-    private fun isPUServiceRunning(): Boolean {
-        val activityManager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
-        if (activityManager != null) {
-            for (service in activityManager.getRunningServices(Int.MAX_VALUE)) {
-                if (PhoneUsageService::class.java.name == service.service.className) {
-                    if (service.foreground) {
-                        return true
-                    }
-                }
-            }
-            return false
-        }
-        return false
-    }
-
-    private fun startPUService() {
-        if (!isPUServiceRunning()) {
-            val intent = Intent(applicationContext, PhoneUsageService::class.java)
-            intent.action = Constants.ACTION_START_PU_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Phone Usage service started", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun stopPUService() {
-        if (isPUServiceRunning()) {
-            val intent = Intent(applicationContext, PhoneUsageService::class.java)
-            intent.action = Constants.ACTION_STOP_PU_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Phone Usage service stopped", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun checkPermission(): Boolean {
-        var granted = false
-        val appOps = applicationContext
-            .getSystemService(APP_OPS_SERVICE) as AppOpsManager
-        val mode = appOps.checkOpNoThrow(
-            AppOpsManager.OPSTR_GET_USAGE_STATS,
-            Process.myUid(), applicationContext.packageName
-        )
-        granted = if (mode == AppOpsManager.MODE_DEFAULT) {
-            applicationContext.checkCallingOrSelfPermission(
-                Manifest.permission.PACKAGE_USAGE_STATS
-            ) == PackageManager.PERMISSION_GRANTED
-        } else {
-            mode == AppOpsManager.MODE_ALLOWED
-        }
-        return granted
-    }
-
 }
