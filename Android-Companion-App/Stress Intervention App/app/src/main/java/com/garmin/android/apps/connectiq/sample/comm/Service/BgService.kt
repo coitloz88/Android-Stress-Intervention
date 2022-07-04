@@ -45,6 +45,9 @@ class BgService : Service() {
     private lateinit var myApp: IQApp
     private lateinit var DBhelper: AppDatabase
 
+    private lateinit var notificationManager: NotificationManager
+    private val GROUP_KEY_NOTIFY = "group_key_notify"
+
     override fun onBind(intent: Intent?): IBinder? {
         return null
     }
@@ -120,22 +123,23 @@ class BgService : Service() {
         startForeground(1, builder.build())*/
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = "Test Notification"
+            val name = "Stress Intervention"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
             val notificationChannel = NotificationChannel("channel_1", name, importance)
 
-            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(notificationChannel)
         }
 
-        // TODO : 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
-        val notificationIntent = Intent(this, InterventionActivity::class.java)
-        val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
+        // 아래 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
+        // val notificationIntent = Intent(this, InterventionActivity::class.java)
+        // val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
 
         val builder = NotificationCompat.Builder(this, "channel_1")
             .setSmallIcon(R.drawable.ic_wind)
+            .setGroup(GROUP_KEY_NOTIFY)
         //    .setContentText("test message")
-            .setContentIntent(pendingIntent)
+        //    .setContentIntent(pendingIntent)
         startForeground(1, builder.build())
 
         DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
@@ -254,6 +258,17 @@ class BgService : Service() {
     private fun giveFeedback(rawDatas: String){
         if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
             //notification 설정
+            val notificationIntent = Intent(this, InterventionActivity::class.java)
+            val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
+
+            val builder = NotificationCompat.Builder(this, "channel_1")
+                .setAutoCancel(true)
+                .setSmallIcon(R.drawable.ic_wind)
+                .setContentText("Hey! Take a Breath:)")
+                .setContentIntent(pendingIntent)
+                .setGroup(GROUP_KEY_NOTIFY)
+
+            notificationManager.notify(101, builder.build())
         } else {
             Log.d(TAG, "No feedback")
         }
