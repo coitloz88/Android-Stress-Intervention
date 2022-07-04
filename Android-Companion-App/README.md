@@ -65,9 +65,9 @@ Intervention Activity의 구성
 
 # 기능
 
-[V] Garmin Watch와 foreground service에서 연결
-[V] notification창 클릭 시 intervention activity 실행
-[V] Main Activity의 **연결된 기기** 혹은 **버튼**으로 foreground service 실행 및 멈춤 가능
-[ ] Garmin Watch에서 주기적으로 데이터 받기(이벤트 등록)
-[ ] 메모리 누수 확인
-[ ] SDK 초기화 확인
+- [X] Garmin Watch와 foreground service에서 연결
+- [X] notification창 클릭 시 intervention activity 실행
+- [X] Main Activity의 **연결된 기기** 혹은 **버튼**으로 foreground service 실행 및 멈춤 가능
+- [ ] Garmin Watch에서 주기적으로 데이터 받기(이벤트 등록)
+- [ ] 메모리 누수 확인
+- [ ] SDK 초기화 확인
