@@ -9,12 +9,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
+import android.widget.Switch
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.Service.BgService
+import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.adapter.IQDeviceAdapter
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQDevice
@@ -23,9 +25,11 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 class MainActivity : Activity() {
 
+    public var isIntervention = false
+
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
-    private lateinit var btnStopIntervention: Button
+    private lateinit var switchIntervention: Switch
 
     private var isSdkReady = false
 
@@ -53,10 +57,26 @@ class MainActivity : Activity() {
         setupUi()
         setupConnectIQSdk()
 
-        btnStopIntervention = findViewById(R.id.btn_stop_intervention)
-        btnStopIntervention.setOnClickListener {
-            val stopIntent = Intent(this, BgService::class.java)
-            stopService(stopIntent)
+        switchIntervention = findViewById(R.id.switch_intervention)
+
+        isIntervention = mPreferences.prefs.getBoolean("isIntervention", false)
+
+        switchIntervention.setOnCheckedChangeListener{_, onSwitch ->
+            if(onSwitch){ //스위치 강제 On
+                if(isIntervention){
+                    Toast.makeText(applicationContext, "Intervention already running", Toast.LENGTH_SHORT).show()
+                }
+                else {
+                    Toast.makeText(applicationContext, "Click connected device to start intervention", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else { //intervention 종료
+                mPreferences.prefs.setBoolean("isIntervention", false)
+                
+                val stopIntent = Intent(this, BgService::class.java)
+                stopService(stopIntent)
+                releaseConnectIQSdk()
+            }
         }
     }
 
@@ -69,7 +89,6 @@ class MainActivity : Activity() {
 
     public override fun onDestroy() {
         super.onDestroy()
-        releaseConnectIQSdk()
     }
 
     private fun releaseConnectIQSdk() {
@@ -94,7 +113,12 @@ class MainActivity : Activity() {
     }
 
     private fun onItemClick(device: IQDevice) {
-        startService(BgService.putIntent(this, device))
+        switchIntervention.isChecked = true
+
+        if(!isIntervention){
+            mPreferences.prefs.setBoolean("isIntervention", true)
+            startService(BgService.putIntent(this, device))
+        }
     }
 
     private fun setupConnectIQSdk() {

@@ -199,9 +199,10 @@ class BgService : Service() {
         val MIN_HRV_2 = 0
 
         if(userHRV < MIN_HRV_1 && userHRV > MIN_HRV_2){
+            Log.d(TAG, "HRV value is not in normal range")
             return true
         }
-
+        Log.d(TAG, "HRV value is in normal range")
         return false
     }
 
