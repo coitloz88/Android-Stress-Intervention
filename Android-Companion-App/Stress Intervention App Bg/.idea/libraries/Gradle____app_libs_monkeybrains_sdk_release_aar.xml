@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/monkeybrains-sdk-release.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
