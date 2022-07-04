@@ -45,7 +45,7 @@ class AccService : Service(), SensorEventListener {
     }
 
     private fun startAccService() {
-        val channelId = "location_notification_channel"
+        val channelId = "acc_notification_channel"
         val notificationManager =
             getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         val resultIntent = Intent()

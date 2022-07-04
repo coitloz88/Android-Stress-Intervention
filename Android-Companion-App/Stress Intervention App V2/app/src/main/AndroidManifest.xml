@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com2.garmin.android.apps.connectiq.sample.comm2"
     android:versionCode="1"
     android:versionName="1.0">
@@ -10,6 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
 
     <application
         android:allowBackup="true"
@@ -19,11 +21,19 @@
         <service
             android:name=".mobilephonedata.LocationService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+        </service>
         <service
             android:name=".mobilephonedata.AccService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+        </service>
+        <service
+            android:name=".mobilephonedata.PhoneUsageService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
 
         <activity
             android:name=".activities.SensorActivity"
