@@ -10,6 +10,7 @@
 <center>
 
 ![Main Activity](https://user-images.githubusercontent.com/88723775/176818519-050734d1-56eb-48cf-982b-caacbecf05c3.png)
+
 Main Activity의 구성
 
 </center>
@@ -21,6 +22,7 @@ Main Activity의 구성
 <center>
 
 ![Intervention Activity](https://user-images.githubusercontent.com/88723775/176818513-6a90b483-285b-4824-b6a1-2b169fd61574.png)
+
 Intervention Activity의 구성
 
 </center>
