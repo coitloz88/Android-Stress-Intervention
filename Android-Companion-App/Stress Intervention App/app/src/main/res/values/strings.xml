@@ -54,5 +54,6 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="btn_stop_intervention">Click here to stop intervention</string>
     <string name="intervention">Intervention</string>
+    <string name="stop_intervention">Stop intervention</string>
 
 </resources>

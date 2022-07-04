@@ -1,16 +1,19 @@
 package com.garmin.android.apps.connectiq.sample.comm.Service
 
-import android.app.*
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.Service
 import android.content.Context
 import android.content.Intent
-import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.IBinder
 import android.os.Parcelable
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
 import com.garmin.android.apps.connectiq.sample.comm.R
+import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
@@ -18,6 +21,7 @@ import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
 import java.lang.Math.sqrt
 import kotlin.math.pow
+
 
 class BgService : Service() {
 
@@ -37,9 +41,6 @@ class BgService : Service() {
     private lateinit var device: IQDevice
     private lateinit var myApp: IQApp
 
-    private var notificationCompat: NotificationCompat? = null
-    private var notificationCompatBuilder: NotificationCompat.Builder? = null
-
     override fun onBind(intent: Intent?): IBinder? {
         return null
     }
@@ -50,7 +51,7 @@ class BgService : Service() {
         //따라서 intent에 대한 처리는 onStartCommand()에서 수행
 
         // Notification 설정
-        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+/*        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             // Notification Channel 아이디, 이름, 설명, 중요도 설정
             val channelId = "channel_one"
@@ -95,33 +96,49 @@ class BgService : Service() {
             notificationCompatBuilder!!.setContentIntent(pendingIntent)
         }
 
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//            val name = "Test Notification"
-//            val importance = NotificationManager.IMPORTANCE_DEFAULT
-//            val notificationChannel = NotificationChannel("channel_1", name, importance)
-//
-//            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-//            notificationManager.createNotificationChannel(notificationChannel)
-//        }
-//
-//        // 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
-//        //val notificationIntent = Intent(this, InterventionActivity::class.java)
-//        //val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
-//
-//        val builder = NotificationCompat.Builder(this, "channel_1")
-//            .setSmallIcon(R.drawable.ic_wind)
-//            .setContentText("intervention message test")
-//           // .setContentIntent(pendingIntent)
-//        startForeground(1, builder.build())
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = "Test Notification"
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val notificationChannel = NotificationChannel("channel_1", name, importance)
 
-        //Garmin watch data를 받는 이벤트 등록
-        // TODO: 이벤트 리스너 등록을 언제 해야하지?
-        listenByMyAppEvents()
+            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(notificationChannel)
+        }
+
+        // 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
+        //val notificationIntent = Intent(this, InterventionActivity::class.java)
+        //val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
+
+        val builder = NotificationCompat.Builder(this, "channel_1")
+            .setSmallIcon(R.drawable.ic_wind)
+            .setContentText("intervention message test")
+           // .setContentIntent(pendingIntent)
+        startForeground(1, builder.build())*/
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = "Test Notification"
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val notificationChannel = NotificationChannel("channel_1", name, importance)
+
+            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(notificationChannel)
+        }
+
+        // TODO : 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
+        val notificationIntent = Intent(this, InterventionActivity::class.java)
+        val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
+
+        val builder = NotificationCompat.Builder(this, "channel_1")
+            .setSmallIcon(R.drawable.ic_wind)
+        //    .setContentText("test message")
+            .setContentIntent(pendingIntent)
+        startForeground(1, builder.build())
     }
 
     private fun listenByMyAppEvents() {
         //이벤트 리스너 설정
         try {
+            Log.d(TAG, "registering garmin app events...")
             connectIQ.registerForAppEvents(device, myApp) { device, app, message, status ->
                 // We know from our Comm sample widget that it will only ever send us strings, but in case
                 // we get something else, we are simply going to do a toString() on each object in the
@@ -149,17 +166,30 @@ class BgService : Service() {
             Log.d(TAG, "there is no intent")
             return START_STICKY //서비스가 종료되어도 자동으로 다시 실행
         } else {
-            // intent가 존재할 때 저장된 정보 파싱
-            device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
-            myApp = IQApp(COMM_WATCH_ID)
-            Log.d(TAG, "connected Device: " + device.friendlyName)
+            if(mPreferences.prefs.getBoolean("isIntervention", true)){
+                Log.d(TAG, "intervention process is already running")
+            } else {
+                // intent가 존재하며, 서비스가 시작되지 않은 경우 때 연결된 기기 이름 정보 파싱
+                device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
+                myApp = IQApp(COMM_WATCH_ID)
+                Log.d(TAG, "connected Device: " + device.friendlyName)
+                mPreferences.prefs.setBoolean("isIntervention", true)
+                listenByMyAppEvents()         // TODO: 이벤트 리스너 등록을 언제 해야하지?
+            }
         }
         return super.onStartCommand(intent, flags, startId)
     }
 
     override fun onDestroy() {
-        // TODO : 서비스 종료시 할 것들
-        connectIQ.unregisterForApplicationEvents(device, myApp)
+        // TODO : 서비스 종료시 할 것들(현재 shutdown..을 하는 경우 익셉션 발생
+        try{
+            connectIQ.unregisterForDeviceEvents(device)
+            connectIQ.unregisterForApplicationEvents(device, myApp)
+            connectIQ.unregisterAllForEvents()
+            //connectIQ.shutdown(applicationContext)
+        } catch (e: InvalidStateException) {
+            Log.e(TAG, e.toString())
+        }
 
         super.onDestroy()
         Log.d(TAG, "Service execution finished")
@@ -208,9 +238,7 @@ class BgService : Service() {
 
     private fun giveFeedBack(rawDatas: String){
         if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
-            with(NotificationManagerCompat.from(this)) {
-                notificationCompatBuilder?.build()?.let { notify(0, it) }
-            }
+            //notification 설정
         } else {
             Log.d(TAG, "No feedback")
         }

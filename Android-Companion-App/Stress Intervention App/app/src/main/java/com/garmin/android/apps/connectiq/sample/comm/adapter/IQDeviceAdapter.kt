@@ -4,6 +4,7 @@
  */
 package com.garmin.android.apps.connectiq.sample.comm.adapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.IQDevice.IQDeviceStatus
 
@@ -60,6 +62,7 @@ class IQDeviceViewHolder(
 
         view.findViewById<TextView>(android.R.id.text1).text = deviceName
         view.findViewById<TextView>(android.R.id.text2).text = device.status?.name
+        mPreferences.prefs.setString("isConnected", device.status?.name.toString())
 
         view.setOnClickListener {
             onItemClickListener(device)

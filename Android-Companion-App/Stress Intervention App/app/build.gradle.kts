@@ -30,8 +30,8 @@ android {
 }
 
 dependencies {
-    val work_version = "2.7.1"
-    implementation("androidx.work:work-runtime-ktx:$work_version")
+    val workVersion = "2.7.1"
+    implementation("androidx.work:work-runtime-ktx:$workVersion")
 
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.3")

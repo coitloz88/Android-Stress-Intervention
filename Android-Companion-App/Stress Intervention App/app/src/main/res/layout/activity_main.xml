@@ -29,21 +29,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Switch
-        android:id="@+id/switch_intervention"
+    <Button
+        android:id="@+id/btn_intervention"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:minHeight="48dp"
-        android:text="@string/intervention"
-        android:textAlignment="textEnd"
-        android:textStyle="bold"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/stop_intervention"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.75"
-        tools:ignore="UseSwitchCompatOrMaterialXml" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

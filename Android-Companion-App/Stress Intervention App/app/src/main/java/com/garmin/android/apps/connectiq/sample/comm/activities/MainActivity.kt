@@ -5,11 +5,14 @@
 package com.garmin.android.apps.connectiq.sample.comm.activities
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Switch
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,14 +26,16 @@ import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
 import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
+
 class MainActivity : Activity() {
 
-    public var isIntervention = false
+    companion object{
+        private const val TAG = "MainActivity"
+    }
 
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
-    private lateinit var switchIntervention: Switch
-
+    private lateinit var btnIntervention: Button
     private var isSdkReady = false
 
     private val connectIQListener: ConnectIQ.ConnectIQListener =
@@ -57,31 +62,31 @@ class MainActivity : Activity() {
         setupUi()
         setupConnectIQSdk()
 
-        switchIntervention = findViewById(R.id.switch_intervention)
+        btnIntervention = findViewById(R.id.btn_intervention)
 
-        isIntervention = mPreferences.prefs.getBoolean("isIntervention", false)
-
-        switchIntervention.setOnCheckedChangeListener{_, onSwitch ->
-            if(onSwitch){ //스위치 강제 On
-                if(isIntervention){
-                    Toast.makeText(applicationContext, "Intervention already running", Toast.LENGTH_SHORT).show()
-                }
-                else {
-                    Toast.makeText(applicationContext, "Click connected device to start intervention", Toast.LENGTH_SHORT).show()
-                }
-            }
-            else { //intervention 종료
+        btnIntervention.setOnClickListener{
+            if(mPreferences.prefs.getBoolean("isIntervention", false)){
+                //현재 intervention이 실행중인 경우, 실행중인 intervention을 종료
                 mPreferences.prefs.setBoolean("isIntervention", false)
-                
+
+                Toast.makeText(applicationContext, "Quit intervention", Toast.LENGTH_SHORT).show()
+
                 val stopIntent = Intent(this, BgService::class.java)
                 stopService(stopIntent)
-                releaseConnectIQSdk()
+                Log.d(TAG, "Quit intervention process")
+
+                //connectIQ.shutdown(this)
+            }
+            else {
+                //intervention이 실행중이지 않은 경우 Toast 메시지를 출력
+                Toast.makeText(applicationContext, "No intervention is running", Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     public override fun onResume() {
         super.onResume()
+
         if (isSdkReady) {
             loadDevices()
         }
@@ -113,11 +118,11 @@ class MainActivity : Activity() {
     }
 
     private fun onItemClick(device: IQDevice) {
-        switchIntervention.isChecked = true
-
-        if(!isIntervention){
-            mPreferences.prefs.setBoolean("isIntervention", true)
+        if(!mPreferences.prefs.getBoolean("isIntervention", true) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
+            Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
             startService(BgService.putIntent(this, device))
+        } else {
+            Log.e(TAG, "cannot start the intervention")
         }
     }
 
