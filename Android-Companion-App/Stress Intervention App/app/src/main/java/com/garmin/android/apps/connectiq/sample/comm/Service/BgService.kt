@@ -11,15 +11,18 @@ import android.os.IBinder
 import android.os.Parcelable
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import androidx.core.content.ContextCompat
+import androidx.room.Room
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
 import java.lang.Math.sqrt
+import java.sql.Timestamp
 import kotlin.math.pow
 
 
@@ -40,6 +43,7 @@ class BgService : Service() {
     private val connectIQ: ConnectIQ = ConnectIQ.getInstance()
     private lateinit var device: IQDevice
     private lateinit var myApp: IQApp
+    private lateinit var DBhelper: AppDatabase
 
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -133,6 +137,8 @@ class BgService : Service() {
         //    .setContentText("test message")
             .setContentIntent(pendingIntent)
         startForeground(1, builder.build())
+
+        DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
     }
 
     private fun listenByMyAppEvents() {
@@ -149,11 +155,12 @@ class BgService : Service() {
                         builder.append(o.toString())
                         builder.append("\r\n")
                     }
+                    Log.d(TAG, "Received data from Garmin Watch: $builder")
+                    giveFeedback(builder.toString())
                 } else {
                     builder.append("Received an empty message from the application")
                 }
 
-                Log.d(TAG, "Received data from Garmin Watch: $builder")
 
             }
         } catch (e: InvalidStateException) {
@@ -164,7 +171,8 @@ class BgService : Service() {
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         if(intent == null || !intent.hasExtra(EXTRA_IQ_DEVICE)){
             Log.d(TAG, "there is no intent")
-            return START_STICKY //서비스가 종료되어도 자동으로 다시 실행
+            //return START_REDELIVER_INTENT //서비스가 종료되어도 자동으로 이전 intent 정보를 가지고 다시 실행
+            return START_NOT_STICKY
         } else {
             if(mPreferences.prefs.getBoolean("isIntervention", true)){
                 Log.d(TAG, "intervention process is already running")
@@ -221,6 +229,13 @@ class BgService : Service() {
         }
         val realHRVdata = sqrt(receivedHRVdata)
 
+        val addRunnable = Runnable {
+            DBhelper!!.roomDAO().insert(HRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+        }
+
+        val thread = Thread(addRunnable)
+        thread.start()
+
         return realHRVdata
     }
 
@@ -236,7 +251,7 @@ class BgService : Service() {
         return false
     }
 
-    private fun giveFeedBack(rawDatas: String){
+    private fun giveFeedback(rawDatas: String){
         if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
             //notification 설정
         } else {

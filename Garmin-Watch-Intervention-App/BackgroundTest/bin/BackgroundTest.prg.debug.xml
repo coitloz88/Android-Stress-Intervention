@@ -2,150 +2,143 @@
 <debugInfo>
     <manifest filename="C:\Users\loveg\Documents\GitHub\Stress-Intervention\Garmin-Watch-Intervention-App\BackgroundTest\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="1" lineNum="11" parent="globals/BackgroundTestDelegate" pc="268437500" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="1" lineNum="12" parent="globals/BackgroundTestDelegate" pc="268437504" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="15" parent="globals/BackgroundTestDelegate" pc="268437523" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="16" parent="globals/BackgroundTestDelegate" pc="268437527" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="17" parent="globals/BackgroundTestDelegate" pc="268437611" symbol="onMenu"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="3" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438439" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="3" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438439" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="1" lineNum="11" parent="globals/BackgroundTestDelegate" pc="268437282" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="1" lineNum="12" parent="globals/BackgroundTestDelegate" pc="268437286" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="15" parent="globals/BackgroundTestDelegate" pc="268437305" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="16" parent="globals/BackgroundTestDelegate" pc="268437309" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="2" lineNum="17" parent="globals/BackgroundTestDelegate" pc="268437393" symbol="onMenu"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="3" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438221" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="3" lineNum="9" parent="globals/BackgroundTestDelegate" pc="268438221" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="4" lineNum="23" parent="globals/CommListener" pc="268435456" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="4" lineNum="24" parent="globals/CommListener" pc="268435460" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="5" lineNum="27" parent="globals/CommListener" pc="268435483" symbol="onComplete"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="5" lineNum="28" parent="globals/CommListener" pc="268435487" symbol="onComplete"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="6" lineNum="31" parent="globals/CommListener" pc="268435509" symbol="onError"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="6" lineNum="32" parent="globals/CommListener" pc="268435513" symbol="onError"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="7" lineNum="22" parent="globals/CommListener" pc="268437481" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="7" lineNum="22" parent="globals/CommListener" pc="268437481" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="7" lineNum="22" parent="globals/CommListener" pc="268437263" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="7" lineNum="22" parent="globals/CommListener" pc="268437263" symbol="&lt;init&gt;"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="8" lineNum="48" parent="globals/BackgroundServiceDelegate" pc="268435535" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="8" lineNum="49" parent="globals/BackgroundServiceDelegate" pc="268435539" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="8" lineNum="50" parent="globals/BackgroundServiceDelegate" pc="268435561" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="8" lineNum="51" parent="globals/BackgroundServiceDelegate" pc="268435574" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="8" lineNum="52" parent="globals/BackgroundServiceDelegate" pc="268435587" symbol="initialize"/>
         <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="55" parent="globals/BackgroundServiceDelegate" pc="268435602" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="57" parent="globals/BackgroundServiceDelegate" pc="268435606" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="58" parent="globals/BackgroundServiceDelegate" pc="268435623" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="61" parent="globals/BackgroundServiceDelegate" pc="268435653" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="62" parent="globals/BackgroundServiceDelegate" pc="268435735" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="63" parent="globals/BackgroundServiceDelegate" pc="268435735" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="66" parent="globals/BackgroundServiceDelegate" pc="268435779" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="9" lineNum="67" parent="globals/BackgroundServiceDelegate" pc="268435812" symbol="onTemporalEvent"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="72" parent="globals/BackgroundServiceDelegate" pc="268435837" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="73" parent="globals/BackgroundServiceDelegate" pc="268435841" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="74" parent="globals/BackgroundServiceDelegate" pc="268435851" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="76" parent="globals/BackgroundServiceDelegate" pc="268435859" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="78" parent="globals/BackgroundServiceDelegate" pc="268435885" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="80" parent="globals/BackgroundServiceDelegate" pc="268435907" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="81" parent="globals/BackgroundServiceDelegate" pc="268435933" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="82" parent="globals/BackgroundServiceDelegate" pc="268435950" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="83" parent="globals/BackgroundServiceDelegate" pc="268436040" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="84" parent="globals/BackgroundServiceDelegate" pc="268436064" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="86" parent="globals/BackgroundServiceDelegate" pc="268436086" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="87" parent="globals/BackgroundServiceDelegate" pc="268436110" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="89" parent="globals/BackgroundServiceDelegate" pc="268436140" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268436164" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="92" parent="globals/BackgroundServiceDelegate" pc="268436190" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="93" parent="globals/BackgroundServiceDelegate" pc="268436207" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="94" parent="globals/BackgroundServiceDelegate" pc="268436297" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="95" parent="globals/BackgroundServiceDelegate" pc="268436321" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="97" parent="globals/BackgroundServiceDelegate" pc="268436343" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436367" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="100" parent="globals/BackgroundServiceDelegate" pc="268436397" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="102" parent="globals/BackgroundServiceDelegate" pc="268436418" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="103" parent="globals/BackgroundServiceDelegate" pc="268436426" symbol="HRHistoryCallback"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="108" parent="globals/BackgroundServiceDelegate" pc="268436444" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="109" parent="globals/BackgroundServiceDelegate" pc="268436448" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="110" parent="globals/BackgroundServiceDelegate" pc="268436469" symbol="disableSensorDataListener"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="12" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437424" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="12" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437424" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="23" parent="globals/BackgroundTestApp" pc="268436486" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="24" parent="globals/BackgroundTestApp" pc="268436490" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="26" parent="globals/BackgroundTestApp" pc="268436508" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="27" parent="globals/BackgroundTestApp" pc="268436523" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="29" parent="globals/BackgroundTestApp" pc="268436558" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="15" lineNum="34" parent="globals/BackgroundTestApp" pc="268436569" symbol="onStart"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="16" lineNum="38" parent="globals/BackgroundTestApp" pc="268436574" symbol="onStop"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="42" parent="globals/BackgroundTestApp" pc="268436579" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="43" parent="globals/BackgroundTestApp" pc="268436583" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="44" parent="globals/BackgroundTestApp" pc="268436597" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="46" parent="globals/BackgroundTestApp" pc="268436647" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="48" parent="globals/BackgroundTestApp" pc="268436668" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="18" lineNum="51" parent="globals/BackgroundTestApp" pc="268436736" symbol="getServiceDelegate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="18" lineNum="52" parent="globals/BackgroundTestApp" pc="268436740" symbol="getServiceDelegate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="19" lineNum="55" parent="globals/BackgroundTestApp" pc="268436778" symbol="canDoBackground"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="19" lineNum="56" parent="globals/BackgroundTestApp" pc="268436782" symbol="canDoBackground"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="59" parent="globals/BackgroundTestApp" pc="268436804" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="60" parent="globals/BackgroundTestApp" pc="268436808" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="62" parent="globals/BackgroundTestApp" pc="268436808" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="63" parent="globals/BackgroundTestApp" pc="268436822" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="66" parent="globals/BackgroundTestApp" pc="268436837" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="67" parent="globals/BackgroundTestApp" pc="268436864" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="69" parent="globals/BackgroundTestApp" pc="268436905" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="70" parent="globals/BackgroundTestApp" pc="268436936" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="72" parent="globals/BackgroundTestApp" pc="268436949" symbol="onPhone"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="21" lineNum="19" parent="globals/BackgroundTestApp" pc="268437462" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="21" lineNum="19" parent="globals/BackgroundTestApp" pc="268437462" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="22" lineNum="77" parent="globals" pc="268437615" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="22" lineNum="78" parent="globals" pc="268437627" symbol="getApp"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="23" lineNum="11" parent="globals" pc="268437344" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="24" lineNum="9" parent="globals/BackgroundTestView" pc="268437644" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="24" lineNum="10" parent="globals/BackgroundTestView" pc="268437648" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="25" lineNum="14" parent="globals/BackgroundTestView" pc="268437667" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="25" lineNum="15" parent="globals/BackgroundTestView" pc="268437671" symbol="onLayout"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="26" lineNum="21" parent="globals/BackgroundTestView" pc="268437709" symbol="onShow"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="25" parent="globals/BackgroundTestView" pc="268437714" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="26" parent="globals/BackgroundTestView" pc="268437718" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="27" parent="globals/BackgroundTestView" pc="268437754" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="28" parent="globals/BackgroundTestView" pc="268437766" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="30" parent="globals/BackgroundTestView" pc="268437802" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="31" parent="globals/BackgroundTestView" pc="268437813" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="32" parent="globals/BackgroundTestView" pc="268437830" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="34" parent="globals/BackgroundTestView" pc="268437896" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="35" parent="globals/BackgroundTestView" pc="268437896" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="37" parent="globals/BackgroundTestView" pc="268437903" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="38" parent="globals/BackgroundTestView" pc="268437966" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="39" parent="globals/BackgroundTestView" pc="268437987" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="40" parent="globals/BackgroundTestView" pc="268438053" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="44" parent="globals/BackgroundTestView" pc="268438079" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="28" lineNum="51" parent="globals/BackgroundTestView" pc="268438155" symbol="onHide"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="29" lineNum="7" parent="globals/BackgroundTestView" pc="268438371" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="29" lineNum="7" parent="globals/BackgroundTestView" pc="268438371" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="31" lineNum="11" parent="globals/BackgroundTestMenuDelegate" pc="268436966" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="31" lineNum="12" parent="globals/BackgroundTestMenuDelegate" pc="268436970" symbol="initialize"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="15" parent="globals/BackgroundTestMenuDelegate" pc="268436989" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="16" parent="globals/BackgroundTestMenuDelegate" pc="268436993" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="17" parent="globals/BackgroundTestMenuDelegate" pc="268437004" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="18" parent="globals/BackgroundTestMenuDelegate" pc="268437021" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="19" parent="globals/BackgroundTestMenuDelegate" pc="268437037" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="20" parent="globals/BackgroundTestMenuDelegate" pc="268437061" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="21" parent="globals/BackgroundTestMenuDelegate" pc="268437072" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="22" parent="globals/BackgroundTestMenuDelegate" pc="268437096" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="23" parent="globals/BackgroundTestMenuDelegate" pc="268437157" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="24" parent="globals/BackgroundTestMenuDelegate" pc="268437178" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="25" parent="globals/BackgroundTestMenuDelegate" pc="268437202" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="26" parent="globals/BackgroundTestMenuDelegate" pc="268437213" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="27" parent="globals/BackgroundTestMenuDelegate" pc="268437237" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="28" parent="globals/BackgroundTestMenuDelegate" pc="268437298" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="29" parent="globals/BackgroundTestMenuDelegate" pc="268437319" symbol="onMenuItem"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="33" lineNum="9" parent="globals/BackgroundTestMenuDelegate" pc="268437443" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="33" lineNum="9" parent="globals/BackgroundTestMenuDelegate" pc="268437443" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="35" lineNum="2" parent="globals/Rez/Drawables" pc="268438414" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="36" lineNum="6" parent="globals/Rez/Fonts" pc="268438435" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="37" lineNum="8" parent="globals/Rez/JsonData" pc="268438437" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="38" lineNum="17" parent="globals/Rez/Layouts" pc="268438160" symbol="MainLayout"/>
-        <entry filename="Rez" id="38" lineNum="18" parent="globals/Rez/Layouts" pc="268438172" symbol="MainLayout"/>
-        <entry filename="Rez" id="39" lineNum="10" parent="globals/Rez/Layouts" pc="268438436" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="40" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268438180" symbol="initialize"/>
-        <entry filename="Rez" id="40" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268438184" symbol="initialize"/>
-        <entry filename="Rez" id="40" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268438202" symbol="initialize"/>
-        <entry filename="Rez" id="40" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268438258" symbol="initialize"/>
-        <entry filename="Rez" id="40" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268438314" symbol="initialize"/>
-        <entry filename="Rez" id="41" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438416" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="41" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438416" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="42" lineNum="21" parent="globals/Rez/Menus" pc="268438415" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="43" lineNum="40" parent="globals/Rez/Strings" pc="268438438" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="44" lineNum="1" parent="globals/Rez" pc="268438390" symbol="&lt;init&gt;"/>
-        <entry filename="Rez" id="44" lineNum="1" parent="globals/Rez" pc="268438390" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="72" parent="globals/BackgroundServiceDelegate" pc="268435607" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="73" parent="globals/BackgroundServiceDelegate" pc="268435611" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="74" parent="globals/BackgroundServiceDelegate" pc="268435621" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="76" parent="globals/BackgroundServiceDelegate" pc="268435629" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="78" parent="globals/BackgroundServiceDelegate" pc="268435655" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="80" parent="globals/BackgroundServiceDelegate" pc="268435677" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="81" parent="globals/BackgroundServiceDelegate" pc="268435703" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="82" parent="globals/BackgroundServiceDelegate" pc="268435720" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="83" parent="globals/BackgroundServiceDelegate" pc="268435810" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="84" parent="globals/BackgroundServiceDelegate" pc="268435834" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="86" parent="globals/BackgroundServiceDelegate" pc="268435862" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="87" parent="globals/BackgroundServiceDelegate" pc="268435886" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="89" parent="globals/BackgroundServiceDelegate" pc="268435916" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="91" parent="globals/BackgroundServiceDelegate" pc="268435940" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="92" parent="globals/BackgroundServiceDelegate" pc="268435966" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="93" parent="globals/BackgroundServiceDelegate" pc="268435983" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="94" parent="globals/BackgroundServiceDelegate" pc="268436073" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="95" parent="globals/BackgroundServiceDelegate" pc="268436097" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="97" parent="globals/BackgroundServiceDelegate" pc="268436125" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="98" parent="globals/BackgroundServiceDelegate" pc="268436149" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="100" parent="globals/BackgroundServiceDelegate" pc="268436179" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="102" parent="globals/BackgroundServiceDelegate" pc="268436200" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="10" lineNum="103" parent="globals/BackgroundServiceDelegate" pc="268436208" symbol="HRHistoryCallback"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="108" parent="globals/BackgroundServiceDelegate" pc="268436226" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="109" parent="globals/BackgroundServiceDelegate" pc="268436230" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="11" lineNum="110" parent="globals/BackgroundServiceDelegate" pc="268436251" symbol="disableSensorDataListener"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="12" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437206" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestDelegate.mc" id="12" lineNum="38" parent="globals/BackgroundServiceDelegate" pc="268437206" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="23" parent="globals/BackgroundTestApp" pc="268436268" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="24" parent="globals/BackgroundTestApp" pc="268436272" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="26" parent="globals/BackgroundTestApp" pc="268436290" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="27" parent="globals/BackgroundTestApp" pc="268436305" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="14" lineNum="29" parent="globals/BackgroundTestApp" pc="268436340" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="15" lineNum="34" parent="globals/BackgroundTestApp" pc="268436351" symbol="onStart"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="16" lineNum="38" parent="globals/BackgroundTestApp" pc="268436356" symbol="onStop"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="42" parent="globals/BackgroundTestApp" pc="268436361" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="43" parent="globals/BackgroundTestApp" pc="268436365" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="44" parent="globals/BackgroundTestApp" pc="268436379" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="46" parent="globals/BackgroundTestApp" pc="268436429" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="17" lineNum="48" parent="globals/BackgroundTestApp" pc="268436450" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="18" lineNum="51" parent="globals/BackgroundTestApp" pc="268436518" symbol="getServiceDelegate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="18" lineNum="52" parent="globals/BackgroundTestApp" pc="268436522" symbol="getServiceDelegate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="19" lineNum="55" parent="globals/BackgroundTestApp" pc="268436560" symbol="canDoBackground"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="19" lineNum="56" parent="globals/BackgroundTestApp" pc="268436564" symbol="canDoBackground"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="59" parent="globals/BackgroundTestApp" pc="268436586" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="60" parent="globals/BackgroundTestApp" pc="268436590" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="62" parent="globals/BackgroundTestApp" pc="268436590" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="63" parent="globals/BackgroundTestApp" pc="268436604" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="66" parent="globals/BackgroundTestApp" pc="268436619" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="67" parent="globals/BackgroundTestApp" pc="268436646" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="69" parent="globals/BackgroundTestApp" pc="268436687" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="70" parent="globals/BackgroundTestApp" pc="268436718" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="20" lineNum="72" parent="globals/BackgroundTestApp" pc="268436731" symbol="onPhone"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="21" lineNum="19" parent="globals/BackgroundTestApp" pc="268437244" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="21" lineNum="19" parent="globals/BackgroundTestApp" pc="268437244" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="22" lineNum="77" parent="globals" pc="268437397" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="22" lineNum="78" parent="globals" pc="268437409" symbol="getApp"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestApp.mc" id="23" lineNum="11" parent="globals" pc="268437126" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="24" lineNum="9" parent="globals/BackgroundTestView" pc="268437426" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="24" lineNum="10" parent="globals/BackgroundTestView" pc="268437430" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="25" lineNum="14" parent="globals/BackgroundTestView" pc="268437449" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="25" lineNum="15" parent="globals/BackgroundTestView" pc="268437453" symbol="onLayout"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="26" lineNum="21" parent="globals/BackgroundTestView" pc="268437491" symbol="onShow"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="25" parent="globals/BackgroundTestView" pc="268437496" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="26" parent="globals/BackgroundTestView" pc="268437500" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="27" parent="globals/BackgroundTestView" pc="268437536" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="28" parent="globals/BackgroundTestView" pc="268437548" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="30" parent="globals/BackgroundTestView" pc="268437584" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="31" parent="globals/BackgroundTestView" pc="268437595" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="32" parent="globals/BackgroundTestView" pc="268437612" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="34" parent="globals/BackgroundTestView" pc="268437678" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="35" parent="globals/BackgroundTestView" pc="268437678" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="37" parent="globals/BackgroundTestView" pc="268437685" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="38" parent="globals/BackgroundTestView" pc="268437748" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="39" parent="globals/BackgroundTestView" pc="268437769" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="40" parent="globals/BackgroundTestView" pc="268437835" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="27" lineNum="44" parent="globals/BackgroundTestView" pc="268437861" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="28" lineNum="51" parent="globals/BackgroundTestView" pc="268437937" symbol="onHide"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="29" lineNum="7" parent="globals/BackgroundTestView" pc="268438153" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestView.mc" id="29" lineNum="7" parent="globals/BackgroundTestView" pc="268438153" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="31" lineNum="11" parent="globals/BackgroundTestMenuDelegate" pc="268436748" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="31" lineNum="12" parent="globals/BackgroundTestMenuDelegate" pc="268436752" symbol="initialize"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="15" parent="globals/BackgroundTestMenuDelegate" pc="268436771" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="16" parent="globals/BackgroundTestMenuDelegate" pc="268436775" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="17" parent="globals/BackgroundTestMenuDelegate" pc="268436786" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="18" parent="globals/BackgroundTestMenuDelegate" pc="268436803" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="19" parent="globals/BackgroundTestMenuDelegate" pc="268436819" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="20" parent="globals/BackgroundTestMenuDelegate" pc="268436843" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="21" parent="globals/BackgroundTestMenuDelegate" pc="268436854" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="22" parent="globals/BackgroundTestMenuDelegate" pc="268436878" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="23" parent="globals/BackgroundTestMenuDelegate" pc="268436939" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="24" parent="globals/BackgroundTestMenuDelegate" pc="268436960" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="25" parent="globals/BackgroundTestMenuDelegate" pc="268436984" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="26" parent="globals/BackgroundTestMenuDelegate" pc="268436995" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="27" parent="globals/BackgroundTestMenuDelegate" pc="268437019" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="28" parent="globals/BackgroundTestMenuDelegate" pc="268437080" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="32" lineNum="29" parent="globals/BackgroundTestMenuDelegate" pc="268437101" symbol="onMenuItem"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="33" lineNum="9" parent="globals/BackgroundTestMenuDelegate" pc="268437225" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\loveg\\Documents\\GitHub\\Stress-Intervention\\Garmin-Watch-Intervention-App\\BackgroundTest\\source\\BackgroundTestMenuDelegate.mc" id="33" lineNum="9" parent="globals/BackgroundTestMenuDelegate" pc="268437225" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="35" lineNum="2" parent="globals/Rez/Drawables" pc="268438196" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="36" lineNum="6" parent="globals/Rez/Fonts" pc="268438217" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="37" lineNum="8" parent="globals/Rez/JsonData" pc="268438219" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="38" lineNum="17" parent="globals/Rez/Layouts" pc="268437942" symbol="MainLayout"/>
+        <entry filename="Rez" id="38" lineNum="18" parent="globals/Rez/Layouts" pc="268437954" symbol="MainLayout"/>
+        <entry filename="Rez" id="39" lineNum="10" parent="globals/Rez/Layouts" pc="268438218" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="40" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437962" symbol="initialize"/>
+        <entry filename="Rez" id="40" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437966" symbol="initialize"/>
+        <entry filename="Rez" id="40" lineNum="32" parent="globals/Rez/Menus/MainMenu" pc="268437984" symbol="initialize"/>
+        <entry filename="Rez" id="40" lineNum="33" parent="globals/Rez/Menus/MainMenu" pc="268438040" symbol="initialize"/>
+        <entry filename="Rez" id="40" lineNum="34" parent="globals/Rez/Menus/MainMenu" pc="268438096" symbol="initialize"/>
+        <entry filename="Rez" id="41" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438198" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="41" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438198" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="42" lineNum="21" parent="globals/Rez/Menus" pc="268438197" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="43" lineNum="40" parent="globals/Rez/Strings" pc="268438220" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="44" lineNum="1" parent="globals/Rez" pc="268438172" symbol="&lt;init&gt;"/>
+        <entry filename="Rez" id="44" lineNum="1" parent="globals/Rez" pc="268438172" symbol="&lt;init&gt;"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -181,10 +174,7 @@
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="22" symbol="timeCount"/>
         <entry id="26" method="true" symbol="HRHistoryCallback"/>
-        <entry field="true" id="8390134" symbol="sampleRate"/>
         <entry id="11" object="true" symbol="BackgroundServiceDelegate"/>
-        <entry id="8390648" symbol="accelerometer"/>
-        <entry field="true" id="8390655" symbol="heartBeatIntervals"/>
         <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
         <entry field="true" id="13" symbol="strings"/>
         <entry field="true" id="16" symbol="phoneMethod"/>
@@ -193,7 +183,6 @@
         <entry id="8388828" method="true" symbol="onError"/>
         <entry id="34" object="true" symbol="MainMenu"/>
         <entry id="21" object="true" symbol="BackgroundTestMenuDelegate"/>
-        <entry field="true" id="8390438" symbol="enabled"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
@@ -213,7 +202,6 @@
         <entry field="true" id="24" symbol="IBI_samples"/>
         <entry id="8389279" method="true" symbol="onStart"/>
         <entry field="true" id="25" symbol="listener"/>
-        <entry id="8389808" symbol="period"/>
         <entry id="30" method="true" symbol="onPhone"/>
         <entry id="19" object="true" symbol="BackgroundTestApp"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
@@ -232,27 +220,25 @@
         <entry field="true" id="37" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435835" name="maxSampleRate" stackId="1" startPc="268435606"/>
-        <entry endPc="268435835" name="options" stackId="2" startPc="268435606"/>
-        <entry endPc="268436160" name="time" stackId="4" startPc="268435933"/>
-        <entry endPc="268436439" name="time" stackId="5" startPc="268436190"/>
-        <entry endPc="268436442" name="rawIBIData" stackId="2" startPc="268435841"/>
-        <entry endPc="268436442" name="send_dict" stackId="3" startPc="268435841"/>
-        <entry arg="true" endPc="268436443" name="sensorData" stackId="1" startPc="268435837"/>
-        <entry arg="true" endPc="268436573" name="state" stackId="1" startPc="268436569"/>
-        <entry arg="true" endPc="268436578" name="state" stackId="1" startPc="268436574"/>
-        <entry endPc="268436964" name="i" stackId="2" startPc="268436808"/>
-        <entry arg="true" endPc="268436965" name="msg" stackId="1" startPc="268436804"/>
-        <entry arg="true" endPc="268437708" name="dc" stackId="1" startPc="268437667"/>
-        <entry endPc="268438075" name="i" stackId="2" startPc="268437896"/>
-        <entry endPc="268438075" name="y" stackId="3" startPc="268437896"/>
-        <entry arg="true" endPc="268438154" name="dc" stackId="1" startPc="268437714"/>
-        <entry endPc="268437198" name="sampleDictionary" stackId="3" startPc="268437072"/>
-        <entry endPc="268437198" name="listener" stackId="2" startPc="268437072"/>
-        <entry endPc="268437339" name="sampleDictionary" stackId="5" startPc="268437213"/>
-        <entry endPc="268437339" name="listener" stackId="4" startPc="268437213"/>
-        <entry arg="true" endPc="268437343" name="item" stackId="1" startPc="268436989"/>
-        <entry arg="true" endPc="268438179" name="dc" stackId="1" startPc="268438160"/>
+        <entry endPc="268435936" name="time" stackId="4" startPc="268435703"/>
+        <entry endPc="268436221" name="time" stackId="5" startPc="268435966"/>
+        <entry endPc="268436224" name="rawIBIData" stackId="2" startPc="268435611"/>
+        <entry endPc="268436224" name="send_dict" stackId="3" startPc="268435611"/>
+        <entry arg="true" endPc="268436225" name="sensorData" stackId="1" startPc="268435607"/>
+        <entry arg="true" endPc="268436355" name="state" stackId="1" startPc="268436351"/>
+        <entry arg="true" endPc="268436360" name="state" stackId="1" startPc="268436356"/>
+        <entry endPc="268436746" name="i" stackId="2" startPc="268436590"/>
+        <entry arg="true" endPc="268436747" name="msg" stackId="1" startPc="268436586"/>
+        <entry arg="true" endPc="268437490" name="dc" stackId="1" startPc="268437449"/>
+        <entry endPc="268437857" name="i" stackId="2" startPc="268437678"/>
+        <entry endPc="268437857" name="y" stackId="3" startPc="268437678"/>
+        <entry arg="true" endPc="268437936" name="dc" stackId="1" startPc="268437496"/>
+        <entry endPc="268436980" name="sampleDictionary" stackId="3" startPc="268436854"/>
+        <entry endPc="268436980" name="listener" stackId="2" startPc="268436854"/>
+        <entry endPc="268437121" name="sampleDictionary" stackId="5" startPc="268436995"/>
+        <entry endPc="268437121" name="listener" stackId="4" startPc="268436995"/>
+        <entry arg="true" endPc="268437125" name="item" stackId="1" startPc="268436771"/>
+        <entry arg="true" endPc="268437961" name="dc" stackId="1" startPc="268437942"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -268,25 +254,25 @@
         <dataEntry label="globals/BackgroundTestMenuDelegate" offset="349" parentId="globals" symbolId="BackgroundTestMenuDelegate" type="class"/>
         <dataEntry label="globals/BackgroundTestApp" offset="404" parentId="globals" symbolId="BackgroundTestApp" type="class"/>
         <dataEntry label="globals/CommListener" offset="507" parentId="globals" symbolId="CommListener" type="class"/>
-        <dataEntry label="globals/BackgroundTestView" offset="1488" parentId="globals" symbolId="BackgroundTestView" type="class"/>
-        <dataEntry label="globals/Rez" offset="1567" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="1646" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="1685" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1724" parentId="Menus" symbolId="MainMenu" type="class"/>
-        <dataEntry label="globals/Rez/Fonts" offset="1771" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1802" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/JsonData" offset="1841" parentId="Rez" symbolId="JsonData" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1872" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/BackgroundTestDelegate" offset="1943" parentId="globals" symbolId="BackgroundTestDelegate" type="class"/>
+        <dataEntry label="globals/BackgroundTestView" offset="1479" parentId="globals" symbolId="BackgroundTestView" type="class"/>
+        <dataEntry label="globals/Rez" offset="1558" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1637" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1676" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1715" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1762" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1793" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="1832" parentId="Rez" symbolId="JsonData" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1863" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/BackgroundTestDelegate" offset="1934" parentId="globals" symbolId="BackgroundTestDelegate" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268437522" name="initialize" parent="BackgroundTestDelegate" startPc="268437500">
+        <functionEntry accessMode="public" endPc="268437304" name="initialize" parent="BackgroundTestDelegate" startPc="268437282">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437614" name="onMenu" parent="BackgroundTestDelegate" startPc="268437523">
+        <functionEntry accessMode="public" endPc="268437396" name="onMenu" parent="BackgroundTestDelegate" startPc="268437305">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438457" name="&lt;init&gt;" parent="BackgroundTestDelegate" startPc="268438439">
+        <functionEntry accessMode="protected" endPc="268438239" name="&lt;init&gt;" parent="BackgroundTestDelegate" startPc="268438221">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435482" name="initialize" parent="CommListener" startPc="268435456">
@@ -298,114 +284,114 @@
         <functionEntry accessMode="public" endPc="268435534" name="onError" parent="CommListener" startPc="268435509">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437499" name="&lt;init&gt;" parent="CommListener" startPc="268437481">
+        <functionEntry accessMode="protected" endPc="268437281" name="&lt;init&gt;" parent="CommListener" startPc="268437263">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" endPc="268435601" name="initialize" parent="BackgroundServiceDelegate" startPc="268435535">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435836" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268435602">
+        <functionEntry accessMode="public" endPc="268435606" name="onTemporalEvent" parent="BackgroundServiceDelegate" startPc="268435602">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436443" name="HRHistoryCallback" parent="BackgroundServiceDelegate" startPc="268435837">
+        <functionEntry accessMode="public" endPc="268436225" name="HRHistoryCallback" parent="BackgroundServiceDelegate" startPc="268435607">
             <param id="sensorData"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436485" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268436444">
+        <functionEntry accessMode="public" endPc="268436267" name="disableSensorDataListener" parent="BackgroundServiceDelegate" startPc="268436226">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437442" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268437424">
+        <functionEntry accessMode="protected" endPc="268437224" name="&lt;init&gt;" parent="BackgroundServiceDelegate" startPc="268437206">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436568" name="initialize" parent="BackgroundTestApp" startPc="268436486">
+        <functionEntry accessMode="public" endPc="268436350" name="initialize" parent="BackgroundTestApp" startPc="268436268">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436573" name="onStart" parent="BackgroundTestApp" startPc="268436569">
+        <functionEntry accessMode="public" endPc="268436355" name="onStart" parent="BackgroundTestApp" startPc="268436351">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436578" name="onStop" parent="BackgroundTestApp" startPc="268436574">
+        <functionEntry accessMode="public" endPc="268436360" name="onStop" parent="BackgroundTestApp" startPc="268436356">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436735" name="getInitialView" parent="BackgroundTestApp" startPc="268436579">
+        <functionEntry accessMode="public" endPc="268436517" name="getInitialView" parent="BackgroundTestApp" startPc="268436361">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436777" name="getServiceDelegate" parent="BackgroundTestApp" startPc="268436736">
+        <functionEntry accessMode="public" endPc="268436559" name="getServiceDelegate" parent="BackgroundTestApp" startPc="268436518">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436803" name="canDoBackground" parent="BackgroundTestApp" startPc="268436778">
+        <functionEntry accessMode="public" endPc="268436585" name="canDoBackground" parent="BackgroundTestApp" startPc="268436560">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436965" name="onPhone" parent="BackgroundTestApp" startPc="268436804">
+        <functionEntry accessMode="public" endPc="268436747" name="onPhone" parent="BackgroundTestApp" startPc="268436586">
             <param id="msg"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437480" name="&lt;init&gt;" parent="BackgroundTestApp" startPc="268437462">
+        <functionEntry accessMode="protected" endPc="268437262" name="&lt;init&gt;" parent="BackgroundTestApp" startPc="268437244">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437643" name="getApp" startPc="268437615">
+        <functionEntry accessMode="public" endPc="268437425" name="getApp" startPc="268437397">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437666" name="initialize" parent="BackgroundTestView" startPc="268437644">
+        <functionEntry accessMode="public" endPc="268437448" name="initialize" parent="BackgroundTestView" startPc="268437426">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437708" name="onLayout" parent="BackgroundTestView" startPc="268437667">
+        <functionEntry accessMode="public" endPc="268437490" name="onLayout" parent="BackgroundTestView" startPc="268437449">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437713" name="onShow" parent="BackgroundTestView" startPc="268437709">
+        <functionEntry accessMode="public" endPc="268437495" name="onShow" parent="BackgroundTestView" startPc="268437491">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438154" name="onUpdate" parent="BackgroundTestView" startPc="268437714">
+        <functionEntry accessMode="public" endPc="268437936" name="onUpdate" parent="BackgroundTestView" startPc="268437496">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438159" name="onHide" parent="BackgroundTestView" startPc="268438155">
+        <functionEntry accessMode="public" endPc="268437941" name="onHide" parent="BackgroundTestView" startPc="268437937">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438389" name="&lt;init&gt;" parent="BackgroundTestView" startPc="268438371">
+        <functionEntry accessMode="protected" endPc="268438171" name="&lt;init&gt;" parent="BackgroundTestView" startPc="268438153">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436988" name="initialize" parent="BackgroundTestMenuDelegate" startPc="268436966">
+        <functionEntry accessMode="public" endPc="268436770" name="initialize" parent="BackgroundTestMenuDelegate" startPc="268436748">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437343" name="onMenuItem" parent="BackgroundTestMenuDelegate" startPc="268436989">
+        <functionEntry accessMode="public" endPc="268437125" name="onMenuItem" parent="BackgroundTestMenuDelegate" startPc="268436771">
             <param id="item"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268437461" name="&lt;init&gt;" parent="BackgroundTestMenuDelegate" startPc="268437443">
+        <functionEntry accessMode="protected" endPc="268437243" name="&lt;init&gt;" parent="BackgroundTestMenuDelegate" startPc="268437225">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438414" name="&lt;init&gt;" parent="Drawables" startPc="268438414">
+        <functionEntry accessMode="protected" endPc="268438196" name="&lt;init&gt;" parent="Drawables" startPc="268438196">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438435" name="&lt;init&gt;" parent="Fonts" startPc="268438435">
+        <functionEntry accessMode="protected" endPc="268438217" name="&lt;init&gt;" parent="Fonts" startPc="268438217">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438437" name="&lt;init&gt;" parent="JsonData" startPc="268438437">
+        <functionEntry accessMode="protected" endPc="268438219" name="&lt;init&gt;" parent="JsonData" startPc="268438219">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438179" name="MainLayout" parent="Layouts" startPc="268438160">
+        <functionEntry accessMode="public" endPc="268437961" name="MainLayout" parent="Layouts" startPc="268437942">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438436" name="&lt;init&gt;" parent="Layouts" startPc="268438436">
+        <functionEntry accessMode="protected" endPc="268438218" name="&lt;init&gt;" parent="Layouts" startPc="268438218">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438370" name="initialize" parent="MainMenu" startPc="268438180">
+        <functionEntry accessMode="public" endPc="268438152" name="initialize" parent="MainMenu" startPc="268437962">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438434" name="&lt;init&gt;" parent="MainMenu" startPc="268438416">
+        <functionEntry accessMode="protected" endPc="268438216" name="&lt;init&gt;" parent="MainMenu" startPc="268438198">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438415" name="&lt;init&gt;" parent="Menus" startPc="268438415">
+        <functionEntry accessMode="protected" endPc="268438197" name="&lt;init&gt;" parent="Menus" startPc="268438197">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438438" name="&lt;init&gt;" parent="Strings" startPc="268438438">
+        <functionEntry accessMode="protected" endPc="268438220" name="&lt;init&gt;" parent="Strings" startPc="268438220">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="protected" endPc="268438413" name="&lt;init&gt;" parent="Rez" startPc="268438390">
+        <functionEntry accessMode="protected" endPc="268438195" name="&lt;init&gt;" parent="Rez" startPc="268438172">
             <documentation/>
         </functionEntry>
     </functions>
