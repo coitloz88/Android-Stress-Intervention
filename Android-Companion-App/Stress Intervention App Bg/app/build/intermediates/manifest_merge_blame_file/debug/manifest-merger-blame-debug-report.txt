@@ -1,0 +1,361 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.garmin.android.apps.connectiq.sample.comm"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:8:5-67
+11-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:8:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:9:5-79
+12-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:10:5-77
+13-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:10:22-74
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:11:5-81
+14-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:11:22-78
+15    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+15-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:12:5-85
+15-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:12:22-82
+16
+17    <uses-feature
+17-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:13:5-98
+18        android:name="android.hardware.sensor.accelerometer"
+18-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:13:19-71
+19        android:required="true" />
+19-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:13:72-95
+20
+21    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+21-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:14:5-114
+21-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:14:22-75
+22
+23    <queries>
+23-->[monkeybrains-sdk-release.aar] /Users/yjhan/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/AndroidManifest.xml:13:5-15:15
+24        <package android:name="com.garmin.android.apps.connectmobile" />
+24-->[monkeybrains-sdk-release.aar] /Users/yjhan/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/AndroidManifest.xml:14:9-73
+24-->[monkeybrains-sdk-release.aar] /Users/yjhan/.gradle/caches/transforms-3/c9d72fa4a94d62ed27d3368561515c57/transformed/jetified-monkeybrains-sdk-release/AndroidManifest.xml:14:18-70
+25    </queries>
+26
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:5-68
+27-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:25:22-65
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+28-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:5-79
+28-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:26:22-76
+29    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+29-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+29-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+30
+31    <application
+31-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:16:5-54:19
+32        android:name="com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences"
+32-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:21:9-88
+33        android:allowBackup="true"
+33-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:17:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.6.0] /Users/yjhan/.gradle/caches/transforms-3/0fb88665f683ca405d65ac5ae7e68504/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@drawable/ic_launcher"
+36-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:18:9-45
+37        android:label="@string/app_name"
+37-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:19:9-41
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:20:9-40
+40        <service
+40-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:22:9-26:19
+41            android:name="com.garmin.android.apps.connectiq.sample.comm.Service.BgService"
+41-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:23:13-46
+42            android:enabled="true"
+42-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:24:13-35
+43            android:exported="true" >
+43-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:25:13-36
+44        </service>
+45        <service
+45-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:27:9-30:19
+46            android:name="com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.AccService"
+46-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:27:18-60
+47            android:enabled="true"
+47-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:28:13-35
+48            android:exported="true" >
+48-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:29:13-36
+49        </service>
+50        <service
+50-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:31:9-34:19
+51            android:name="com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.LocationService"
+51-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:31:18-65
+52            android:enabled="true"
+52-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:32:13-35
+53            android:exported="true" >
+53-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:33:13-36
+54        </service>
+55
+56        <activity
+56-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:35:9-39:39
+57            android:name="com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity"
+57-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:36:13-60
+58            android:excludeFromRecents="true"
+58-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:37:13-46
+59            android:launchMode="singleTask"
+59-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:38:13-44
+60            android:taskAffinity="" />
+60-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:39:13-36
+61        <activity
+61-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:40:9-44:39
+62            android:name="com.garmin.android.apps.connectiq.sample.comm.activities.SensorActivity"
+62-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:41:13-54
+63            android:excludeFromRecents="true"
+63-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:42:13-46
+64            android:launchMode="singleTask"
+64-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:43:13-44
+65            android:taskAffinity="" />
+65-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:44:13-36
+66        <activity
+66-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:45:9-53:20
+67            android:name="com.garmin.android.apps.connectiq.sample.comm.activities.MainActivity"
+67-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:46:13-52
+68            android:exported="true" >
+68-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:47:13-36
+69            <intent-filter>
+69-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:48:13-52:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:49:17-69
+70-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:49:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:51:17-77
+72-->/Users/yjhan/Downloads/Stress-Intervention-AndroidBg/Android-Companion-App/Stress Intervention App/app/src/main/AndroidManifest.xml:51:27-74
+73            </intent-filter>
+74        </activity>
+75
+76        <provider
+76-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+77            android:name="androidx.startup.InitializationProvider"
+77-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+78            android:authorities="com.garmin.android.apps.connectiq.sample.comm.androidx-startup"
+78-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+79            android:exported="false" >
+79-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+80            <meta-data
+80-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+81                android:name="androidx.work.WorkManagerInitializer"
+81-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+82                android:value="androidx.startup" />
+82-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+83        </provider>
+84
+85        <service
+85-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+86            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+86-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+87            android:directBootAware="false"
+87-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+88            android:enabled="@bool/enable_system_alarm_service_default"
+88-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+89            android:exported="false" />
+89-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+90        <service
+90-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+91            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+91-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+92            android:directBootAware="false"
+92-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+93            android:enabled="@bool/enable_system_job_service_default"
+93-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+94            android:exported="true"
+94-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+95            android:permission="android.permission.BIND_JOB_SERVICE" />
+95-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+96        <service
+96-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+97            android:name="androidx.work.impl.foreground.SystemForegroundService"
+97-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+98            android:directBootAware="false"
+98-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+99            android:enabled="@bool/enable_system_foreground_service_default"
+99-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+100            android:exported="false" />
+100-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+101
+102        <receiver
+102-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+103            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+103-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+104            android:directBootAware="false"
+104-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+105            android:enabled="true"
+105-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+106            android:exported="false" />
+106-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+107        <receiver
+107-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+108            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+108-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+109            android:directBootAware="false"
+109-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+110            android:enabled="false"
+110-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+111            android:exported="false" >
+111-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+112            <intent-filter>
+112-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+113                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+113-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+113-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+114                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+114-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+114-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+115            </intent-filter>
+116        </receiver>
+117        <receiver
+117-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+118            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+118-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+119            android:directBootAware="false"
+119-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+120            android:enabled="false"
+120-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+121            android:exported="false" >
+121-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+122            <intent-filter>
+122-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+123                <action android:name="android.intent.action.BATTERY_OKAY" />
+123-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+123-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+124                <action android:name="android.intent.action.BATTERY_LOW" />
+124-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+124-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+125            </intent-filter>
+126        </receiver>
+127        <receiver
+127-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+128            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+128-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+129            android:directBootAware="false"
+129-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+130            android:enabled="false"
+130-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+131            android:exported="false" >
+131-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+132            <intent-filter>
+132-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+133                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+133-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+133-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+134                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+134-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+134-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+135            </intent-filter>
+136        </receiver>
+137        <receiver
+137-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+138            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+138-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+139            android:directBootAware="false"
+139-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+140            android:enabled="false"
+140-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+141            android:exported="false" >
+141-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+142            <intent-filter>
+142-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+143                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+143-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+143-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+144            </intent-filter>
+145        </receiver>
+146        <receiver
+146-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+147            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+147-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+148            android:directBootAware="false"
+148-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+149            android:enabled="false"
+149-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+150            android:exported="false" >
+150-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+151            <intent-filter>
+151-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+152                <action android:name="android.intent.action.BOOT_COMPLETED" />
+152-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+152-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+153                <action android:name="android.intent.action.TIME_SET" />
+153-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+153-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+154                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+154-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+154-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+155            </intent-filter>
+156        </receiver>
+157        <receiver
+157-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+158            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+158-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+160            android:enabled="@bool/enable_system_alarm_service_default"
+160-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+161            android:exported="false" >
+161-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+162            <intent-filter>
+162-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+163                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+163-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+163-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+164            </intent-filter>
+165        </receiver>
+166        <receiver
+166-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+167            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+167-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+168            android:directBootAware="false"
+168-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+169            android:enabled="true"
+169-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+170            android:exported="true"
+170-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+171            android:permission="android.permission.DUMP" >
+171-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+172            <intent-filter>
+172-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+173                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+173-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+173-->[androidx.work:work-runtime:2.7.1] /Users/yjhan/.gradle/caches/transforms-3/49f60e4e9f87aa3393f4d08d955576c1/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+174            </intent-filter>
+175        </receiver>
+176
+177        <activity
+177-->[com.google.android.gms:play-services-base:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/aa5e1c847ccfff075431796267a764d3/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:23:9-26:75
+178            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+178-->[com.google.android.gms:play-services-base:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/aa5e1c847ccfff075431796267a764d3/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:24:13-79
+179            android:exported="false"
+179-->[com.google.android.gms:play-services-base:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/aa5e1c847ccfff075431796267a764d3/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:25:13-37
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.google.android.gms:play-services-base:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/aa5e1c847ccfff075431796267a764d3/transformed/jetified-play-services-base-17.5.0/AndroidManifest.xml:26:13-72
+181
+182        <meta-data
+182-->[com.google.android.gms:play-services-basement:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/988fbf9512240487f20eb8f90b9dade3/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:23:9-25:69
+183            android:name="com.google.android.gms.version"
+183-->[com.google.android.gms:play-services-basement:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/988fbf9512240487f20eb8f90b9dade3/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:24:13-58
+184            android:value="@integer/google_play_services_version" />
+184-->[com.google.android.gms:play-services-basement:17.5.0] /Users/yjhan/.gradle/caches/transforms-3/988fbf9512240487f20eb8f90b9dade3/transformed/jetified-play-services-basement-17.5.0/AndroidManifest.xml:25:13-66
+185
+186        <service
+186-->[androidx.room:room-runtime:2.3.0] /Users/yjhan/.gradle/caches/transforms-3/473ab595aace97314bd280237e5c1d06/transformed/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+187            android:name="androidx.room.MultiInstanceInvalidationService"
+187-->[androidx.room:room-runtime:2.3.0] /Users/yjhan/.gradle/caches/transforms-3/473ab595aace97314bd280237e5c1d06/transformed/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+188            android:directBootAware="true"
+188-->[androidx.room:room-runtime:2.3.0] /Users/yjhan/.gradle/caches/transforms-3/473ab595aace97314bd280237e5c1d06/transformed/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+189            android:exported="false" />
+189-->[androidx.room:room-runtime:2.3.0] /Users/yjhan/.gradle/caches/transforms-3/473ab595aace97314bd280237e5c1d06/transformed/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+190    </application>
+191
+192</manifest>
