@@ -11,41 +11,41 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.garmin.android.apps.connectiq.sample.comm.Message
+import com.garmin.android.apps.connectiq.sample.comm.SensorData
 
-class MessagesAdapter(
+class SensorDatasAdapter(
     private val onItemClickListener: (Any) -> Unit
-) : ListAdapter<Message, MessageViewHolder>(MessageItemDiffCallback()) {
+) : ListAdapter<SensorData, SensorDataViewHolder>(SensorDataItemDiffCallback()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MessageViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SensorDataViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(android.R.layout.simple_list_item_1, parent, false)
-        return MessageViewHolder(view, onItemClickListener)
+        return SensorDataViewHolder(view, onItemClickListener)
     }
 
-    override fun onBindViewHolder(holder: MessageViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SensorDataViewHolder, position: Int) {
         holder.bindTo(getItem(position))
     }
 }
 
-private class MessageItemDiffCallback : DiffUtil.ItemCallback<Message>() {
-    override fun areItemsTheSame(oldItem: Message, newItem: Message): Boolean =
+private class SensorDataItemDiffCallback : DiffUtil.ItemCallback<SensorData>() {
+    override fun areItemsTheSame(oldItem: SensorData, newItem: SensorData): Boolean =
         oldItem == newItem
 
-    override fun areContentsTheSame(oldItem: Message, newItem: Message): Boolean =
+    override fun areContentsTheSame(oldItem: SensorData, newItem: SensorData): Boolean =
         oldItem == newItem
-
 }
 
-class MessageViewHolder(
+class SensorDataViewHolder(
     private val view: View,
     private val onItemClickListener: (Any) -> Unit
 ) : RecyclerView.ViewHolder(view) {
 
-    fun bindTo(message: Message) {
-        view.findViewById<TextView>(android.R.id.text1).text = message.text
+    fun bindTo(sensorDatas: SensorData) {
+        view.findViewById<TextView>(android.R.id.text1).text = sensorDatas.text
         view.setOnClickListener {
-            onItemClickListener(message.payload)
+            //TODO: 클릭 시 실행할 것
+            onItemClickListener(sensorDatas.payload)
         }
     }
 }

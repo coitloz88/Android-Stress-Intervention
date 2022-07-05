@@ -13,15 +13,13 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".activities.SensorActivity"
-            android:exported="false" />
-
         <service
             android:name=".Service.BgService"
             android:enabled="true"
             android:exported="true" />
-
+        <activity
+            android:name=".activities.SensorActivity"
+            android:exported="false" />
         <activity
             android:name=".activities.InterventionActivity"
             android:excludeFromRecents="true"
