@@ -7,12 +7,12 @@
     * 연결 가능한 디바이스 목록 출력
     * 단, 해당 디바이스를 클릭하는 경우 기존 앱의 `DeviceActivity`가 아닌 `BgService`가 시작됨
 
-<img src="https://user-images.githubusercontent.com/88723775/176818519-050734d1-56eb-48cf-982b-caacbecf05c3.png  width="50%"/>
+<img src="https://user-images.githubusercontent.com/88723775/176818519-050734d1-56eb-48cf-982b-caacbecf05c3.png"  width="50%"/>
 
 2. `InterventionActivity`
     * 기존 코드 그대로 사용
 
-<img src="https://user-images.githubusercontent.com/88723775/176818513-6a90b483-285b-4824-b6a1-2b169fd61574.png  width="50%"/>
+<img src="https://user-images.githubusercontent.com/88723775/176818513-6a90b483-285b-4824-b6a1-2b169fd61574.png"  width="50%"/>
 
 
 3. `SensorActivity`
@@ -20,7 +20,7 @@
     * Recyclerview를 추가함: SensorFactory.kt에 원하는 센서 항목을 추가하고,
     * SensorActivity.kt의 `onItemClick()`에 클릭시 무엇을 실행할지 작성
 
-<img src="https://user-images.githubusercontent.com/88723775/177260762-ec9baa89-07e0-4f30-879b-3a88b857941f.png  width="50%"/>
+<img src="https://user-images.githubusercontent.com/88723775/177260762-ec9baa89-07e0-4f30-879b-3a88b857941f.png"  width="50%"/>
 
 
 
