@@ -5,9 +5,8 @@
 package com.garmin.android.apps.connectiq.sample.comm.activities
 
 import android.app.Activity
-import android.content.Context
+import android.app.ActivityManager
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -65,16 +64,13 @@ class MainActivity : Activity() {
         btnIntervention = findViewById(R.id.btn_intervention)
 
         btnIntervention.setOnClickListener{
-            if(mPreferences.prefs.getBoolean("isIntervention", false)){
+            if(isMyServiceRunning(BgService::class.java)){
                 //현재 intervention이 실행중인 경우, 실행중인 intervention을 종료
-                mPreferences.prefs.setBoolean("isIntervention", false)
-
                 Toast.makeText(applicationContext, "Quit intervention", Toast.LENGTH_SHORT).show()
 
                 val stopIntent = Intent(this, BgService::class.java)
                 stopService(stopIntent)
                 Log.d(TAG, "Quit intervention process")
-
                 //connectIQ.shutdown(this)
             }
             else {
@@ -118,10 +114,11 @@ class MainActivity : Activity() {
     }
 
     private fun onItemClick(device: IQDevice) {
-        if(!mPreferences.prefs.getBoolean("isIntervention", true) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
+        if(!isMyServiceRunning(BgService::class.java) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
             Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
             startService(BgService.putIntent(this, device))
         } else {
+            Toast.makeText(applicationContext, "Intervention cannot start", Toast.LENGTH_SHORT).show()
             Log.e(TAG, "cannot start the intervention")
         }
     }
@@ -188,5 +185,15 @@ class MainActivity : Activity() {
 
     private fun setEmptyState(text: String) {
         findViewById<TextView>(android.R.id.empty)?.text = text
+    }
+
+    private fun isMyServiceRunning(serviceClass: Class<*>): Boolean {
+        val manager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
+        for (service in manager.getRunningServices(Int.MAX_VALUE)) {
+            if (serviceClass.name == service.service.className) {
+                return true
+            }
+        }
+        return false
     }
 }

@@ -6,14 +6,11 @@ import android.app.PendingIntent
 import android.app.Service
 import android.content.Context
 import android.content.Intent
-import android.os.Build
-import android.os.IBinder
-import android.os.Parcelable
+import android.os.*
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.room.Room
 import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
@@ -54,74 +51,10 @@ class BgService : Service() {
 
     override fun onCreate() {
         super.onCreate()
-        //서비스는 한번 실행되면 계속 실행된 상태로 유지외기 때문에 intent를 받아 처리하기에는 적절하지 않음
+        //서비스는 한번 실행되면 계속 실행된 상태로 유지되기 때문에 onCreate()에서 intent를 받아 처리하기에는 적절하지 않음
         //따라서 intent에 대한 처리는 onStartCommand()에서 수행
 
         // Notification 설정
-/*        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            // Notification Channel 아이디, 이름, 설명, 중요도 설정
-            val channelId = "channel_one"
-            val channelName = "Channel One"
-            val channelDescription = "Channel One Description"
-            val importance = NotificationManager.IMPORTANCE_HIGH
-            // NotificationChannel 객체 생성
-            val notificationChannel = NotificationChannel(channelId, channelName, importance)
-            // 설명 설정
-            notificationChannel.description = channelDescription
-            // 시스템에 notificationChannel 등록
-            notificationManager.createNotificationChannel(notificationChannel)
-            notificationCompatBuilder = NotificationCompat.Builder(this, channelId)
-        }
-        else {
-            // 26버전 미만은 생성자에 context만 설정
-            notificationCompatBuilder = NotificationCompat.Builder(this)
-        }
-
-        notificationCompatBuilder.let {
-            if(it != null){
-                it.setSmallIcon(R.drawable.ic_wind)
-                it.setWhen(System.currentTimeMillis())
-                it.setContentTitle("Hey!")
-                it.setContentText("Take a breath :)")
-                it.setDefaults(Notification.DEFAULT_VIBRATE)
-                it.setAutoCancel(true)
-                it.setStyle(NotificationCompat.BigPictureStyle().bigPicture(BitmapFactory.decodeResource(resources, R.drawable.breath)))
-            }
-        }
-
-        // Create an explicit intent for an Activity in your app
-        val intentIntervention = Intent(this, InterventionActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-        }
-        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intentIntervention, PendingIntent.FLAG_UPDATE_CURRENT)
-
-        if(notificationCompatBuilder == null){
-            Log.e(TAG, "Null Pointer Exception: notificationCompatBuilder is null")
-            stopSelf()
-        } else {
-            notificationCompatBuilder!!.setContentIntent(pendingIntent)
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = "Test Notification"
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val notificationChannel = NotificationChannel("channel_1", name, importance)
-
-            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.createNotificationChannel(notificationChannel)
-        }
-
-        // 아래 주석 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
-        //val notificationIntent = Intent(this, InterventionActivity::class.java)
-        //val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0)
-
-        val builder = NotificationCompat.Builder(this, "channel_1")
-            .setSmallIcon(R.drawable.ic_wind)
-            .setContentText("intervention message test")
-           // .setContentIntent(pendingIntent)
-        startForeground(1, builder.build())*/
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = "Stress Intervention"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
@@ -129,17 +62,13 @@ class BgService : Service() {
 
             notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(notificationChannel)
+        } else {
+            //TODO: Oreo 이하에서의 처리
         }
-
-        // 아래 인텐트는 해당 Notification을 눌렀을때 어떤 엑티비티를 띄울 것인지 정의.
-        // val notificationIntent = Intent(this, InterventionActivity::class.java)
-        // val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
 
         val builder = NotificationCompat.Builder(this, "channel_1")
             .setSmallIcon(R.drawable.ic_wind)
             .setGroup(GROUP_KEY_NOTIFY)
-        //    .setContentText("test message")
-        //    .setContentIntent(pendingIntent)
         startForeground(1, builder.build())
 
         DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
@@ -176,18 +105,13 @@ class BgService : Service() {
         if(intent == null || !intent.hasExtra(EXTRA_IQ_DEVICE)){
             Log.d(TAG, "there is no intent")
             //return START_REDELIVER_INTENT //서비스가 종료되어도 자동으로 이전 intent 정보를 가지고 다시 실행
-            return START_NOT_STICKY
+            return START_NOT_STICKY //시작하기에 충분한 정보가 넘어오지 않은 경우 재시작 없이 서비스 종료
         } else {
-            if(mPreferences.prefs.getBoolean("isIntervention", true)){
-                Log.d(TAG, "intervention process is already running")
-            } else {
-                // intent가 존재하며, 서비스가 시작되지 않은 경우 때 연결된 기기 이름 정보 파싱
-                device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
-                myApp = IQApp(COMM_WATCH_ID)
-                Log.d(TAG, "connected Device: " + device.friendlyName)
-                mPreferences.prefs.setBoolean("isIntervention", true)
-                listenByMyAppEvents()         // TODO: 이벤트 리스너 등록을 언제 해야하지?
-            }
+            // intent가 존재하며, 서비스가 시작되지 않은 경우 때 연결된 기기 이름 정보 파싱
+            device = intent.getParcelableExtra<Parcelable>(EXTRA_IQ_DEVICE) as IQDevice
+            myApp = IQApp(COMM_WATCH_ID)
+            Log.d(TAG, "connected Device: " + device.friendlyName)
+            listenByMyAppEvents()
         }
         return super.onStartCommand(intent, flags, startId)
     }
@@ -234,7 +158,7 @@ class BgService : Service() {
         val realHRVdata = sqrt(receivedHRVdata)
 
         val addRunnable = Runnable {
-            DBhelper!!.roomDAO().insert(HRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+            DBhelper.roomDAO().insert(HRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
         }
 
         val thread = Thread(addRunnable)
@@ -268,7 +192,16 @@ class BgService : Service() {
                 .setContentIntent(pendingIntent)
                 .setGroup(GROUP_KEY_NOTIFY)
 
-            notificationManager.notify(101, builder.build())
+            notificationManager.notify(2, builder.build())
+
+            //진동 설정(0.5초 진동)
+            val vibrator = getSystemService(VIBRATOR_SERVICE) as Vibrator
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                vibrator.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE))
+            } else {
+                vibrator.vibrate(500)
+            }
+
         } else {
             Log.d(TAG, "No feedback")
         }
