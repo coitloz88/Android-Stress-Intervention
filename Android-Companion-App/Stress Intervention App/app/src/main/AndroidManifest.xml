@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <service
-            android:name=".Service.BgService"
+            android:name=".Service.InterventionService"
             android:enabled="true"
             android:exported="true" />
         <activity

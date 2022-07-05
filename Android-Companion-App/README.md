@@ -38,7 +38,7 @@
 
 ## Service
 
-1. `BgService`
+1. `InterventionService`
     <details>
     <summary>TODO</summary>
 

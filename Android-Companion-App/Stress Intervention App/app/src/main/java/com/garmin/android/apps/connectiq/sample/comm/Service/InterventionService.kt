@@ -23,7 +23,7 @@ import java.sql.Timestamp
 import kotlin.math.pow
 
 
-class BgService : Service() {
+class InterventionService : Service() {
 
     companion object {
         private const val TAG = "BgService"
@@ -31,7 +31,7 @@ class BgService : Service() {
         private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
         fun putIntent(context: Context, device: IQDevice?): Intent {
-            val intent = Intent(context, BgService::class.java)
+            val intent = Intent(context, InterventionService::class.java)
             intent.putExtra(EXTRA_IQ_DEVICE, device)
             return intent
         }

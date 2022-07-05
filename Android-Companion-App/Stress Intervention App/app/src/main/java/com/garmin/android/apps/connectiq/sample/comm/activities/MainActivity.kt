@@ -17,7 +17,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.Service.BgService
+import com.garmin.android.apps.connectiq.sample.comm.Service.InterventionService
 import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.adapter.IQDeviceAdapter
 import com.garmin.android.connectiq.ConnectIQ
@@ -64,11 +64,11 @@ class MainActivity : Activity() {
         btnIntervention = findViewById(R.id.btn_intervention)
 
         btnIntervention.setOnClickListener{
-            if(isMyServiceRunning(BgService::class.java)){
+            if(isMyServiceRunning(InterventionService::class.java)){
                 //현재 intervention이 실행중인 경우, 실행중인 intervention을 종료
                 Toast.makeText(applicationContext, "Quit intervention", Toast.LENGTH_SHORT).show()
 
-                val stopIntent = Intent(this, BgService::class.java)
+                val stopIntent = Intent(this, InterventionService::class.java)
                 stopService(stopIntent)
                 Log.d(TAG, "Quit intervention process")
                 //connectIQ.shutdown(this)
@@ -114,9 +114,9 @@ class MainActivity : Activity() {
     }
 
     private fun onItemClick(device: IQDevice) {
-        if(!isMyServiceRunning(BgService::class.java) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
+        if(!isMyServiceRunning(InterventionService::class.java) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
             Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
-            startService(BgService.putIntent(this, device))
+            startService(InterventionService.putIntent(this, device))
         } else {
             Toast.makeText(applicationContext, "Intervention cannot start", Toast.LENGTH_SHORT).show()
             Log.e(TAG, "cannot start the intervention")
