@@ -146,6 +146,10 @@ class MainActivity : Activity() {
                 loadDevices()
                 true
             }
+            R.id.see_other_datas -> {
+                startActivity(Intent(this, SensorActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

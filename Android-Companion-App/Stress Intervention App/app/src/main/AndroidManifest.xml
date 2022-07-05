@@ -5,18 +5,23 @@
     android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+        android:name=".Utils.mPreferences"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme"
-        android:name="com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SensorActivity"
+            android:exported="false" />
+
         <service
             android:name=".Service.BgService"
             android:enabled="true"
             android:exported="true" />
+
         <activity
             android:name=".activities.InterventionActivity"
             android:excludeFromRecents="true"

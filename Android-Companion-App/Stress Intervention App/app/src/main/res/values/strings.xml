@@ -56,4 +56,12 @@
     <string name="intervention">Intervention</string>
     <string name="stop_intervention">Stop intervention</string>
 
+    <!-- Sensor Activity -->
+    <string name="start_location_update">Start Location Updates</string>
+    <string name="stop_location_updates">Stop Location Updates</string>
+    <string name="start_acc_update">Start Acc Updates</string>
+    <string name="stop_acc_updates">Stop Acc Updates</string>
+    <string name="start_pu_update">Start Phone Usage Updates</string>
+    <string name="stop_pu_updates">Stop Phone Usage Updates</string>
+
 </resources>
