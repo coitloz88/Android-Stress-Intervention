@@ -34,5 +34,12 @@ class SensorActivity : Activity() {
     private fun onItemClick(datas: Any){
         //TODO: 각 아이템 클릭 시 실행할 것
         Log.d(TAG, datas.toString())
+        when(datas.toString()){
+            R.string.start_location_update.toString() -> {
+
+            }
+
+
+        }
     }
 }

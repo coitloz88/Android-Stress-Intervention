@@ -69,7 +69,7 @@ class InterventionService : Service() {
         val builder = NotificationCompat.Builder(this, "channel_1")
             .setSmallIcon(R.drawable.ic_wind)
             .setGroup(GROUP_KEY_NOTIFY)
-        startForeground(1, builder.build())
+        startForeground(Constants.INTERVENTION_SERVICE_ID, builder.build())
 
         DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
     }

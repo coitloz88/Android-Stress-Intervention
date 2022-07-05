@@ -52,4 +52,6 @@ dependencies {
 
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$roomVersion")
+    //location information
+    implementation("com.google.android.gms:play-services-location:18.0.0")
 }
