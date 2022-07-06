@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
-import com.garmin.android.apps.connectiq.sample.comm.Service.AccService
+import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
 import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
 import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
 import com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageService
@@ -99,17 +99,17 @@ class SensorActivity : Activity() {
         }
 
         else if(datas.toString().equals(getString(R.string.start_acc_update))){
-            if(isMyServiceRunning(AccService::class.java)){
+            if(isMyServiceRunning(AccelService::class.java)){
                 Log.e(TAG, "Acc Service is already running")
             } else {
                 Toast.makeText(applicationContext, "Start AccService..", Toast.LENGTH_SHORT).show()
-                startService(Intent(this, AccService::class.java))
+                startService(Intent(this, AccelService::class.java))
             }
         } else if(datas.toString().equals(getString(R.string.stop_acc_updates))){
-            if (isMyServiceRunning(AccService::class.java)) {
+            if (isMyServiceRunning(AccelService::class.java)) {
                 Log.d(TAG, "acc service 중지")
                 Toast.makeText(applicationContext, "Stop Acc Service", Toast.LENGTH_SHORT).show()
-                stopService(Intent(this, AccService::class.java))
+                stopService(Intent(this, AccelService::class.java))
             } else {
                 Log.e(TAG, "acc Service is not running")
             }

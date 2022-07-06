@@ -11,9 +11,12 @@ data class HRVdata(
 )
 
 @Entity
-data class ESMdata(
+data class PhoneUsageData(
     @PrimaryKey val current_time: String,
-    @ColumnInfo(name = "ESM_data") val ESMdata: String
+    @ColumnInfo(name = "Package_Name") val PackageName: String,
+    @ColumnInfo(name = "LastTime_Used") val LastTimeUsed: String,
+    @ColumnInfo(name = "TotalTime_Foreground") val TotalTimeInForeground: Long,
+    @ColumnInfo(name = "App_Launch_Count") val AppLaunchCount: Int
 )
 
 @Entity

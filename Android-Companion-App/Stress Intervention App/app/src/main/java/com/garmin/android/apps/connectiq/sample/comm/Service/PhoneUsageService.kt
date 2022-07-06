@@ -27,6 +27,8 @@ class PhoneUsageService : Service() {
     override fun onCreate() {
         super.onCreate()
         Log.d("checkpoint","start")
+
+        //notification 설정
         val channelId = "phone_usage_notification_channel"
         notificationManager =
             getSystemService(NOTIFICATION_SERVICE) as NotificationManager
@@ -56,6 +58,7 @@ class PhoneUsageService : Service() {
                 notificationManager.createNotificationChannel(notificationChannel)
             }
         }
+        
         val lastPackageName = getPackageName(applicationContext)
         if (lastPackageName != null) {
             Log.d("PhoneUsageData", lastPackageName)

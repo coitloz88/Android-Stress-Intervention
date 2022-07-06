@@ -20,14 +20,15 @@ import com.garmin.android.apps.connectiq.sample.comm.roomdb.Accdata
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase4
 import java.sql.Timestamp
 
-class AccService : Service(), SensorEventListener {
+class AccelService : Service(), SensorEventListener {
     companion object{
-        private const val TAG = "AccService"
+        private const val TAG = "AccelService"
     }
 
     private lateinit var sensorManager: SensorManager
     private lateinit var DBhelper: AppDatabase4
     private lateinit var notificationManager: NotificationManager
+    private var count: Int = 0
 
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -88,7 +89,7 @@ class AccService : Service(), SensorEventListener {
         {
             val mAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
             //sensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL)
-            sensorManager.registerListener(this, mAccelerometer, 1000000 * 5)
+            sensorManager.registerListener(this, mAccelerometer, 10000000 * 200)
 
         }
         return super.onStartCommand(intent, flags, startId)
@@ -100,20 +101,26 @@ class AccService : Service(), SensorEventListener {
                 TAG,
                 " x:${event.values[0]}, y:${event.values[1]}, z:${event.values[2]} "
             )
-            
+            ++count
+            if (count >= 360){
+                Log.d(TAG, "count 초기화")
+                count = 0
+
+                val addRunnable = Runnable {
+                    DBhelper!!.roomDAO().insert(
+                        Accdata(
+                            Timestamp(System.currentTimeMillis()).toString(),
+                            event.values[0],
+                            event.values[1],
+                            event.values[2]
+                        )
+                    )
+                }
+                val thread = Thread(addRunnable)
+                thread.start()
+            }
             //TODO: DB에 정보 추가
-//            val addRunnable = Runnable {
-//                DBhelper!!.roomDAO().insert(
-//                    Accdata(
-//                        Timestamp(System.currentTimeMillis()).toString(),
-//                        event.values[0],
-//                        event.values[1],
-//                        event.values[2]
-//                    )
-//                )
-//            }
-//            val thread = Thread(addRunnable)
-//            thread.start()
+
 
 
             //Handler(Looper.getMainLooper()).postDelayed(addRunnable, 1000)

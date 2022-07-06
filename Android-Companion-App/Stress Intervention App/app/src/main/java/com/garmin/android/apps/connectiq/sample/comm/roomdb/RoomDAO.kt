@@ -25,17 +25,17 @@ interface RoomDAO1 {
 
 @Dao
 interface RoomDAO2 {
-    @Query("SELECT * FROM ESMdata")
-    fun getAllESMdata(): List<ESMdata>
+    @Query("SELECT * FROM PhoneUsageData")
+    fun getAllESMdata(): List<PhoneUsageData>
 
-    @Query("SELECT * FROM ESMdata WHERE current_time LIKE :currentTime")
-    fun findByTime(currentTime: String): ESMdata
+    @Query("SELECT * FROM PhoneUsageData WHERE current_time LIKE :currentTime")
+    fun findByTime(currentTime: String): PhoneUsageData
 
     @Insert
-    fun insert(esmdata: ESMdata)
+    fun insert(phoneUsageData: PhoneUsageData)
 
     @Delete
-    fun delete(esmdata: ESMdata)
+    fun delete(phoneUsageData: PhoneUsageData)
 }
 
 @Dao

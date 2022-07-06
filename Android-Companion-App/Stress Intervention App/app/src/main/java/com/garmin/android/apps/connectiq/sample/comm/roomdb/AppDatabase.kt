@@ -27,7 +27,7 @@ abstract class AppDatabase1 : RoomDatabase() {
     }
 }
 
-@Database(entities = [ESMdata::class], version = 1)
+@Database(entities = [PhoneUsageData::class], version = 1)
 abstract class AppDatabase2 : RoomDatabase() {
     abstract fun roomDAO(): RoomDAO2
     companion object {
