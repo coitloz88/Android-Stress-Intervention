@@ -87,7 +87,8 @@ class AccService : Service(), SensorEventListener {
         if(sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null)
         {
             val mAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
-            sensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
+            //sensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL)
+            sensorManager.registerListener(this, mAccelerometer, 1000000 * 5)
 
         }
         return super.onStartCommand(intent, flags, startId)
