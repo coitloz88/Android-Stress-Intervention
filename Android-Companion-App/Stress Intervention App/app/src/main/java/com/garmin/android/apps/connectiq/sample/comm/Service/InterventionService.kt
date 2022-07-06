@@ -9,10 +9,9 @@ import android.content.Intent
 import android.os.*
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import androidx.room.Room
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase1
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
@@ -26,7 +25,7 @@ import kotlin.math.pow
 class InterventionService : Service() {
 
     companion object {
-        private const val TAG = "BgService"
+        private const val TAG = "InterventionService"
         private const val EXTRA_IQ_DEVICE = "IQDevice"
         private const val COMM_WATCH_ID = "5d80e574-aa63-4fae-8dc0-f58656071277"
 
@@ -40,7 +39,7 @@ class InterventionService : Service() {
     private val connectIQ: ConnectIQ = ConnectIQ.getInstance()
     private lateinit var device: IQDevice
     private lateinit var myApp: IQApp
-    private lateinit var DBhelper: AppDatabase
+    private lateinit var DBhelper: AppDatabase1
 
     private lateinit var notificationManager: NotificationManager
     private val GROUP_KEY_NOTIFY = "group_key_notify"
@@ -65,13 +64,13 @@ class InterventionService : Service() {
         } else {
             //TODO: Oreo 이하에서의 처리
         }
+        DBhelper = AppDatabase1.getInstance(this)
 
         val builder = NotificationCompat.Builder(this, "channel_1")
             .setSmallIcon(R.drawable.ic_wind)
             .setGroup(GROUP_KEY_NOTIFY)
         startForeground(Constants.INTERVENTION_SERVICE_ID, builder.build())
 
-        DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "HRVdatabase").build()
     }
 
     private fun listenByMyAppEvents() {
@@ -119,9 +118,11 @@ class InterventionService : Service() {
     override fun onDestroy() {
         // TODO : 서비스 종료시 할 것들(현재 shutdown..을 하는 경우 익셉션 발생
         try{
-            connectIQ.unregisterForDeviceEvents(device)
-            connectIQ.unregisterForApplicationEvents(device, myApp)
-            connectIQ.unregisterAllForEvents()
+            if(this::device.isInitialized && this::myApp.isInitialized){
+                connectIQ.unregisterForDeviceEvents(device)
+                connectIQ.unregisterForApplicationEvents(device, myApp)
+                connectIQ.unregisterAllForEvents()
+            }
             //connectIQ.shutdown(applicationContext)
         } catch (e: InvalidStateException) {
             Log.e(TAG, e.toString())
@@ -193,6 +194,13 @@ class InterventionService : Service() {
                 .setGroup(GROUP_KEY_NOTIFY)
 
             notificationManager.notify(2, builder.build())
+
+            val pm = getSystemService(POWER_SERVICE) as PowerManager
+            val wLock = pm.newWakeLock(PowerManager.SCREEN_BRIGHT_WAKE_LOCK or PowerManager.ACQUIRE_CAUSES_WAKEUP or PowerManager.ON_AFTER_RELEASE, "myapp:TAG")
+            if(wLock != null && !wLock.isHeld){
+                wLock.acquire(3*1000L /*3 seconds*/)
+            }
+
 
             //진동 설정(0.5초 진동)
             val vibrator = getSystemService(VIBRATOR_SERVICE) as Vibrator

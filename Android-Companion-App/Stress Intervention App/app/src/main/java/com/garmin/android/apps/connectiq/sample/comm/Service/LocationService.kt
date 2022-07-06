@@ -12,12 +12,12 @@ import android.os.Build
 import android.os.IBinder
 import android.os.Looper
 import android.util.Log
-import androidx.annotation.Nullable
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
-//import androidx.room.Room
-//import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
-//import com.garmin.android.apps.connectiq.sample.comm.roomdb.Locationdata
+import androidx.room.Room
+import com.garmin.android.apps.connectiq.sample.comm.activities.SensorActivity
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase3
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.Locationdata
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
@@ -26,34 +26,19 @@ import java.sql.Timestamp
 
 
 class LocationService : Service() {
-    //var DBhelper: AppDatabase? = null
-
-    private val mLocationCallback: LocationCallback = object : LocationCallback() {
-        override fun onLocationResult(locationResult: LocationResult) {
-            super.onLocationResult(locationResult)
-            //DBhelper = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "Locationdatabase").build()
-            if (locationResult != null && locationResult.lastLocation != null) {
-                val latitude = locationResult.lastLocation.latitude
-                val longitude = locationResult.lastLocation.longitude
-                Log.v("LOCATION_UPDATE", "$latitude, $longitude")
-//                val addRunnable = Runnable {
-//                    DBhelper!!.roomDAO().insert(Locationdata(Timestamp(System.currentTimeMillis()).toString(), latitude, longitude))
-//                }
-//                val thread = Thread(addRunnable)
-//                thread.start()
-            }
-        }
+    companion object{
+        private const val TAG = "LocationService"
     }
 
-    override fun onBind(intent: Intent?): IBinder? {
-        return null
-    }
+    private lateinit var DBhelper: AppDatabase3
+    private lateinit var notificationManager: NotificationManager
 
-    private fun startLocationService() {
+    override fun onCreate() {
+        super.onCreate()
         val channelId = "location_notification_channel"
-        val notificationManager =
+        notificationManager =
             getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        val resultIntent = Intent()
+        val resultIntent = Intent(this, SensorActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
             applicationContext,
             0,
@@ -61,12 +46,12 @@ class LocationService : Service() {
             PendingIntent.FLAG_IMMUTABLE
         )
         val builder = NotificationCompat.Builder(applicationContext, channelId)
-        builder.setSmallIcon(R.mipmap.sym_def_app_icon)
-        builder.setContentTitle("Location Service")
-        builder.setDefaults(NotificationCompat.DEFAULT_ALL)
-        builder.setContentText("Running")
-        builder.setContentIntent(pendingIntent)
-        builder.setAutoCancel(false)
+            .setSmallIcon(R.mipmap.sym_def_app_icon)
+            .setContentTitle("Location Service")
+            .setDefaults(NotificationCompat.DEFAULT_ALL)
+            .setContentText("Running")
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(false)
         builder.priority = NotificationCompat.PRIORITY_MAX
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (notificationManager != null && notificationManager.getNotificationChannel(channelId) == null) {
@@ -93,29 +78,45 @@ class LocationService : Service() {
         ) {
             return
         }
+        DBhelper = AppDatabase3.getInstance(this)
         LocationServices.getFusedLocationProviderClient(this)
             .requestLocationUpdates(locationRequest, mLocationCallback, Looper.getMainLooper())
         startForeground(Constants.LOCATION_SERVICE_ID, builder.build())
     }
 
-    private fun stopLocationService() {
-        LocationServices.getFusedLocationProviderClient(this)
-            .removeLocationUpdates(mLocationCallback)
-        stopForeground(true)
-        stopSelf()
+    private val mLocationCallback: LocationCallback = object : LocationCallback() {
+        override fun onLocationResult(locationResult: LocationResult) {
+            super.onLocationResult(locationResult)
+            if (locationResult != null && locationResult.lastLocation != null) {
+                val latitude = locationResult.lastLocation.latitude
+                val longitude = locationResult.lastLocation.longitude
+                Log.v("LOCATION_UPDATE", "$latitude, $longitude")
+                val addRunnable = Runnable {
+                    DBhelper.roomDAO().insert(Locationdata(Timestamp(System.currentTimeMillis()).toString(), latitude, longitude))
+                }
+                val thread = Thread(addRunnable)
+                thread.start()
+            }
+        }
+    }
+
+    override fun onBind(intent: Intent?): IBinder? {
+        return null
     }
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
-        if (intent != null) {
-            val action = intent.action
-            if (action != null) {
-                if (action == Constants.ACTION_START_LOCATION_SERVICE) {
-                    startLocationService()
-                } else if (action == Constants.ACTION_STOP_LOCATION_SERVICE) {
-                    stopLocationService()
-                }
-            }
+        if(intent == null){
+            Log.d(TAG, "there is no intent")
+            return START_NOT_STICKY //시작하기에 충분한 정보가 넘어오지 않은 경우 재시작 없이 서비스 종료
         }
+        Log.d(TAG, "starting Location Service...")
         return super.onStartCommand(intent, flags, startId)
+    }
+
+    override fun onDestroy() {
+        LocationServices.getFusedLocationProviderClient(this)
+            .removeLocationUpdates(mLocationCallback)
+        super.onDestroy()
+        Log.d(TAG, "quit location service")
     }
 }
