@@ -4,32 +4,39 @@ import android.Manifest
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.AppOpsManager
-import android.app.job.JobInfo
+import android.app.AppOpsManager.MODE_ALLOWED
+import android.app.AppOpsManager.OPSTR_GET_USAGE_STATS
+import android.app.usage.UsageStats
+import android.app.usage.UsageStatsManager
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Process
+import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.work.*
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
 import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
 import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
 import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
-import com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWorker
-import java.util.concurrent.TimeUnit
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase2
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.PhoneUsageData
+import java.sql.Timestamp
+import java.util.*
+import kotlin.Comparator
 
 private const val TAG = "SensorActivity"
 
 class SensorActivity : Activity() {
     private val REQUEST_CODE_LOCATION_PERMISSION = 1
-    private val REQUEST_CODE_PU_PERMISSION = 2
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor)
@@ -86,31 +93,22 @@ class SensorActivity : Activity() {
         // Phone usage service
             //TODO: Not implemented yet
         else if(datas.toString().equals(getString(R.string.start_pu_update))){
-//            if(isMyServiceRunning(PhoneUsageService::class.java)){
-//                Log.e(TAG, "Phone Usage Service is already running")
-//            } else {
-//                startService(Intent(this, PhoneUsageService::class.java))
-//            }
-            Toast.makeText(applicationContext, "Start Phone Usage Service..", Toast.LENGTH_SHORT).show()
-
-            val uploadWorkRequest: PeriodicWorkRequest = PeriodicWorkRequestBuilder<PhoneUsageWorker>(15, TimeUnit.MINUTES)
-                .setConstraints(
-                    Constraints.Builder()
-                    .setRequiredNetworkType(NetworkType.CONNECTED)
-                    .build()
-                ).build()
-            WorkManager.getInstance(this).enqueueUniquePeriodicWork("Phone_Usage_updates_work", ExistingPeriodicWorkPolicy.KEEP, uploadWorkRequest)
-
+            if(!checkForPermission()){
+                Log.i(TAG, "The user may not allow the access to apps usage. ")
+                Toast.makeText(
+                    this,
+                    "Failed to retrieve app usage statistics. " +
+                            "You may need to enable access for this app through " +
+                            "Settings > Security > Apps with usage access",
+                    Toast.LENGTH_LONG
+                ).show()
+                startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+            } else {
+                val usageStats = getAppUsageStats()
+                showAppUsageStats(usageStats)
+            }
         } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
-//            if (isMyServiceRunning(LocationService::class.java)) {
-//                Log.d(TAG, "phone usage service 중지")
-//                Toast.makeText(applicationContext, "Stop phone usage Service", Toast.LENGTH_SHORT).show()
-//                stopService(Intent(this, PhoneUsageService::class.java))
-//            } else {
-//                Log.e(TAG, "Phone Usage Service is not running")
-//            }
-            Toast.makeText(applicationContext, "Stop Phone Usage", Toast.LENGTH_SHORT).show()
-            WorkManager.getInstance(this).cancelUniqueWork("Phone_Usage_updates_work")
+
         }
 
         else if(datas.toString().equals(getString(R.string.start_acc_update))){
@@ -131,24 +129,6 @@ class SensorActivity : Activity() {
         }
     }
 
-    private fun checkPermission(): Boolean {
-        var granted = false
-        val appOps = applicationContext
-            .getSystemService(APP_OPS_SERVICE) as AppOpsManager
-        val mode = appOps.checkOpNoThrow(
-            AppOpsManager.OPSTR_GET_USAGE_STATS,
-            Process.myUid(), applicationContext.packageName
-        )
-        granted = if (mode == AppOpsManager.MODE_DEFAULT) {
-            applicationContext.checkCallingOrSelfPermission(
-                Manifest.permission.PACKAGE_USAGE_STATS
-            ) == PackageManager.PERMISSION_GRANTED
-        } else {
-            mode == AppOpsManager.MODE_ALLOWED
-        }
-        return granted
-    }
-
     private fun isMyServiceRunning(serviceClass: Class<*>): Boolean {
         val manager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
         for (service in manager.getRunningServices(Int.MAX_VALUE)) {
@@ -157,5 +137,43 @@ class SensorActivity : Activity() {
             }
         }
         return false
+    }
+
+    private fun checkForPermission(): Boolean {
+        val appOps = getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
+        val mode = appOps.checkOpNoThrow(OPSTR_GET_USAGE_STATS, Process.myUid(), packageName)
+        return mode == MODE_ALLOWED
+    }
+
+    private fun showAppUsageStats(usageStats: MutableList<UsageStats>) {
+        usageStats.sortWith(Comparator { right, left ->
+            compareValues(left.lastTimeUsed, right.lastTimeUsed)
+        })
+
+        usageStats.forEach { it ->
+            if(it.totalTimeInForeground != 0.toLong()){ //foreground에서 사용된 시간이 0인 앱은 저장하지 않음
+                Log.d(TAG, "packageName: ${it.packageName}, lastTimeUsed: ${Date(it.lastTimeUsed)}, " +
+                        "totalTimeInForeground: ${it.totalTimeInForeground}")
+
+                val addRunnable = Runnable {
+                    AppDatabase2.getInstance(this).roomDAO().insert(PhoneUsageData(Timestamp(System.currentTimeMillis()).toString(), it.packageName, Date(it.lastTimeUsed).toString(), it.totalTimeInForeground))
+                }
+                val thread = Thread(addRunnable)
+                thread.start()
+            }
+        }
+    }
+
+    private fun getAppUsageStats(): MutableList<UsageStats> {
+        val cal = Calendar.getInstance()
+        cal.add(Calendar.MONTH, -1)
+
+        val usageStatsManager = getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+        val queryUsageStats = usageStatsManager
+            .queryUsageStats(
+                UsageStatsManager.INTERVAL_DAILY, cal.timeInMillis,
+                System.currentTimeMillis()
+            )
+        return queryUsageStats
     }
 }

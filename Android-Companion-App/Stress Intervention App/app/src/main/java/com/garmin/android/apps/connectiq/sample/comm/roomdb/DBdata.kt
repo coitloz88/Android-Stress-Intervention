@@ -10,13 +10,12 @@ data class HRVdata(
     @ColumnInfo(name = "HRV_data") val HRVdata: Double
 )
 
-@Entity
+@Entity(primaryKeys = ["current_time", "Package_Name"])
 data class PhoneUsageData(
-    @PrimaryKey val current_time: String,
+    val current_time: String,
     @ColumnInfo(name = "Package_Name") val PackageName: String,
     @ColumnInfo(name = "LastTime_Used") val LastTimeUsed: String,
     @ColumnInfo(name = "TotalTime_Foreground") val TotalTimeInForeground: Long,
-    @ColumnInfo(name = "App_Launch_Count") val AppLaunchCount: Int
 )
 
 @Entity
