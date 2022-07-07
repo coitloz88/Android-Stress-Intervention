@@ -6,64 +6,35 @@ import androidx.room.Insert
 import androidx.room.Query
 
 @Dao
-interface RoomDAO1 {
-    @Query("SELECT * FROM HRVdata")
-    fun getAllHRVdata(): List<HRVdata>
+interface RoomDAO {
+//    @Query("SELECT * FROM HRVdata")
+//    fun getAllHRVdata(): List<HRVdata>
+//
+//    @Query("SELECT * FROM HRVdata WHERE current_time LIKE :currentTime")
+//    fun findHRVdataByTime(currentTime: String): HRVdata
 
-    @Query("SELECT * FROM HRVdata WHERE current_time LIKE :currentTime")
-    fun findByTime(currentTime: String): HRVdata
+    @Query("INSERT INTO HRVdata VALUES (:currentTime, :HRVdata)")
+    fun insertHRVdata(currentTime: String, HRVdata: Double)
 
-    @Insert
-    fun insert(hrvdata: HRVdata)
+    @Query("DELETE FROM HRVdata WHERE current_time = :currentTime")
+    fun deleteHRVdata(currentTime: String)
 
-    @Delete
-    fun delete(hrvdata: HRVdata)
+    @Query("INSERT INTO PhoneUsageData VALUES (:currentTime, :packName, :lastTimeUsed, :totalTime)")
+    fun insertPhoneUsageData(currentTime: String, packName:String, lastTimeUsed: String, totalTime: Long)
 
-    @Query("DELETE FROM HRVdata")
-    fun deleteAll()
-}
+    @Query("DELETE FROM PhoneUsageData WHERE (current_time = :currentTime AND Package_Name = :packName)")
+    fun deletePhoneUsageData(currentTime: String, packName: String)
 
-@Dao
-interface RoomDAO2 {
-    @Query("SELECT * FROM PhoneUsageData")
-    fun getAllESMdata(): List<PhoneUsageData>
+    @Query("INSERT INTO Locationdata VALUES (:currentTime, :lat, :longt)")
+    fun insertLocationData(currentTime: String, lat: Double, longt: Double)
 
-    @Query("SELECT * FROM PhoneUsageData WHERE current_time LIKE :currentTime")
-    fun findByTime(currentTime: String): PhoneUsageData
+    @Query("DELETE FROM Locationdata WHERE current_time = :currentTime")
+    fun deleteLocationData(currentTime: String)
 
-    @Insert
-    fun insert(phoneUsageData: PhoneUsageData)
+    @Query("INSERT INTO Accdata VALUES (:currentTime, :x, :y, :z)")
+    fun insertAccData(currentTime: String, x: Float, y: Float, z: Float)
 
-    @Delete
-    fun delete(phoneUsageData: PhoneUsageData)
-}
+    @Query("DELETE FROM Accdata WHERE current_time = :currentTime")
+    fun deleteAccData(currentTime: String)
 
-@Dao
-interface RoomDAO3 {
-    @Query("SELECT * FROM Locationdata")
-    fun getAllLocationdata(): List<Locationdata>
-
-    @Query("SELECT * FROM Locationdata WHERE current_time LIKE :currentTime")
-    fun findByTime(currentTime: String): Locationdata
-
-    @Insert
-    fun insert(locationdata: Locationdata)
-
-    @Delete
-    fun delete(locationdata: Locationdata)
-}
-
-@Dao
-interface RoomDAO4 {
-    @Query("SELECT * FROM Accdata")
-    fun getAllESMdata(): List<Accdata>
-
-    @Query("SELECT * FROM Accdata WHERE current_time LIKE :currentTime")
-    fun findByTime(currentTime: String): Accdata
-
-    @Insert
-    fun insert(accdata: Accdata)
-
-    @Delete
-    fun delete(accdata: Accdata)
 }

@@ -17,7 +17,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.garmin.android.apps.connectiq.sample.comm.activities.SensorActivity
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.Accdata
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase4
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import java.sql.Timestamp
 
 class AccelService : Service(), SensorEventListener {
@@ -26,7 +26,6 @@ class AccelService : Service(), SensorEventListener {
     }
 
     private lateinit var sensorManager: SensorManager
-    private lateinit var DBhelper: AppDatabase4
     private lateinit var notificationManager: NotificationManager
     private var count: Int = 0
 
@@ -70,9 +69,6 @@ class AccelService : Service(), SensorEventListener {
         //foreground 서비스 시작
         startForeground(Constants.ACC_SERVICE_ID, builder.build())
 
-        //DB연결
-        DBhelper = AppDatabase4.getInstance(this)
-
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -106,14 +102,12 @@ class AccelService : Service(), SensorEventListener {
                 count = 0
 
                 val addRunnable = Runnable {
-                    DBhelper.roomDAO().insert(
-                        Accdata(
+                    AppDatabase.getInstance(this).roomDAO().insertAccData(
                             Timestamp(System.currentTimeMillis()).toString(),
                             event.values[0],
                             event.values[1],
                             event.values[2]
                         )
-                    )
                 }
                 val thread = Thread(addRunnable)
                 thread.start()

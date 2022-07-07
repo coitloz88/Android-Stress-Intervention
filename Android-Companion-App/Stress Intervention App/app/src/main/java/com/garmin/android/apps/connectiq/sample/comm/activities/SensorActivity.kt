@@ -25,8 +25,7 @@ import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
 import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
 import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
 import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase2
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.PhoneUsageData
 import java.sql.Timestamp
 import java.util.*
@@ -156,7 +155,7 @@ class SensorActivity : Activity() {
                         "totalTimeInForeground: ${it.totalTimeInForeground}")
 
                 val addRunnable = Runnable {
-                    AppDatabase2.getInstance(this).roomDAO().insert(PhoneUsageData(Timestamp(System.currentTimeMillis()).toString(), it.packageName, Date(it.lastTimeUsed).toString(), it.totalTimeInForeground))
+                    AppDatabase.getInstance(this).roomDAO().insertPhoneUsageData(Timestamp(System.currentTimeMillis()).toString(), it.packageName.toString(), Date(it.lastTimeUsed).toString(), it.totalTimeInForeground)
                 }
                 val thread = Thread(addRunnable)
                 thread.start()

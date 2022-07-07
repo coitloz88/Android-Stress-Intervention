@@ -11,8 +11,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase1
-import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
@@ -39,7 +38,6 @@ class InterventionService : Service() {
     private val connectIQ: ConnectIQ = ConnectIQ.getInstance()
     private lateinit var device: IQDevice
     private lateinit var myApp: IQApp
-    private lateinit var DBhelper: AppDatabase1
 
     private lateinit var notificationManager: NotificationManager
     private val GROUP_KEY_NOTIFY = "group_key_notify"
@@ -64,7 +62,6 @@ class InterventionService : Service() {
         } else {
             //TODO: Oreo 이하에서의 처리
         }
-        DBhelper = AppDatabase1.getInstance(this)
 
         val builder = NotificationCompat.Builder(this, "intervention_channel")
             .setSmallIcon(R.drawable.ic_wind)
@@ -160,7 +157,7 @@ class InterventionService : Service() {
         val realHRVdata = sqrt(receivedHRVdata)
 
         val addRunnable = Runnable {
-            DBhelper.roomDAO().insert(HRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata))
+            AppDatabase.getInstance(this).roomDAO().insertHRVdata(Timestamp(System.currentTimeMillis()).toString(), realHRVdata)
         }
 
         val thread = Thread(addRunnable)
