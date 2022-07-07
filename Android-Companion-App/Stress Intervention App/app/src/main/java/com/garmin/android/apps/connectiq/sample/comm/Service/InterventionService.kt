@@ -69,6 +69,7 @@ class InterventionService : Service() {
         val builder = NotificationCompat.Builder(this, "intervention_channel")
             .setSmallIcon(R.drawable.ic_wind)
             .setGroup(GROUP_KEY_NOTIFY)
+            .setAutoCancel(false)
         startForeground(Constants.INTERVENTION_SERVICE_ID, builder.build())
 
     }

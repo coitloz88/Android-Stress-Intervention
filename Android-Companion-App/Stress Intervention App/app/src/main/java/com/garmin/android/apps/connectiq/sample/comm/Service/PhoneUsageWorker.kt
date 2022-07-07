@@ -16,8 +16,14 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat.getSystemService
+import androidx.core.content.ContextCompat.startForegroundService
+import androidx.work.CoroutineWorker
+import androidx.work.ForegroundInfo
 import androidx.work.Worker
 import androidx.work.WorkerParameters
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase2
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.HRVdata
+import java.sql.Timestamp
 import java.util.*
 
 private val TAG = "PhoneUsageWorker"
@@ -26,43 +32,47 @@ class PhoneUsageWorker(appContext: Context, workerParams: WorkerParameters):
     Worker(appContext, workerParams){
 
     override fun doWork(): Result {
-        return try{
-            // Notification 설정
-            // Make a channel if necessary
+        return try {
+            val id: Int = 3
+
+            val name = "Phone usage service"
+
+            val notificationManager =
+                applicationContext.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                // Create the NotificationChannel, but only on API 26+ because
-                // the NotificationChannel class is new and not in the support library
-                val name = "Phone usage service"
                 val importance = NotificationManager.IMPORTANCE_DEFAULT
-                val channel = NotificationChannel("phone_usage_channel", name, importance)
 
                 // Add the channel
-                val notificationManager =
-                    applicationContext.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-
+                val channel = NotificationChannel("phone_usage_channel", name, importance)
                 notificationManager.createNotificationChannel(channel)
             }
-
             // Create the notification
             val builder = NotificationCompat.Builder(applicationContext, "phone_usage_channel")
                 .setSmallIcon(R.mipmap.sym_def_app_icon)
                 .setContentTitle("PhoneUsage Service")
-                .setVibrate(LongArray(0))
 
-            // Show the notification
-            NotificationManagerCompat.from(applicationContext).notify(3, builder.build())
-            
-            
+            NotificationManagerCompat.from(applicationContext).notify(id, builder.build())
+
             //TODO
-            //usage stats 가져오기, DB 백업
-            
+            //usage stats 가져오기
+
+
+
+            // DB 백업
+            val addRunnable = Runnable {
+                AppDatabase2.getInstance(applicationContext).roomDAO().insert())
+            }
+            val thread = Thread(addRunnable)
+            thread.start()
+
+
             Result.success()
         } catch (exception: Exception){
-            exception.printStackTrace()
-            Result.failure()
-        }
+                exception.printStackTrace()
+                Result.failure()
+            }
     }
-/*
+
     private fun checkForPermission(): Boolean {
         val appOps = getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
         val mode = appOps.checkOpNoThrow(OPSTR_GET_USAGE_STATS, Process.myUid(), packageName)
@@ -82,9 +92,9 @@ class PhoneUsageWorker(appContext: Context, workerParams: WorkerParameters):
 
     private fun getAppUsageStats(): MutableList<UsageStats> {
         val cal = Calendar.getInstance()
-        cal.add(Calendar.YEAR, -1)
+        cal.add(Calendar.MONTH, -1)
 
-        val usageStatsManager = getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+        val usageStatsManager = getSystemService(applicationContext) as UsageStatsManager
         val queryUsageStats = usageStatsManager
             .queryUsageStats(
                 UsageStatsManager.INTERVAL_DAILY, cal.timeInMillis,
@@ -92,6 +102,6 @@ class PhoneUsageWorker(appContext: Context, workerParams: WorkerParameters):
             )
         return queryUsageStats
     }
-*/
+
 
 }

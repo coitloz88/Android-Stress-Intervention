@@ -4,6 +4,7 @@ import android.Manifest
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.AppOpsManager
+import android.app.job.JobInfo
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -14,11 +15,14 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.work.*
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
 import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
 import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
 import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
+import com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWorker
+import java.util.concurrent.TimeUnit
 
 private const val TAG = "SensorActivity"
 
@@ -81,14 +85,23 @@ class SensorActivity : Activity() {
 
         // Phone usage service
             //TODO: Not implemented yet
-//        else if(datas.toString().equals(getString(R.string.start_pu_update))){
+        else if(datas.toString().equals(getString(R.string.start_pu_update))){
 //            if(isMyServiceRunning(PhoneUsageService::class.java)){
 //                Log.e(TAG, "Phone Usage Service is already running")
 //            } else {
-//                Toast.makeText(applicationContext, "Start Phone Usage Service..", Toast.LENGTH_SHORT).show()
 //                startService(Intent(this, PhoneUsageService::class.java))
 //            }
-//        } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
+            Toast.makeText(applicationContext, "Start Phone Usage Service..", Toast.LENGTH_SHORT).show()
+
+            val uploadWorkRequest: PeriodicWorkRequest = PeriodicWorkRequestBuilder<PhoneUsageWorker>(15, TimeUnit.MINUTES)
+                .setConstraints(
+                    Constraints.Builder()
+                    .setRequiredNetworkType(NetworkType.CONNECTED)
+                    .build()
+                ).build()
+            WorkManager.getInstance(this).enqueueUniquePeriodicWork("Phone_Usage_updates_work", ExistingPeriodicWorkPolicy.KEEP, uploadWorkRequest)
+
+        } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
 //            if (isMyServiceRunning(LocationService::class.java)) {
 //                Log.d(TAG, "phone usage service 중지")
 //                Toast.makeText(applicationContext, "Stop phone usage Service", Toast.LENGTH_SHORT).show()
@@ -96,7 +109,9 @@ class SensorActivity : Activity() {
 //            } else {
 //                Log.e(TAG, "Phone Usage Service is not running")
 //            }
-//        }
+            Toast.makeText(applicationContext, "Stop Phone Usage", Toast.LENGTH_SHORT).show()
+            WorkManager.getInstance(this).cancelUniqueWork("Phone_Usage_updates_work")
+        }
 
         else if(datas.toString().equals(getString(R.string.start_acc_update))){
             if(isMyServiceRunning(AccelService::class.java)){
