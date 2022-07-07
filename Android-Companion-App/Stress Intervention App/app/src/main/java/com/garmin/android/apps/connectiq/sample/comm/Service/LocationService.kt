@@ -49,7 +49,6 @@ class LocationService : Service() {
             .setSmallIcon(R.mipmap.sym_def_app_icon)
             .setContentTitle("Location Service")
             .setDefaults(NotificationCompat.DEFAULT_ALL)
-            .setContentText("Running")
             .setContentIntent(pendingIntent)
             .setAutoCancel(false)
         builder.priority = NotificationCompat.PRIORITY_MAX

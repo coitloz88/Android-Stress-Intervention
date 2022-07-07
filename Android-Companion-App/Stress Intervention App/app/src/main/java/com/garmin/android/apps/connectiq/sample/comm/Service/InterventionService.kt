@@ -57,7 +57,7 @@ class InterventionService : Service() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val name = "Stress Intervention"
             val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val notificationChannel = NotificationChannel("channel_1", name, importance)
+            val notificationChannel = NotificationChannel("intervention_channel", name, importance)
 
             notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(notificationChannel)
@@ -66,7 +66,7 @@ class InterventionService : Service() {
         }
         DBhelper = AppDatabase1.getInstance(this)
 
-        val builder = NotificationCompat.Builder(this, "channel_1")
+        val builder = NotificationCompat.Builder(this, "intervention_channel")
             .setSmallIcon(R.drawable.ic_wind)
             .setGroup(GROUP_KEY_NOTIFY)
         startForeground(Constants.INTERVENTION_SERVICE_ID, builder.build())
@@ -186,7 +186,7 @@ class InterventionService : Service() {
             val notificationIntent = Intent(this, InterventionActivity::class.java)
             val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
 
-            val builder = NotificationCompat.Builder(this, "channel_1")
+            val builder = NotificationCompat.Builder(this, "intervention_channel")
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_wind)
                 .setContentText("Hey! Take a Breath:)")

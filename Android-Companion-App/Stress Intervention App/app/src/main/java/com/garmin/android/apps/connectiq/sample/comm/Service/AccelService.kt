@@ -40,7 +40,7 @@ class AccelService : Service(), SensorEventListener {
         //notification 설정
         val channelId = "acc_notification_channel"
         notificationManager =
-            getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val resultIntent = Intent(this, SensorActivity::class.java)
         val pendingIntent = PendingIntent.getActivity(
             applicationContext,
@@ -49,12 +49,11 @@ class AccelService : Service(), SensorEventListener {
             PendingIntent.FLAG_IMMUTABLE
         )
         val builder = NotificationCompat.Builder(applicationContext, channelId)
-        builder.setSmallIcon(R.mipmap.sym_def_app_icon)
-        builder.setContentTitle("Acc Service")
-        builder.setDefaults(NotificationCompat.DEFAULT_ALL)
-        builder.setContentText("Running")
-        builder.setContentIntent(pendingIntent)
-        builder.setAutoCancel(false)
+            .setSmallIcon(R.mipmap.sym_def_app_icon)
+            .setContentTitle("Acc Service")
+            .setDefaults(NotificationCompat.DEFAULT_ALL)
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(false)
         builder.priority = NotificationCompat.PRIORITY_MAX
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (this::notificationManager.isInitialized && notificationManager.getNotificationChannel(channelId) == null) {
@@ -107,7 +106,7 @@ class AccelService : Service(), SensorEventListener {
                 count = 0
 
                 val addRunnable = Runnable {
-                    DBhelper!!.roomDAO().insert(
+                    DBhelper.roomDAO().insert(
                         Accdata(
                             Timestamp(System.currentTimeMillis()).toString(),
                             event.values[0],

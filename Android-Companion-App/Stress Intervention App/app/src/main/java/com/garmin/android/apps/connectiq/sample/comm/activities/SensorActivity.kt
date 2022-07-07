@@ -19,7 +19,6 @@ import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
 import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
 import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
 import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
-import com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageService
 
 private const val TAG = "SensorActivity"
 
@@ -81,22 +80,23 @@ class SensorActivity : Activity() {
         }
 
         // Phone usage service
-        else if(datas.toString().equals(getString(R.string.start_pu_update))){
-            if(isMyServiceRunning(PhoneUsageService::class.java)){
-                Log.e(TAG, "Phone Usage Service is already running")
-            } else {
-                Toast.makeText(applicationContext, "Start Phone Usage Service..", Toast.LENGTH_SHORT).show()
-                startService(Intent(this, PhoneUsageService::class.java))
-            }
-        } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
-            if (isMyServiceRunning(LocationService::class.java)) {
-                Log.d(TAG, "phone usage service 중지")
-                Toast.makeText(applicationContext, "Stop phone usage Service", Toast.LENGTH_SHORT).show()
-                stopService(Intent(this, PhoneUsageService::class.java))
-            } else {
-                Log.e(TAG, "Phone Usage Service is not running")
-            }
-        }
+            //TODO: Not implemented yet
+//        else if(datas.toString().equals(getString(R.string.start_pu_update))){
+//            if(isMyServiceRunning(PhoneUsageService::class.java)){
+//                Log.e(TAG, "Phone Usage Service is already running")
+//            } else {
+//                Toast.makeText(applicationContext, "Start Phone Usage Service..", Toast.LENGTH_SHORT).show()
+//                startService(Intent(this, PhoneUsageService::class.java))
+//            }
+//        } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
+//            if (isMyServiceRunning(LocationService::class.java)) {
+//                Log.d(TAG, "phone usage service 중지")
+//                Toast.makeText(applicationContext, "Stop phone usage Service", Toast.LENGTH_SHORT).show()
+//                stopService(Intent(this, PhoneUsageService::class.java))
+//            } else {
+//                Log.e(TAG, "Phone Usage Service is not running")
+//            }
+//        }
 
         else if(datas.toString().equals(getString(R.string.start_acc_update))){
             if(isMyServiceRunning(AccelService::class.java)){
