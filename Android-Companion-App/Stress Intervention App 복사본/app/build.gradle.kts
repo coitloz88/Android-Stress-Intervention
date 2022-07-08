@@ -27,39 +27,35 @@ android {
             )
         }
     }
-    buildFeatures {
-        mlModelBinding = true
-    }
 }
 
 dependencies {
-    implementation("org.tensorflow:tensorflow-lite-support:0.4.1")
-    implementation("org.tensorflow:tensorflow-lite-metadata:0.4.1")
-    implementation("org.tensorflow:tensorflow-lite-gpu:2.9.0")
     val workVersion = "2.7.1"
     implementation("androidx.work:work-runtime-ktx:$workVersion")
 
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.3")
     implementation ("com.android.support:support-compat:28.0.0")
 
     // 파일 경로를 libs\monkeybrains-sdk-release.aar이 있는 경로로 바꿔주어야 함
     // aar 파일 추가 방법: https://developer.android.com/studio/projects/android-library?hl=ko
     implementation(files("\\libs\\monkeybrains-sdk-release.aar"))
 
-    implementation("androidx.appcompat:appcompat:1.4.2")
-    implementation("com.google.android.material:material:1.6.1")
-    implementation("androidx.preference:preference:1.2.0")
+    implementation("androidx.appcompat:appcompat:1.3.0")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.preference:preference:1.1.1")
 
-    val roomVersion = "2.4.2"
+    implementation ("com.android.support:appcompat-v7:27.1.1")
+
+    val roomVersion = "2.3.0"
 
     implementation("androidx.room:room-runtime:$roomVersion")
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$roomVersion")
-    kapt("org.xerial:sqlite-jdbc:3.36.0.3")
+    kapt("org.xerial:sqlite-jdbc:3.34.0")
 
     //location information
-    implementation("com.google.android.gms:play-services-location:20.0.0")
+    implementation("com.google.android.gms:play-services-location:18.0.0")
 }

@@ -5,9 +5,8 @@
 package com.garmin.android.apps.connectiq.sample.comm.activities
 
 import android.app.Activity
-import android.content.Context
+import android.app.ActivityManager
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -15,10 +14,12 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.Service.BgService
+import com.garmin.android.apps.connectiq.sample.comm.Service.InterventionService
 import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.apps.connectiq.sample.comm.adapter.IQDeviceAdapter
 import com.garmin.android.connectiq.ConnectIQ
@@ -27,7 +28,7 @@ import com.garmin.android.connectiq.exception.InvalidStateException
 import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     companion object{
         private const val TAG = "MainActivity"
@@ -36,8 +37,9 @@ class MainActivity : Activity() {
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
     private lateinit var btnIntervention: Button
-    private lateinit var btnData: Button
     private var isSdkReady = false
+
+    private lateinit var toolbar: Toolbar
 
     private val connectIQListener: ConnectIQ.ConnectIQListener =
         object : ConnectIQ.ConnectIQListener {
@@ -60,34 +62,30 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        toolbar = findViewById(R.id.main_toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+
         setupUi()
         setupConnectIQSdk()
 
         btnIntervention = findViewById(R.id.btn_intervention)
-        btnData = findViewById(R.id.btn_data)
-        val intentSensor = Intent(this, SensorActivity::class.java)
 
         btnIntervention.setOnClickListener{
-            if(mPreferences.prefs.getBoolean("isIntervention", false)){
+            if(isMyServiceRunning(InterventionService::class.java)){
                 //현재 intervention이 실행중인 경우, 실행중인 intervention을 종료
-                mPreferences.prefs.setBoolean("isIntervention", false)
-
                 Toast.makeText(applicationContext, "Quit intervention", Toast.LENGTH_SHORT).show()
 
-                val stopIntent = Intent(this, BgService::class.java)
+                val stopIntent = Intent(this, InterventionService::class.java)
                 stopService(stopIntent)
                 Log.d(TAG, "Quit intervention process")
-
                 //connectIQ.shutdown(this)
             }
             else {
                 //intervention이 실행중이지 않은 경우 Toast 메시지를 출력
-                mPreferences.prefs.setBoolean("isIntervention", false)
                 Toast.makeText(applicationContext, "No intervention is running", Toast.LENGTH_SHORT).show()
             }
         }
-
-        btnData.setOnClickListener{ startActivity(intentSensor) }
     }
 
     public override fun onResume() {
@@ -117,17 +115,18 @@ class MainActivity : Activity() {
     private fun setupUi() {
         // Setup UI.
         adapter = IQDeviceAdapter { onItemClick(it) }
-        findViewById<RecyclerView>(android.R.id.list).apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+        findViewById<RecyclerView>(R.id.main_recycler_view).apply {
+            layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
             adapter = this@MainActivity.adapter
         }
     }
 
     private fun onItemClick(device: IQDevice) {
-        if(!mPreferences.prefs.getBoolean("isIntervention", true)){
+        if(!isMyServiceRunning(InterventionService::class.java) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
             Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
-            startService(BgService.putIntent(this, device))
+            startService(InterventionService.putIntent(this, device))
         } else {
+            Toast.makeText(applicationContext, "Intervention cannot start", Toast.LENGTH_SHORT).show()
             Log.e(TAG, "cannot start the intervention")
         }
     }
@@ -153,6 +152,14 @@ class MainActivity : Activity() {
         return when (item.itemId) {
             R.id.load_devices -> {
                 loadDevices()
+                true
+            }
+            R.id.control_data_collection -> {
+                startActivity(Intent(this, SensorActivity::class.java))
+                true
+            }
+            R.id.intervention_ui -> {
+                startActivity(Intent(this, InterventionActivity::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -195,4 +202,16 @@ class MainActivity : Activity() {
     private fun setEmptyState(text: String) {
         findViewById<TextView>(android.R.id.empty)?.text = text
     }
+
+    private fun isMyServiceRunning(serviceClass: Class<*>): Boolean {
+        val manager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
+        for (service in manager.getRunningServices(Int.MAX_VALUE)) {
+            if (serviceClass.name == service.service.className) {
+                return true
+            }
+        }
+        return false
+    }
+
+
 }

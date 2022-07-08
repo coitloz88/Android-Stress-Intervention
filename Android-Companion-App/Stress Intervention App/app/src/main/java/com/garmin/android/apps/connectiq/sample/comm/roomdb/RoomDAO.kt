@@ -34,3 +34,36 @@ interface RoomDAO2 {
     @Delete
     fun delete(esmdata: ESMdata)
 }
+
+@Dao
+interface RoomDAO3 {
+    @Query("SELECT * FROM Locationdata")
+    fun getAllLocationdata(): List<Locationdata>
+
+    @Query("SELECT * FROM Locationdata WHERE current_time LIKE :currentTime")
+    fun findByTime(currentTime: String): Locationdata
+
+    @Query("SELECT * FROM Locationdata ORDER BY current_time DESC LIMIT 1")
+    fun findLastData(): Locationdata
+
+    @Insert
+    fun insert(locationdata: Locationdata)
+
+    @Delete
+    fun delete(locationdata: Locationdata)
+}
+
+@Dao
+interface RoomDAO4 {
+    @Query("SELECT * FROM Accdata")
+    fun getAllESMdata(): List<Accdata>
+
+    @Query("SELECT * FROM Accdata WHERE current_time LIKE :currentTime")
+    fun findByTime(currentTime: String): Accdata
+
+    @Insert
+    fun insert(accdata: Accdata)
+
+    @Delete
+    fun delete(accdata: Accdata)
+}

@@ -1,0 +1,32 @@
+<!--
+ Copyright (C) 2015 Garmin International Ltd.
+ Subject to Garmin SDK License Agreement and Wearables Application Developer Agreement.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.garmin.android.apps.connectiq.sample.comm.activities.MainActivity" >
+
+    <item
+        android:id="@+id/load_devices"
+        android:orderInCategory="100"
+        android:title="@string/load_devices"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/control_data_collection"
+        android:orderInCategory="101"
+        android:title="Control Data Collection"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/view_my_data"
+        android:orderInCategory="101"
+        android:title="View My Data"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/intervention_ui"
+        android:orderInCategory="102"
+        android:title="See Intervention UI"
+        app:showAsAction="never" />
+</menu>

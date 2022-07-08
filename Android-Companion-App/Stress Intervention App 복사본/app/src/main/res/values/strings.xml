@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright (C) 2015 Garmin International Ltd.
+ Subject to Garmin SDK License Agreement and Wearables Application Developer Agreement.
+-->
+<resources>
+
+    <string name="app_name">Stress Intervention</string>
+    <string name="load_devices">Reload Devices</string>
+    <string name="initialization_error">Failed to initalize the SDK.\n</string>
+    <string name="service_unavailable">The ConnectIQ service is unavailabe.</string>
+    <string name="tap_for_sensor">Tap here to see sensor data.</string>
+    <string name="received_message">Received message from device.</string>
+
+    <string name="missing_widget">Missing Comm Widget</string>
+    <string name="missing_widget_message">The Comm Widget used with this application is not installed on your ConnectIQ device.   Please install the widget and try again.</string>
+
+    <string name="missing_store_id">Missing App Store Id</string>
+    <string name="missing_store_id_message">Please add a valid store app id for STORE_APP_ID in DeviceActivity.</string>
+    <string name="title_activity_intervention">InterventionActivity</string>
+
+    <string name="intervention_message">Keep calm and Take a deep breath</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="btn_stop_intervention">Click here to stop intervention</string>
+    <string name="intervention">Intervention</string>
+    <string name="stop_intervention">Stop intervention</string>
+
+    <!-- Sensor Activity -->
+    <string name="start_location_update">Start \nLocation Updates</string>
+    <string name="stop_location_updates">Stop \nLocation Updates</string>
+    <string name="start_acc_update">Start \nAcc Updates</string>
+    <string name="stop_acc_updates">Stop \nAcc Updates</string>
+    <string name="start_pu_update">Start \nPhone Usage Updates</string>
+    <string name="stop_pu_updates">Stop \nPhone Usage Updates</string>
+
+    <string name="start_location_update_payload">Start Location Updates</string>
+    <string name="stop_location_updates_payload">Stop Location Updates</string>
+    <string name="start_acc_update_payload">Start Acc Updates</string>
+    <string name="stop_acc_updates_payload">Stop Acc Updates</string>
+    <string name="start_pu_update_payload">Start Phone Usage Updates</string>
+    <string name="stop_pu_updates_payload">Stop Phone Usage Updates</string>
+</resources>
