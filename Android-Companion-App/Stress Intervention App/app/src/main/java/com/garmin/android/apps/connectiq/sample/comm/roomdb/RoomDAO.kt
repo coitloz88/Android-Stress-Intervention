@@ -3,6 +3,7 @@ package com.garmin.android.apps.connectiq.sample.comm.roomdb
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
+import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
 
 @Dao
@@ -19,7 +20,7 @@ interface RoomDAO {
     @Query("DELETE FROM HRVdata WHERE current_time = :currentTime")
     fun deleteHRVdata(currentTime: String)
 
-    @Query("INSERT INTO PhoneUsageData VALUES (:currentTime, :packName, :lastTimeUsed, :totalTime)")
+    @Query("INSERT INTO PhoneUsageData VALUES (:currentTime, :packName, :lastTimeUsed, :totalTime, null)")
     fun insertPhoneUsageData(currentTime: String, packName:String, lastTimeUsed: String, totalTime: Long)
 
     @Query("DELETE FROM PhoneUsageData WHERE (current_time = :currentTime AND Package_Name = :packName)")

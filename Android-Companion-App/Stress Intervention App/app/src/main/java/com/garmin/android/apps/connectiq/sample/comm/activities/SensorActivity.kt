@@ -122,11 +122,13 @@ class SensorActivity : Activity() {
                         )
                         .build()
                 WorkManager.getInstance().enqueueUniquePeriodicWork("phoneUsageDataUpdates", ExistingPeriodicWorkPolicy.KEEP, recurringWork)
+                Toast.makeText(this, "Start to track phone usage", Toast.LENGTH_SHORT).show()
                 Log.d(TAG, "enqueue phone usage data updates work into work manager")
 
             }
         } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
             WorkManager.getInstance().cancelUniqueWork("phoneUsageDataUpdates")
+            Toast.makeText(this, "Quit to track phone usage", Toast.LENGTH_SHORT).show()
             Log.d(TAG, "delete phone usage data updates work from work manager")
         }
 

@@ -16,7 +16,7 @@ data class PhoneUsageData(
     @ColumnInfo(name = "Package_Name") val PackageName: String,
     @ColumnInfo(name = "LastTime_Used") val LastTimeUsed: String,
     @ColumnInfo(name = "TotalTime_Foreground") val TotalTimeInForeground: Long,
-    @PrimaryKey(autoGenerate = true) val PUID: Int = 0,
+    @PrimaryKey(autoGenerate = true) val PUID: Int = 0
 )
 
 @Entity
