@@ -68,6 +68,23 @@
         * `SharedPreferences`에 서비스 구동 여부를 저장하면 강제 종료시 핸들링 불가
             - [Service 구동 확인 코드](https://stackoverflow.com/questions/600207/how-to-check-if-a-service-is-running-on-android?answertab=trending#tab-top) 추가
     
+    3. Phone usage exception
+    ```
+    2022-07-08 17:03:14.472 30520-30731/com.garmin.android.apps.connectiq.sample.comm E/AndroidRuntime: FATAL EXCEPTION: Thread-9
+    Process: com.garmin.android.apps.connectiq.sample.comm, PID: 30520
+    android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: PhoneUsageData.current_time, PhoneUsageData.Package_Name (code 1555 SQLITE_CONSTRAINT_PRIMARYKEY[1555])
+        at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+        at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:1232)
+        at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+        at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+        at androidx.sqlite.db.framework.FrameworkSQLiteStatement.executeInsert(FrameworkSQLiteStatement.java:51)
+        at com.garmin.android.apps.connectiq.sample.comm.roomdb.RoomDAO_Impl.insertPhoneUsageData(RoomDAO_Impl.java:162)
+        at com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWork.showAppUsageStats$lambda-2$lambda-1(PhoneUsageWork.kt:41)
+        at com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWork.$r8$lambda$267d0ECP4qdHBA7wPOFxRjJOBtM(Unknown Source:0)
+        at com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWork$$ExternalSyntheticLambda0.run(Unknown Source:4)
+        at java.lang.Thread.run(Thread.java:920)
+    ```
+
     </details>
 
 # 기능
