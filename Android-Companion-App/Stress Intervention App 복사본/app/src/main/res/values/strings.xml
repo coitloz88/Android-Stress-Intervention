@@ -18,7 +18,7 @@
     <string name="missing_store_id_message">Please add a valid store app id for STORE_APP_ID in DeviceActivity.</string>
     <string name="title_activity_intervention">InterventionActivity</string>
 
-    <string name="intervention_message">Keep calm and Take a deep breath</string>
+    <string name="intervention_message">KEEP CALM \nand \nTAKE A \nDEEP \nBREATH</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>

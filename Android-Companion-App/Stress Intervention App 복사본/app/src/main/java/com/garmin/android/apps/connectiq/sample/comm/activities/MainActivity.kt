@@ -4,16 +4,18 @@
  */
 package com.garmin.android.apps.connectiq.sample.comm.activities
 
-import android.app.Activity
 import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -162,6 +164,10 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, InterventionActivity::class.java))
                 true
             }
+            R.id.view_my_data -> {
+                alert()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -213,5 +219,21 @@ class MainActivity : AppCompatActivity() {
         return false
     }
 
+    private fun alert() {
+        val alertBuilder = AlertDialog.Builder(this@MainActivity)
+        val arrayEMA = arrayOf("Very slightly or nor at all", "A little", "Moderately", "Quite a bit", "Extremely")
+        alertBuilder.setTitle("Stressed")
+        alertBuilder.setSingleChoiceItems(
+            arrayEMA, -1,
+        ) { dialog, which ->
+            try {
+                dialog.dismiss()
+            } catch (e:IllegalArgumentException) {
+                Toast.makeText(this, "Please select your answer", Toast.LENGTH_SHORT).show()
+            }
+        }
+        alertBuilder.create()
+        alertBuilder.show()
+    }
 
 }

@@ -30,24 +30,31 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="248dp"
-        android:layout_height="127dp"
-        android:src="@drawable/breath"
+        android:layout_width="308dp"
+        android:layout_height="168dp"
+        android:src="@drawable/breathing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal"
         android:text="@string/intervention_message"
-        android:textStyle="bold"
+        android:textAlignment="center"
         android:textColor="#454545"
+        android:textSize="36dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intervention_toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

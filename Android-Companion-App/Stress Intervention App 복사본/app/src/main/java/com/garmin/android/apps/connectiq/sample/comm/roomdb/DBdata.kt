@@ -32,3 +32,4 @@ data class Accdata(
     @ColumnInfo(name = "Acc_Y_data") val AccYdata: Float,
     @ColumnInfo(name = "Acc_Z_data") val AccZdata: Float
 )
+

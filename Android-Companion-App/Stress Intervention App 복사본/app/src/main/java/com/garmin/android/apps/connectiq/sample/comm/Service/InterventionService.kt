@@ -1,13 +1,11 @@
 package com.garmin.android.apps.connectiq.sample.comm.Service
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.app.PendingIntent
-import android.app.Service
+import android.app.*
 import android.content.Context
 import android.content.Intent
 import android.os.*
 import android.util.Log
+import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
@@ -16,6 +14,7 @@ import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.exception.InvalidStateException
+import java.lang.Exception
 import java.lang.Math.sqrt
 import java.sql.Timestamp
 import kotlin.math.pow
@@ -85,13 +84,15 @@ class InterventionService : Service() {
                         builder.append(o.toString())
                         builder.append("\r\n")
                     }
-                    Log.d(TAG, "Received data from Garmin Watch: $builder")
-                    giveFeedback(builder.toString())
                 } else {
                     builder.append("Received an empty message from the application")
                 }
-
-
+                Log.d(TAG, "Received data from Garmin Watch: $builder")
+                try {
+                    giveFeedback(builder.toString())
+                } catch (e:Exception) {
+                    Log.e(TAG,e.toString())
+                }
             }
         } catch (e: InvalidStateException) {
             Log.e(TAG, "ConnectIQ is not in a valid state")
