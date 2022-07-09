@@ -31,7 +31,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:id="@+id/information"
+        android:id="@+id/main_information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="18dp"
@@ -50,10 +50,26 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/information"
-        app:layout_constraintTop_toBottomOf="@+id/information"
+        app:layout_constraintStart_toEndOf="@+id/main_information"
+        app:layout_constraintTop_toBottomOf="@+id/main_information"
         android:paddingTop="18dp"/>
 
+    <Button
+        android:id="@+id/btn_control_data_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/control_data_collection_button"
+        android:text="@string/control_data_collection"
+        android:textColor="#454545"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
     <Button
         android:id="@+id/btn_intervention"
         android:layout_width="match_parent"
@@ -68,5 +84,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

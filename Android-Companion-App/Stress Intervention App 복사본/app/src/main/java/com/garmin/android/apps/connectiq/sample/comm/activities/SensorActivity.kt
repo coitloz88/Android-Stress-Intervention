@@ -119,6 +119,7 @@ class SensorActivity : AppCompatActivity() {
 
         }
 
+        // Acc service
         else if(datas.toString().equals(getString(R.string.start_acc_update))){
             if(isMyServiceRunning(AccelService::class.java)){
                 Log.e(TAG, "Acc Service is already running")

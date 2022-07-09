@@ -48,6 +48,11 @@
             android:launchMode="singleTask"
             android:taskAffinity="" />
         <activity
+            android:name=".activities.ESMActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity="" />
+        <activity
             android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>

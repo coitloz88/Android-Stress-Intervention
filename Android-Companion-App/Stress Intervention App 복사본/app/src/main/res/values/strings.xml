@@ -19,6 +19,7 @@
     <string name="title_activity_intervention">InterventionActivity</string>
 
     <string name="intervention_message">KEEP CALM \nand \nTAKE A \nDEEP \nBREATH</string>
+    <string name="esm_time">for the <b>past 1 hour</b></string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
@@ -37,6 +38,7 @@
     <string name="btn_stop_intervention">Click here to stop intervention</string>
     <string name="intervention">Intervention</string>
     <string name="stop_intervention">Stop intervention</string>
+    <string name="control_data_collection">Control data collection</string>
 
     <!-- Sensor Activity -->
     <string name="start_location_update">Start \nLocation Updates</string>

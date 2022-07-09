@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
-    private lateinit var btnIntervention: Button
+    //private lateinit var btnIntervention: Button
+    private lateinit var btnDataCollection: Button
     private var isSdkReady = false
 
     private lateinit var toolbar: Toolbar
@@ -71,8 +72,8 @@ class MainActivity : AppCompatActivity() {
         setupUi()
         setupConnectIQSdk()
 
+        /*
         btnIntervention = findViewById(R.id.btn_intervention)
-
         btnIntervention.setOnClickListener{
             if(isMyServiceRunning(InterventionService::class.java)){
                 //현재 intervention이 실행중인 경우, 실행중인 intervention을 종료
@@ -88,6 +89,10 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "No intervention is running", Toast.LENGTH_SHORT).show()
             }
         }
+        */
+
+        btnDataCollection = findViewById(R.id.btn_control_data_collection)
+        btnDataCollection.setOnClickListener{startActivity(Intent(this, SensorActivity::class.java))}
     }
 
     public override fun onResume() {
@@ -164,8 +169,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, InterventionActivity::class.java))
                 true
             }
-            R.id.view_my_data -> {
-                alert()
+            R.id.esm_ui -> {
+                startActivity(Intent(this, ESMActivity::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)

@@ -19,9 +19,9 @@
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/view_my_data"
-        android:orderInCategory="101"
-        android:title="View My Data"
+        android:id="@+id/esm_ui"
+        android:orderInCategory="103"
+        android:title="See ESM UI"
         app:showAsAction="never"/>
 
     <item
