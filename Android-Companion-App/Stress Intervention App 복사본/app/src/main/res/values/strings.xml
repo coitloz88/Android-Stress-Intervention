@@ -18,7 +18,8 @@
     <string name="missing_store_id_message">Please add a valid store app id for STORE_APP_ID in DeviceActivity.</string>
     <string name="title_activity_intervention">InterventionActivity</string>
 
-    <string name="intervention_message">KEEP CALM \nand \nTAKE A \nDEEP \nBREATH</string>
+    <string name="intervention_message_1"><b>Inhale</b> and <b>Exhale</b> slowly</string>
+    <string name="intervention_message_2">Now, <b>Go back</b> to your work</string>
     <string name="esm_time">for the <b>past 1 hour</b></string>
 
     <!-- Preference Titles -->
