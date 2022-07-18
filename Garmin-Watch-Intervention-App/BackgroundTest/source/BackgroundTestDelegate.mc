@@ -1,5 +1,6 @@
 import Toybox.Lang;
 import Toybox.WatchUi;
+import Toybox.ActivityMonitor;
 
 import Toybox.Background;
 import Toybox.System;
@@ -43,6 +44,9 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     var timeCount;
     var periodSetting;
     var IBI_samples as Lang.Array<Lang.Number>;
+    var ACCx_samples as Lang.Array<Lang.Number>;
+    var ACCy_samples as Lang.Array<Lang.Number>;
+    var ACCz_samples as Lang.Array<Lang.Number>;
     var listener;
 
     function initialize(){
@@ -54,13 +58,13 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     function onTemporalEvent() {
         // A callback method that is triggered in the background when time-based events occur.
-        var maxSampleRate = Sensor.getMaxSampleRate();
+        // var maxSampleRate = Sensor.getMaxSampleRate();
         listener = new CommListener();
 
         // initialize accelerometer & heart rate intervals to request the maximum amount of data possible    
-        var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => maxSampleRate}, :heartBeatIntervals => {:enabled=> true}};
+        var options = {:period => periodSetting, :accelerometer => {:enabled => true, :sampleRate => 20}, :heartBeatIntervals => {:enabled=> true}};
         try {
-            Sensor.registerSensorDataListener(method(:HRHistoryCallback), options);
+            Sensor.registerSensorDataListener(method(:HistoryCallback), options);
         }
         catch(e) {
             System.println(" *** " + e.getErrorMessage());
@@ -69,19 +73,36 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
     }
 
-    public function HRHistoryCallback(sensorData as SensorData) as Void {
+    public function HistoryCallback(sensorData as SensorData) as Void {
         var rawIBIData = sensorData.heartRateData;
+        var rawACCData = sensorData.accelerometerData;
+
         var send_dict = {};
 
         IBI_samples.addAll(rawIBIData.heartBeatIntervals);
+        ACCx_samples.addAll(rawACCData.x);
+        ACCy_samples.addAll(rawACCData.y);
+        ACCz_samples.addAll(rawACCData.z);
 
         timeCount += periodSetting;
 
         if(timeCount >= (30 - periodSetting)){            
             var time = System.getClockTime();
+            var stepData = ActivityMonitor.getInfo(steps);
+            var caloriesData = ActivityMonitor.getInfo(calories);
             System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
             System.println(IBI_samples);
-            send_dict.put(timeCount, IBI_samples);
+            System.println(ACCx_samples);
+            System.println(ACCy_samples);
+            System.println(ACCz_samples);
+            System.println(stepData);
+            System.println(caloriesData);
+            send_dict.put(timeCount+"i", IBI_samples);
+            send_dict.put(timeCount+"x", ACCx_samples);
+            send_dict.put(timeCount+"y", ACCy_samples);
+            send_dict.put(timeCount+"z", ACCz_samples);
+            send_dict.put(timeCount+"s", stepData);
+            send_dict.put(timeCount+"c", caloriesData);
 
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(send_dict, null, listener);

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SensorActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/buttonStartLocationUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_location_update"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/buttonStopLocationUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_location_updates"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/buttonStartAccUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_acc_update"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/buttonStopAccUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_acc_updates"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/buttonStartPUUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_pu_update"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/buttonStopPUUpdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_pu_updates"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

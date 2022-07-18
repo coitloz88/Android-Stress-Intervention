@@ -4,219 +4,200 @@ import android.Manifest
 import android.app.Activity
 import android.app.ActivityManager
 import android.app.AppOpsManager
+import android.app.AppOpsManager.MODE_ALLOWED
+import android.app.AppOpsManager.OPSTR_GET_USAGE_STATS
+import android.app.usage.UsageStats
+import android.app.usage.UsageStatsManager
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
-import android.hardware.SensorManager
 import android.os.Bundle
 import android.os.Process
 import android.provider.Settings
 import android.util.Log
-import android.view.View
-import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.work.*
 import com.garmin.android.apps.connectiq.sample.comm.R
-import com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.AccService
-import com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.Constants
-import com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.LocationService
-import com.garmin.android.apps.connectiq.sample.comm.mobilephonedata.PhoneUsageService
+import com.garmin.android.apps.connectiq.sample.comm.SensorFactory
+import com.garmin.android.apps.connectiq.sample.comm.Service.AccelService
+import com.garmin.android.apps.connectiq.sample.comm.adapter.SensorDatasAdapter
+import com.garmin.android.apps.connectiq.sample.comm.Service.LocationService
+import com.garmin.android.apps.connectiq.sample.comm.Service.PhoneUsageWork
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
+import com.garmin.android.apps.connectiq.sample.comm.roomdb.PhoneUsageData
+import java.sql.Timestamp
+import java.util.*
+import java.util.concurrent.TimeUnit
+import kotlin.Comparator
 
+private const val TAG = "SensorActivity"
 
 class SensorActivity : Activity() {
     private val REQUEST_CODE_LOCATION_PERMISSION = 1
-    private val REQUEST_CODE_PU_PERMISSION = 2
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor)
-
-        findViewById<View>(R.id.buttonStartLocationUpdates).setOnClickListener {
-            if (ContextCompat.checkSelfPermission(
-                        applicationContext,
-                        Manifest.permission.ACCESS_FINE_LOCATION
-                    ) != PackageManager.PERMISSION_GRANTED
-                ) {
-                    ActivityCompat.requestPermissions(
-                        this@SensorActivity,
-                        arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                        REQUEST_CODE_LOCATION_PERMISSION
-                    )
-                } else {
-                    startLocationService()
-                }
-        }
-
-        findViewById<View>(R.id.buttonStopLocationUpdates).setOnClickListener {
-            stopLocationService()
-        }
-
-        findViewById<View>(R.id.buttonStartAccUpdates).setOnClickListener {
-            startAccService()
-        }
-
-        findViewById<View>(R.id.buttonStopAccUpdates).setOnClickListener {
-            stopAccService()
-        }
-
-        findViewById<View>(R.id.buttonStartPUUpdates).setOnClickListener {
-            if (!checkPermission()) {
-                startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
-            } else {
-                startPUService()
-            }
-        }
-
-        findViewById<View>(R.id.buttonStopPUUpdates).setOnClickListener {
-            stopPUService()
-        }
-
-
-
     }
 
     override fun onResume() {
         super.onResume()
+        buildSensorDataList()
     }
 
-    override fun onPause() {
-        super.onPause()
+    private fun buildSensorDataList(){
+        val adapter = SensorDatasAdapter { onItemClick(it) }
+        adapter.submitList(SensorFactory.getSensorDatas(this@SensorActivity))
+        findViewById<RecyclerView>(android.R.id.list).apply {
+            layoutManager = LinearLayoutManager(this@SensorActivity)
+            this.adapter = adapter
+        }
     }
 
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<String?>,
-        grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_CODE_LOCATION_PERMISSION && grantResults.size > 0) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startLocationService()
+    private fun onItemClick(datas: Any) {
+        //TODO: 각 아이템 클릭 시 실행할 것
+        Log.d(TAG, datas.toString())
+
+        //location service
+        if (datas.toString().equals(getString(R.string.start_location_update))) {
+            Log.d(TAG, "location service 시작")
+            if (ContextCompat.checkSelfPermission(
+                    applicationContext,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                ActivityCompat.requestPermissions(
+                    this@SensorActivity,
+                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                    REQUEST_CODE_LOCATION_PERMISSION
+                )
             } else {
-                Toast.makeText(this, "Permission denied!", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
-
-    private fun isLocationServiceRunning(): Boolean {
-        val activityManager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
-        if (activityManager != null) {
-            for (service in activityManager.getRunningServices(Int.MAX_VALUE)) {
-                if (LocationService::class.java.name == service.service.className) {
-                    if (service.foreground) {
-                        return true
-                    }
+                if (isMyServiceRunning(LocationService::class.java)) {
+                    Log.e(TAG, "Location Service is already running")
+                } else {
+                    Toast.makeText(
+                        applicationContext,
+                        "Start Location Service..",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startService(Intent(this, LocationService::class.java))
                 }
             }
-            return false
+        } else if (datas.toString().equals(getString(R.string.stop_location_updates))) {
+            if (isMyServiceRunning(LocationService::class.java)) {
+                Log.d(TAG, "location service 중지")
+                Toast.makeText(applicationContext, "Stop Location Service", Toast.LENGTH_SHORT)
+                    .show()
+                stopService(Intent(this, LocationService::class.java))
+            } else {
+                Log.e(TAG, "Location Service is not running")
+            }
+        }
+
+        // Phone usage service
+        //TODO: Not implemented yet
+        else if (datas.toString().equals(getString(R.string.start_pu_update))) {
+            if (!checkForPermission()) {
+                Log.i(TAG, "The user may not allow the access to apps usage. ")
+                Toast.makeText(
+                    this,
+                    "Failed to retrieve app usage statistics. " +
+                            "You may need to enable access for this app through " +
+                            "Settings > Security > Apps with usage access",
+                    Toast.LENGTH_LONG
+                ).show()
+                startActivity(Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS))
+            } else {
+//                val usageStats = getAppUsageStats()
+//                showAppUsageStats(usageStats)
+                val recurringWork: PeriodicWorkRequest =
+                    PeriodicWorkRequest.Builder(PhoneUsageWork::class.java, 15, TimeUnit.MINUTES)
+                        .setConstraints(Constraints.Builder()
+                            .setRequiredNetworkType(NetworkType.CONNECTED)
+                            .build()
+                        )
+                        .build()
+                WorkManager.getInstance().enqueueUniquePeriodicWork("phoneUsageDataUpdates", ExistingPeriodicWorkPolicy.KEEP, recurringWork)
+                Toast.makeText(this, "Start to track phone usage", Toast.LENGTH_SHORT).show()
+                Log.d(TAG, "enqueue phone usage data updates work into work manager")
+
+            }
+        } else if(datas.toString().equals(getString(R.string.stop_pu_updates))){
+            WorkManager.getInstance().cancelUniqueWork("phoneUsageDataUpdates")
+            Toast.makeText(this, "Quit to track phone usage", Toast.LENGTH_SHORT).show()
+            Log.d(TAG, "delete phone usage data updates work from work manager")
+        }
+
+        else if (datas.toString().equals(getString(R.string.start_acc_update))) {
+            if (isMyServiceRunning(AccelService::class.java)) {
+                Log.e(TAG, "Acc Service is already running")
+            } else {
+                Toast.makeText(applicationContext, "Start AccService..", Toast.LENGTH_SHORT)
+                    .show()
+                startService(Intent(this, AccelService::class.java))
+            }
+        } else if (datas.toString().equals(getString(R.string.stop_acc_updates))) {
+            if (isMyServiceRunning(AccelService::class.java)) {
+                Log.d(TAG, "acc service 중지")
+                Toast.makeText(applicationContext, "Stop Acc Service", Toast.LENGTH_SHORT)
+                    .show()
+                stopService(Intent(this, AccelService::class.java))
+            } else {
+                Log.e(TAG, "acc Service is not running")
+            }
+        }
+
+    }
+
+    private fun isMyServiceRunning(serviceClass: Class<*>): Boolean {
+        val manager = getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+        for (service in manager.getRunningServices(Int.MAX_VALUE)) {
+            if (serviceClass.name == service.service.className) {
+                return true
+            }
         }
         return false
     }
 
-    private fun startLocationService() {
-        if (!isLocationServiceRunning()) {
-            val intent = Intent(applicationContext, LocationService::class.java)
-            intent.action = Constants.ACTION_START_LOCATION_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Location service started", Toast.LENGTH_SHORT).show()
-        }
+    private fun checkForPermission(): Boolean {
+        val appOps = getSystemService(Context.APP_OPS_SERVICE) as AppOpsManager
+        val mode = appOps.checkOpNoThrow(OPSTR_GET_USAGE_STATS, Process.myUid(), packageName)
+        return mode == MODE_ALLOWED
     }
 
-    private fun stopLocationService() {
-        if (isLocationServiceRunning()) {
-            val intent = Intent(applicationContext, LocationService::class.java)
-            intent.action = Constants.ACTION_STOP_LOCATION_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Location service stopped", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun isAccServiceRunning(): Boolean {
-        val activityManager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
-        if (activityManager != null) {
-            for (service in activityManager.getRunningServices(Int.MAX_VALUE)) {
-                if (AccService::class.java.name == service.service.className) {
-                    if (service.foreground) {
-                        return true
-                    }
-                }
-            }
-            return false
-        }
-        return false
-    }
-
-    private fun startAccService() {
-        if (!isAccServiceRunning()) {
-            val intent = Intent(applicationContext, AccService::class.java)
-            intent.action = Constants.ACTION_START_ACC_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Acc service started", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun stopAccService() {
-        if (isAccServiceRunning()) {
-            val intent = Intent(applicationContext, AccService::class.java)
-            intent.action = Constants.ACTION_STOP_ACC_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Acc service stopped", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun isPUServiceRunning(): Boolean {
-        val activityManager = getSystemService(ACTIVITY_SERVICE) as ActivityManager
-        if (activityManager != null) {
-            for (service in activityManager.getRunningServices(Int.MAX_VALUE)) {
-                if (PhoneUsageService::class.java.name == service.service.className) {
-                    if (service.foreground) {
-                        return true
-                    }
-                }
-            }
-            return false
-        }
-        return false
-    }
-
-    private fun startPUService() {
-        if (!isPUServiceRunning()) {
-            val intent = Intent(applicationContext, PhoneUsageService::class.java)
-            intent.action = Constants.ACTION_START_PU_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Phone Usage service started", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun stopPUService() {
-        if (isPUServiceRunning()) {
-            val intent = Intent(applicationContext, PhoneUsageService::class.java)
-            intent.action = Constants.ACTION_STOP_PU_SERVICE
-            startService(intent)
-            Toast.makeText(this, "Phone Usage service stopped", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun checkPermission(): Boolean {
-        var granted = false
-        val appOps = applicationContext
-            .getSystemService(APP_OPS_SERVICE) as AppOpsManager
-        val mode = appOps.checkOpNoThrow(
-            AppOpsManager.OPSTR_GET_USAGE_STATS,
-            Process.myUid(), applicationContext.packageName
-        )
-        granted = if (mode == AppOpsManager.MODE_DEFAULT) {
-            applicationContext.checkCallingOrSelfPermission(
-                Manifest.permission.PACKAGE_USAGE_STATS
-            ) == PackageManager.PERMISSION_GRANTED
-        } else {
-            mode == AppOpsManager.MODE_ALLOWED
-        }
-        return granted
-    }
-
+//    private fun showAppUsageStats(usageStats: MutableList<UsageStats>) {
+//        usageStats.sortWith(Comparator { right, left ->
+//            compareValues(left.lastTimeUsed, right.lastTimeUsed)
+//        })
+//
+//        usageStats.forEach { it ->
+//            if(it.totalTimeInForeground != 0.toLong()){ //foreground에서 사용된 시간이 0인 앱은 저장하지 않음
+//                Log.d(TAG, "packageName: ${it.packageName}, lastTimeUsed: ${Date(it.lastTimeUsed)}, " +
+//                        "totalTimeInForeground: ${it.totalTimeInForeground}")
+//
+//                val addRunnable = Runnable {
+//                    AppDatabase.getInstance(this).roomDAO().insertPhoneUsageData(Timestamp(System.currentTimeMillis()).toString(), it.packageName.toString(), Date(it.lastTimeUsed).toString(), it.totalTimeInForeground)
+//                }
+//                val thread = Thread(addRunnable)
+//                thread.start()
+//            }
+//        }
+//    }
+//
+//    private fun getAppUsageStats(): MutableList<UsageStats> {
+//        val cal = Calendar.getInstance()
+//        cal.add(Calendar.MONTH, -1)
+//
+//        val usageStatsManager = getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
+//        val queryUsageStats = usageStatsManager
+//            .queryUsageStats(
+//                UsageStatsManager.INTERVAL_DAILY, cal.timeInMillis,
+//                System.currentTimeMillis()
+//            )
+//        return queryUsageStats
+//    }
 }
