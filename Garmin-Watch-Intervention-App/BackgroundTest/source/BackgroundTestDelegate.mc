@@ -44,9 +44,6 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     var timeCount;
     var periodSetting;
     var IBI_samples as Lang.Array<Lang.Number>;
-    var ACCx_samples as Lang.Array<Lang.Number>;
-    var ACCy_samples as Lang.Array<Lang.Number>;
-    var ACCz_samples as Lang.Array<Lang.Number>;
     var listener;
 
     function initialize(){
@@ -76,33 +73,25 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     public function HistoryCallback(sensorData as SensorData) as Void {
         var rawIBIData = sensorData.heartRateData;
         var rawACCData = sensorData.accelerometerData;
+        var info = ActivityMonitor.getInfo();
 
         var send_dict = {};
 
         IBI_samples.addAll(rawIBIData.heartBeatIntervals);
-        ACCx_samples.addAll(rawACCData.x);
-        ACCy_samples.addAll(rawACCData.y);
-        ACCz_samples.addAll(rawACCData.z);
 
         timeCount += periodSetting;
 
         if(timeCount >= (30 - periodSetting)){            
             var time = System.getClockTime();
-            var stepData = ActivityMonitor.getInfo(steps);
-            var caloriesData = ActivityMonitor.getInfo(calories);
             System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
-            System.println(IBI_samples);
-            System.println(ACCx_samples);
-            System.println(ACCy_samples);
-            System.println(ACCz_samples);
-            System.println(stepData);
-            System.println(caloriesData);
+        
             send_dict.put(timeCount+"i", IBI_samples);
-            send_dict.put(timeCount+"x", ACCx_samples);
-            send_dict.put(timeCount+"y", ACCy_samples);
-            send_dict.put(timeCount+"z", ACCz_samples);
-            send_dict.put(timeCount+"s", stepData);
-            send_dict.put(timeCount+"c", caloriesData);
+            send_dict.put(timeCount+"x", rawACCData.x);
+            send_dict.put(timeCount+"y", rawACCData.y);
+            send_dict.put(timeCount+"z", rawACCData.z);
+            send_dict.put(timeCount+"s", info.steps);
+            send_dict.put(timeCount+"c", info.calories);
+            System.println(send_dict);
 
             if(System.getDeviceSettings().phoneConnected){
                 Communications.transmit(send_dict, null, listener);
