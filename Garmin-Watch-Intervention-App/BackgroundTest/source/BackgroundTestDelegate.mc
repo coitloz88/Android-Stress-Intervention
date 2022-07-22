@@ -89,8 +89,8 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             send_dict.put(timeCount+"x", rawACCData.x);
             send_dict.put(timeCount+"y", rawACCData.y);
             send_dict.put(timeCount+"z", rawACCData.z);
-            send_dict.put(timeCount+"s", info.steps);
-            send_dict.put(timeCount+"c", info.calories);
+            send_dict.put(timeCount+"s", "["+info.steps+"]");
+            send_dict.put(timeCount+"c", "["+info.calories+"]");
             System.println(send_dict);
 
             if(System.getDeviceSettings().phoneConnected){

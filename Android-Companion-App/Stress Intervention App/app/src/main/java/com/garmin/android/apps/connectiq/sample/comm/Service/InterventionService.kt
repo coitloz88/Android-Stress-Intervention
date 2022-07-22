@@ -11,6 +11,7 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.activities.InterventionActivity
+import com.garmin.android.apps.connectiq.sample.comm.activities.MainActivity
 import com.garmin.android.apps.connectiq.sample.comm.roomdb.AppDatabase
 import com.garmin.android.connectiq.ConnectIQ
 import com.garmin.android.connectiq.IQApp
@@ -41,6 +42,8 @@ class InterventionService : Service() {
 
     private lateinit var notificationManager: NotificationManager
     private val GROUP_KEY_NOTIFY = "group_key_notify"
+
+    private var dataMap: MutableMap<String, MutableList<Int>> = mutableMapOf()
 
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -130,23 +133,44 @@ class InterventionService : Service() {
         Log.d(TAG, "Service execution finished")
     }
 
-    private fun parseSensorData(rawDatas: String): List<Int> {
+    private fun parseSensorData(rawDatas: String): Map<String, List<Int>> {
         try {
-            val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).replace(" ", "").split(",").map{it.toInt()}
+            /* val sensorDataValues = rawDatas.substring(rawDatas.indexOf("[") + 1, rawDatas.indexOf("]")).replace(" ", "").split(",").map{it.toInt()}
             Log.d(TAG, "Parsed Sensor Data Values: $sensorDataValues")
-
-            return sensorDataValues
+            return sensorDataValues */
+            var dataName: String = String()
+            var dataList = rawDatas.split("=", " 28") // ],로 하면 안됨
+            dataList.forEach{
+                if (it.contains("i" ) || it.contains("x") || it.contains("y") || it.contains("z") || it.contains("s") || it.contains("c")) {
+                    dataName = it.last().toString()
+                    //return@forEach
+                }
+                else {
+                    if (it.contains(",")) {
+                        dataMap.put(
+                            dataName,
+                            it.substring(it.indexOf("[") + 1, it.indexOf("]")).replace(" ", "").split(",").map{it.toInt()} as MutableList<Int>)
+                    }
+                    else {
+                        dataMap.put(
+                            dataName,
+                            it.substring(it.indexOf("[")+1, it.indexOf("]")).map{it.toInt()} as MutableList<Int>)
+                    }
+                }
+            }
+            Log.d(TAG, "$dataMap")
+            return dataMap
         } catch (e: IndexOutOfBoundsException) {
             Log.e(TAG, e.toString())
         } catch (e: NumberFormatException){
             Log.e(TAG, e.toString())
         }
-
-        return listOf(0)
+        return emptyMap()
     }
 
-    private fun IBItoHRV(IBI_samples: List<Int>): Double{
-        var receivedHRVdata = 0.0
+    private fun dataProcessing(receivedData: Map<String, List<Int>>): Double{
+        // TODO: 받은 데이터 전부 processing
+        /*var receivedHRVdata = 0.0
         for(i in 0 until (IBI_samples.size-1)){
             receivedHRVdata += (IBI_samples[i + 1] - IBI_samples[i]).toDouble().pow(2.0)
         }
@@ -164,6 +188,8 @@ class InterventionService : Service() {
         thread.start()
 
         return realHRVdata
+        */
+        return 0.0
     }
 
     private fun isLowerHRV(userHRV: Double): Boolean {
@@ -179,7 +205,7 @@ class InterventionService : Service() {
     }
 
     private fun giveFeedback(rawDatas: String){
-        if(isLowerHRV(IBItoHRV(parseSensorData(rawDatas)))){
+        if(isLowerHRV(dataProcessing(parseSensorData(rawDatas)))){
             //notification 설정
             val notificationIntent = Intent(this, InterventionActivity::class.java)
             val pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
@@ -198,7 +224,6 @@ class InterventionService : Service() {
             if(wLock != null && !wLock.isHeld){
                 wLock.acquire(3*1000L /*3 seconds*/)
             }
-
 
             //진동 설정(0.5초 진동)
             val vibrator = getSystemService(VIBRATOR_SERVICE) as Vibrator

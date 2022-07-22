@@ -35,7 +35,10 @@ class MainActivity : Activity() {
     private lateinit var connectIQ: ConnectIQ
     private lateinit var adapter: IQDeviceAdapter
     private lateinit var btnIntervention: Button
+    private lateinit var btnParse: Button
     private var isSdkReady = false
+
+    private var dataMap: MutableMap<String, MutableList<Int>> = mutableMapOf()
 
     private val connectIQListener: ConnectIQ.ConnectIQListener =
         object : ConnectIQ.ConnectIQListener {
@@ -78,6 +81,32 @@ class MainActivity : Activity() {
                 Toast.makeText(applicationContext, "No intervention is running", Toast.LENGTH_SHORT).show()
             }
         }
+
+        btnParse = findViewById(R.id.btn_parse)
+        btnParse.setOnClickListener{
+            var data = "{28x=[58, 59, 58, 57, 59, 56], 28i=[757, 767, 774, 763, 767, 770], 28y= [612, 612, 616, 614, 615, 614], 28z=[-862, -859, -861, -861, -859], 28s=[15], 28c=[877]}"
+            var dataName: String = String()
+            var dataList = data.split("=", " 28") //TODO: ], 하면 안됨
+            dataList.forEach{
+                if (it.contains("i" ) || it.contains("x") || it.contains("y") || it.contains("z") || it.contains("s") || it.contains("c")) {
+                    dataName = it.last().toString()
+                    //return@forEach
+                }
+                else {
+                    if (it.contains(",")) {
+                        dataMap.put(
+                            dataName,
+                            it.substring(it.indexOf("[") + 1, it.indexOf("]")).replace(" ", "").split(",").map{it.toInt()} as MutableList<Int>)
+                    }
+                    else {
+                        dataMap.put(
+                            dataName,
+                            it.substring(it.indexOf("[")+1, it.indexOf("]")).map{it.toInt()} as MutableList<Int>)
+                    }
+                }
+            }
+            Log.d(TAG, "$dataMap")
+        }
     }
 
     public override fun onResume() {
@@ -114,6 +143,14 @@ class MainActivity : Activity() {
     }
 
     private fun onItemClick(device: IQDevice) {
+        if(!isMyServiceRunning(InterventionService::class.java)){
+            Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
+            startService(InterventionService.putIntent(this, device))
+        } else {
+            Toast.makeText(applicationContext, "Intervention cannot start", Toast.LENGTH_SHORT).show()
+            Log.e(TAG, "cannot start the intervention")
+        }
+        /*
         if(!isMyServiceRunning(InterventionService::class.java) && mPreferences.prefs.getString("isConnected", "NOT CONNECTED").equals("CONNECTED")){
             Toast.makeText(applicationContext, "Starting Intervention...", Toast.LENGTH_SHORT).show()
             startService(InterventionService.putIntent(this, device))
@@ -121,6 +158,7 @@ class MainActivity : Activity() {
             Toast.makeText(applicationContext, "Intervention cannot start", Toast.LENGTH_SHORT).show()
             Log.e(TAG, "cannot start the intervention")
         }
+        */
     }
 
     private fun setupConnectIQSdk() {
