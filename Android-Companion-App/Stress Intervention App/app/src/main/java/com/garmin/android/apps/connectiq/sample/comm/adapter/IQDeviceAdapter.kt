@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.Utils.mPreferences
 import com.garmin.android.connectiq.IQDevice
 import com.garmin.android.connectiq.IQDevice.IQDeviceStatus
@@ -22,7 +23,7 @@ class IQDeviceAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IQDeviceViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_2, parent, false)
+            .inflate(R.layout.main_item_recycler, parent, false)
         return IQDeviceViewHolder(view, onItemClickListener)
     }
 
@@ -60,8 +61,8 @@ class IQDeviceViewHolder(
             else -> device.friendlyName
         }
 
-        view.findViewById<TextView>(android.R.id.text1).text = deviceName
-        view.findViewById<TextView>(android.R.id.text2).text = device.status?.name
+        view.findViewById<TextView>(R.id.device_name).text = deviceName
+        //view.findViewById<TextView>(android.R.id.text2).text = device.status?.name
         mPreferences.prefs.setString("isConnected", device.status?.name.toString())
 
         view.setOnClickListener {

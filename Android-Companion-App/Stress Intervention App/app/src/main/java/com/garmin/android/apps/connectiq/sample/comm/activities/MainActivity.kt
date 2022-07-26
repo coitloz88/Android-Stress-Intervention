@@ -14,6 +14,8 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.garmin.android.apps.connectiq.sample.comm.R
@@ -38,7 +40,7 @@ class MainActivity : Activity() {
     private lateinit var btnParse: Button
     private var isSdkReady = false
 
-    private var dataMap: MutableMap<String, MutableList<Int>> = mutableMapOf()
+    private lateinit var toolbar: Toolbar
 
     private val connectIQListener: ConnectIQ.ConnectIQListener =
         object : ConnectIQ.ConnectIQListener {
@@ -58,13 +60,19 @@ class MainActivity : Activity() {
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.AppTheme)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //toolbar = findViewById(R.id.main_toolbar)
+        //setSupportActionBar(toolbar)
+        //supportActionBar!!.set
 
         setupUi()
         setupConnectIQSdk()
 
-        btnIntervention = findViewById(R.id.btn_intervention)
+        btnIntervention = findViewById(R.id.btn_control_data_collection)
 
         btnIntervention.setOnClickListener{
             if(isMyServiceRunning(InterventionService::class.java)){
@@ -110,8 +118,8 @@ class MainActivity : Activity() {
     private fun setupUi() {
         // Setup UI.
         adapter = IQDeviceAdapter { onItemClick(it) }
-        findViewById<RecyclerView>(android.R.id.list).apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+        findViewById<RecyclerView>(R.id.main_recycler_view).apply {
+            layoutManager = LinearLayoutManager(this@MainActivity, LinearLayoutManager.VERTICAL, false)
             adapter = this@MainActivity.adapter
         }
     }
