@@ -18,9 +18,16 @@
         android:elevation="4dp"
         android:background="#F2F1F1"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Stress Intervention App"
-        android:gravity="center"
-        android:textAlignment="center">
+        app:title="Stress Intervention App">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stress Intervention App"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#454545">
+        </TextView>
     </androidx.appcompat.widget.Toolbar>
 
     <TextView

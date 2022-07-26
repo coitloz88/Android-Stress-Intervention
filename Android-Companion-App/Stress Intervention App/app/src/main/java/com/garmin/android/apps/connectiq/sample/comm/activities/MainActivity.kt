@@ -14,7 +14,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,7 +28,7 @@ import com.garmin.android.connectiq.exception.InvalidStateException
 import com.garmin.android.connectiq.exception.ServiceUnavailableException
 
 
-class MainActivity : Activity() {
+class MainActivity : AppCompatActivity() {
 
     companion object{
         private const val TAG = "MainActivity"
@@ -65,9 +65,9 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //toolbar = findViewById(R.id.main_toolbar)
-        //setSupportActionBar(toolbar)
-        //supportActionBar!!.set
+        toolbar = findViewById(R.id.main_toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
 
         setupUi()
         setupConnectIQSdk()
