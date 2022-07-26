@@ -84,13 +84,15 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
         if(timeCount >= (30 - periodSetting)){            
             var time = System.getClockTime();
             System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
+
+            var distance = info.distance / 100;
         
             send_dict.put(timeCount+"i", IBI_samples);
             send_dict.put(timeCount+"x", rawACCData.x);
             send_dict.put(timeCount+"y", rawACCData.y);
             send_dict.put(timeCount+"z", rawACCData.z);
             send_dict.put(timeCount+"s", "["+info.steps+"]");
-            send_dict.put(timeCount+"c", "["+info.calories+"]");
+            send_dict.put(timeCount+"d", "["+distance+"]");
             System.println(send_dict);
 
             if(System.getDeviceSettings().phoneConnected){
