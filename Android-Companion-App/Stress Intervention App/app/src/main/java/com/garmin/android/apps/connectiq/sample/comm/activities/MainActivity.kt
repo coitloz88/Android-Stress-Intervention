@@ -166,7 +166,7 @@ class MainActivity : AppCompatActivity() {
                 loadDevices()
                 true
             }
-            R.id.see_other_datas -> {
+            R.id.control_data_collection -> {
                 startActivity(Intent(this, SensorActivity::class.java))
                 true
             }

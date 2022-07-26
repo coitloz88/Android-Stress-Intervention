@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.garmin.android.apps.connectiq.sample.comm.R
 import com.garmin.android.apps.connectiq.sample.comm.SensorData
 
 class SensorDatasAdapter(
@@ -19,7 +20,7 @@ class SensorDatasAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SensorDataViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(android.R.layout.simple_list_item_1, parent, false)
+            .inflate(R.layout.sensor_item_recycler, parent, false)
         return SensorDataViewHolder(view, onItemClickListener)
     }
 
@@ -42,7 +43,7 @@ class SensorDataViewHolder(
 ) : RecyclerView.ViewHolder(view) {
 
     fun bindTo(sensorDatas: SensorData) {
-        view.findViewById<TextView>(android.R.id.text1).text = sensorDatas.text
+        view.findViewById<TextView>(R.id.collect_data).text = sensorDatas.text
         view.setOnClickListener {
             //TODO: 클릭 시 실행할 것
             onItemClickListener(sensorDatas.payload)

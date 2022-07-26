@@ -16,9 +16,11 @@ import android.os.Process
 import android.provider.Settings
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.work.*
@@ -37,12 +39,18 @@ import kotlin.Comparator
 
 private const val TAG = "SensorActivity"
 
-class SensorActivity : Activity() {
+class SensorActivity : AppCompatActivity() {
     private val REQUEST_CODE_LOCATION_PERMISSION = 1
+
+    private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sensor)
+
+        toolbar = findViewById(R.id.sensor_toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
     }
 
     override fun onResume() {
@@ -54,7 +62,7 @@ class SensorActivity : Activity() {
         val adapter = SensorDatasAdapter { onItemClick(it) }
         adapter.submitList(SensorFactory.getSensorDatas(this@SensorActivity))
         findViewById<RecyclerView>(android.R.id.list).apply {
-            layoutManager = LinearLayoutManager(this@SensorActivity)
+            layoutManager = GridLayoutManager(this@SensorActivity, 2)
             this.adapter = adapter
         }
     }
