@@ -170,6 +170,18 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, SensorActivity::class.java))
                 true
             }
+            R.id.intervention_ui -> {
+                startActivity(Intent(this, InterventionActivity::class.java))
+                true
+            }
+            R.id.intervention2_ui -> {
+                startActivity(Intent(this, InterventionActivity2::class.java))
+                true
+            }
+            R.id.esm_ui -> {
+                startActivity(Intent(this, ESMActivity::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

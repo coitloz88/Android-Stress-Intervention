@@ -6,14 +6,14 @@ import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import com.garmin.android.apps.connectiq.sample.comm.R
 
-class InterventionActivity : AppCompatActivity() {
+class InterventionActivity2 : AppCompatActivity() {
     private lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_intervention)
+        setContentView(R.layout.activity_intervention2)
 
-        toolbar = findViewById(R.id.intervention_toolbar)
+        toolbar = findViewById(R.id.intervention2_toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayShowTitleEnabled(false)
     }

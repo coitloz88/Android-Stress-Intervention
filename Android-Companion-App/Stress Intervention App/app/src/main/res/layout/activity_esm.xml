@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".activities.ESMActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/esm_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:elevation="4dp"
+        android:background="#F2F1F1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Stress Intervention">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stress Self Reports"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#454545">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/esm_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="96dp"
+        android:text="Indicate the extent you feel"
+        android:textSize="16dp"
+        android:textColor="#454545"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esm_toolbar">
+    </TextView>
+
+    <TextView
+        android:id="@+id/esm_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:gravity="center"
+        android:text="Stressed"
+        android:textSize="20dp"
+        android:textColor="#ff7575"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esm_information">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="90dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esm_day">
+        <RadioButton
+            android:id="@+id/rg_btn1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Very slightly or not at all"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/esm_button"
+            android:button="@android:color/transparent"/>
+        <RadioButton
+            android:id="@+id/rg_btn2"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="A little"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/esm_button"
+            android:button="@android:color/transparent"/>
+        <RadioButton
+            android:id="@+id/rg_btn3"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Moderately"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/esm_button"
+            android:button="@android:color/transparent"/>
+        <RadioButton
+            android:id="@+id/rg_btn4"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Quite a bit"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/esm_button"
+            android:button="@android:color/transparent"/>
+        <RadioButton
+            android:id="@+id/rg_btn5"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Extremely"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/esm_button"
+            android:button="@android:color/transparent"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

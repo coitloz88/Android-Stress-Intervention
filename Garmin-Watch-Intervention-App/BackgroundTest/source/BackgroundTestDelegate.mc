@@ -44,13 +44,19 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
     var timeCount;
     var periodSetting;
     var IBI_samples as Lang.Array<Lang.Number>;
+    var ACC_X_samples as Lang.Array<Lang.Number>;
+    var ACC_Y_samples as Lang.Array<Lang.Number>;
+    var ACC_Z_samples as Lang.Array<Lang.Number>;
     var listener;
 
     function initialize(){
         System.ServiceDelegate.initialize();
-        periodSetting = 4; //1~4s (max 4)
+        periodSetting = 1; //1~4s (max 4)
         timeCount = 0;
         IBI_samples = [];
+        ACC_X_samples = [];
+        ACC_Y_samples = [];
+        ACC_Z_samples = [];
     }
 
     function onTemporalEvent() {
@@ -81,16 +87,16 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
 
         timeCount += periodSetting;
 
-        if(timeCount >= (30 - periodSetting)){            
+        if(timeCount == 30){            
             var time = System.getClockTime();
             System.print(Lang.format("$1$:$2$:$3$", [time.hour, time.min, time.sec]));
 
             var distance = info.distance / 100;
         
             send_dict.put(timeCount+"i", IBI_samples);
-            send_dict.put(timeCount+"x", rawACCData.x);
-            send_dict.put(timeCount+"y", rawACCData.y);
-            send_dict.put(timeCount+"z", rawACCData.z);
+            send_dict.put(timeCount+"x", ACC_X_samples);
+            send_dict.put(timeCount+"y", ACC_Y_samples);
+            send_dict.put(timeCount+"z", ACC_Z_samples);
             send_dict.put(timeCount+"s", "["+info.steps+"]");
             send_dict.put(timeCount+"d", "["+distance+"]");
             System.println(send_dict);
@@ -100,6 +106,11 @@ public class BackgroundServiceDelegate extends System.ServiceDelegate {
             } else {
                 System.println("    *** fail to send(not connected) ***");
             }
+        }
+        else if (timeCount >= 25 && timeCount < 30){
+            ACC_X_samples.addAll(rawACCData.x);
+            ACC_Y_samples.addAll(rawACCData.y);
+            ACC_Z_samples.addAll(rawACCData.z);
         }
         
     }
