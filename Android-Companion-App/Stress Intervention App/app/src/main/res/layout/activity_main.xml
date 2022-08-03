@@ -55,6 +55,22 @@
         android:paddingTop="18dp" />
 
     <Button
+        android:id="@+id/parsing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/stop_intervention_button"
+        android:text="STOP INTERVENTION"
+        android:textColor="#454545"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
         android:id="@+id/btn_control_data_collection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

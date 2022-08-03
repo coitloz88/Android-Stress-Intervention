@@ -43,7 +43,8 @@ class InterventionService : Service() {
     private lateinit var notificationManager: NotificationManager
     private val GROUP_KEY_NOTIFY = "group_key_notify"
 
-    private var dataMap: MutableMap<String, MutableList<Int>> = mutableMapOf()
+    private var dataMap1: MutableMap<String, MutableList<Int>> = mutableMapOf()
+    private var dataMap2: MutableMap<String, Int> = mutableMapOf()
 
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -139,27 +140,40 @@ class InterventionService : Service() {
             Log.d(TAG, "Parsed Sensor Data Values: $sensorDataValues")
             return sensorDataValues */
             var dataName: String = String()
-            var dataList = rawDatas.split("=", " 28") // ],로 하면 안됨
+            var dataList = rawDatas.split("=", "], ") // ],로 하면 안됨
             dataList.forEach{
-                if (it.contains("i" ) || it.contains("x") || it.contains("y") || it.contains("z") || it.contains("s") || it.contains("c")) {
+                if (it.contains("i" ) || it.contains("x") || it.contains("y") || it.contains("z") || it.contains("s") || it.contains("d")) {
                     dataName = it.last().toString()
                     //return@forEach
                 }
                 else {
                     if (it.contains(",")) {
-                        dataMap.put(
-                            dataName,
-                            it.substring(it.indexOf("[") + 1, it.indexOf("]")).replace(" ", "").split(",").map{it.toInt()} as MutableList<Int>)
+                        if (it.contains("]")) {
+                            dataMap1.put(
+                                dataName,
+                                it.substring(it.indexOf("[") + 1, it.indexOf("]")).replace(" ", "").split(",").map{it.toInt()} as MutableList<Int>)
+                        }
+                        else{
+                            dataMap1.put(
+                                dataName,
+                                it.substring(it.indexOf("[") + 1).replace(" ", "").split(",").map{it.toInt()} as MutableList<Int>)
+                        }
                     }
-                    else {
-                        dataMap.put(
-                            dataName,
-                            it.substring(it.indexOf("[")+1, it.indexOf("]")).map{it.toInt()} as MutableList<Int>)
+                    else{
+                        if(it.contains("]")) {
+                            dataMap2.put(
+                                dataName,
+                                it.substring(it.indexOf("[") + 1, it.indexOf("]")).toInt())
+                        }
+                        else {
+                            dataMap2.put(
+                                dataName,
+                                it.substring(it.indexOf(("[")) + 1).toInt())
+                        }
                     }
                 }
             }
-            Log.d(TAG, "$dataMap")
-            return dataMap
+            return dataMap1 //TODO
         } catch (e: IndexOutOfBoundsException) {
             Log.e(TAG, e.toString())
         } catch (e: NumberFormatException){
