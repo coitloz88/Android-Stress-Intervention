@@ -94,8 +94,6 @@ class InterventionService : Service() {
                 } else {
                     builder.append("Received an empty message from the application")
                 }
-
-
             }
         } catch (e: InvalidStateException) {
             Log.e(TAG, "ConnectIQ is not in a valid state")
